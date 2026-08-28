@@ -1,0 +1,159 @@
+# SmartSpend AI Configuration
+
+data_generation:
+  random_seed: 42
+  months: 12
+  avg_daily_transactions: 4.5
+  start_date: "2025-01-01"
+  category_distribution:
+    food: 0.35
+    transport: 0.20
+    shopping: 0.20
+    bills: 0.10
+    entertainment: 0.10
+    other: 0.05
+
+model_training:
+  random_state: 42
+  test_size: 0.2
+
+baseline_keywords:
+  food:
+    - "อาหาร"
+    - "ข้าว"
+    - "ก๋วยเตี๋ยว"
+    - "ชาบู"
+    - "ส้มตำ"
+    - "กาแฟ"
+    - "cafe"
+    - "coffee"
+    - "lineman"
+    - "grabfood"
+    - "shopeefood"
+    - "foodpanda"
+    - "7-eleven"
+    - "เซเว่น"
+    - "บุฟเฟต์"
+    - "ขนม"
+    - "เบเกอรี่"
+    - "starbucks"
+    - "kfc"
+    - "mcdonald"
+    - "sukishi"
+    - "mk"
+    - "สุกี้"
+    - "หมูกระทะ"
+    - "น้ำดื่ม"
+    - "ชายสี่"
+    - "amazon cafe"
+  transport:
+    - "bts"
+    - "mrt"
+    - "grab"
+    - "bolt"
+    - "แท็กซี่"
+    - "taxi"
+    - "ค่าน้ำมัน"
+    - "ปตท"
+    - "ptt"
+    - "bcp"
+    - "shell"
+    - "caltex"
+    - "ทางด่วน"
+    - "easy pass"
+    - "m-flow"
+    - "ตั๋วรถไฟ"
+    - "รถเมล์"
+    - "วินมอไซค์"
+    - "เติมน้ำมัน"
+    - "ที่จอดรถ"
+    - "airasia"
+    - "nokair"
+  shopping:
+    - "shopee"
+    - "lazada"
+    - "tiktok shop"
+    - "uniqlo"
+    - "zara"
+    - "h&m"
+    - "เสื้อผ้า"
+    - "รองเท้า"
+    - "กระเป๋า"
+    - "เครื่องสำอาง"
+    - "eveandboy"
+    - "watsons"
+    - "boots"
+    - "ห้าง"
+    - "central"
+    - "the mall"
+    - "ikea"
+    - "gadget"
+    - "apple store"
+    - "หูฟัง"
+    - "เคสมือถือ"
+    - "ช้อปปิ้ง"
+  bills:
+    - "ค่าไฟ"
+    - "กฟน"
+    - "กฟภ"
+    - "mea"
+    - "pea"
+    - "ค่าน้ำ"
+    - "กปน"
+    - "กปภ"
+    - "mwa"
+    - "pwa"
+    - "ค่าเน็ต"
+    - "ais"
+    - "true"
+    - "dtac"
+    - "3bb"
+    - "nt broadband"
+    - "ค่าเช่าห้อง"
+    - "ค่าหอ"
+    - "ค่าคอนโด"
+    - "ประกันสุขภาพ"
+    - "ประกันชีวิต"
+    - "บัตรเครดิต"
+    - "ค่าส่วนกลาง"
+  entertainment:
+    - "netflix"
+    - "spotify"
+    - "youtube premium"
+    - "disney+"
+    - "steam"
+    - "playstation"
+    - "nintendo"
+    - "เกม"
+    - "ดูหนัง"
+    - "major cineplex"
+    - "sf cinema"
+    - "ตั๋วคอนเสิร์ต"
+    - "บอร์ดเกม"
+    - "คาราโอเกะ"
+    - "เหล้า"
+    - "เบียร์"
+    - "ผับ"
+    - "บาร์"
+  other:
+    - "โอนเงิน"
+    - "ทำบุญ"
+    - "บริจาค"
+    - "ถอนเงิน"
+    - "ค่าธรรมเนียม"
+    - "เบ็ดเตล็ด"
+
+impulse_score:
+  weights:
+    late_night: 25
+    payday: 25
+    wants: 20
+    amount_anomaly: 30
+  nudge_threshold: 70
+  late_night_window:
+    - "23:00"
+    - "02:00"
+
+needs_wants:
+  # Placeholder until confirmed in Phase 2 (Open Decision #2)
+  override_amount_multiplier: null
