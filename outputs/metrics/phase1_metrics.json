@@ -1,0 +1,368 @@
+{
+  "phase": 1,
+  "component": "Expense Categorization",
+  "metric_name": "macro_f1",
+  "value": 1.0,
+  "baseline_value": 0.8626,
+  "best_ml_model": "Logistic Regression",
+  "ml_beats_baseline": true,
+  "timestamp": "2026-08-28T23:19:49.320769",
+  "models_evaluated": {
+    "baseline": {
+      "model_name": "Keyword Baseline",
+      "accuracy": 0.9132,
+      "macro_f1": 0.8626,
+      "weighted_f1": 0.9243,
+      "confusion_matrix": [
+        [
+          38,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          28,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          104,
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          2,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          7,
+          52,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          0,
+          52
+        ]
+      ],
+      "labels": [
+        "bills",
+        "entertainment",
+        "food",
+        "other",
+        "shopping",
+        "transport"
+      ],
+      "classification_report": {
+        "bills": {
+          "precision": 0.8837209302325582,
+          "recall": 1.0,
+          "f1-score": 0.9382716049382716,
+          "support": 38.0
+        },
+        "entertainment": {
+          "precision": 1.0,
+          "recall": 0.9032258064516129,
+          "f1-score": 0.9491525423728814,
+          "support": 31.0
+        },
+        "food": {
+          "precision": 0.9811320754716981,
+          "recall": 0.9454545454545454,
+          "f1-score": 0.9629629629629629,
+          "support": 110.0
+        },
+        "other": {
+          "precision": 0.3333333333333333,
+          "recall": 0.5882352941176471,
+          "f1-score": 0.425531914893617,
+          "support": 17.0
+        },
+        "shopping": {
+          "precision": 1.0,
+          "recall": 0.8813559322033898,
+          "f1-score": 0.9369369369369369,
+          "support": 59.0
+        },
+        "transport": {
+          "precision": 1.0,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.9629629629629629,
+          "support": 56.0
+        },
+        "accuracy": 0.9131832797427653,
+        "macro avg": {
+          "precision": 0.8663643898395983,
+          "recall": 0.8744738344664373,
+          "f1-score": 0.8626364875112721,
+          "support": 311.0
+        },
+        "weighted avg": {
+          "precision": 0.9426771392842145,
+          "recall": 0.9131832797427653,
+          "f1-score": 0.924254737895615,
+          "support": 311.0
+        }
+      }
+    },
+    "logistic_regression": {
+      "model_name": "Logistic Regression",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "confusion_matrix": [
+        [
+          38,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          110,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          59,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          56
+        ]
+      ],
+      "labels": [
+        "bills",
+        "entertainment",
+        "food",
+        "other",
+        "shopping",
+        "transport"
+      ],
+      "classification_report": {
+        "bills": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 38.0
+        },
+        "entertainment": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "food": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 110.0
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 17.0
+        },
+        "shopping": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 59.0
+        },
+        "transport": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 56.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 311.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 311.0
+        }
+      }
+    },
+    "lightgbm": {
+      "model_name": "LightGBM",
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "confusion_matrix": [
+        [
+          38,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          110,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          17,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          59,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          56
+        ]
+      ],
+      "labels": [
+        "bills",
+        "entertainment",
+        "food",
+        "other",
+        "shopping",
+        "transport"
+      ],
+      "classification_report": {
+        "bills": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 38.0
+        },
+        "entertainment": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 31.0
+        },
+        "food": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 110.0
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 17.0
+        },
+        "shopping": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 59.0
+        },
+        "transport": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 56.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 311.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 311.0
+        }
+      }
+    }
+  },
+  "sample_counts": {
+    "test_total": 311,
+    "per_category": {
+      "bills": 38,
+      "entertainment": 31,
+      "food": 110,
+      "other": 17,
+      "shopping": 59,
+      "transport": 56
+    }
+  }
+}
