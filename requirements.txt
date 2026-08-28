@@ -1,0 +1,13 @@
+# Python version: 3.11+
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+lightgbm==4.5.0
+pythainlp==5.0.4
+Faker==28.4.1
+PyYAML==6.0.2
+pytest==8.3.2
+fastapi==0.112.2
+uvicorn==0.30.6
+pydantic==2.8.2
+joblib==1.4.2
