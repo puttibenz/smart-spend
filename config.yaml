@@ -12,15 +12,11 @@ data_generation:
     bills: 0.10
     entertainment: 0.10
     other: 0.05
-  category_distribution_tolerance: 0.01
+  category_distribution_tolerance: 0.01  # ±1.0%
   noise:
     ambiguous_memo_pct: 0.15
     typo_pct: 0.10
     unseen_merchant_pct: 0.20
-
-model_training:
-  random_state: 42
-  test_size: 0.2
 
 evaluation_thresholds:
   macro_f1_floor: 0.75
@@ -28,6 +24,10 @@ evaluation_thresholds:
   unseen_accuracy_floor: 0.60
   max_generalization_gap: 0.20
   min_train_samples_per_category: 40
+
+model_training:
+  random_state: 42
+  test_size: 0.2
 
 baseline_keywords:
   food:
