@@ -1,0 +1,658 @@
+transaction_id,merchant,memo,category_true,category_pred_baseline,category_pred_logreg,category_pred_lgbm,best_ml_pred,top1_prob,top2_prob,confidence_margin,is_unseen_merchant,sub_type,is_ml_misclassified,error_attribution
+93b2047b-76f2-4783-8272-74f93fe5ba79,Starbucks Reserve,Shibuya Honey Toast และชาร้อน,food,food,food,food,food,0.6549,0.1026,0.5523,False,wants,False,both_correct
+55b7f736-8bd3-470e-8972-d1f4e6344406,GrabCar Premium Bangkok,เช่ารถขับเที่ยวกับเพื่อน,transport,transport,transport,transport,transport,0.7554,0.074,0.6814,False,wants,False,both_correct
+9f8910a4-ba35-4ced-accf-3e64f29d4a7b,Major Cineplex รัชโยธิน,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,entertainment,entertainment,entertainment,entertainment,0.86,0.0376,0.8224,False,wants,False,both_correct
+4c66ee52-ed7d-4cae-9b68-959751438109,Lotus's สุขุมวิท 50,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,shopping,shopping,0.8142,0.0572,0.757,False,routine,False,ml_wins_baseline_wrong
+376515b8-d050-4571-8706-a6122ceb8e7c,Caltex เอกมัย,เติมเงินบัตร BTS รายเดือน,transport,transport,transport,transport,transport,0.707,0.0785,0.6285,False,routine,False,both_correct
+e98b0b22-b218-45a3-b110-985bfe0a7ec7,H&M EmQuartier,กระเป๋าผ้าแบรนด์ยอดฮิต,shopping,shopping,shopping,shopping,shopping,0.7141,0.0715,0.6426,False,wants,False,both_correct
+e182bba9-7d09-454b-82c2-6ffd38cb95cc,Bar B Q Plaza,xxx,food,other,food,food,food,0.5377,0.1404,0.3973,False,wants,False,ml_wins_baseline_wrong
+ef673d83-52d1-4487-b8ab-6030bafd5478,Foodpanda - Pizza Hut Delivery,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,food,food,food,food,food,0.64,0.1152,0.5248,False,impulse_delivery,False,both_correct
+8be46395-d2c8-41fa-ba02-f33afca26fad,Amazon Cafe PTT,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.8014,0.0524,0.749,False,routine,False,both_correct
+e3275231-cca9-4d28-9cdd-abd9f1bcffce,Sephora Thailand,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,shopping,shopping,shopping,shopping,shopping,0.7424,0.0761,0.6663,False,wants,False,both_correct
+123f6389-192c-4dca-93f4-cb5773704ce2,KFC Drive Thru,Iced Caramel Macchiato Venti,food,food,food,food,food,0.7592,0.0647,0.6945,False,wants,False,both_correct
+fbb6035c-48ae-4fd8-9176-77f2024e6d9c,Spotify Premium TH,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,entertainment,entertainment,entertainment,entertainment,0.8453,0.04,0.8053,False,wants,False,both_correct
+7200cce4-cacb-4198-aae0-d683260a3f11,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.7648,0.0756,0.6892,False,routine,False,both_correct
+a6e9ff20-3aab-4f3a-839d-d5e7225b2674,Big C Supercenter รัชดา,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.7807,0.0708,0.7099,False,routine,False,ml_wins_baseline_wrong
+f561dc72-e04e-45e2-bd7f-1cd931781e92,Gentlewoman Store,ยอดตัดบัญชี,shopping,other,shopping,food,shopping,0.4196,0.1916,0.228,False,wants,False,ml_wins_baseline_wrong
+e6d09738-de89-44f7-b625-7933d9d4f49f,Steam Games Store,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,entertainment,entertainment,entertainment,entertainment,entertainment,0.7211,0.0664,0.6546,False,wants,False,both_correct
+c4168cbf-1e59-42b9-b479-7cb43551c592,Spotify Premium TH,ยอดตัดบัญชี,entertainment,entertainment,entertainment,entertainment,entertainment,0.6051,0.1132,0.4919,False,wants,False,both_correct
+f3d51a13-ba32-45b7-8127-bdb185a076ea,Central Online Shopping,Apple Watch สายสปอร์ตแฟชั่น,shopping,shopping,shopping,shopping,shopping,0.6611,0.0917,0.5693,False,impulse_online,False,both_correct
+a6d7a960-1231-4766-8531-ead2e467b437,Line Man Taxi VIP,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.8326,0.0486,0.784,False,wants,False,both_correct
+c84e233d-055a-42b7-bc9d-1f3ed2d0c8f3,Bar B Q Plaza,เบอร์เกอร์เนื้อทรัฟเฟิล,food,other,food,food,food,0.7359,0.0788,0.6571,False,wants,False,ml_wins_baseline_wrong
+057d2c8a-137d-4456-a68e-666fdb6c0a84,ปตท. PTT Station สาขา 1,ค่าวินไปหน้าปากซอยสุขุมวิท,transport,transport,transport,transport,transport,0.8034,0.0588,0.7446,False,routine,False,both_correct
+78328002-640e-40c1-a45f-e3f1d6dd1e95,GrabFood - ชานมไข่มุก KOI The,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.7527,0.0672,0.6855,False,impulse_delivery,False,both_correct
+d27cce69-2f91-441a-a95b-0249cb6d148c,ชายสี่บะหมี่เกี๊ยว,Iced Black Coffee หวานน้อย,food,food,food,food,food,0.7053,0.0824,0.6229,False,routine,False,both_correct
+8e598e4b-3126-414b-ae8d-02b85cc05f88,McDonald's EmQuartier,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.76,0.0876,0.6724,False,wants,False,both_correct
+912990be-036d-48e3-bdf9-0e7656d920d4,Nintendo eShop,ตั๋วคอนเสิร์ตอินดี้มิวสิก,entertainment,entertainment,entertainment,entertainment,entertainment,0.7434,0.0741,0.6693,False,wants,False,both_correct
+cc0b227d-b817-4a4b-8f2c-6485a5462929,AIS Fibre Broadband,ต่อประกันภัยรถยนต์ชั้น 1,bills,bills,bills,bills,bills,0.7667,0.0603,0.7064,False,routine,False,both_correct
+38046077-d2e3-4568-b0e5-3078c64c9982,KFC Drive Thru,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.766,0.0675,0.6986,False,wants,False,both_correct
+ba1499f1-ebb1-443c-a32c-d09aaf544e13,YouTube Premium Monthly,เล่นบอร์ดเกมกับกลุ่มเพื่อน,entertainment,entertainment,entertainment,entertainment,entertainment,0.8185,0.0484,0.7701,False,wants,False,both_correct
+0ad0983b-2e4c-46a3-9c06-1ddc9894441b,ที่จอดรถ อาคารเสริมมิตร,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.783,0.0593,0.7236,False,routine,False,both_correct
+0c7788b8-7e27-4714-96ab-9af3e968151a,ธนาคารกรุงไทย Krungthai Next,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,other,food,other,other,other,0.8256,0.0432,0.7824,False,routine,False,ml_wins_baseline_wrong
+b494ef22-5598-4518-8fad-7992ee5142a2,Sukishi Korean Buffet,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.771,0.0654,0.7055,False,wants,False,both_correct
+a8133e55-8cd7-40b7-b031-f08dd7712636,Big C Supercenter รัชดา,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,other,shopping,shopping,shopping,0.8006,0.0622,0.7384,False,routine,False,ml_wins_baseline_wrong
+0f6abef3-79ba-475d-ad59-d6cdc5043e7b,ร้านส้มตำเจ๊ไก่ รัชดา,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.7555,0.0777,0.6778,False,routine,False,both_correct
+4afd8e3b-ab3c-4788-897c-c793b9d11b08,ร้านอาหารตามสั่งลุงหนวด,xxx,food,food,food,food,food,0.7224,0.0939,0.6285,False,routine,False,both_correct
+905083c3-f3b2-4412-a03b-158b5d8c68bf,ข้าวมันไก่ตอนประตูน้ำ,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.7131,0.0764,0.6366,False,routine,False,both_correct
+fd1fca64-9f9a-48a9-9e31-c6b82b925434,ShopeeFood - McDonald's 24hrs,,food,food,food,food,food,0.5286,0.1597,0.3689,False,impulse_delivery,False,both_correct
+0750b3ca-b215-465d-b05f-d48997486935,NT Broadband Thailand,ยอดตัดบัญชี,bills,bills,bills,bills,bills,0.5071,0.1579,0.3492,False,routine,False,both_correct
+213837b1-2f74-49c5-aed8-f83fc53bef60,Karaoke City Praditmanutham,ปาร์ตี้วันเกิดกับเพื่อนร่วมงาน,entertainment,other,entertainment,entertainment,entertainment,0.8084,0.0509,0.7575,False,wants,False,ml_wins_baseline_wrong
+1a0ecd78-c1c9-4ec1-8a12-6bad0e9bc6b6,GrabFood - ชานมไข่มุก KOI The,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.7527,0.0672,0.6855,False,impulse_delivery,False,both_correct
+a85d062b-b182-46e0-963c-50949b479a05,7-Eleven สาขาอโศก,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.7288,0.0794,0.6495,False,routine,False,both_correct
+0d3cf0f7-a63c-45e8-885f-7af04cd9dd49,ธนาคารกสิกรไทย K-Mobile,ส่งพัสดุเอกสารด่วน,other,other,other,other,other,0.7949,0.0686,0.7262,False,routine,False,both_correct
+866a62e1-20b4-4fe3-8544-a471e5322f6b,Bar B Q Plaza,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.7497,0.0755,0.6742,False,wants,False,both_correct
+92934c48-6a49-41d2-a1de-46d0242bda88,YouTube Premium Monthly,จ่ายผ่านแอป,entertainment,entertainment,entertainment,entertainment,entertainment,0.4975,0.1724,0.3251,False,wants,False,both_correct
+346e099f-8177-4f42-89bd-a3bc06b21543,ประกันภัยรถยนต์ วิริยะประกันภัย,ค่าโทรศัพท์และบรอดแบนด์,bills,other,bills,bills,bills,0.7958,0.0543,0.7416,False,routine,False,ml_wins_baseline_wrong
+7cc4f7c8-2d1f-4e0c-bdb1-a5d9440b7687,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,ค่ารถตู้ไปทำงานอนุสาวรีย์,transport,other,transport,transport,transport,0.8429,0.0467,0.7962,False,routine,False,ml_wins_baseline_wrong
+10a5fa48-859a-4939-9143-db7845c302a3,ข้าวมันไก่ตอนประตูน้ำ,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.7296,0.0888,0.6408,False,routine,False,both_correct
+8e13598c-7faa-4386-9753-acff59dea479,บัตรเครดิต SCB CardX,โอนค่าเช่าคอนโดประจำเดือน,bills,bills,bills,bills,bills,0.917,0.0177,0.8993,False,routine,False,both_correct
+cecce534-d505-4f88-906f-43e4a1ad8e87,GrabCar Premium Bangkok,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,transport,transport,0.8579,0.0355,0.8223,False,wants,False,both_correct
+8258d3e8-7046-457f-9ee7-4b267bcb134a,นิติบุคคลอาคารชุด ดิ ไอริส,โอนเงิน,bills,other,bills,other,bills,0.4437,0.1929,0.2507,False,routine,False,ml_wins_baseline_wrong
+d5bb132c-8034-4fe7-b55c-810ec1f432fc,The Beer Bar Sukhumvit 11,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,other,entertainment,entertainment,entertainment,0.7925,0.0648,0.7277,False,wants,False,ml_wins_baseline_wrong
+8e80aea3-6a18-4fa8-a3f2-6977c15ea7be,YouTube Premium Monthly,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,entertainment,entertainment,entertainment,entertainment,0.6748,0.0949,0.58,False,wants,False,both_correct
+7035b47c-21e7-4fce-ae00-f85e039a0334,AirAsia Flight Booking,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.8834,0.0304,0.853,False,wants,False,both_correct
+be1f104a-4df1-409b-a92f-592272dd21eb,Shell Station สุขุมวิท,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.7525,0.0844,0.6681,False,routine,False,both_correct
+b3ce89af-24a0-4c5f-8c3c-03a9dafcd748,โจ๊กสามย่าน สาขา 2,แซนด์วิชทูน่ามื้อเช้า,food,other,food,food,food,0.7838,0.0703,0.7135,False,routine,False,ml_wins_baseline_wrong
+809e8777-f59a-47e3-8765-96b7c626e4a6,ข้าวมันไก่ตอนประตูน้ำ,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.7352,0.08,0.6552,False,routine,False,both_correct
+a2f9ebcf-785b-48ff-9598-63b2b0c164f8,Amazon Cafe PTT,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.8014,0.0524,0.749,False,routine,False,both_correct
+2a27a5fe-15cc-42b9-892d-e5c87a48477c,ปตท. PTT Station สาขา 1,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.7567,0.0606,0.696,False,routine,False,both_correct
+b38f78b6-af59-46e6-98c5-6bdb3bdd3a87,B2S Think Space,,shopping,other,shopping,shopping,shopping,0.6401,0.1438,0.4964,False,wants,False,ml_wins_baseline_wrong
+3caff374-7d3e-4f88-8f4e-063f085d731d,AirAsia Flight Booking,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.8834,0.0304,0.853,False,wants,False,both_correct
+129c88a9-414e-4554-8f0c-bc4faa47a7d5,Lazada 9.9 Official Store,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.6756,0.1059,0.5696,False,impulse_online,False,both_correct
+1991efcb-b756-48b0-82e4-ff2af45d8286,Big C Supercenter รัชดา,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,other,shopping,shopping,shopping,0.8118,0.0604,0.7513,False,routine,False,ml_wins_baseline_wrong
+6ca8907e-4981-442a-a8eb-5e1dab1c3724,ร้านส้มตำเจ๊ไก่ รัชดา,Iced Black Coffee หวานน้อย,food,food,food,food,food,0.7357,0.0829,0.6528,False,routine,False,both_correct
+aa09b0fb-5118-411f-8b20-7d2784e620db,IKEA Bangna,หนังสือแปลและนวนิยายขายดี,shopping,shopping,shopping,shopping,shopping,0.6916,0.0902,0.6014,False,wants,False,both_correct
+56918bcd-3204-403a-9796-3a09fa12e51b,ร้านส้มตำเจ๊ไก่ รัชดา,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.818,0.0625,0.7555,False,routine,False,both_correct
+3a3f65f0-13b7-475f-bfa4-495ef09f6d1e,BCP บางจาก พระโขนง,ชำระเงิน,transport,transport,transport,entertainment,transport,0.6323,0.1132,0.5191,False,routine,False,both_correct
+872b0d71-2788-4d53-837f-89ba46976a51,Bar B Q Plaza,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,entertainment,food,food,food,0.7885,0.0486,0.7399,False,wants,False,ml_wins_baseline_wrong
+a09411ae-1291-4193-ab96-885e94f4df5b,ร้านอาหารตามสั่งลุงหนวด,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.732,0.0692,0.6628,False,routine,False,both_correct
+c7446cbc-47bc-4e10-8577-19b0ebc479a1,The Beer Bar Sukhumvit 11,,entertainment,other,entertainment,entertainment,entertainment,0.7422,0.0819,0.6603,False,wants,False,ml_wins_baseline_wrong
+a54b7d4a-478a-4649-8152-2a5eece210ea,ชายสี่บะหมี่เกี๊ยว,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.81,0.053,0.757,False,routine,False,both_correct
+cdb96cd3-ac19-49db-99bd-ae9b0bcd9849,Apple Store Online TH,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.6252,0.1029,0.5223,False,impulse_online,False,both_correct
+23e9bc68-c48d-47f9-aed4-f74b37dd0c5a,B2S Think Space,ซื้อเสื้อกล้ามและกางเกงสแล็ค,shopping,other,shopping,shopping,shopping,0.8053,0.0607,0.7446,False,wants,False,ml_wins_baseline_wrong
+c375f75f-9a5c-4154-ae47-092238b26c4f,ร้านข้าวราดแกงเมืองตรัง,พร้อมเพย์,food,food,food,food,food,0.7443,0.0714,0.6729,False,routine,False,both_correct
+eba765d6-5db3-4791-a7d7-ec8cc1c6e43d,H&M EmQuartier,เสื้อเบลเซอร์ทำงานคอลใหม่,shopping,shopping,shopping,shopping,shopping,0.7727,0.0741,0.6986,False,wants,False,both_correct
+eb9a48da-05fb-4208-a738-0d306149589c,AirAsia Flight Booking,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.8544,0.0426,0.8119,False,wants,False,both_correct
+133195f6-a573-41ab-802f-e2a2820f32c9,Karaoke City Praditmanutham,Netflix Premium รายเดือน 4K,entertainment,entertainment,entertainment,entertainment,entertainment,0.7587,0.0591,0.6996,False,wants,False,both_correct
+7bd30a34-241f-43a6-819b-60aaf3203532,AirAsia Flight Booking,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,transport,transport,0.8712,0.0342,0.837,False,wants,False,both_correct
+8ff3da4a-d752-4d5a-846f-beb4c320919c,โอนร่วมบุญผ้าป่าวัดป่า,โอนเงินซื้อของขวัญวันเกิดเพื่อน,other,other,other,other,other,0.8832,0.0305,0.8526,False,wants,False,both_correct
+6af100d2-57c8-4f88-8fca-49a4abc331f5,บัตรเครดิต SCB CardX,เบี้ยประกันสุขภาพรายเดือน,bills,bills,bills,bills,bills,0.7934,0.0444,0.7491,False,routine,False,both_correct
+29ad0686-6280-4981-9498-06a04aec7ac7,PromptPay โอนเงินส่วนตัว,ร่วมบริจาคอาหารสุนัขแมวจรจัด,other,other,other,other,other,0.8842,0.0326,0.8516,False,wants,False,both_correct
+a406f273-af30-4c4c-8449-2f5f3edbbe5e,Big C Supercenter รัชดา,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,other,shopping,shopping,shopping,0.8006,0.0622,0.7384,False,routine,False,ml_wins_baseline_wrong
+d7ddc871-129d-4dcc-a059-2f38b6a6b93d,ปตท. PTT Station สาขา 2,ค่าจอดรถรายชั่วโมงอาคาร,transport,transport,transport,transport,transport,0.7754,0.0758,0.6996,False,routine,False,both_correct
+9210f4c2-dca1-48f9-bde6-caa6d306ccc4,ร้านส้มตำเจ๊ไก่ รัชดา,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.8145,0.0537,0.7607,False,routine,False,both_correct
+346f3ecc-5394-4212-8009-2ea5539497f5,Amazon Cafe PTT,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.7944,0.061,0.7334,False,routine,False,both_correct
+3125d042-18f4-4a05-ba04-c1bb810cb044,Board Game Cafe Ari,PlayStation Plus Member,entertainment,food,entertainment,entertainment,entertainment,0.801,0.0593,0.7417,False,wants,False,ml_wins_baseline_wrong
+cb325a22-ea90-45da-9460-417af6b2f40f,GrabCar Premium Bangkok,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,transport,transport,transport,transport,0.8232,0.048,0.7752,False,wants,False,both_correct
+9bdffd38-5eaf-4513-860b-0eff5b9287e7,ร้านข้าวต้มรอบดึก กวงเฮง,Iced Black Coffee หวานน้อย,food,food,food,food,food,0.8028,0.0529,0.7499,False,routine,False,both_correct
+e7f94fe1-7e22-4c7a-95a0-ac35a13e6de9,KFC Drive Thru,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.766,0.0675,0.6986,False,wants,False,both_correct
+8f38e943-abc8-4d7a-bd41-3a28335ce34a,Lazada 9.9 Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,shopping,shopping,shopping,shopping,shopping,0.7381,0.1029,0.6353,False,impulse_online,False,both_correct
+83b04e36-a6e9-45e3-b666-722e657e0aae,วัดสระเกศราชวรมหาวิหาร,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,other,food,other,other,other,0.8297,0.0405,0.7892,False,routine,False,ml_wins_baseline_wrong
+f09e38f7-7917-4b10-959f-2d843b4c2c06,Boots Pharmacy พระราม 9,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,shopping,shopping,shopping,shopping,0.8196,0.057,0.7626,False,routine,False,both_correct
+f06f8e7d-aa0b-45b4-84cb-08d69b85c021,GrabFood - ชานมไข่มุก KOI The,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.6997,0.0863,0.6134,False,impulse_delivery,False,both_correct
+27f46307-c203-4b01-81cb-1aee5cef2f3c,7-Eleven สาขาอโศก,แซนด์วิชทูน่ามื้อเช้า,food,food,food,food,food,0.6578,0.1166,0.5412,False,routine,False,both_correct
+c45cd6a4-23c1-4547-bd5c-287dc3fd8a48,ร้านอาหารตามสั่งลุงหนวด,มื้อเที่ยงกับทีม,food,food,food,food,food,0.7316,0.0862,0.6454,False,routine,False,both_correct
+f48e2007-1f58-4aad-8b3f-a092c79821b5,NT Broadband Thailand,เคลียร์ยอด,bills,bills,bills,bills,bills,0.4519,0.1634,0.2885,False,routine,False,both_correct
+194f655b-ceae-46fe-b7d8-1e0e635f5d01,Steam Games Store,ปาร์ตี้วันเกิดกับเพื่อนร่วมงาน,entertainment,entertainment,entertainment,entertainment,entertainment,0.8121,0.0468,0.7653,False,wants,False,both_correct
+f8d0b6e8-9cb3-4802-aac9-e3dffb274ea8,Foodpanda - Pizza Hut Delivery,ยอดตัดบัญชี,food,food,shopping,food,shopping,0.2426,0.2105,0.032,False,impulse_delivery,True,baseline_wins_ml_wrong
+1d904947-0a55-4326-9a19-27221ed9d255,Caltex เอกมัย,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.703,0.0885,0.6145,False,routine,False,both_correct
+8528d0f7-38c3-41c8-b788-35488562015d,The Beer Bar Sukhumvit 11,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.8519,0.0407,0.8112,False,wants,False,both_correct
+03214d56-9a45-4dae-9c6e-43e3b39864f3,Lotus's สุขุมวิท 50,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,other,shopping,shopping,shopping,0.8587,0.0424,0.8163,False,routine,False,ml_wins_baseline_wrong
+b6a91689-9207-4f95-90ee-446eeba7c7e1,GrabCar Premium Bangkok,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,transport,transport,0.8579,0.0355,0.8223,False,wants,False,both_correct
+b72fb3f1-92a0-424b-b226-ed5bdc87c989,McDonald's EmQuartier,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.7557,0.0897,0.666,False,wants,False,both_correct
+59f22b53-70fc-4eb8-b551-e995b19c3ad1,3BB Broadband Member,ค่าบริการอินเทอร์เน็ตบ้านไฟเบอร์,bills,bills,bills,bills,bills,0.9136,0.0231,0.8906,False,routine,False,both_correct
+5000f366-54b2-4ffa-ba5e-01b762d97887,ค่าธรรมเนียมถอนเงินข้ามเขต,เติมเงินมือถือระบบเติมเงิน,other,other,other,other,other,0.8032,0.061,0.7422,False,routine,False,both_correct
+d7cf0b89-0345-40a1-ab00-95f408726752,ข้าวมันไก่ตอนประตูน้ำ,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.78,0.0684,0.7116,False,routine,False,both_correct
+0e366446-3ae4-4f46-9e74-ce95beeb7e38,ที่จอดรถ อาคารเสริมมิตร,,transport,transport,transport,transport,transport,0.6756,0.1098,0.5658,False,routine,False,both_correct
+8a514714-df23-4081-9000-8f2b0181d84f,Lineman - ยำกุ้งสดแซ่บลืมผัว,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,food,food,food,food,food,0.6967,0.093,0.6037,False,impulse_delivery,False,both_correct
+3afe11a2-2fe1-4cbf-a6e5-60fd300dd94c,ชายสี่บะหมี่เกี๊ยว,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.6907,0.0904,0.6003,False,routine,False,both_correct
+516f7639-9e83-454a-b8b5-7f94eb837bf1,Haidilao Hot Pot CentralWorld,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.8079,0.0487,0.7592,False,wants,False,both_correct
+c882c26b-7ca4-48b4-9ce7-7533fb1848b3,Lotus's สุขุมวิท 50,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,shopping,shopping,0.8142,0.0572,0.757,False,routine,False,ml_wins_baseline_wrong
+ca0bddd0-b892-4605-8838-1839314975ef,H&M EmQuartier,กระเป๋าผ้าแบรนด์ยอดฮิต,shopping,shopping,shopping,shopping,shopping,0.7141,0.0715,0.6426,False,wants,False,both_correct
+652016c8-c1a7-4881-8640-1281b5b96b0c,Sukishi Korean Buffet,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,food,food,food,food,food,0.7595,0.0665,0.693,False,wants,False,both_correct
+35982eea-8c5c-469d-83d2-2f96b1ea23e9,โจ๊กสามย่าน สาขา 2,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.7895,0.058,0.7315,False,routine,False,both_correct
+e51a6288-5e16-400e-a494-51177a09c633,3BB Broadband Member,ค่าโทรศัพท์และบรอดแบนด์,bills,bills,bills,bills,bills,0.7877,0.0562,0.7315,False,routine,False,both_correct
+26d9e417-adba-458d-98c2-f99878185ea7,Gentlewoman Store,หนังสือแปลและนวนิยายขายดี,shopping,other,shopping,shopping,shopping,0.71,0.08,0.63,False,wants,False,ml_wins_baseline_wrong
+e6bd81fe-3bbf-4162-8cbc-5891a16a7044,McDonald's EmQuartier,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.76,0.0876,0.6724,False,wants,False,both_correct
+256c55ae-ae11-4313-ae03-ede58ea489e6,7-Eleven สาขาอโศก,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6494,0.1066,0.5427,False,routine,False,both_correct
+3d4fa43e-3fbc-4165-8e3f-b960a420d304,Lotus's สุขุมวิท 50,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,other,shopping,shopping,shopping,0.86,0.0424,0.8176,False,routine,False,ml_wins_baseline_wrong
+18ce14b9-b663-47d4-be32-1123ac1ff4b5,ร้านข้าวราดแกงเมืองตรัง,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.8513,0.0413,0.81,False,routine,False,both_correct
+c0aadab9-efa7-47ab-89a0-b83753baaa62,H&M EmQuartier,ลิปสติกและพาเลตต์อายแชโดว์,shopping,shopping,shopping,shopping,shopping,0.8462,0.0516,0.7946,False,wants,False,both_correct
+031fbf5a-0b7c-4bb1-bb04-f0351aa7293a,ปตท. PTT Station สาขา 2,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.7533,0.0869,0.6664,False,routine,False,both_correct
+d361e2a9-47d6-4d68-b193-1c6011ad5189,Momoparadise Central Rama 9,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.7817,0.0889,0.6929,False,wants,False,both_correct
+f8bfb97d-4771-4707-b9b3-5ac3c8e6b01d,3BB Broadband Member,ค่าเน็ตบ้านรายเดือน 3BB,bills,bills,bills,bills,bills,0.9047,0.0236,0.8811,False,routine,False,both_correct
+2162a5ed-8b51-4062-925e-c8b91f83f56a,AIS Fibre Broadband,จ่ายเงิน,bills,bills,bills,bills,bills,0.264,0.2079,0.0561,False,routine,False,both_correct
+35a80ab7-c8fe-4df7-82cd-f909d76fa5b8,AIS Fibre Broadband,เบี้ยประกันสุขภาพรายเดือน,bills,bills,bills,bills,bills,0.6755,0.0746,0.6009,False,routine,False,both_correct
+f308f62d-2721-48a4-b5c2-fbdd78ffb63d,Lotus's สุขุมวิท 50,ซื้อยาแก้แพ้และวิตามินซีรวม,shopping,other,shopping,shopping,shopping,0.8356,0.048,0.7876,False,routine,False,ml_wins_baseline_wrong
+7e3c052a-4ff6-4cdd-89d8-5f5d99ae2bfd,Line Man Taxi VIP,เช่ารถขับเที่ยวกับเพื่อน,transport,transport,transport,transport,transport,0.7747,0.0714,0.7033,False,wants,False,both_correct
+323c165a-5d9a-4aae-9270-c9d918bfef6c,Lotus's สุขุมวิท 50,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.8394,0.0473,0.7921,False,routine,False,ml_wins_baseline_wrong
+18cea12b-6622-4ff2-863e-06a81a8a2ade,MK Restaurants,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.7054,0.0859,0.6194,False,wants,False,both_correct
+702a1a41-5fa1-4632-840a-a39dc3ac2ca7,McDonald's EmQuartier,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.7768,0.0672,0.7096,False,wants,False,both_correct
+3c4cfcb5-d4c3-4924-992e-6378b1a3fd49,Sukishi Korean Buffet,Iced Caramel Macchiato Venti,food,food,food,food,food,0.7646,0.0625,0.7021,False,wants,False,both_correct
+d6c9f192-2206-4cc8-a2d9-c32a2fef7af0,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,โอน,transport,other,transport,transport,transport,0.7867,0.0735,0.7133,False,routine,False,ml_wins_baseline_wrong
+f1fc96bc-bce0-4cce-9147-b5ed84bc08e3,Spotify Premium TH,ยอดตัดบัญชี,entertainment,entertainment,entertainment,entertainment,entertainment,0.6051,0.1132,0.4919,False,wants,False,both_correct
+e67b7a1c-3bee-406f-9fc0-68af7375ab6d,Gourmet Market Siam Paragon,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.823,0.0505,0.7725,False,routine,False,ml_wins_baseline_wrong
+d0fdfce2-3c20-4dd0-bf6c-3936dee47eb8,Lotus's สุขุมวิท 50,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,other,shopping,shopping,shopping,0.86,0.0424,0.8176,False,routine,False,ml_wins_baseline_wrong
+fda05fa1-e2c9-43b6-8eec-735037f25b96,Big C Supercenter รัชดา,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.7807,0.0708,0.7099,False,routine,False,ml_wins_baseline_wrong
+4a9daa35-61e2-4993-90ff-6c1e4e50af3e,GrabCar Premium Bangkok,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,transport,transport,transport,transport,0.8232,0.048,0.7752,False,wants,False,both_correct
+069d898c-f225-455a-afb7-aa2d3e58ff94,7-Eleven สาขาอโศก,ข้าวต้มปลาอินทรีย์รอบค่ำ,food,food,food,food,food,0.6492,0.09,0.5593,False,routine,False,both_correct
+55647a6c-0583-481f-b800-f283cbf98ac8,The Beer Bar Sukhumvit 11,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,other,entertainment,entertainment,entertainment,0.875,0.037,0.8381,False,wants,False,ml_wins_baseline_wrong
+50278684-28df-44ca-b8de-5b5e5adf0582,Amazon Cafe PTT,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.7562,0.0685,0.6876,False,routine,False,both_correct
+24385feb-a9a0-4f21-ab22-e4caa2db8a72,Lazada 9.9 Official Store,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.6778,0.1008,0.5771,False,impulse_online,False,both_correct
+5a8f28ea-c078-47f9-ab34-29bcd9596287,Big C Supercenter รัชดา,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,other,shopping,shopping,shopping,0.7911,0.0706,0.7205,False,routine,False,ml_wins_baseline_wrong
+05cf388c-e4a6-434e-b6e8-cef41797dba5,Uniqlo Central Rama 9,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,shopping,shopping,shopping,shopping,0.7597,0.1021,0.6576,False,wants,False,both_correct
+5ec04a89-fa99-4716-b28d-8931459f997d,TikTok Shop Thailand,Flash Sale 00:00 หูฟังบลูทูธ,shopping,shopping,shopping,shopping,shopping,0.611,0.1119,0.4991,False,impulse_online,False,both_correct
+4dfc8a7d-dc55-466b-8724-2fe28187b4ee,Muji Central Chidlom,เสื้อเบลเซอร์ทำงานคอลใหม่,shopping,shopping,shopping,shopping,shopping,0.8098,0.064,0.7458,False,wants,False,both_correct
+6a0de05d-c596-42e6-8585-53b0540dce7b,ร้านอาหารตามสั่งลุงหนวด,xxx,food,food,food,food,food,0.7224,0.0939,0.6285,False,routine,False,both_correct
+c5ac8fd1-da41-485b-a037-3693108442fd,บัตรเครดิต SCB CardX,โอนค่าเช่าคอนโดประจำเดือน,bills,bills,bills,bills,bills,0.917,0.0177,0.8993,False,routine,False,both_correct
+77434203-aba0-4c32-83b8-e2cc094b2c08,Momoparadise Central Rama 9,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,food,shopping,food,food,food,0.7433,0.1091,0.6342,False,wants,False,ml_wins_baseline_wrong
+a73a4ced-7491-42b2-93b9-1b39f4204000,Gourmet Market Siam Paragon,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.823,0.0505,0.7725,False,routine,False,ml_wins_baseline_wrong
+91efbcf2-29be-413a-9b22-c7994da4add1,PlayStation Network TH,Netflix Premium รายเดือน 4K,entertainment,entertainment,entertainment,entertainment,entertainment,0.8029,0.0477,0.7552,False,wants,False,both_correct
+ff159b4d-54b0-4b21-8c19-095fe23a466c,Shell Station สุขุมวิท,ค่าวินไปหน้าปากซอยสุขุมวิท,transport,transport,transport,transport,transport,0.7279,0.1067,0.6213,False,routine,False,both_correct
+0542d7d5-decc-4fab-8b49-1c4bcf6e82bd,Caltex เอกมัย,เติมน้ำมัน E20 รถยนต์ส่วนตัว,transport,transport,transport,transport,transport,0.6455,0.0897,0.5558,False,routine,False,both_correct
+519f38f8-1865-4f5c-a850-3ba4d98a1493,3BB Broadband Member,ชำระค่าส่วนกลางคอนโดมิเนียม,bills,bills,bills,bills,bills,0.8353,0.042,0.7933,False,routine,False,both_correct
+0aae4088-a6c1-4c37-8cdf-e1e48547831e,Bolt Taxi Express,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,transport,transport,0.8644,0.0357,0.8287,False,wants,False,both_correct
+ac1a21ac-4282-4539-b2ac-d71920c452f9,นิติบุคคลอาคารชุด ดิ ไอริส,ชำระยอดบัตรเครดิตยอดเต็ม,bills,bills,bills,bills,bills,0.813,0.0435,0.7696,False,routine,False,both_correct
+c90eee66-3120-4fde-b721-a50a12c43b32,บัตรเครดิต SCB CardX,ชำระบิลบัตรเครดิตรายเดือน,bills,bills,bills,bills,bills,0.8546,0.0335,0.8211,False,routine,False,both_correct
+5f908511-3675-4383-a29d-127ab9f321d8,โจ๊กสามย่าน สาขา 2,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.8322,0.0465,0.7857,False,routine,False,both_correct
+87b77b0b-909f-4db4-8b97-73b12675a944,BTS Skytrain อโศก,เติมน้ำมัน E20 รถยนต์ส่วนตัว,transport,transport,transport,transport,transport,0.7245,0.0676,0.6569,False,routine,False,both_correct
+b3a4a65c-1f29-4b2d-b9a7-51b65750f0e7,GrabCar Premium Bangkok,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.8377,0.0449,0.7928,False,wants,False,both_correct
+a0ddcfa6-8350-4dc3-83fc-c6a75548c1fd,3BB Broadband Member,ชำระค่าไฟฟ้าประจำเดือน MEA,bills,bills,bills,bills,bills,0.8638,0.0306,0.8332,False,routine,False,both_correct
+a06c1e28-e5b1-434b-b7d1-ec361f129fa6,ข้าวมันไก่ตอนประตูน้ำ,บะหมี่เกี๊ยวหมูแดงแห้ง,food,food,food,food,food,0.8413,0.0467,0.7947,False,routine,False,both_correct
+1ccca435-0c83-4665-b997-7429fe5dfbde,Line Man Taxi VIP,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.87,0.0333,0.8367,False,wants,False,both_correct
+9965c9cc-75ee-435e-ae78-030dbc6b656b,Shell Station สุขุมวิท,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.7427,0.0968,0.646,False,routine,False,both_correct
+a918eb8b-469d-46d0-8a03-02233bbaff04,Lineman - ยำกุ้งสดแซ่บลืมผัว,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.7353,0.078,0.6573,False,impulse_delivery,False,both_correct
+51ee5191-735d-41a0-bd5f-3f6327c0f141,Starbucks Reserve,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,food,food,food,food,0.7957,0.0445,0.7513,False,wants,False,both_correct
+c2621009-2861-4dc3-b82f-4a6f482a758b,โจ๊กสามย่าน สาขา 2,แซนด์วิชทูน่ามื้อเช้า,food,other,food,food,food,0.7838,0.0703,0.7135,False,routine,False,ml_wins_baseline_wrong
+21092284-b944-4539-9f54-c60b5a5a7719,ที่จอดรถ อาคารเสริมมิตร,Easy Pass เติมเงินทางด่วน,transport,transport,transport,transport,transport,0.8638,0.0364,0.8274,False,routine,False,both_correct
+739cd3ff-df4e-46e7-b260-298efcfe6df6,ShopeeFood - McDonald's 24hrs,โอนเงิน,food,food,food,food,food,0.3885,0.2024,0.1861,False,impulse_delivery,False,both_correct
+134e6d6d-5a22-44ef-b69d-120a68ba08a0,Netflix Thailand,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.6507,0.1047,0.5461,False,wants,False,both_correct
+1bbb8076-a8ca-476d-bf4a-95e751d8928c,Momoparadise Central Rama 9,เคลียร์ยอด,food,shopping,food,food,food,0.3774,0.3097,0.0677,False,wants,False,ml_wins_baseline_wrong
+3bdc54c7-87f5-468d-8c95-97bd4d0ad83a,B2S Think Space,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,other,shopping,shopping,shopping,0.7793,0.0777,0.7016,False,wants,False,ml_wins_baseline_wrong
+32883f6a-f650-43e8-b624-ce6988d994e2,Major Cineplex รัชโยธิน,จ่ายเงิน,entertainment,entertainment,entertainment,entertainment,entertainment,0.7784,0.0566,0.7218,False,wants,False,both_correct
+fcdd5c27-2956-478e-a49c-648f964114ba,IKEA Bangna,กระเป๋าผ้าแบรนด์ยอดฮิต,shopping,shopping,shopping,shopping,shopping,0.6453,0.0902,0.5551,False,wants,False,both_correct
+2a20fb24-8f03-47c3-a40a-f3d47558890a,Amazon Cafe PTT,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.7599,0.0709,0.689,False,routine,False,both_correct
+a2e00a02-97c3-4557-87e8-0bb9590ff05b,AirAsia Flight Booking,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.8544,0.0426,0.8119,False,wants,False,both_correct
+3a4283d6-8eea-4031-8c06-4c77d1a43cb3,Shell Station สุขุมวิท,ค่าจอดรถรายชั่วโมงอาคาร,transport,transport,transport,transport,transport,0.7704,0.0784,0.6919,False,routine,False,both_correct
+ea84f9d0-8c2c-4298-bf89-ab63fe5ed333,Steam Games Store,ตั๋วคอนเสิร์ตอินดี้มิวสิก,entertainment,entertainment,entertainment,entertainment,entertainment,0.7466,0.0686,0.6781,False,wants,False,both_correct
+6a40474c-6a8f-470c-874c-cff9580763db,NT Broadband Thailand,ชำระบิลบัตรเครดิตรายเดือน,bills,bills,bills,bills,bills,0.8824,0.0302,0.8522,False,routine,False,both_correct
+fa6161cd-0224-4efe-b514-9337a7a885de,Gentlewoman Store,เสื้อเบลเซอร์ทำงานคอลใหม่,shopping,other,shopping,shopping,shopping,0.7395,0.0783,0.6613,False,wants,False,ml_wins_baseline_wrong
+4f142483-b97f-4f95-87f1-49571cf5dc09,Caltex เอกมัย,ค่ารถตู้ไปทำงานอนุสาวรีย์,transport,transport,transport,transport,transport,0.6723,0.0836,0.5888,False,routine,False,both_correct
+c81a9a25-1fd1-48d4-876d-07a962609692,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.8347,0.0509,0.7839,False,routine,False,both_correct
+6e491c8b-b4ea-4fe7-baaf-3b0d49866488,Caltex เอกมัย,ค่าวินไปหน้าปากซอยสุขุมวิท,transport,transport,transport,transport,transport,0.7354,0.0822,0.6532,False,routine,False,both_correct
+e6f7eef8-8d2e-4cdd-8fbd-9708ef3a36d0,Karaoke City Praditmanutham,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.7426,0.0702,0.6724,False,wants,False,both_correct
+a6ea6fe9-5613-4f0e-ade6-b7ce88ec63aa,ร้านข้าวต้มรอบดึก กวงเฮง,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.7833,0.0656,0.7177,False,routine,False,both_correct
+d05f1142-1254-4b34-a03b-26ae07c0692e,AirAsia Flight Booking,เช่ารถขับเที่ยวกับเพื่อน,transport,transport,transport,transport,transport,0.7694,0.0738,0.6955,False,wants,False,both_correct
+57ae7a1c-3e33-46f5-bfae-afa3d63a4a94,Haidilao Hot Pot CentralWorld,จ่ายผ่านแอป,food,shopping,food,food,food,0.5555,0.1515,0.404,False,wants,False,ml_wins_baseline_wrong
+f880a70b-e1ff-4004-81ed-164c938531bc,ค่าเช่าคอนโด ลุมพินีทาวเวอร์,เบี้ยประกันชีวิตและอุบัติเหตุ,bills,bills,bills,bills,bills,0.9107,0.0233,0.8873,False,routine,False,both_correct
+d04723d5-6b77-4547-a2f1-b031a27bcc4d,Major Cineplex รัชโยธิน,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.8522,0.0371,0.8151,False,wants,False,both_correct
+73ad586b-c4c0-46e0-a3ed-ee2fe81fa8c4,Haidilao Hot Pot CentralWorld,Iced Caramel Macchiato Venti,food,shopping,food,food,food,0.7653,0.0603,0.705,False,wants,False,ml_wins_baseline_wrong
+53b81e2a-b23a-4713-aa24-f55a9d3053e7,AIS Fibre Broadband,เคลียร์ยอด,bills,bills,bills,bills,bills,0.3976,0.1547,0.243,False,routine,False,both_correct
+40b03841-b43d-4709-b15f-5ccd8a887b5a,Big C Supercenter รัชดา,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,other,shopping,shopping,shopping,0.8258,0.0486,0.7772,False,routine,False,ml_wins_baseline_wrong
+94a690e3-ed8c-4bfb-9f86-ed6d3a429e70,Gourmet Market Siam Paragon,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,other,shopping,shopping,shopping,0.8426,0.0438,0.7987,False,routine,False,ml_wins_baseline_wrong
+fb2b2b57-d7ad-4ffa-b6b7-299b2aa19cc9,ชายสี่บะหมี่เกี๊ยว,Iced Black Coffee หวานน้อย,food,food,food,food,food,0.7053,0.0824,0.6229,False,routine,False,both_correct
+11591c56-7657-439e-b85c-bfc672ca2360,Momoparadise Central Rama 9,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.7817,0.0889,0.6929,False,wants,False,both_correct
+885f9145-a5f7-49b0-924d-050c86b4924c,Amazon Cafe PTT,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.7757,0.0584,0.7172,False,routine,False,both_correct
+bf6196e7-2aa3-400f-a588-7610a0b13e09,บัตรเครดิต SCB CardX,เบี้ยประกันสุขภาพรายเดือน,bills,bills,bills,bills,bills,0.7934,0.0444,0.7491,False,routine,False,both_correct
+23e36eab-2afa-444c-9e0d-db063c4ac9e1,Gourmet Market Siam Paragon,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,other,shopping,shopping,shopping,0.8545,0.0418,0.8128,False,routine,False,ml_wins_baseline_wrong
+6abb4973-9ccc-4205-8056-4c8dd04f1f30,Muji Central Chidlom,ซื้อเสื้อกล้ามและกางเกงสแล็ค,shopping,shopping,shopping,shopping,shopping,0.8142,0.0524,0.7618,False,wants,False,both_correct
+8b3737c7-6c92-4fe8-ae16-4d274f47ea52,ค่าธรรมเนียมถอนเงินข้ามเขต,ทำบุญค่าน้ำค่าไฟวัดประจำเดือน,other,other,other,other,other,0.8169,0.0455,0.7714,False,routine,False,both_correct
+79dd2c54-04d7-4cb7-851e-080328bf3862,Line Man Taxi VIP,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,transport,transport,transport,transport,0.8392,0.0459,0.7933,False,wants,False,both_correct
+a479fbb5-2550-4f03-82ef-9c52267cb8e8,Apple Store Online TH,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.6266,0.1091,0.5175,False,impulse_online,False,both_correct
+bea2fffe-4892-4905-8909-1653badc90e9,Caltex เอกมัย,เติมน้ำมัน E20 รถยนต์ส่วนตัว,transport,transport,transport,transport,transport,0.6455,0.0897,0.5558,False,routine,False,both_correct
+4e420c2b-78bc-4325-9388-7cef3098a37b,PromptPay โอนเงินส่วนตัว,บริจาคช่วยมูลนิธิการกุศล,other,other,other,other,other,0.8852,0.0282,0.857,False,wants,False,both_correct
+27208816-21e6-4e04-a153-3402cdd54cde,Shell Station สุขุมวิท,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,transport,transport,transport,transport,transport,0.8688,0.0429,0.8259,False,routine,False,both_correct
+2ff567e7-b920-4ec6-901a-233769398c7c,Big C Supercenter รัชดา,ซื้อยาแก้แพ้และวิตามินซีรวม,shopping,other,shopping,shopping,shopping,0.772,0.074,0.698,False,routine,False,ml_wins_baseline_wrong
+a52ef017-a682-4a19-9e55-b88f76c5862e,Amazon Cafe PTT,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.6691,0.0936,0.5755,False,routine,False,both_correct
+3a1532c3-ed0a-420b-8b2d-d9665a72f706,ที่จอดรถ อาคารเสริมมิตร,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.807,0.0479,0.7591,False,routine,False,both_correct
+ab528f7e-c8ec-4b7d-9cd1-fea88f2c3de6,Lotus's สุขุมวิท 50,โอน,shopping,other,shopping,shopping,shopping,0.7648,0.096,0.6688,False,routine,False,ml_wins_baseline_wrong
+876611ff-8ff3-40c4-83f3-9d12550d49a9,Haidilao Hot Pot CentralWorld,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,food,shopping,food,food,food,0.7646,0.0634,0.7013,False,wants,False,ml_wins_baseline_wrong
+fa5d3ee6-1d37-4c4e-bf5f-e7245bcdbd13,Big C Supercenter รัชดา,,shopping,other,shopping,shopping,shopping,0.6412,0.1325,0.5087,False,routine,False,ml_wins_baseline_wrong
+0eda4447-5767-408a-80ec-bbacd8b489c3,Line Man Taxi VIP,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.87,0.0333,0.8367,False,wants,False,both_correct
+9c83c57c-40c7-49d7-b6ad-ab8b9a70c673,Gourmet Market Siam Paragon,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,other,shopping,shopping,shopping,0.8545,0.0418,0.8128,False,routine,False,ml_wins_baseline_wrong
+016a69bc-029b-454d-b558-0be2e88473a8,PromptPay โอนเงินส่วนตัว,พร้อมเพย์,other,other,other,other,other,0.6215,0.1049,0.5166,False,wants,False,both_correct
+5044e91e-a529-4f6a-a329-3b64c40cbeeb,ธนาคารกรุงไทย Krungthai Next,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,other,food,other,other,other,0.8256,0.0432,0.7824,False,routine,False,ml_wins_baseline_wrong
+5d327c6e-4041-4197-84bb-2d086ced3339,GrabFood - ชานมไข่มุก KOI The,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,food,food,food,food,food,0.6191,0.1447,0.4744,False,impulse_delivery,False,both_correct
+2cc5d69e-ba30-47ee-99b6-dc9a5d9df43a,Caltex เอกมัย,แตะบัตร MRT สถานีพระราม 9,transport,transport,transport,transport,transport,0.6374,0.1171,0.5203,False,routine,False,both_correct
+d7c1f0a4-f6c5-4770-b3a3-4e1a657793c0,Boots Pharmacy พระราม 9,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,shopping,shopping,shopping,shopping,0.8196,0.057,0.7626,False,routine,False,both_correct
+ec643153-7c06-4fa2-878e-b34512786b9c,Bar B Q Plaza,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,entertainment,food,food,food,0.7885,0.0486,0.7399,False,wants,False,ml_wins_baseline_wrong
+598388ab-7efb-4522-94ee-07824e189e4e,Momoparadise Central Rama 9,Iced Caramel Macchiato Venti,food,shopping,food,food,food,0.7426,0.1196,0.623,False,wants,False,ml_wins_baseline_wrong
+a940fd0f-82a9-4195-af21-45859e61cea8,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน 5G,bills,bills,bills,bills,bills,0.7133,0.0705,0.6429,False,routine,False,both_correct
+7a272f61-cae5-46d8-bc2b-522cc57b7411,GrabCar Premium Bangkok,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.8377,0.0449,0.7928,False,wants,False,both_correct
+fce8ecef-4199-42d3-afc1-d8f5f729bfca,YouTube Premium Monthly,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.5793,0.1186,0.4607,False,wants,False,both_correct
+d6777746-987d-40c8-9773-a521acb6016c,Bar B Q Plaza,ชำระเงิน,food,other,food,food,food,0.52,0.1638,0.3562,False,wants,False,ml_wins_baseline_wrong
+aeef9b1c-2685-47e3-a47d-90e71b01ceb3,SF Cinema World CentralWorld,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.7929,0.0606,0.7323,False,wants,False,both_correct
+9648fee8-20dc-4d42-a111-051092201b55,ร้านข้าวต้มรอบดึก กวงเฮง,อาหารตามสั่งจานด่วน,food,food,food,food,food,0.8443,0.0402,0.8042,False,routine,False,both_correct
+73974e60-01ab-4827-9f90-3adbf2218be0,Tops Supermarket All Seasons,ผลไม้นำเข้าและนมจืด,shopping,other,shopping,shopping,shopping,0.7731,0.0663,0.7069,False,routine,False,ml_wins_baseline_wrong
+9a3d7d65-2ace-443e-b8c5-a92b53b43576,The Beer Bar Sukhumvit 11,ตั๋วคอนเสิร์ตอินดี้มิวสิก,entertainment,entertainment,entertainment,entertainment,entertainment,0.8208,0.0536,0.7672,False,wants,False,both_correct
+3ca58c4b-cb5e-4d4b-bafe-e38f2a325bd3,ทางด่วน กทพ. Easy Pass,xxx,transport,transport,transport,transport,transport,0.7197,0.082,0.6377,False,routine,False,both_correct
+595ea30b-92f1-4d3f-8f8b-b993b27e013e,H&M EmQuartier,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,shopping,shopping,shopping,shopping,0.7493,0.079,0.6703,False,wants,False,both_correct
+a482378b-78f0-425c-a6e1-9b8fa52200f7,ชายสี่บะหมี่เกี๊ยว,แซนด์วิชทูน่ามื้อเช้า,food,food,food,food,food,0.723,0.087,0.636,False,routine,False,both_correct
+abb54437-9bcd-4072-8504-b3ed91ba1641,Big C Supercenter รัชดา,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,other,shopping,shopping,shopping,0.8118,0.0604,0.7513,False,routine,False,ml_wins_baseline_wrong
+f7009384-1b33-4713-98e7-1e234a68ece2,McDonald's EmQuartier,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.7768,0.0672,0.7096,False,wants,False,both_correct
+f00d0881-8ccb-484a-8ad0-9f6f92e21998,ร้านข้าวราดแกงเมืองตรัง,เคลียร์ยอด,food,food,food,food,food,0.6272,0.0983,0.5289,False,routine,False,both_correct
+c62cd198-d279-4df3-81ee-ad3ea10acb3c,Momoparadise Central Rama 9,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.7674,0.1024,0.665,False,wants,False,both_correct
+38e0aa03-0166-4210-b77e-dffce8ea234b,BCP บางจาก พระโขนง,ค่าจอดรถรายชั่วโมงอาคาร,transport,transport,transport,transport,transport,0.7746,0.0592,0.7154,False,routine,False,both_correct
+76757547-b75b-4f50-955e-5427308fb58a,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน 5G,bills,bills,bills,bills,bills,0.7133,0.0705,0.6429,False,routine,False,both_correct
+41c16eeb-08f3-436a-b6d0-045fe38797a8,การประปานครหลวง MWA,โอนค่าเช่าคอนโดประจำเดือน,bills,bills,bills,bills,bills,0.8638,0.0305,0.8333,False,routine,False,both_correct
+58237b10-63f8-4c79-97ab-d21ddf100eab,TrueMove H Postpaid,ชำระยอดบัตรเครดิตยอดเต็ม,bills,bills,bills,bills,bills,0.8278,0.0475,0.7803,False,routine,False,both_correct
+3f22cb16-962d-47f3-8e54-37036ebec5cd,ค่าเช่าคอนโด ลุมพินีทาวเวอร์,ชำระค่าส่วนกลางคอนโดมิเนียม,bills,bills,bills,bills,bills,0.879,0.0303,0.8487,False,routine,False,both_correct
+839752db-96f8-4124-8bbb-a4fb71c92e4b,ชายสี่บะหมี่เกี๊ยว,คืนเพื่อน,food,food,food,shopping,food,0.5256,0.1286,0.397,False,routine,False,both_correct
+261a247d-cc8e-4383-8e6e-5694e84f499c,Bolt Taxi Express,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,transport,transport,0.8644,0.0357,0.8287,False,wants,False,both_correct
+d3b4969f-e968-4748-ad14-42a7f0f50932,ปตท. PTT Station สาขา 2,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.7593,0.0813,0.678,False,routine,False,both_correct
+7ffcfc12-19d2-4ead-b481-018e6d699f84,บัตรเครดิต SCB CardX,ชำระยอดบัตรเครดิตยอดเต็ม,bills,bills,bills,bills,bills,0.8106,0.0531,0.7575,False,routine,False,both_correct
+dfb03454-aa71-4e09-885b-2a6e1d64d1ec,โจ๊กสามย่าน สาขา 2,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,other,food,food,food,0.8155,0.0502,0.7653,False,routine,False,ml_wins_baseline_wrong
+49cfada6-c7ec-4f6b-8f10-4af7e8137c6d,ตู้เติมเงิน บุญเติม,ทำบุญค่าน้ำค่าไฟวัดประจำเดือน,other,bills,other,other,other,0.6717,0.1078,0.5639,False,routine,False,ml_wins_baseline_wrong
+477c0f82-9536-410f-b003-b84ec8af8fe9,Starbucks Reserve,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.742,0.0749,0.6671,False,wants,False,both_correct
+1fc0642c-ba55-4d02-87eb-9c05f5d5da7e,โอนร่วมบุญผ้าป่าวัดป่า,โอนเงิน,other,other,other,other,other,0.8794,0.0282,0.8511,False,wants,False,both_correct
+60d18e07-910f-46d8-bfff-1fef4e69e2e5,Sukishi Korean Buffet,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.781,0.0522,0.7288,False,wants,False,both_correct
+53c93a33-f747-4171-b6d1-4306dddc8707,YouTube Premium Monthly,ซื้อเกมลดราคาบน Steam Store,entertainment,entertainment,entertainment,entertainment,entertainment,0.783,0.0776,0.7055,False,wants,False,both_correct
+a360312c-145f-4ecd-8d1b-f695132416c0,ZARA Siam Paragon,จ่ายผ่านแอป,shopping,shopping,shopping,food,shopping,0.3455,0.2344,0.1111,True,wants,False,both_correct
+2def9d05-631a-4b33-bc29-43dae07a3a2c,Sushi Masa Thonglor,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.6765,0.078,0.5984,True,wants,False,both_correct
+ee19981a-0c4d-487e-b45d-b98bd4b0dbba,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,food,transport,0.5106,0.1658,0.3449,True,wants,False,ml_wins_baseline_wrong
+b4eaab79-8ca9-488b-8063-db6292d86ebb,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.6599,0.109,0.551,True,routine,False,both_correct
+1bd56a9e-8ca4-4805-94bb-391af2cc420b,MRT Bangkok พระราม 9,Easy Pass เติมเงินทางด่วน,transport,transport,transport,transport,transport,0.7287,0.084,0.6447,True,routine,False,both_correct
+2f9bce0e-e59c-41b0-bcdd-aad3ef460606,FWD Insurance Thailand,เบี้ยประกันสุขภาพรายเดือน,bills,bills,bills,bills,bills,0.4835,0.1287,0.3549,True,routine,False,both_correct
+fd193be2-5985-42cb-af68-58e73cb9ad93,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,shopping,shopping,shopping,shopping,shopping,0.7147,0.0838,0.6309,True,wants,False,both_correct
+df02478a-39ad-4bc0-befe-93b4d0f6c13c,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.7146,0.0725,0.6421,True,wants,False,both_correct
+025f5d56-124d-40cd-ba51-22cc9b254752,MRT Bangkok พระราม 9,เติมเงินบัตร BTS รายเดือน,transport,transport,transport,transport,transport,0.6234,0.096,0.5273,True,routine,False,both_correct
+a932755a-7bc6-4f01-ad9c-55395bc79947,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.7146,0.0725,0.6421,True,wants,False,both_correct
+ab8c8ddc-021f-4449-8d8b-fba483dd8b72,Glow Nightclub Thonglor,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,entertainment,entertainment,entertainment,transport,entertainment,0.5214,0.1086,0.4128,True,wants,False,both_correct
+19ae9a6d-a33d-41d1-81e6-316cf6ee0b35,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6173,0.1108,0.5065,True,wants,False,both_correct
+b94e9014-5d61-43f7-8e31-9f9013d04c07,After You Dessert Cafe,xxx,food,food,food,entertainment,food,0.3661,0.1938,0.1723,True,wants,False,both_correct
+3b59157f-5466-479f-b098-814e9a592fb8,CJ Express ซอย 5,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.4706,0.1571,0.3135,True,routine,False,both_correct
+c4a94405-c16b-438c-9c64-8a62582d011c,การไฟฟ้านครหลวง MEA,ค่าเน็ตบ้านรายเดือน 3BB,bills,bills,bills,bills,bills,0.8435,0.043,0.8005,True,routine,False,both_correct
+aecb6dd4-8807-48ad-815f-e4ce8cc19311,ร้านข้าวแกงป้าพร,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.6311,0.0928,0.5383,True,routine,False,both_correct
+1bb1be36-5781-4a4b-b000-c4aa6b3fb896,Daiso Japan 60 บาท,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,bills,shopping,food,shopping,0.6399,0.1177,0.5222,True,routine,False,ml_wins_baseline_wrong
+258b64bf-4dd2-4092-bdf8-a6075fabf8eb,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+45afbe31-b048-41c2-90d1-133f71ab058c,Nok Air Ticket,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,other,transport,food,transport,0.6289,0.1116,0.5173,True,wants,False,ml_wins_baseline_wrong
+feab6cbf-85c4-4677-9985-fbe0b5dfb338,MRT Bangkok พระราม 9,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.6098,0.1432,0.4666,True,routine,False,both_correct
+2a95fb92-fd97-4eb3-94ca-0e193bc418c4,Lineman - ส้มตำแซ่บพรีเมียม,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.7656,0.0617,0.7039,True,impulse_delivery,False,both_correct
+401c7c66-4c1a-497a-b469-9578a303c6ab,After You Dessert Cafe,Shibuya Honey Toast และชาร้อน,food,food,food,food,food,0.5592,0.1278,0.4315,True,wants,False,both_correct
+6276e04d-2378-402a-96d3-82ec9d8686f0,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.6317,0.114,0.5176,True,routine,False,both_correct
+0e10d02a-5d6c-4e70-b047-236dda776680,Ticketmelon Concerts,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,other,entertainment,entertainment,entertainment,0.5089,0.1539,0.355,True,wants,False,ml_wins_baseline_wrong
+e9dace51-810e-4fed-b10e-116c93028cb2,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน MEA,bills,bills,bills,bills,bills,0.5988,0.0959,0.5029,True,routine,False,both_correct
+990d6291-7167-480b-bae3-bb1e150ad6c8,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.6952,0.0859,0.6092,True,wants,False,both_correct
+a75d1057-930b-43f0-bf3c-b15843802f74,FWD Insurance Thailand,ค่าโทรศัพท์และบรอดแบนด์,bills,other,bills,shopping,bills,0.4786,0.1731,0.3055,True,routine,False,ml_wins_baseline_wrong
+78a6b06f-ce93-4856-be45-1314a635782f,Sushi Masa Thonglor,พร้อมเพย์,food,other,food,entertainment,food,0.2914,0.2601,0.0312,True,wants,False,ml_wins_baseline_wrong
+e1c97af9-d28d-4c35-8fd5-716d91ced695,Sushi Masa Thonglor,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6612,0.1024,0.5588,True,wants,False,both_correct
+b6d567e3-ab9e-47f2-918e-944baf4140d1,Watsons สาขา เซ็นทรัล,คืนเพื่อน,shopping,shopping,food,food,food,0.2385,0.2228,0.0157,True,routine,True,baseline_wins_ml_wrong
+b92bbd25-2ce2-47be-a6ff-5f4a688bb443,Drive Car Rental Thailand,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6202,0.1013,0.5188,True,wants,False,both_correct
+428c1083-cf6f-4cd0-be22-a6cc3a2ea7e8,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,food,other,food,food,food,0.6384,0.1075,0.5309,True,wants,False,ml_wins_baseline_wrong
+a151fe7f-22b7-4a1d-9ddd-bed1f3e45f20,Sushi Masa Thonglor,คืนเพื่อน,food,other,transport,food,transport,0.2051,0.2028,0.0023,True,wants,True,shared_error_both_wrong
+b8bdc878-af88-4783-b89f-6899d2b0a1bf,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.6977,0.0804,0.6172,True,wants,False,both_correct
+ddc5315c-ff3a-4446-8a93-e862b074122c,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินคืนค่าแท็กซี่หารกัน,other,transport,other,other,other,0.6589,0.0862,0.5727,True,routine,False,ml_wins_baseline_wrong
+fd49b3a6-18b3-4b30-afa1-c58c67abc255,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ส้มตำไทยคอหมูย่าง,food,food,food,food,food,0.7355,0.0725,0.6631,True,routine,False,both_correct
+879a2d73-6327-471d-abf7-7edaddf5445a,CJ Express ซอย 5,โอน,food,other,transport,food,transport,0.3388,0.2094,0.1294,True,routine,True,shared_error_both_wrong
+636c332d-d5c8-43af-b5ed-6a1a9f777af1,Lineman - ส้มตำแซ่บพรีเมียม,ยอดตัดบัญชี,food,food,food,transport,food,0.396,0.1439,0.2521,True,impulse_delivery,False,both_correct
+7aedc4c6-bf9f-45c6-9958-3b120a667dd9,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6173,0.1108,0.5065,True,wants,False,both_correct
+9cb38f6c-1262-4153-a236-dfaa1b532cc2,Glow Nightclub Thonglor,ซื้อเกมลดราคาบน Steam Store,entertainment,entertainment,entertainment,entertainment,entertainment,0.6361,0.1458,0.4903,True,wants,False,both_correct
+b922a63f-8dfb-47f0-8e9f-9b27238800ae,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,shopping,shopping,shopping,shopping,0.6265,0.1345,0.492,True,routine,False,both_correct
+4a78b83a-33ac-4f1c-9f94-2def17848f0a,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.5712,0.1441,0.4271,True,routine,False,both_correct
+8e6e2cb9-23b3-4227-ab55-c55de048ba1f,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,อาหารตามสั่งจานด่วน,food,food,food,food,food,0.6286,0.1047,0.5239,True,routine,False,both_correct
+df89c583-1431-4592-a236-206ae55b26ba,Nok Air Ticket,จ่ายผ่านแอป,transport,other,food,food,food,0.3069,0.2358,0.0711,True,wants,True,shared_error_both_wrong
+bc4be2e9-26b6-49dc-8665-6bf1eb73c7f5,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+d2ac1b11-76f1-462a-9dcc-584389ab7deb,ZARA Siam Paragon,กระเป๋าผ้าแบรนด์ยอดฮิต,shopping,shopping,shopping,shopping,shopping,0.6742,0.0829,0.5913,True,wants,False,both_correct
+182a8cff-1097-4b39-aabe-60bda96e2857,Watsons สาขา เซ็นทรัล,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,shopping,shopping,food,shopping,0.6411,0.1343,0.5069,True,routine,False,both_correct
+89a21d5e-ec19-4ea0-a46d-07feae7c0791,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,other,other,other,other,other,0.6267,0.1115,0.5152,True,wants,False,both_correct
+954afa40-cada-4709-afab-0ed0dafd77a5,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,other,other,other,other,other,0.6267,0.1115,0.5152,True,wants,False,both_correct
+3ba6f8a4-bd54-4af6-bf38-411851814534,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.6608,0.0911,0.5696,True,routine,False,both_correct
+5c4b3a06-160c-4777-a27c-d8c706ffed2c,Daiso Japan 60 บาท,จ่ายผ่านแอป,shopping,bills,food,food,food,0.3069,0.2358,0.0711,True,routine,True,shared_error_both_wrong
+2f885b4c-712d-4793-a6fb-5e1ee7e8614b,AIA Life Insurance Post,ชำระยอดบัตรเครดิตยอดเต็ม,bills,bills,bills,bills,bills,0.6833,0.1001,0.5832,True,routine,False,both_correct
+46d74d8a-4a9a-49de-b1c1-5ea0ba58bdc7,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.6317,0.114,0.5176,True,routine,False,both_correct
+c97d8cc6-c693-44e7-ae0a-ee892afd3613,ZARA Siam Paragon,กระเป๋าผ้าแบรนด์ยอดฮิต,shopping,shopping,shopping,shopping,shopping,0.6742,0.0829,0.5913,True,wants,False,both_correct
+146680a1-deb3-4988-8c1b-f0852d9df39e,วินมอเตอร์ไซค์ หน้า MRT,ค่าจอดรถรายชั่วโมงอาคาร,transport,transport,transport,transport,transport,0.7144,0.0684,0.646,True,routine,False,both_correct
+31906246-abb8-4a2e-8992-c556b0a07675,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.6317,0.114,0.5176,True,routine,False,both_correct
+58eaa38c-1a5b-40ae-9a05-44881c280998,Lineman - ส้มตำแซ่บพรีเมียม,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,food,food,food,food,food,0.7643,0.0651,0.6992,True,impulse_delivery,False,both_correct
+299b1990-5add-4778-b8e3-ef8f3d751704,FWD Insurance Thailand,ชำระค่าส่วนกลางคอนโดมิเนียม,bills,bills,bills,bills,bills,0.5809,0.1021,0.4789,True,routine,False,both_correct
+cd3f9dfb-324e-4343-b54b-b74126befa60,Daiso Japan 60 บาท,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,bills,shopping,food,shopping,0.6597,0.1002,0.5595,True,routine,False,ml_wins_baseline_wrong
+665aa29c-cd9a-4fd4-b699-fbce1dcf6583,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.6584,0.0801,0.5783,True,routine,False,both_correct
+0600aba3-bfa1-4e4d-87fe-1b86ba043f40,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.6871,0.0761,0.611,True,routine,False,both_correct
+4637a4ef-4d6c-44c8-b639-b28d72f3fbd2,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+195a0e73-cd8e-4d85-8c64-07f9d7433476,ร้านข้าวแกงป้าพร,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.6311,0.0928,0.5383,True,routine,False,both_correct
+b9441c87-ab33-4221-bd2d-3dcded4afec1,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.7033,0.0732,0.6301,True,impulse_delivery,False,both_correct
+cf3e4857-bef9-460d-8daa-a6d939ac272b,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.7033,0.0732,0.6301,True,impulse_delivery,False,both_correct
+c633ad01-387c-44a4-9303-b308f56012f1,AIA Life Insurance Post,จ่ายผ่านแอป,bills,other,food,food,food,0.3069,0.2358,0.0711,True,routine,True,shared_error_both_wrong
+1db8fd28-892f-4800-b2a2-1f06c7c188a2,Glow Nightclub Thonglor,PlayStation Plus Member,entertainment,entertainment,entertainment,entertainment,entertainment,0.5665,0.1156,0.4509,True,wants,False,both_correct
+41d0bbfa-5f05-4b93-add6-2486c6bd1ffc,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินไปหน้าปากซอยสุขุมวิท,transport,transport,transport,transport,transport,0.6978,0.0918,0.6059,True,routine,False,both_correct
+e8b54cae-3e05-476b-a028-14402072c673,Pop Mart Official Store,จ่ายผ่านแอป,shopping,other,shopping,entertainment,shopping,0.2895,0.2414,0.0481,True,impulse_online,False,ml_wins_baseline_wrong
+0901f616-cb9f-444c-a9e0-57a609f272b8,Pop Mart Official Store,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.567,0.1352,0.4318,True,impulse_online,False,both_correct
+f78a0c1a-77cf-44d9-a606-772156720397,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6173,0.1108,0.5065,True,wants,False,both_correct
+8c5adbef-bc0d-49ce-b15e-fee5cffc6b52,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.5667,0.1413,0.4255,True,routine,False,both_correct
+4cde84e8-7544-4214-bfc1-56980f68877c,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+3ba327fd-bdcc-4875-bd91-d91809f7d090,ร้านข้าวแกงป้าพร,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.7659,0.0615,0.7044,True,routine,False,both_correct
+489173ea-cfe8-482a-a1ae-781789c5ddad,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,แซนด์วิชทูน่ามื้อเช้า,food,food,food,food,food,0.5765,0.1273,0.4492,True,routine,False,both_correct
+966359e5-2889-4143-8583-789f396d6206,ZARA Siam Paragon,ลิปสติกและพาเลตต์อายแชโดว์,shopping,shopping,shopping,shopping,shopping,0.8292,0.0566,0.7726,True,wants,False,both_correct
+5f393980-647c-4a7e-99cc-25e87a51ecaa,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,other,other,other,food,other,0.5496,0.1613,0.3883,True,wants,False,both_correct
+e1dbf454-d4e3-420f-8872-02d02bfb7396,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6939,0.0832,0.6107,True,wants,False,both_correct
+4298b6e0-c3e8-4c17-a82b-936fcdfd2955,Sushi Masa Thonglor,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.6765,0.078,0.5984,True,wants,False,both_correct
+968da1f7-7440-4c48-9600-a009c8b569b4,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.5522,0.1434,0.4088,True,wants,False,both_correct
+34fcb706-7c1e-4da5-9a95-af014b097ab8,Glow Nightclub Thonglor,ซื้อเกมลดราคาบน Steam Store,entertainment,entertainment,entertainment,entertainment,entertainment,0.6361,0.1458,0.4903,True,wants,False,both_correct
+9651b50e-0c6a-4758-9696-6261cecdc199,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6939,0.0832,0.6107,True,wants,False,both_correct
+42db3fa9-8da3-4d74-bc17-0ffb6c899c37,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,shopping,shopping,shopping,shopping,0.6265,0.1345,0.492,True,routine,False,both_correct
+3043e9f1-417f-432f-9162-bba582346469,Sushi Masa Thonglor,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.6668,0.0983,0.5685,True,wants,False,both_correct
+af571680-23a1-4270-8709-e372f538203c,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.7146,0.0725,0.6421,True,wants,False,both_correct
+5a3e6be9-1acd-42b3-a6da-a77b65f83140,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,entertainment,transport,0.5097,0.1234,0.3863,True,wants,False,ml_wins_baseline_wrong
+f3887b9e-a96b-4a61-b73e-e9bd3d3558ba,CJ Express ซอย 5,กาแฟคั่วเข้มแก้วเช้า,food,food,food,food,food,0.4224,0.2082,0.2142,True,routine,False,both_correct
+51497ba6-48f5-4b83-9da6-5271da1415d6,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,shopping,shopping,shopping,shopping,0.663,0.1067,0.5563,True,routine,False,both_correct
+d7c3bec5-4041-4dea-8049-88914f916ea5,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.6266,0.1063,0.5202,True,impulse_delivery,False,both_correct
+28432bb4-6422-492b-98a6-13e3ca28bfd3,Pop Mart Official Store,Flash Sale 00:00 หูฟังบลูทูธ,shopping,shopping,shopping,shopping,shopping,0.5484,0.134,0.4144,True,impulse_online,False,both_correct
+b2552909-7975-4690-95f6-1b0a5b393282,Glow Nightclub Thonglor,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,other,entertainment,entertainment,entertainment,0.5089,0.1539,0.355,True,wants,False,ml_wins_baseline_wrong
+df09306b-d9be-4a0e-8850-8fbd8006026b,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินส่วนตัวเข้าบัญชีออมทรัพย์,other,other,other,other,other,0.6895,0.0894,0.6001,True,routine,False,both_correct
+10654850-5794-4e0d-a630-969d3c8ecc3b,Pop Mart Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,shopping,other,shopping,shopping,shopping,0.649,0.1352,0.5138,True,impulse_online,False,ml_wins_baseline_wrong
+59dc447b-0e14-45a6-819f-26e0fe26bc5f,ZARA Siam Paragon,เสื้อเบลเซอร์ทำงานคอลใหม่,shopping,shopping,shopping,shopping,shopping,0.7423,0.0829,0.6594,True,wants,False,both_correct
+566b90bc-4b5c-4dfb-9cca-17df067cba15,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,shopping,shopping,shopping,shopping,shopping,0.4597,0.1722,0.2875,True,impulse_online,False,both_correct
+419a50f1-348c-4b79-814c-d75d4b8d0b11,After You Dessert Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.6706,0.0929,0.5778,True,wants,False,both_correct
+11913bb6-bcff-48af-acf2-71413607cd90,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+23e1e384-1912-4c1d-8243-1394328c0ea7,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6989,0.0826,0.6163,True,wants,False,both_correct
+52ff6e1e-7669-487f-9d79-791ccfa7dea5,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ชำระเงิน,food,food,food,food,food,0.424,0.2001,0.2239,True,routine,False,both_correct
+45847821-ff36-4292-b43b-95bb346deb4b,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,bills,shopping,shopping,shopping,0.6931,0.0784,0.6146,True,routine,False,ml_wins_baseline_wrong
+11c9f633-0b13-41fa-a56d-8a1065a527c7,FWD Insurance Thailand,คืนเพื่อน,bills,other,shopping,shopping,shopping,0.2467,0.1701,0.0767,True,routine,True,shared_error_both_wrong
+3149d634-5316-45f4-8d89-e349be020221,Daiso Japan 60 บาท,ชำระเงิน,shopping,bills,shopping,food,shopping,0.2776,0.2612,0.0164,True,routine,False,ml_wins_baseline_wrong
+8bc9480d-c323-42d9-9cd9-3520bb9fab0b,AIA Life Insurance Post,ค่าโทรศัพท์และบรอดแบนด์,bills,other,bills,food,bills,0.4688,0.1554,0.3134,True,routine,False,ml_wins_baseline_wrong
+de76ffb7-ae10-4bd4-a172-c1e3c67e39c0,M-Flow ทล.9 กรมทางหลวง,ค่ารถตู้ไปทำงานอนุสาวรีย์,transport,transport,transport,transport,transport,0.542,0.1412,0.4008,True,routine,False,both_correct
+3ca6f82a-dfea-4a5e-8da3-5447523a6cc5,Sushi Masa Thonglor,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.6668,0.0983,0.5685,True,wants,False,both_correct
+55a73484-43dc-4385-b560-1849eb7377fc,Daiso Japan 60 บาท,โอน,shopping,bills,other,food,other,0.3008,0.2019,0.0989,True,routine,True,shared_error_both_wrong
+5d331943-6e90-4aef-a2ae-9d7fb888d0b5,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.6621,0.0947,0.5674,True,wants,False,both_correct
+ec9e0195-5967-4339-a748-d30a11993d3a,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,shopping,shopping,shopping,shopping,shopping,0.6438,0.097,0.5468,True,wants,False,both_correct
+a041ea69-6bae-4e53-a72b-80d0e0176118,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.6707,0.1083,0.5624,True,routine,False,both_correct
+9a0a162b-ec03-45a6-85b5-042b23920590,ร้านข้าวแกงป้าพร,มื้อเที่ยงกับทีม,food,food,food,food,food,0.6308,0.0977,0.5331,True,routine,False,both_correct
+dcea3355-9e93-43c7-9c9b-912db75e352f,Eveandboy Mega Bangna,ซื้อเสื้อกล้ามและกางเกงสแล็ค,shopping,shopping,shopping,shopping,shopping,0.6795,0.0865,0.593,True,wants,False,both_correct
+2b4b5a5b-6888-4336-bfc6-90dda78aa933,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,entertainment,food,food,food,0.7159,0.0619,0.654,True,wants,False,ml_wins_baseline_wrong
+912a67a2-7ace-4bcd-96ea-bef2d421185f,Lineman - ส้มตำแซ่บพรีเมียม,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.758,0.0599,0.6981,True,impulse_delivery,False,both_correct
+37498ebc-50d8-4b6c-a02f-88a4e0f732e5,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.724,0.0728,0.6513,True,routine,False,both_correct
+4265ca4a-c48b-4ae0-b12c-9cb7ae7bbe14,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,แซนด์วิชทูน่ามื้อเช้า,food,food,food,food,food,0.5765,0.1273,0.4492,True,routine,False,both_correct
+8d4c4e9e-2efd-41df-b6ee-00cf3319d0e4,CJ Express ซอย 5,แซนด์วิชทูน่ามื้อเช้า,food,other,food,food,food,0.459,0.2108,0.2482,True,routine,False,ml_wins_baseline_wrong
+405a4e08-c70f-4f79-8418-cc24f2f75aa9,FWD Insurance Thailand,ชำระค่าน้ำประปานครหลวง,bills,bills,bills,bills,bills,0.6942,0.0879,0.6063,True,routine,False,both_correct
+f79ca2ca-8f56-49dc-b621-3d00b115307a,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,entertainment,transport,0.5097,0.1234,0.3863,True,wants,False,ml_wins_baseline_wrong
+2867aec0-f384-4349-bf17-decb3a51f3e2,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,food,transport,0.5106,0.1658,0.3449,True,wants,False,ml_wins_baseline_wrong
+910926c8-ad9f-4423-b443-5e22a93c8f5b,MRT Bangkok พระราม 9,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.5719,0.1342,0.4377,True,routine,False,both_correct
+59eab2ab-581e-4b9e-8d5d-e719e8d6374e,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.6621,0.0947,0.5674,True,wants,False,both_correct
+9419b598-eddb-4474-930d-f16c36456add,After You Dessert Cafe,ยอดตัดบัญชี,food,food,entertainment,food,entertainment,0.2406,0.2161,0.0245,True,wants,True,baseline_wins_ml_wrong
+71883206-2eaa-45dc-8c3f-be8a6a083a97,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.5667,0.1413,0.4255,True,routine,False,both_correct
+6e42ab24-d204-482c-aa0b-9d7afa553d69,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,entertainment,food,food,food,0.7159,0.0619,0.654,True,wants,False,ml_wins_baseline_wrong
+a6cad4bb-fae8-4cce-a19f-0b812944eb1c,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,transport,shopping,0.558,0.1283,0.4297,True,routine,False,ml_wins_baseline_wrong
+ca9a8a73-a702-42bd-ad8c-65bb56130ba2,Lineman - ส้มตำแซ่บพรีเมียม,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,food,food,food,food,food,0.5741,0.1494,0.4248,True,impulse_delivery,False,both_correct
+16860aed-3ecb-4e7e-a0a5-d6ce7987b6a9,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,shopping,bills,shopping,shopping,shopping,0.6009,0.1216,0.4793,True,routine,False,ml_wins_baseline_wrong
+0aafe22c-cda3-4f9f-9fca-23744d6f186f,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+52335274-f515-4537-840e-b3118dc2875d,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+07ae94ad-7b8d-45da-9eb3-e2888b10a5d5,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,food,food,food,food,food,0.4687,0.1523,0.3164,True,routine,False,both_correct
+b02474c3-c9f5-4502-a7b6-1ca958d690c8,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.6266,0.1063,0.5202,True,impulse_delivery,False,both_correct
+0955dc58-3e05-4840-a142-90c656d303b7,Glow Nightclub Thonglor,จ่ายผ่านแอป,entertainment,other,food,food,food,0.3069,0.2358,0.0711,True,wants,True,shared_error_both_wrong
+a2297507-2190-4eae-9cd3-d4a1667bcaa8,Nok Air Ticket,โอน,transport,other,other,food,other,0.3008,0.2019,0.0989,True,wants,True,shared_error_both_wrong
+9be76028-108c-4074-8fa9-f81422733dbb,MRT Bangkok พระราม 9,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.5544,0.1759,0.3784,True,routine,False,both_correct
+abb04ca4-60db-4949-a384-6876297e5888,Drive Car Rental Thailand,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,transport,transport,0.4547,0.1811,0.2736,True,wants,False,ml_wins_baseline_wrong
+51f7decb-e56b-41db-80be-df38e370b47b,Eveandboy Mega Bangna,เสื้อเบลเซอร์ทำงานคอลใหม่,shopping,shopping,shopping,shopping,shopping,0.6698,0.1083,0.5616,True,wants,False,both_correct
+f90cbcaa-3059-412c-9e6a-77a07b8e3892,After You Dessert Cafe,Shibuya Honey Toast และชาร้อน,food,food,food,food,food,0.5592,0.1278,0.4315,True,wants,False,both_correct
+6b6758db-f074-4937-92b0-249b38c16042,Shopee Flash Sale Mall,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,shopping,shopping,shopping,shopping,shopping,0.4781,0.1884,0.2897,True,impulse_online,False,both_correct
+611a8210-d7bc-4ffc-83ca-78fb4c8cec0a,Greyhound Cafe,โอนเงิน,food,food,other,entertainment,other,0.6153,0.1103,0.505,True,wants,True,baseline_wins_ml_wrong
+fced2e17-b0b8-45b0-8d78-2cc35ab01ff0,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,food,other,food,food,food,0.6384,0.1075,0.5309,True,wants,False,ml_wins_baseline_wrong
+843bd078-4dfa-4fa6-8f1e-9dfe1f426ad4,การไฟฟ้านครหลวง MEA,เบี้ยประกันชีวิตและอุบัติเหตุ,bills,bills,bills,bills,bills,0.6524,0.091,0.5614,True,routine,False,both_correct
+abaf6d2f-a255-4418-bd17-85375329bb17,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน MEA,bills,bills,bills,bills,bills,0.5988,0.0959,0.5029,True,routine,False,both_correct
+2b9d258f-6de7-40ab-973e-e66b6c7d5028,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบุญสร้างโรงพยาบาลสงฆ์,other,other,other,food,other,0.5322,0.144,0.3882,True,wants,False,both_correct
+fb081845-190f-44a0-8441-c29b806b86d7,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+5b77425f-43c2-4c3e-82c8-f56adb021c40,Drive Car Rental Thailand,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,transport,transport,0.4547,0.1811,0.2736,True,wants,False,ml_wins_baseline_wrong
+21b95abd-3df3-4abc-b346-aa734e9ed4ab,Lineman - ส้มตำแซ่บพรีเมียม,จ่ายเงิน,food,food,food,food,food,0.4468,0.1514,0.2954,True,impulse_delivery,False,both_correct
+e39485ca-3eec-4541-87d3-80301b59abc7,Sushi Masa Thonglor,Shibuya Honey Toast และชาร้อน,food,other,food,food,food,0.52,0.1467,0.3733,True,wants,False,ml_wins_baseline_wrong
+7bb8521e-3705-4cb0-a40a-0bc535b78093,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,shopping,shopping,shopping,shopping,shopping,0.4597,0.1722,0.2875,True,impulse_online,False,both_correct
+261461c6-9fad-4f14-8343-e5b6534c5e3f,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.6599,0.109,0.551,True,routine,False,both_correct
+01c8d7b1-257b-483f-80be-4e494673b83d,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.6977,0.0804,0.6172,True,wants,False,both_correct
+9f572df1-5de8-47d8-9ab8-53afa96fea63,Eveandboy Mega Bangna,ซื้อเสื้อกล้ามและกางเกงสแล็ค,shopping,shopping,shopping,shopping,shopping,0.6795,0.0865,0.593,True,wants,False,both_correct
+49a9f4ff-640e-4f0c-9cf6-5ff148a734f6,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,bills,shopping,shopping,shopping,0.6931,0.0784,0.6146,True,routine,False,ml_wins_baseline_wrong
+410bab68-2f6c-4a01-accb-be06f29e02fe,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.6871,0.0761,0.611,True,routine,False,both_correct
+ba524e2c-48d9-4a21-9539-99ef0390090c,Ticketmelon Concerts,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,other,entertainment,entertainment,entertainment,0.63,0.1087,0.5213,True,wants,False,ml_wins_baseline_wrong
+1c0a758c-0e78-4149-b7f6-b78f7eb228e4,CJ Express ซอย 5,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.4706,0.1571,0.3135,True,routine,False,both_correct
+36d05c28-1835-457f-8c87-f4fe38f11f6e,ไปรษณีย์ไทย Kerry Express,โอนเงินคืนค่าแท็กซี่หารกัน,other,transport,other,transport,other,0.5778,0.1218,0.456,True,routine,False,ml_wins_baseline_wrong
+e2242e12-f01e-41c3-bc0e-e4a00ed14e10,Lineman - ส้มตำแซ่บพรีเมียม,xxx,food,food,food,food,food,0.6179,0.0915,0.5263,True,impulse_delivery,False,both_correct
+ed74a243-ceb3-4761-a347-c6b6c60e9afc,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.662,0.0908,0.5712,True,routine,False,both_correct
+f7cb12ab-6fb2-4eff-af43-7c863c89c412,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.5522,0.1434,0.4088,True,wants,False,both_correct
+1be7557b-5e42-4e23-b0cf-59657610f041,MRT Bangkok พระราม 9,เติมน้ำมัน E20 รถยนต์ส่วนตัว,transport,transport,transport,transport,transport,0.5608,0.1346,0.4263,True,routine,False,both_correct
+7dce14ff-a09d-4e33-a5d6-0d1b61c714d1,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+6a311422-f78f-48d3-a1d2-88387a7b4129,Disney+ Hotstar TH,ตั๋วคอนเสิร์ตอินดี้มิวสิก,entertainment,entertainment,entertainment,entertainment,entertainment,0.7245,0.0781,0.6465,True,wants,False,both_correct
+2d9d0cef-74cb-4886-852b-05d2fffbe297,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.6621,0.0947,0.5674,True,wants,False,both_correct
+f5df6466-0302-424c-85ca-d2af5ecb3389,การไฟฟ้านครหลวง MEA,ค่าเน็ตบ้านรายเดือน 3BB,bills,bills,bills,bills,bills,0.8435,0.043,0.8005,True,routine,False,both_correct
+9eee5f45-7753-4041-99fd-115fb98255fa,Watsons สาขา เซ็นทรัล,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,food,shopping,0.5276,0.1703,0.3573,True,routine,False,ml_wins_baseline_wrong
+67645286-c63d-4ddb-9efe-d05b21b82b96,MRT Bangkok พระราม 9,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,transport,transport,transport,transport,transport,0.7723,0.0765,0.6959,True,routine,False,both_correct
+6bb54eaa-5032-4a72-9a1c-b13895e32625,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.7033,0.0732,0.6301,True,impulse_delivery,False,both_correct
+226c3227-c7b1-46a6-a911-52c00bd0d4f5,CJ Express ซอย 5,xxx,food,other,transport,entertainment,transport,0.3234,0.2281,0.0953,True,routine,True,shared_error_both_wrong
+eb4458c5-1b3a-4bdf-94fa-43c8f6fbdf7b,ร้านข้าวแกงป้าพร,อาหารตามสั่งจานด่วน,food,food,food,food,food,0.7118,0.0708,0.6409,True,routine,False,both_correct
+401f123c-b710-4501-8d7e-c39574cd8c39,FWD Insurance Thailand,ชำระค่าไฟฟ้าประจำเดือน MEA,bills,bills,bills,bills,bills,0.6359,0.0957,0.5402,True,routine,False,both_correct
+9a9ba7e6-73b2-41b0-965c-db10dd542dfa,Watsons สาขา เซ็นทรัล,พร้อมเพย์,shopping,shopping,food,food,food,0.3778,0.1773,0.2005,True,routine,True,baseline_wins_ml_wrong
+e1e1aa07-79f4-4b55-9e9b-cab5a0809bc6,Sushi Masa Thonglor,Iced Caramel Macchiato Venti,food,other,food,food,food,0.6152,0.1051,0.5101,True,wants,False,ml_wins_baseline_wrong
+6f1c88e7-aed7-42a4-85ef-99e01fe435f5,Lineman - ส้มตำแซ่บพรีเมียม,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,food,food,food,food,food,0.7409,0.0691,0.6718,True,impulse_delivery,False,both_correct
+67721ca4-271d-48e0-a79f-7afa5a9197ef,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,entertainment,transport,0.5097,0.1234,0.3863,True,wants,False,ml_wins_baseline_wrong
+c55aea44-0d93-437e-84fa-da64014e43e8,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.5667,0.1413,0.4255,True,routine,False,both_correct
+e17bd4e6-f42b-4a54-ad92-06bd935a4491,Eveandboy Mega Bangna,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,shopping,shopping,shopping,shopping,shopping,0.6777,0.1049,0.5728,True,wants,False,both_correct
+39fd37d4-4940-4c28-93be-0c4169d89058,AIA Life Insurance Post,โอนค่าเช่าคอนโดประจำเดือน,bills,other,bills,bills,bills,0.7612,0.0524,0.7088,True,routine,False,ml_wins_baseline_wrong
+0a125063-381f-437b-8ae1-063bba5bcf92,After You Dessert Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,food,food,food,food,food,0.6621,0.0947,0.5674,True,wants,False,both_correct
+d6382ea5-3ec0-46da-a394-cc817dc6c914,Glow Nightclub Thonglor,ร้องคาราโอเกะปาร์ตี้วันหยุด,entertainment,entertainment,entertainment,entertainment,entertainment,0.6917,0.0888,0.6029,True,wants,False,both_correct
+1542c0cb-6d9a-4aff-9ad4-c9506c57d106,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+60d93428-75a5-466b-a4d6-873938da021e,Watsons สาขา เซ็นทรัล,ซื้อยาแก้แพ้และวิตามินซีรวม,shopping,shopping,shopping,shopping,shopping,0.5896,0.153,0.4365,True,routine,False,both_correct
+53b17d57-fc3a-4f29-ad3c-dc12fc0e679c,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,transport,shopping,0.558,0.1283,0.4297,True,routine,False,ml_wins_baseline_wrong
+dfc5bbad-4cb2-4828-93de-e191e8a0972b,Ticketmelon Concerts,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.4753,0.148,0.3273,True,wants,False,both_correct
+eff749b5-b0fe-4d35-823d-e818ed13df78,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.6608,0.0911,0.5696,True,routine,False,both_correct
+5a8c3ebf-6a95-4885-9857-a31d722605e1,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6939,0.0832,0.6107,True,wants,False,both_correct
+df6a65c9-83e4-4a56-b09f-856cd766989e,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6173,0.1108,0.5065,True,wants,False,both_correct
+32a01b8f-00f8-4a92-a55e-7eb3d67bb505,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,transport,transport,transport,transport,transport,0.7799,0.0568,0.7232,True,routine,False,both_correct
+c8856fca-74f3-487d-adb6-47476b4668fd,Daiso Japan 60 บาท,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,bills,shopping,food,shopping,0.6597,0.1002,0.5595,True,routine,False,ml_wins_baseline_wrong
+74326d46-1b2d-43e2-9cb6-8e4b08449525,Watsons สาขา เซ็นทรัล,โอน,shopping,shopping,food,food,food,0.3621,0.2013,0.1607,True,routine,True,baseline_wins_ml_wrong
+2bc9cbb4-3602-4a09-8b21-803cc5b3d6bf,ร้านข้าวแกงป้าพร,ข้าวต้มปลาอินทรีย์รอบค่ำ,food,food,food,food,food,0.6455,0.0866,0.5589,True,routine,False,both_correct
+e5997976-4e50-4bf1-b90e-6381c0d96f49,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.5175,0.1599,0.3576,True,impulse_online,False,both_correct
+4e4f88f4-7517-4a26-8afa-cf7c28d821db,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.5175,0.1599,0.3576,True,impulse_online,False,both_correct
+71493d75-52e9-41d3-9bc5-e1de859821c3,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,food,food,food,food,food,0.4687,0.1523,0.3164,True,routine,False,both_correct
+1ba32002-16f0-4aad-8710-ad95e7a4fd88,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.6584,0.0801,0.5783,True,routine,False,both_correct
+ffa8eaa0-527c-4034-8c1e-ea03d6299278,AIA Life Insurance Post,ยอดตัดบัญชี,bills,other,shopping,food,shopping,0.2426,0.2105,0.032,True,routine,True,shared_error_both_wrong
+3324ddad-b6a7-4fe2-a9b5-8a71d25527fa,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.662,0.0908,0.5712,True,routine,False,both_correct
+a245236e-dcf2-4d9f-84ac-bced36e0c806,CJ Express ซอย 5,เส้นเล็กน้ำตกหมูพิเศษ,food,other,food,food,food,0.5823,0.1198,0.4625,True,routine,False,ml_wins_baseline_wrong
+a8a2d269-97fc-4bb2-b7cd-c3907806c3f5,Disney+ Hotstar TH,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.7656,0.0606,0.705,True,wants,False,both_correct
+003cb030-dab0-4dd4-b8cb-957ab05ed85e,Ticketmelon Concerts,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.5022,0.1469,0.3553,True,wants,False,both_correct
+c9e976af-81cb-4382-847e-886d5f0f72c1,Glow Nightclub Thonglor,ร้องคาราโอเกะปาร์ตี้วันหยุด,entertainment,entertainment,entertainment,entertainment,entertainment,0.6917,0.0888,0.6029,True,wants,False,both_correct
+285dd2be-819d-4542-ab5d-bef8565ccab4,Glow Nightclub Thonglor,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,other,entertainment,entertainment,entertainment,0.5089,0.1539,0.355,True,wants,False,ml_wins_baseline_wrong
+2a294cba-9295-41b8-9a3c-f89860abc2dc,MRT Bangkok พระราม 9,Easy Pass เติมเงินทางด่วน,transport,transport,transport,transport,transport,0.7287,0.084,0.6447,True,routine,False,both_correct
+d2828178-7d63-4878-828c-f9bc6bf8ef37,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.6707,0.1083,0.5624,True,routine,False,both_correct
+15ef1e50-b864-478d-ba86-6e3ba151d6d6,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,พร้อมเพย์,food,food,food,food,food,0.4359,0.1798,0.2561,True,routine,False,both_correct
+5fd89b2c-9ec9-4e9d-97ae-6046a7d7a9e4,Lineman - ส้มตำแซ่บพรีเมียม,,food,food,food,food,food,0.6319,0.0892,0.5427,True,impulse_delivery,False,both_correct
+0c97b028-110d-4529-a78d-0ef324b5b90d,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินคืนค่าแท็กซี่หารกัน,other,transport,other,other,other,0.6589,0.0862,0.5727,True,routine,False,ml_wins_baseline_wrong
+7e4a4f80-baf7-4d2a-b762-a8d8d5a8cc52,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.6599,0.109,0.551,True,routine,False,both_correct
+aa43fc4e-e5bd-4d52-a997-ee1308ed3399,Ticketmelon Concerts,ชำระเงิน,entertainment,other,shopping,food,shopping,0.2776,0.2612,0.0164,True,wants,True,shared_error_both_wrong
+02e60af5-4fa1-44a4-9bc8-272010e66583,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6939,0.0832,0.6107,True,wants,False,both_correct
+b50b8db6-e683-4e35-8a83-f7f211600aa2,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,shopping,bills,shopping,shopping,shopping,0.6009,0.1216,0.4793,True,routine,False,ml_wins_baseline_wrong
+c981a0ef-cf53-43db-8413-95d27926555e,Drive Car Rental Thailand,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6202,0.1013,0.5188,True,wants,False,both_correct
+381edde1-7ce5-40cd-a1a8-f9eb4235c9a9,Daiso Japan 60 บาท,โอนเงิน,shopping,bills,other,entertainment,other,0.7458,0.0624,0.6834,True,routine,True,shared_error_both_wrong
+59c8b105-6184-4cba-a53f-8fba97d477d7,Disney+ Hotstar TH,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,entertainment,entertainment,entertainment,entertainment,entertainment,0.6976,0.0666,0.6309,True,wants,False,both_correct
+905980ee-2d16-4402-b00b-4a3b6b72b464,Nok Air Ticket,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,other,transport,food,transport,0.6289,0.1116,0.5173,True,wants,False,ml_wins_baseline_wrong
+1d811043-5df4-4ca7-95a4-5746562d1f2d,M-Flow ทล.9 กรมทางหลวง,เติมเงินบัตร BTS รายเดือน,transport,transport,transport,transport,transport,0.5895,0.1086,0.4809,True,routine,False,both_correct
+93937f1c-c83a-4177-8f5b-c1a45f3c6092,CJ Express ซอย 5,ชำระเงิน,food,other,transport,food,transport,0.3336,0.2315,0.1021,True,routine,True,shared_error_both_wrong
+d08605fc-a40d-4a82-ae90-761752430954,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.6367,0.1103,0.5264,True,impulse_delivery,False,both_correct
+9041c0c1-61d4-454b-8480-418f39578460,FWD Insurance Thailand,โอนค่าเช่าคอนโดประจำเดือน,bills,other,bills,bills,bills,0.7626,0.0563,0.7063,True,routine,False,ml_wins_baseline_wrong
+9b8d3f34-fc56-4ce9-8a30-926c6b3b8d15,Watsons สาขา เซ็นทรัล,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,food,shopping,0.5276,0.1703,0.3573,True,routine,False,ml_wins_baseline_wrong
+478860fb-cba2-42b3-bd1d-37cc33671b8f,Watsons สาขา เซ็นทรัล,ซื้อยาแก้แพ้และวิตามินซีรวม,shopping,shopping,shopping,shopping,shopping,0.5896,0.153,0.4365,True,routine,False,both_correct
+138c5d66-bc8f-4d5b-bbab-d4d976b49d41,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,food,food,food,food,food,0.5945,0.1268,0.4677,True,impulse_delivery,False,both_correct
+699ad343-625d-49f6-b6cd-fbe0cbb1f7f5,Disney+ Hotstar TH,Netflix Premium รายเดือน 4K,entertainment,entertainment,entertainment,entertainment,entertainment,0.7426,0.062,0.6806,True,wants,False,both_correct
+c54cd01c-390a-4d46-a341-1b7451e0f450,Watsons สาขา เซ็นทรัล,จ่ายผ่านแอป,shopping,shopping,food,food,food,0.3751,0.1919,0.1833,True,routine,True,baseline_wins_ml_wrong
+f6f3b884-d22b-4652-8916-baa4f251d42b,การไฟฟ้านครหลวง MEA,เบี้ยประกันชีวิตและอุบัติเหตุ,bills,bills,bills,bills,bills,0.6524,0.091,0.5614,True,routine,False,both_correct
+add70850-fc9a-4bf0-922c-0d5da7563524,Disney+ Hotstar TH,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,entertainment,entertainment,entertainment,entertainment,entertainment,0.6896,0.0925,0.5971,True,wants,False,both_correct
+9211ef69-a627-47ad-b978-1e29fa84c60b,Disney+ Hotstar TH,YouTube Premium Family,entertainment,entertainment,entertainment,entertainment,entertainment,0.7656,0.0606,0.705,True,wants,False,both_correct
+114220b1-740f-4a76-a667-3b4fd23263c8,Daiso Japan 60 บาท,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,bills,shopping,shopping,shopping,0.6788,0.0981,0.5808,True,routine,False,ml_wins_baseline_wrong
+5a699e67-b01a-42d8-8fb4-e88c8a2f6d73,ZARA Siam Paragon,,shopping,shopping,shopping,entertainment,shopping,0.5259,0.1592,0.3667,True,wants,False,both_correct
+7fccbbf3-ae81-454f-81b6-cf54e6276aa0,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.6977,0.0804,0.6172,True,wants,False,both_correct
+be9dfa94-7214-44f6-a99a-dd75337fb43f,ไปรษณีย์ไทย Kerry Express,จ่ายเงิน,other,other,entertainment,entertainment,entertainment,0.2291,0.2185,0.0105,True,routine,True,baseline_wins_ml_wrong
+58661be5-f352-4e2d-8f6e-f0a63710e039,ZARA Siam Paragon,xxx,shopping,shopping,shopping,entertainment,shopping,0.5348,0.1447,0.39,True,wants,False,both_correct
+c508bf96-f82c-4873-ab3b-6afdeede243c,After You Dessert Cafe,โอน,food,food,food,food,food,0.3507,0.1693,0.1814,True,wants,False,both_correct
+105a07f5-9c3f-412f-9d11-4a888a2baaf8,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,มื้อเที่ยงกับทีม,food,food,food,food,food,0.4914,0.1417,0.3497,True,routine,False,both_correct
+949ae341-8a47-4508-9f09-87a54e1a41a0,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.7033,0.0732,0.6301,True,impulse_delivery,False,both_correct
+a82fe7bd-1024-4f25-a361-44c29c08c635,ไปรษณีย์ไทย Kerry Express,ยอดตัดบัญชี,other,other,transport,food,transport,0.256,0.1875,0.0685,True,routine,True,baseline_wins_ml_wrong
+448b78b6-43ab-43bc-a775-5194e7f25060,CJ Express ซอย 5,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.4649,0.1706,0.2943,True,routine,False,both_correct
+bc9bffe8-6dbc-4345-8d55-503139af8433,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,transport,transport,transport,transport,transport,0.5667,0.1413,0.4255,True,routine,False,both_correct
+80d2bc08-153b-43b3-a636-146cd98dee6e,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.724,0.0728,0.6513,True,routine,False,both_correct
+77deae3c-50fc-4d01-ae45-bb0f67b1e185,Glow Nightclub Thonglor,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,other,entertainment,entertainment,entertainment,0.63,0.1087,0.5213,True,wants,False,ml_wins_baseline_wrong
+e12c312a-b84e-40f8-bd3a-4768e3737050,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.6952,0.0859,0.6092,True,wants,False,both_correct
+b794b0b9-c821-4c93-a8dd-923f3b6b52e0,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.6707,0.1083,0.5624,True,routine,False,both_correct
+eb42ea18-0dd2-4e7b-b1e7-b7f9ff1d8336,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6989,0.0826,0.6163,True,wants,False,both_correct
+3d4540d1-33ef-4eee-abe0-b6ad3bf4a050,CJ Express ซอย 5,เคลียร์ยอด,food,other,transport,entertainment,transport,0.3098,0.1821,0.1276,True,routine,True,shared_error_both_wrong
+3622f3e5-74e7-4167-9761-86447c216a95,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,shopping,bills,shopping,shopping,shopping,0.6009,0.1216,0.4793,True,routine,False,ml_wins_baseline_wrong
+3ce50d77-51ea-436c-8f7f-3ca9ec67db7d,ร้านข้าวแกงป้าพร,Iced Black Coffee หวานน้อย,food,food,food,food,food,0.6434,0.0941,0.5494,True,routine,False,both_correct
+f5a56d35-2e21-44ed-bb8d-156b5a59eecb,Greyhound Cafe,โอนเงิน,food,food,other,entertainment,other,0.6153,0.1103,0.505,True,wants,True,baseline_wins_ml_wrong
+543afa55-9840-42ea-aff8-e2c513d87b60,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,transport,transport,transport,transport,transport,0.7526,0.0767,0.6759,True,routine,False,both_correct
+249b9909-0c5e-4bd2-90cb-9fe2b1a55425,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,other,other,other,other,other,0.6267,0.1115,0.5152,True,wants,False,both_correct
+0d8fdd81-9bb6-4293-aecf-3dd4c96fbe5e,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.7395,0.0624,0.6771,True,routine,False,both_correct
+beae028f-e7b0-4093-8c33-d4511a092e9e,Watsons สาขา เซ็นทรัล,ผลไม้นำเข้าและนมจืด,shopping,shopping,shopping,shopping,shopping,0.5596,0.1677,0.3919,True,routine,False,both_correct
+f3c139e4-e974-4399-bd24-06df6b63710d,Greyhound Cafe,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,food,food,food,food,0.739,0.0618,0.6772,True,wants,False,both_correct
+fb12715e-8eb8-4222-ad8a-f0eb2525d31c,ร้านข้าวแกงป้าพร,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.7211,0.0781,0.643,True,routine,False,both_correct
+57c28667-db44-4759-af88-93dee3c4c243,CJ Express ซอย 5,แซนด์วิชทูน่ามื้อเช้า,food,other,food,food,food,0.459,0.2108,0.2482,True,routine,False,ml_wins_baseline_wrong
+6283e398-741c-47f3-8042-788a44e2a169,AIA Life Insurance Post,ชำระยอดบัตรเครดิตยอดเต็ม,bills,bills,bills,bills,bills,0.6833,0.1001,0.5832,True,routine,False,both_correct
+c4aca66a-7a18-42c2-99ee-8d296ff6323d,วินมอเตอร์ไซค์ หน้า MRT,คืนเพื่อน,transport,transport,transport,transport,transport,0.4893,0.119,0.3704,True,routine,False,both_correct
+f770f96a-7782-41a1-8b17-f935f6cd9058,Greyhound Cafe,Shibuya Honey Toast และชาร้อน,food,food,food,food,food,0.5592,0.1278,0.4315,True,wants,False,both_correct
+6e853296-5c6f-4205-8177-5454ba928a42,Disney+ Hotstar TH,Disney+ Hotstar รายปี,entertainment,entertainment,entertainment,entertainment,entertainment,0.7133,0.0784,0.6348,True,wants,False,both_correct
+c23e5308-e447-4cdb-9d83-6b9ab0baab71,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.6599,0.109,0.551,True,routine,False,both_correct
+a47da2ca-2cd3-4fee-af2d-99e16d31e42f,Pop Mart Official Store,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,shopping,other,shopping,shopping,shopping,0.5559,0.1456,0.4103,True,impulse_online,False,ml_wins_baseline_wrong
+dd2ae76f-139c-4ef7-a2c0-ed1237c0ad9e,CJ Express ซอย 5,มื้อเที่ยงกับทีม,food,other,food,food,food,0.4116,0.2002,0.2114,True,routine,False,ml_wins_baseline_wrong
+eeeffe70-cef7-43a7-bfd2-a6d4b3b255d5,ทำบุญช่วยเหลือผู้ประสบภัย,บริจาคช่วยมูลนิธิการกุศล,other,other,other,food,other,0.5836,0.1177,0.4659,True,wants,False,both_correct
+57219897-db88-47f6-b4a2-6d84edff54a0,CJ Express ซอย 5,อาหารตามสั่งจานด่วน,food,food,food,food,food,0.5091,0.151,0.3581,True,routine,False,both_correct
+6e1cd5cf-471b-4194-a58d-d1f9d457b03c,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+5470344a-1d7e-4525-8d25-e3dfa8b276ab,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.6853,0.0921,0.5932,True,routine,False,both_correct
+91d4d96e-0675-4684-9ffd-1fe6332d90a6,Nok Air Ticket,จ่ายผ่านแอป,transport,other,food,food,food,0.3069,0.2358,0.0711,True,wants,True,shared_error_both_wrong
+a36e7eaf-ffd6-421a-b0e2-4ee7a1627da0,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+b6b390c5-1d12-450a-8e6c-6a97d92d85ae,Greyhound Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.6706,0.0929,0.5778,True,wants,False,both_correct
+75851acf-621e-4eee-8519-f357a301c33c,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6989,0.0826,0.6163,True,wants,False,both_correct
+7800b145-cc39-4b43-92c4-be5a55b178c0,Greyhound Cafe,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,food,food,food,food,0.739,0.0618,0.6772,True,wants,False,both_correct
+ebabaa1d-e9f9-4696-9af2-9eaeca199fdb,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.662,0.0908,0.5712,True,routine,False,both_correct
+0a074248-9f78-40b0-8a27-34660e9859ee,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โจ๊กหมูใส่ไข่เยี่ยวม้า,food,food,food,food,food,0.6853,0.0921,0.5932,True,routine,False,both_correct
+a69427e6-aec0-40c9-91b9-e28a0682cded,MRT Bangkok พระราม 9,จ่ายเงิน,transport,transport,shopping,shopping,shopping,0.3056,0.214,0.0916,True,routine,True,baseline_wins_ml_wrong
+4fd5b610-f80d-4ffc-a513-aec069b60dbf,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โอน,food,food,food,food,food,0.4378,0.1444,0.2934,True,routine,False,both_correct
+e27d22a2-a2d0-4ad1-885c-6c8c4c81355a,ไปรษณีย์ไทย Kerry Express,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,other,food,other,transport,other,0.5874,0.1357,0.4517,True,routine,False,ml_wins_baseline_wrong
+ec9255d3-cec9-4281-be88-313f289c2692,ไปรษณีย์ไทย Kerry Express,ค่าธรรมเนียมธุรกรรมธนาคาร,other,other,other,other,other,0.6767,0.0867,0.59,True,routine,False,both_correct
+04bcf7d0-495c-4328-a61c-31b1834742fc,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,food,food,food,food,food,0.6317,0.114,0.5176,True,routine,False,both_correct
+4c0dfe2d-4743-477b-a1d0-5566db64fbbe,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,shopping,shopping,shopping,shopping,0.663,0.1067,0.5563,True,routine,False,both_correct
+c3126ad3-8b45-44ad-8f41-1c5d9f085503,Ticketmelon Concerts,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.4753,0.148,0.3273,True,wants,False,both_correct
+3617aacd-d974-4aed-8e70-d57f2662a456,Daiso Japan 60 บาท,ซื้อยาแก้แพ้และวิตามินซีรวม,shopping,bills,shopping,shopping,shopping,0.6161,0.1198,0.4963,True,routine,False,ml_wins_baseline_wrong
+cb67f14c-abdb-40ba-870e-de04ff29462b,After You Dessert Cafe,เคลียร์ยอด,food,food,entertainment,entertainment,entertainment,0.2307,0.2019,0.0289,True,wants,True,baseline_wins_ml_wrong
+4ad79281-5c50-40ad-9a3d-5eb846518e8b,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6885,0.0899,0.5986,True,wants,False,both_correct
+7c63da3b-142e-425e-8073-6779c0742700,ธนาคารไทยพาณิชย์ SCB Easy,เติมเงินมือถือระบบเติมเงิน,other,other,other,food,other,0.4344,0.2195,0.2149,True,routine,False,both_correct
+45a91e71-70bb-4050-a56f-1a408a2ed3e6,ธนาคารไทยพาณิชย์ SCB Easy,ค่าธรรมเนียมธุรกรรมธนาคาร,other,other,other,other,other,0.6927,0.0766,0.6161,True,routine,False,both_correct
+f76186ab-f4f5-4c68-8630-05e83a68f7dc,FWD Insurance Thailand,ค่าเน็ตบ้านรายเดือน 3BB,bills,bills,bills,bills,bills,0.8388,0.041,0.7979,True,routine,False,both_correct
+48c1b7fa-ad9d-4f20-acd0-1c1b4bbc2487,CJ Express ซอย 5,เคลียร์ยอด,food,other,transport,entertainment,transport,0.3098,0.1821,0.1276,True,routine,True,shared_error_both_wrong
+0ebef76f-6e21-41a4-bde9-832cff8f82da,วินมอเตอร์ไซค์ หน้า MRT,เคลียร์ยอด,transport,transport,transport,transport,transport,0.4847,0.1296,0.355,True,routine,False,both_correct
+bc56f8ad-49c1-46da-9fb5-bf544b398c5d,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.724,0.0728,0.6513,True,routine,False,both_correct
+ec63b6a6-d956-4f1d-8eb1-b67496d3b0d2,Drive Car Rental Thailand,จ่ายเงิน,transport,other,entertainment,shopping,entertainment,0.3001,0.2162,0.0839,True,wants,True,shared_error_both_wrong
+742c5ad2-2987-4bd4-9f70-65d39e515250,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+fdb46dd5-93c4-4a01-ba2d-20f84c3e1547,ZARA Siam Paragon,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,shopping,shopping,food,shopping,0.715,0.0883,0.6267,True,wants,False,both_correct
+63589824-d5f0-40d7-b739-db6ef6a4b243,MRT Bangkok พระราม 9,เติมน้ำมัน Gasohol 95,transport,transport,transport,transport,transport,0.5544,0.1759,0.3784,True,routine,False,both_correct
+0687be16-d120-44fb-aada-78a0d2f82613,MRT Bangkok พระราม 9,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,transport,transport,transport,transport,transport,0.7723,0.0765,0.6959,True,routine,False,both_correct
+d0ced105-afe7-4dc4-990c-4dca3d198c92,After You Dessert Cafe,Iced Caramel Macchiato Venti,food,food,food,food,food,0.6524,0.0902,0.5622,True,wants,False,both_correct
+10e551e5-6d47-4707-984f-2dd8761e2484,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,other,other,other,food,other,0.5496,0.1613,0.3883,True,wants,False,both_correct
+0c23c38e-de45-4f10-b2f1-5cee9374fad7,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,shopping,shopping,shopping,shopping,shopping,0.6438,0.097,0.5468,True,wants,False,both_correct
+e6487717-6f3d-40c3-96f3-1560c9f73c65,GrabFood - Bonchon Chicken,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,food,food,food,food,food,0.3465,0.2898,0.0568,True,impulse_delivery,False,both_correct
+0017311e-0a8a-4fa5-83bf-44ef1469520e,CJ Express ซอย 5,อาหารตามสั่งจานด่วน,food,food,food,food,food,0.5091,0.151,0.3581,True,routine,False,both_correct
+5e8076dc-82ce-42e7-9371-e56cc9a5989b,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,transport,transport,transport,transport,transport,0.6989,0.0826,0.6163,True,wants,False,both_correct
+2f3e96d4-2383-4f48-8e28-3d8181ec2b10,Shopee Flash Sale Mall,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,shopping,shopping,shopping,food,shopping,0.5065,0.1563,0.3503,True,impulse_online,False,both_correct
+809e340f-4fe3-4fcb-9572-27c80ae86b8a,วินมอเตอร์ไซค์ หน้า MRT,แตะบัตร เอ็มอาร์ที สถานีพระราม 9,transport,transport,transport,transport,transport,0.6763,0.1097,0.5666,True,routine,False,both_correct
+81544b18-b2a0-49c2-9f32-73a458cd894e,ไปรษณีย์ไทย Kerry Express,ชำระเงิน,other,other,transport,food,transport,0.2947,0.2716,0.0231,True,routine,True,baseline_wins_ml_wrong
+8926b38a-e2a0-4fe1-b786-b5ff381c8f6c,FWD Insurance Thailand,โอน,bills,other,shopping,shopping,shopping,0.2755,0.1631,0.1124,True,routine,True,shared_error_both_wrong
+a3221ab8-fa91-42a0-b698-b14a2a93e066,Disney+ Hotstar TH,เน็ตฟลิก Premium รายเดือน 4K,entertainment,entertainment,entertainment,entertainment,entertainment,0.5796,0.1328,0.4468,True,wants,False,both_correct
+1e710961-bf2e-4f2b-b14b-beda79bc6d6c,การไฟฟ้านครหลวง MEA,ค่าบริการอินเทอร์เน็ตบ้านไฟเบอร์,bills,bills,bills,bills,bills,0.7838,0.0621,0.7217,True,routine,False,both_correct
+e84f8db7-485b-40b9-8b00-374dd58d65fd,MRT Bangkok พระราม 9,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.5719,0.1342,0.4377,True,routine,False,both_correct
+4de13453-66d6-4593-8d94-2465ba21f264,Pop Mart Official Store,Apple Watch สายสปอร์ตแฟชั่น,shopping,other,shopping,entertainment,shopping,0.572,0.1199,0.4522,True,impulse_online,False,ml_wins_baseline_wrong
+180c5101-f69c-40d7-9113-7577371551fb,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.7033,0.0732,0.6301,True,impulse_delivery,False,both_correct
+3937fe65-2cc3-4cb1-9eb6-7e03f35fbbe3,วินมอเตอร์ไซค์ หน้า MRT,ยอดตัดบัญชี,transport,transport,transport,transport,transport,0.4554,0.1423,0.3131,True,routine,False,both_correct
+8b2b4510-1f79-4116-88f4-44f85dd28648,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบุญสร้างโรงพยาบาลสงฆ์,other,other,other,food,other,0.5322,0.144,0.3882,True,wants,False,both_correct
+dafa444e-0e82-4420-9bc8-09786d49c4a9,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,food,other,food,food,food,0.6384,0.1075,0.5309,True,wants,False,ml_wins_baseline_wrong
+2c26005a-25c5-4048-bbb8-c2a5398bbef7,CJ Express ซอย 5,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.5645,0.1253,0.4391,True,routine,False,both_correct
+9ef3f550-1b47-44ba-9858-f006b401c44d,MRT Bangkok พระราม 9,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.6098,0.1432,0.4666,True,routine,False,both_correct
+9fcc4460-0989-4879-b4f7-54c16598e148,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.662,0.0908,0.5712,True,routine,False,both_correct
+3a48f6ea-4c6d-4f97-ad3b-be5f2b6a9c07,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.6316,0.1127,0.5189,True,wants,False,both_correct
+8fcd95e7-a6d7-4fbf-8a6f-6c012833ba82,Lineman - ส้มตำแซ่บพรีเมียม,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,food,food,food,food,food,0.7409,0.0691,0.6718,True,impulse_delivery,False,both_correct
+c1928686-6bf8-4d7d-8d61-e06ee10fe633,Watsons สาขา เซ็นทรัล,ยอดตัดบัญชี,shopping,shopping,shopping,food,shopping,0.2561,0.1793,0.0768,True,routine,False,both_correct
+5d9bdad7-f50a-44e5-8814-46375ccf6f07,After You Dessert Cafe,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.7238,0.0702,0.6536,True,wants,False,both_correct
+e3f3f60f-0242-4935-9a99-f37327f96d79,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,shopping,shopping,shopping,shopping,0.663,0.1067,0.5563,True,routine,False,both_correct
+95013c47-cd57-4d23-b60d-733c1db39d55,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6885,0.0899,0.5986,True,wants,False,both_correct
+90243d7e-dc71-44d3-a233-d26c1cf69f3e,CJ Express ซอย 5,เกาเหลาเลือดหมูข้าวเปล่า,food,food,food,food,food,0.4649,0.1706,0.2943,True,routine,False,both_correct
+7992bf24-0c86-469e-91c1-a17bca11de1d,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,shopping,transport,0.4508,0.1374,0.3134,True,wants,False,ml_wins_baseline_wrong
+7a4429ac-c985-4684-8ca9-2dccec10fd4a,การไฟฟ้านครหลวง MEA,ต่อประกันภัยรถยนต์ชั้น 1,bills,bills,bills,bills,bills,0.618,0.1,0.518,True,routine,False,both_correct
+79f7a4d0-1b7a-455e-9416-377fd7db1cf2,Greyhound Cafe,เคลียร์ยอด,food,food,entertainment,entertainment,entertainment,0.2307,0.2019,0.0289,True,wants,True,baseline_wins_ml_wrong
+d7db96a1-f408-4665-b3b4-bb692fb1c9e3,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,shopping,bills,shopping,shopping,shopping,0.6931,0.0784,0.6146,True,routine,False,ml_wins_baseline_wrong
+7cfa8d2a-6fe2-4955-badf-cd1a657dd5e8,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.6367,0.1103,0.5264,True,impulse_delivery,False,both_correct
+8fee5db4-46f9-41dd-8d0e-834053cf35de,CJ Express ซอย 5,เส้นเล็กน้ำตกหมูพิเศษ,food,other,food,food,food,0.5823,0.1198,0.4625,True,routine,False,ml_wins_baseline_wrong
+33c0bc10-9606-469a-9ad4-a28743b76434,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,other,other,other,other,other,0.6267,0.1115,0.5152,True,wants,False,both_correct
+fa9d593a-d966-4f7d-98af-a046224f95b2,Drive Car Rental Thailand,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,other,transport,shopping,transport,0.5679,0.1277,0.4402,True,wants,False,ml_wins_baseline_wrong
+c6092cde-c0c3-485f-91f7-55f07552ceaf,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,transport,shopping,0.558,0.1283,0.4297,True,routine,False,ml_wins_baseline_wrong
+7d107c67-9b17-4bc8-8649-95cdd79993e1,ZARA Siam Paragon,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,shopping,shopping,food,shopping,0.715,0.0883,0.6267,True,wants,False,both_correct
+80989827-5503-48a2-8263-58755aac5f02,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.6266,0.1063,0.5202,True,impulse_delivery,False,both_correct
+7efc0556-9986-466f-b796-ce2ec09d22b7,M-Flow ทล.9 กรมทางหลวง,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,transport,transport,transport,transport,transport,0.5411,0.1328,0.4084,True,routine,False,both_correct
+a209fde4-86ce-4248-8a8e-3530257aab54,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+cfa223d4-c007-40a0-9f6a-685975317e31,Greyhound Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,food,food,food,food,food,0.6706,0.0929,0.5778,True,wants,False,both_correct
+d2ed4a7b-171d-4841-bb52-c39ddd2c16f5,Daiso Japan 60 บาท,ซื้อของใช้จำเป็นในห้องน้ำ,shopping,bills,shopping,shopping,shopping,0.6788,0.0981,0.5808,True,routine,False,ml_wins_baseline_wrong
+41dd1f48-01c8-41d6-8c08-272a7bff95e7,Sushi Masa Thonglor,ชำระเงิน,food,other,shopping,food,shopping,0.2776,0.2612,0.0164,True,wants,True,shared_error_both_wrong
+452c467b-d7fe-4430-bbf9-75d38a0433cd,Ticketmelon Concerts,Netflix Premium รายเดือน 4K,entertainment,entertainment,entertainment,entertainment,entertainment,0.5369,0.1164,0.4205,True,wants,False,both_correct
+66e70a08-a29c-4b62-8ca2-a6043022587a,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,food,food,food,food,food,0.5945,0.1268,0.4677,True,impulse_delivery,False,both_correct
+da82a1cb-9beb-4a3b-a122-6619df9d335c,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมัน E20 รถยนต์ส่วนตัว,transport,transport,transport,transport,transport,0.5303,0.1329,0.3973,True,routine,False,both_correct
+2356b27b-06c3-4078-931b-64dffb7f5a26,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,food,food,food,food,food,0.6952,0.0859,0.6092,True,wants,False,both_correct
+9d0725e6-1eb1-4fb0-8e60-846278160c78,Drive Car Rental Thailand,จ่ายเงิน,transport,other,entertainment,shopping,entertainment,0.3001,0.2162,0.0839,True,wants,True,shared_error_both_wrong
+03fd29ec-71b2-4674-a610-f90fe4b59fb5,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.5522,0.1434,0.4088,True,wants,False,both_correct
+815ca6b7-3f13-4fad-90ff-af2dc36dbbb5,Disney+ Hotstar TH,PlayStation Plus Member,entertainment,entertainment,entertainment,entertainment,entertainment,0.7858,0.0552,0.7306,True,wants,False,both_correct
+2e289ec1-061b-479a-8e17-d68839e218bd,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,shopping,shopping,shopping,shopping,shopping,0.7147,0.0838,0.6309,True,wants,False,both_correct
+742575f1-d48b-491f-9a26-cfc147e186ce,AIA Life Insurance Post,โอนค่าเช่าคอนโดประจำเดือน,bills,other,bills,bills,bills,0.7612,0.0524,0.7088,True,routine,False,ml_wins_baseline_wrong
+21597015-d69f-403b-951a-9bf0fb38949f,Eveandboy Mega Bangna,พร้อมเพย์,shopping,shopping,food,entertainment,food,0.2635,0.2334,0.0301,True,wants,True,baseline_wins_ml_wrong
+0f1e7f97-1dfe-440f-8f08-a4721831c7a0,วินมอเตอร์ไซค์ หน้า MRT,ยอดตัดบัญชี,transport,transport,transport,transport,transport,0.4554,0.1423,0.3131,True,routine,False,both_correct
+54e6e5c6-765f-4db3-ac7f-b6403ce334d6,Watsons สาขา เซ็นทรัล,ผลไม้นำเข้าและนมจืด,shopping,shopping,shopping,shopping,shopping,0.5596,0.1677,0.3919,True,routine,False,both_correct
+d5ed9174-0577-41af-94ee-b9dae0c6f6c9,Lineman - ส้มตำแซ่บพรีเมียม,เคลียร์ยอด,food,food,food,food,food,0.4694,0.1235,0.3458,True,impulse_delivery,False,both_correct
+1f858a52-a772-4ac3-ae0a-117d355bc664,วินมอเตอร์ไซค์ หน้า MRT,Easy Pass เติมเงินทางด่วน,transport,transport,transport,transport,transport,0.7973,0.0733,0.724,True,routine,False,both_correct
+d428655f-00bd-4838-b623-c08b9f18d906,After You Dessert Cafe,ชาบูหม้อไฟหมาล่าพรีเมียม,food,food,food,food,food,0.7238,0.0702,0.6536,True,wants,False,both_correct
+10155224-5eb2-4d9f-acd8-015bd3afc9c1,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,other,other,other,food,other,0.5496,0.1613,0.3883,True,wants,False,both_correct
+d318a127-4730-4236-a7eb-7e88fdd10ae2,M-Flow ทล.9 กรมทางหลวง,M-Flow ชำระค่าผ่านทางด่วน,transport,transport,transport,transport,transport,0.5255,0.1542,0.3713,True,routine,False,both_correct
+228d11f9-08f2-457f-b3eb-de336d998c45,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,shopping,transport,0.4508,0.1374,0.3134,True,wants,False,ml_wins_baseline_wrong
+018b2c91-8d9f-4ba0-967d-2adf214d77c6,วินมอเตอร์ไซค์ หน้า MRT,Easy Pass เติมเงินทางด่วน,transport,transport,transport,transport,transport,0.7973,0.0733,0.724,True,routine,False,both_correct
+6e6f9adf-b5d8-4ff7-bb87-56f22286505a,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,shopping,shopping,shopping,shopping,shopping,0.7147,0.0838,0.6309,True,wants,False,both_correct
+d5cebaa3-b018-4f4a-991c-9bfdc70ea4f1,Eveandboy Mega Bangna,โคมไฟมินิมอลแต่งโต๊ะทำงาน,shopping,shopping,shopping,food,shopping,0.6398,0.1135,0.5262,True,wants,False,both_correct
+4adf6949-4928-4bdd-b469-d89d8370bdb8,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.6367,0.1103,0.5264,True,impulse_delivery,False,both_correct
+2d080e5a-c888-4acb-89bb-bceab4f78b91,AIA Life Insurance Post,ค่าเน็ตบ้านรายเดือน 3BB,bills,bills,bills,bills,bills,0.8475,0.0427,0.8048,True,routine,False,both_correct
+e3fa82d3-26d1-4f1e-98ad-e97ca20e530a,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,food,transport,0.5106,0.1658,0.3449,True,wants,False,ml_wins_baseline_wrong
+1b7a5c57-f461-4f52-a877-e543774f5863,Ticketmelon Concerts,Spotify Individual Subscription,entertainment,entertainment,entertainment,entertainment,entertainment,0.4753,0.148,0.3273,True,wants,False,both_correct
+4deb7df8-bd56-4c25-b2a7-d8b0d77713b7,Drive Car Rental Thailand,โอนเงิน,transport,other,other,entertainment,other,0.5115,0.1384,0.3731,True,wants,True,shared_error_both_wrong
+d2451d2f-cff2-455b-b92a-006fb659352e,GrabFood - Bonchon Chicken,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,food,food,food,food,food,0.5579,0.1241,0.4338,True,impulse_delivery,False,both_correct
+784faf87-3f3c-42e7-81d3-730b2d9abf25,Pop Mart Official Store,ชำระเงิน,shopping,other,shopping,shopping,shopping,0.4358,0.1697,0.2661,True,impulse_online,False,ml_wins_baseline_wrong
+cbd4e109-0991-4f49-9cca-c95bfbf852e8,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,transport,other,transport,food,transport,0.5106,0.1658,0.3449,True,wants,False,ml_wins_baseline_wrong
+8319402c-87f6-472f-9fb2-04f5e91f883a,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,food,food,food,food,food,0.6358,0.1119,0.5239,True,routine,False,both_correct
+a562ca84-33d8-4f00-8d62-0ebc868b5e3e,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,transport,transport,transport,transport,transport,0.5522,0.1434,0.4088,True,wants,False,both_correct
+e5dba622-2f4e-4dbb-9256-f5e440913571,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.6608,0.0911,0.5696,True,routine,False,both_correct
+39368fca-5b24-4329-a8fe-fbfa668ac135,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+d5c4399f-9979-43fa-b65d-1c38d6854f8f,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,shopping,shopping,shopping,shopping,shopping,0.5175,0.1599,0.3576,True,impulse_online,False,both_correct
+935ba817-3216-4572-8c29-40b239286598,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,shopping,shopping,shopping,shopping,shopping,0.6265,0.1345,0.492,True,routine,False,both_correct
+a27a0be4-1f74-4585-ad7a-dc1a34916fcb,วินมอเตอร์ไซค์ หน้า MRT,ค่ารถตู้ไปทำงานอนุสาวรีย์,transport,transport,transport,transport,transport,0.6891,0.0733,0.6158,True,routine,False,both_correct
+345d0836-7a3c-453a-b6ec-e71023a7ffaf,Greyhound Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6885,0.0899,0.5986,True,wants,False,both_correct
+44c69859-7a3c-4a4c-a123-9cef5a30f68c,AIA Life Insurance Post,ชำระบิลบัตรเครดิตรายเดือน,bills,bills,bills,bills,bills,0.7651,0.0554,0.7097,True,routine,False,both_correct
+a4b4cb87-4ad8-4593-99a8-5f580c3759c4,ร้านข้าวแกงป้าพร,ข้าวมันไก่เนื้อน่องไม่หนัง,food,food,food,food,food,0.7258,0.0801,0.6457,True,routine,False,both_correct
+63c45a1a-395f-45b8-aab1-06bf9e37fc54,ไปรษณีย์ไทย Kerry Express,ส่งพัสดุเอกสารด่วน,other,other,other,other,other,0.4791,0.2092,0.2699,True,routine,False,both_correct
+d6351206-54f8-45ae-900c-6b55b84e366b,Lineman - ส้มตำแซ่บพรีเมียม,ชานมไข่มุก golden bubble x2,food,food,food,food,food,0.7656,0.0617,0.7039,True,impulse_delivery,False,both_correct
+d6132d9f-8233-4a83-8501-f60ab61ebc4f,Greyhound Cafe,ไก่ทอด KFC บักเก็ตพิเศษ,food,food,food,food,food,0.7041,0.0713,0.6328,True,wants,False,both_correct
+d71882d2-8571-4a3f-890f-2e516c1f8a07,Glow Nightclub Thonglor,xxx,entertainment,other,food,entertainment,food,0.2632,0.2247,0.0384,True,wants,True,shared_error_both_wrong
+35eaf734-bbb0-4d84-8326-5f3b76bf6229,Disney+ Hotstar TH,ตั๋วชมภาพยนตร์รอบค่ำ,entertainment,entertainment,entertainment,entertainment,entertainment,0.8041,0.0542,0.75,True,wants,False,both_correct
+27750818-30e6-4339-8643-59f1229e34ca,AIA Life Insurance Post,เบี้ยประกันสุขภาพรายเดือน,bills,bills,bills,bills,bills,0.4724,0.1203,0.352,True,routine,False,both_correct
+6d32f2d1-029a-4fad-9b05-fa624cc1d93a,AIA Life Insurance Post,ชำระค่าน้ำประปานครหลวง,bills,bills,bills,bills,bills,0.6946,0.0888,0.6058,True,routine,False,both_correct
+029da69c-4b6b-4f87-a8db-325a7822726d,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,food,food,food,food,food,0.6707,0.1083,0.5624,True,routine,False,both_correct
+95c5197c-df39-4a1c-be0c-e2f0faf31b5d,Daiso Japan 60 บาท,กล่องเก็บของและอุปกรณ์อเนกประสงค์,shopping,bills,shopping,food,shopping,0.6399,0.1177,0.5222,True,routine,False,ml_wins_baseline_wrong
+bef511d7-a95d-451a-8004-43ea48676a81,Drive Car Rental Thailand,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,transport,other,transport,shopping,transport,0.5679,0.1277,0.4402,True,wants,False,ml_wins_baseline_wrong
+00e23323-2fec-468b-96cd-62e0e7a43e6e,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,food,food,food,food,food,0.737,0.0728,0.6642,True,wants,False,both_correct
+adfb855a-f997-4ea3-8e63-ca915f88c806,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,shopping,bills,shopping,shopping,shopping,0.6009,0.1216,0.4793,True,routine,False,ml_wins_baseline_wrong
+e679bdaa-9bdf-4efb-96fd-359542aef833,Eveandboy Mega Bangna,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,shopping,shopping,shopping,shopping,shopping,0.6777,0.1049,0.5728,True,wants,False,both_correct
+f72b6efd-4a90-483e-87f1-1a2ed68e8ea2,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,shopping,shopping,shopping,shopping,shopping,0.6438,0.097,0.5468,True,wants,False,both_correct
+df9105c2-6630-414d-b812-e32d55df943b,GrabFood - Bonchon Chicken,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,food,food,food,food,food,0.6484,0.1118,0.5366,True,impulse_delivery,False,both_correct
+e181091d-57bf-4899-93b1-d94ca9454862,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,food,food,food,food,food,0.6608,0.0911,0.5696,True,routine,False,both_correct
+7ab2c2ce-ceb9-47ab-a3ba-04d93ee7c4a5,Pop Mart Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,shopping,other,shopping,shopping,shopping,0.649,0.1352,0.5138,True,impulse_online,False,ml_wins_baseline_wrong
+9cdbd388-3e22-4df2-a239-5cf1ea8b7337,CJ Express ซอย 5,กะเพราหมูกรอบไข่ดาวไม่สุก,food,other,food,food,food,0.5431,0.1349,0.4082,True,routine,False,ml_wins_baseline_wrong
+d5b3482f-f948-490f-859e-3e457ba5c9f5,Sushi Masa Thonglor,พร้อมเพย์,food,other,food,entertainment,food,0.2914,0.2601,0.0312,True,wants,False,ml_wins_baseline_wrong
+ad384cc9-f2a5-444a-87e2-5de8b8392142,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6173,0.1108,0.5065,True,wants,False,both_correct
+f93b51b7-f15f-4bb9-8619-c98aef2dc635,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,shopping,shopping,shopping,shopping,shopping,0.4597,0.1722,0.2875,True,impulse_online,False,both_correct
+87e2b24f-bf43-492c-99e5-c22e4e0dcb0e,Shopee Flash Sale Mall,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,shopping,shopping,shopping,shopping,shopping,0.4781,0.1884,0.2897,True,impulse_online,False,both_correct
+3d651c01-3256-4337-865b-3f28d4a048af,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,other,other,other,food,other,0.5496,0.1613,0.3883,True,wants,False,both_correct
+e0ff9653-02df-401a-8a52-977b28364ed9,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,shopping,transport,0.4508,0.1374,0.3134,True,wants,False,ml_wins_baseline_wrong
+0d87e521-922a-4469-9219-83d7077c77e0,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,food,entertainment,food,food,food,0.7159,0.0619,0.654,True,wants,False,ml_wins_baseline_wrong
+cf9fd597-11fd-43d3-b34a-21d5b6a1d2dd,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,food,food,food,food,food,0.4687,0.1523,0.3164,True,routine,False,both_correct
+c5b2c601-0ebc-4e47-9b7d-bf6aa2b188c2,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6885,0.0899,0.5986,True,wants,False,both_correct
+1ef267d1-3039-49fc-a239-4b4fcef4b1cc,Greyhound Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,food,food,food,food,food,0.6885,0.0899,0.5986,True,wants,False,both_correct
+23920c04-2e2a-42ba-87bc-db33be3c0867,Lineman - ส้มตำแซ่บพรีเมียม,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,food,food,food,food,food,0.758,0.0599,0.6981,True,impulse_delivery,False,both_correct
+6202ff9d-2c0f-4eb5-b998-d006e7707f7c,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,transport,other,transport,shopping,transport,0.4508,0.1374,0.3134,True,wants,False,ml_wins_baseline_wrong
+465f583d-5ac5-43cc-8f0b-e2a5610db202,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,transport,transport,transport,entertainment,transport,0.6939,0.0832,0.6107,True,wants,False,both_correct
+48f06559-3c75-4be8-949e-3bbe681dba00,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,shopping,food,shopping,transport,shopping,0.558,0.1283,0.4297,True,routine,False,ml_wins_baseline_wrong
+2363bc05-c665-4997-b4eb-60395c09d2b8,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,food,food,food,food,food,0.5945,0.1268,0.4677,True,impulse_delivery,False,both_correct
+a59ae9fb-0486-4542-b158-9a4bcaa4dd9b,Disney+ Hotstar TH,Disney+ Hotstar รายปี,entertainment,entertainment,entertainment,entertainment,entertainment,0.7133,0.0784,0.6348,True,wants,False,both_correct
