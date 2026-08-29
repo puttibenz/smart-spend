@@ -198,7 +198,7 @@ TYPO_DICT = {
 
 AMBIGUOUS_MEMOS = [
     "โอน", "จ่ายเงิน", "พร้อมเพย์", "xxx", "คืนเพื่อน", "จ่ายผ่านแอป",
-    "ยอดตัดบัญชี", "ชำระเงิน", "โอนเงิน", "เคลียร์ยอด", ""
+    "ยอดตัดบัญชี", "ชำระเงิน", "โอนเงิน", "เคลียร์ยอด", "-", "ไม่ระบุ"
 ]
 
 def select_stratified_unseen_merchants(rng: random.Random, unseen_pct: float) -> tuple[set, dict]:
