@@ -1,312 +1,658 @@
-transaction_id,date,time,merchant,memo,amount,category,is_wants,is_impulse,processed_text
-52cc8ca4-8c92-432b-b419-5439ffcaf35b,2025-03-27,23:19,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,206.39,other,True,True,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-10bf9bb8-7f3c-4d0b-bcc3-4db3096d84c8,2025-02-26,09:32,AirAsia,ตั๋วเครื่องบินไปเที่ยวเชียงใหม่,2544.19,transport,True,False,airasia ตั๋ว เครื่องบิน ไปเที่ยว เชียงใหม่
-ad8ac49d-14e6-4d08-9fc4-39fd193fd2fb,2025-12-31,16:52,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,57.39,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-5d423361-afb8-4bd4-964b-9ae82b044325,2025-07-14,20:33,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,71.19,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-a0b85102-2d83-4614-b336-bb2086078bc0,2025-04-06,09:32,FWD Insurance,เบี้ยประกันชีวิตและสุขภาพรายเดือน,2474.32,bills,False,False,fwd insurance เบี้ย ประกันชีวิต และ สุขภาพ รายเดือน
-2d0a8242-1c30-42e6-b7e1-eef08da4eefe,2026-01-01,16:18,การประปานครหลวง MWA,ชำระค่าน้ำประปา,177.44,bills,False,False,การประปา นครหลวง mwa ชำระ ค่า น้ำประปา
-a4b6c4bd-57a0-438f-9415-164b011a3e7a,2025-07-22,11:39,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,269.73,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-028d45ed-259e-4e6a-b21f-b2152e527706,2025-12-18,09:48,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,468.56,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-4858279e-4b8f-4be0-9291-2677fe4a9796,2025-09-23,20:46,YouTube Premium,YouTube Premium รายเดือน,179.0,entertainment,True,False,youtube premium youtube premium รายเดือน
-ac01ef8c-df74-4a47-9cea-e2beae90734e,2025-05-20,09:05,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,1020.82,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-8442907d-add3-46b3-bd82-c6f647d9d618,2025-11-21,08:52,AIS Fibre / 3BB,ค่าบริการอินเทอร์เน็ตบ้าน,702.94,bills,False,False,ais fibre 3 bb ค่าบริการ อินเทอร์เน็ต บ้าน
-0c72780b-0d79-4929-9fef-8cf59e55a533,2025-10-12,09:40,After You Dessert Cafe,Shibuya Honey Toast,281.04,food,True,False,after you dessert cafe shibuya honey toast
-acc91a98-968a-488a-93f2-f6814954d38e,2025-10-19,13:52,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,951.49,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-855be69a-235d-40f0-960a-e35a0979ea61,2025-01-31,17:22,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,381.99,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-5010c865-fe2f-4b47-98d2-57f37f953bcc,2025-02-16,23:02,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,123.22,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-ca558c76-6881-4298-93c8-0a5c3afe4775,2025-05-29,08:00,Boots,ซื้อยาแก้แพ้และวิตามินซี,264.18,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-7a864942-1d4e-4a18-805b-7e6f17f00d99,2025-07-24,19:12,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,999.01,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-30d949fc-2166-44d9-8d6d-c05e974b8cd2,2025-03-21,10:43,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,78.94,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-36aa423f-6331-4705-869d-eaa6e03b2350,2025-12-14,14:39,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,755.91,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-ef012918-3d08-466d-b089-8fe59f32e673,2025-09-12,20:02,After You Dessert Cafe,Shibuya Honey Toast,344.02,food,True,False,after you dessert cafe shibuya honey toast
-a90dd822-8a9d-473e-9d47-11b9d80386d2,2025-11-07,10:09,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,61.18,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-0bac7527-c7d4-4396-b859-28db6c70db6d,2025-04-06,19:49,AirAsia,ตั๋วเครื่องบินไปเที่ยวเชียงใหม่,2264.66,transport,True,False,airasia ตั๋ว เครื่องบิน ไปเที่ยว เชียงใหม่
-b5d4c9f3-f338-4e46-aad2-da738abca7b6,2025-01-28,17:00,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,62.35,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-d9ec6ceb-a31b-4490-bdb6-2120c3141861,2025-01-27,13:29,วัดสระเกศราชวรมหาวิหาร,ทำบุญค่าน้ำค่าไฟวัด,80.29,other,False,False,วัด สระ เกศ ราชวรมหาวิหาร ทำบุญ ค่าน้ำค่าไฟ วัด
-18b4c8ca-109d-4527-a138-f49e01590939,2025-06-28,20:33,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,55.65,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-97c699ba-d45c-46f8-b4e8-b0ffa02b33eb,2025-06-06,16:56,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,63.09,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-c39295eb-572a-4eb7-a809-067466c3d91d,2025-05-21,18:56,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,579.18,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-c0ac1372-b54e-44b8-aba6-f3ddc2578c13,2025-11-17,19:52,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,870.87,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-318e30c3-7390-4784-b10d-6a61630547f7,2025-09-21,02:57,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1351.94,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-83fd7e79-3cc5-470a-b19b-896f3c6146bd,2025-01-31,13:13,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,74.49,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-3d4afcdb-68b6-4fac-b7fe-881bd1171cd1,2025-03-17,18:50,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,83.78,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-4da800a4-87a9-4c39-bae3-b5d6d7680de1,2025-06-28,11:57,BTS Skytrain,เติมเงินบัตร BTS เที่ยวเดินทาง,479.39,transport,False,False,bts skytrain เติม เงิน บัตร bts เที่ยว เดินทาง
-0d951849-c595-455f-94f3-ab1a043ac457,2025-08-20,16:36,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,312.28,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-05b12ba7-c8c2-4bf4-9d20-556b5241eab8,2025-03-06,15:02,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,55.72,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-32c491fd-6ee0-49f9-bd0f-78b8dfc9ae7e,2025-10-17,17:29,Watsons,ซื้อยาสีฟัน แชมพู สบู่,289.03,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-ac31d4ee-beab-434c-8990-1862d972a4b4,2025-11-08,22:40,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน,698.3,bills,False,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน
-b7baa349-fe1f-4461-a2c7-cc481b774e33,2025-04-10,17:27,Boots,ซื้อยาแก้แพ้และวิตามินซี,195.07,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-1a87c0da-d6cd-40f6-9557-45c4a41f4b1f,2025-09-05,09:56,วัดสระเกศราชวรมหาวิหาร,ทำบุญค่าน้ำค่าไฟวัด,57.0,other,False,False,วัด สระ เกศ ราชวรมหาวิหาร ทำบุญ ค่าน้ำค่าไฟ วัด
-2318946d-5585-4541-8ef1-eb5effd889e4,2025-06-04,07:41,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,81.98,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-bd122736-319a-438d-8844-b5084b2c9cb3,2025-04-20,09:28,Watsons,ซื้อยาสีฟัน แชมพู สบู่,311.86,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-5d8aeced-7729-4101-8391-0998a858df46,2025-07-21,12:56,MK Restaurants,สุกี้ชุดครอบครัว + เป็ดย่าง,1076.81,food,True,False,mk restaurants สุกี้ ชุด ครอบครัว เป็ด ย่าง
-d5a54146-627a-4ad2-910e-a83b171cf395,2025-09-14,23:39,Watsons,ซื้อยาสีฟัน แชมพู สบู่,267.51,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-135bb2ce-b0b5-4124-82f2-24073309341f,2025-01-01,10:43,Watsons,ซื้อยาสีฟัน แชมพู สบู่,280.38,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-e1039a72-9469-48bd-b6f4-db4b8d1e5308,2026-01-01,12:59,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,316.38,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-bf9e43dd-c4bf-4719-b6ee-b93d9a8068ac,2025-02-24,22:47,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,57.6,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-31cc1cbb-3545-4c50-b0ef-39f03fecc720,2025-12-24,07:42,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,8867.62,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-24901899-c286-4ef6-b57c-5ca319560b61,2025-08-26,17:45,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,240.93,transport,True,True,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-e9b4c576-ba91-4715-bf49-5986d38e39b8,2025-01-30,07:05,After You Dessert Cafe,Shibuya Honey Toast,338.39,food,True,False,after you dessert cafe shibuya honey toast
-7ab342a7-dc81-4024-9745-dbae1cae7399,2025-07-09,14:52,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,292.57,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-ebcc054f-d503-4b4f-a5ec-6a44fe5d61ba,2025-10-13,19:53,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,54.72,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-28f55b72-2966-4c5c-86ef-19598ca2db04,2025-09-09,22:31,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1538.14,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-2c74b48b-cd97-4ab2-9828-ed0b6b0f3622,2025-09-13,19:57,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1242.53,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-a9de06d3-2658-4196-be6a-dd62a2a704c5,2025-09-05,21:01,Starbucks,Iced Caramel Macchiato Venti,183.57,food,True,False,starbucks iced caramel macchiato venti
-edee29fd-59b0-478b-b0c9-2626d0dd134f,2025-07-08,12:29,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1358.6,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-fa66a8ca-3e28-4f8b-97e5-4ffe4cc9735c,2025-06-02,08:54,AirAsia,ตั๋วเครื่องบินไปเที่ยวเชียงใหม่,2331.6,transport,True,False,airasia ตั๋ว เครื่องบิน ไปเที่ยว เชียงใหม่
-afc4f31e-c4f8-4bf0-8766-9d475014beec,2025-07-29,09:07,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,477.84,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-ccd8d864-1780-4cc7-bd25-605442ff4d12,2025-11-24,16:38,MK Restaurants,สุกี้ชุดครอบครัว + เป็ดย่าง,1183.65,food,True,False,mk restaurants สุกี้ ชุด ครอบครัว เป็ด ย่าง
-1a18a59a-55fe-4ac7-8483-0491e8d45a93,2025-10-15,23:53,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,70.72,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-26791c33-349c-4167-a91b-47fb990b04ba,2025-03-13,16:41,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,897.95,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-03d0b611-79b9-4a4d-b72f-d80292619296,2025-06-02,09:06,AIS Fibre / 3BB,ค่าบริการอินเทอร์เน็ตบ้าน,651.83,bills,False,False,ais fibre 3 bb ค่าบริการ อินเทอร์เน็ต บ้าน
-2a34fa43-11ea-4860-9ec4-fe019c1c8dab,2025-08-17,23:21,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,57.49,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-79e35249-50be-4bc0-891d-d541307aa071,2025-05-20,21:58,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,811.53,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-3dee44b8-5850-4f37-a168-326efd727b5d,2025-05-25,16:45,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,1158.19,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-cdc340c5-0514-44d4-bd26-c095f08b222d,2025-06-26,13:37,The Beer Bar Sukhumvit,ดื่มคราฟต์เบียร์สังสรรค์กับเพื่อน,847.87,entertainment,True,True,the beer bar sukhumvit ดื่ม คราฟต์ เบียร์ สังสรรค์ กับ เพื่อน
-b7f3b1b8-ff8c-4e00-980b-1496c46b4c62,2025-07-25,18:57,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,298.28,transport,True,True,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-93be345f-ea60-4daf-b483-7487a091bc00,2025-06-07,20:06,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,287.51,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-264df639-3dfa-422c-b1b9-0288faa616ac,2025-02-23,00:19,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,376.83,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-d9fedf9f-6f55-44eb-97e6-e489c69da474,2025-03-30,08:55,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,195.88,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-78ea0811-ab25-4321-a08c-70bf311a1f83,2025-08-31,02:29,Boots,ซื้อยาแก้แพ้และวิตามินซี,227.99,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-c7e05ba6-7125-40a4-ab1c-9a5234c2b154,2025-01-30,18:30,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,417.65,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-06c25f64-ceac-45f7-bb0d-acb5aa0f8dde,2025-05-08,11:02,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,69.92,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-e83f2a6c-a103-4d5e-b2f6-be4684e0e0a5,2025-04-16,19:39,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-45e2788a-7881-42d6-98b9-b2cabc6f843e,2025-03-04,11:35,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,75.56,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-fa24e959-a08f-4f98-be2d-32a5d536a790,2025-08-22,02:07,Glow Nightclub,ปาร์ตี้ศุกร์หรรษากับเพื่อนร่วมงาน,1999.5,entertainment,True,False,glow nightclub ปาร์ตี้ ศุกร์ หรรษา กับ เพื่อนร่วมงาน
-972802ab-5ae3-4c1c-8860-dbdffb2627d7,2025-04-09,16:30,ATM KBank,ถอนเงินสดใช้จ่ายเบ็ดเตล็ด,625.85,other,False,False,atm kbank ถอน เงินสด ใช้จ่าย เบ็ดเตล็ด
-562132b0-7282-47cb-94cc-198da8f61e0e,2025-03-14,14:29,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,214.71,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-88aac9da-e0d8-4ae3-ac50-d996fd3c3d63,2025-01-04,11:16,IKEA Bangna,โคมไฟแต่งห้องและของตกแต่ง,1039.44,shopping,True,False,ikea bangna โคมไฟ แต่ง ห้อง และ ของ ตกแต่ง
-e8932100-5cdf-46d6-b545-b059c20d0b12,2025-07-14,07:44,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน,688.39,bills,False,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน
-c0ba3031-d0c2-4e4c-98a1-772dff1f1e91,2025-06-11,16:44,The Beer Bar Sukhumvit,ดื่มคราฟต์เบียร์สังสรรค์กับเพื่อน,910.04,entertainment,True,False,the beer bar sukhumvit ดื่ม คราฟต์ เบียร์ สังสรรค์ กับ เพื่อน
-3b9c45da-9537-4831-b1c8-2f4863f4260d,2025-11-07,20:56,Major Cineplex,ตั๋วหนัง IMAX + ป๊อปคอร์นเซ็ต,483.85,entertainment,True,False,major cineplex ตั๋วหนัง imax ป๊อปคอร์น เซ็ต
-7dbcf970-f50c-4fda-8a0d-8e3a4e7eb250,2025-10-17,11:54,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,84.63,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-02794937-34bd-436b-86b5-11ef4a0dfe62,2025-11-02,21:26,ธนาคารกสิกรไทย,โอนเงินคืนเพื่อนค่าอาหารกองกลาง,149.06,other,False,False,ธนาคาร กสิกร ไทย โอน เงิน คืน เพื่อน ค่า อาหาร กองกลาง
-429d498c-f07e-4110-9f0d-ff5396608fde,2025-07-25,17:38,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,556.96,food,True,True,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-31e210ca-31d4-4023-afc1-400571cb7c83,2025-07-02,22:28,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1544.61,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-570cd287-2d1a-4b41-a4e6-23bb788f0559,2025-03-13,19:19,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,529.96,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-f67d88ad-8575-495c-aed6-e6c479fd1921,2025-12-25,09:22,Eveandboy,สกินแคร์และเครื่องสำอางแบรนด์ดัง,2182.28,shopping,True,True,eveandboy ส กิน แคร์ และ เครื่องสำอาง แบรนด์ ดัง
-2d9d16e1-dfa2-46b5-a435-4f910e670a15,2025-12-16,07:14,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,392.82,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-dc516a66-4e55-4fb8-ace4-ccaefd8ec076,2025-01-07,16:53,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,68.98,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-88abf997-26dd-490e-addf-6f816b3f1282,2025-07-22,09:42,The Beer Bar Sukhumvit,ดื่มคราฟต์เบียร์สังสรรค์กับเพื่อน,751.9,entertainment,True,False,the beer bar sukhumvit ดื่ม คราฟต์ เบียร์ สังสรรค์ กับ เพื่อน
-1a82d8dc-4e32-413e-b30b-1a0839f13ec5,2025-05-04,10:32,After You Dessert Cafe,Shibuya Honey Toast,255.1,food,True,False,after you dessert cafe shibuya honey toast
-007fb635-e50b-40a7-a108-c083295b25bc,2025-07-05,14:51,AIS Fibre / 3BB,ค่าบริการอินเทอร์เน็ตบ้าน,681.49,bills,False,False,ais fibre 3 bb ค่าบริการ อินเทอร์เน็ต บ้าน
-86561257-ccb5-4e51-94f2-4c865f05ebf0,2025-01-13,23:43,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,69.92,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-8c42c739-41d2-47ff-b7f7-c6a6bd38f865,2025-11-18,13:05,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,532.52,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-73d89211-76b8-492e-b3ae-b4ccae324068,2025-03-29,19:50,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,492.89,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-0b08e2e2-109b-4473-9008-e08c69877f06,2025-02-08,22:30,ZARA,กางเกงสแล็คและเบลเซอร์,1706.96,shopping,True,False,zara กางเกง สแล็ค และ เบล เซอร์
-cc5b1088-ae49-4f45-8c5a-29d979aa69ce,2025-11-30,19:01,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,678.69,food,True,False,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-81174386-35a2-498c-a0f1-0c3b6451d273,2025-12-19,18:24,Amazon Cafe,Iced Black Coffee,74.81,food,False,False,amazon cafe iced black coffee
-4a15ed3d-b88f-4eca-8577-9d7297925754,2025-02-16,11:24,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1744.86,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-bd875e59-3925-4dd5-8314-465102b5b2e1,2025-02-26,16:50,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,428.85,transport,True,True,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-5661b36e-c211-4a54-8a96-227dcdc6ce90,2025-04-14,11:22,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,50.23,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-cb214b5d-c000-4e45-aa88-93c93a3f09d4,2025-09-03,21:45,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,264.58,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-2fe1ce2d-be4d-46e0-8835-0f1938d60032,2025-07-10,22:53,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,610.61,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-4b65d740-ca5a-4e3d-b1ec-bfe1353c4114,2025-02-28,17:49,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,70.0,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-f52fa8c6-b8ba-49b7-bfa7-43c46bc4bf51,2025-07-13,21:08,Boots,ซื้อยาแก้แพ้และวิตามินซี,238.62,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-31aa93a7-04fb-4efb-9251-d8872598a2a6,2025-09-24,11:12,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,157.89,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-99c51e05-26e7-4486-b3be-bd9e07b528b4,2025-05-13,19:37,MK Restaurants,สุกี้ชุดครอบครัว + เป็ดย่าง,827.43,food,True,False,mk restaurants สุกี้ ชุด ครอบครัว เป็ด ย่าง
-909b3cd7-cbd5-41c5-af23-1d461adc2540,2025-03-03,14:52,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,78.61,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-9e6161f6-34de-4de9-8704-e14dd73be0a8,2025-09-23,21:47,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,915.45,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-805cd2ee-16cb-44ca-b7b9-42b4726ec2ce,2025-11-23,13:06,AirAsia,ตั๋วเครื่องบินไปเที่ยวเชียงใหม่,3012.61,transport,True,False,airasia ตั๋ว เครื่องบิน ไปเที่ยว เชียงใหม่
-982d35f5-3cf5-4d6a-a6de-929423e32463,2025-01-30,14:44,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน,628.18,bills,False,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน
-9d2ff791-4a03-4ed9-9194-d2f76bba44b1,2025-12-09,21:31,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-ec6f4636-eab4-49a0-89cf-c6666f345482,2025-03-29,11:51,Watsons,ซื้อยาสีฟัน แชมพู สบู่,275.61,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-8161e284-e160-4c8a-941c-1b7925029464,2025-10-23,11:35,Amazon Cafe,Iced Black Coffee,69.55,food,False,False,amazon cafe iced black coffee
-d8e03469-aa56-40fd-b431-a1f4dd48d2fe,2025-11-25,09:15,FWD Insurance,เบี้ยประกันชีวิตและสุขภาพรายเดือน,2178.3,bills,False,False,fwd insurance เบี้ย ประกันชีวิต และ สุขภาพ รายเดือน
-14a552dc-467f-4240-b555-717cdad36367,2025-06-26,14:04,MK Restaurants,สุกี้ชุดครอบครัว + เป็ดย่าง,1002.88,food,True,True,mk restaurants สุกี้ ชุด ครอบครัว เป็ด ย่าง
-935014ac-a2e6-4514-abdf-eddabb291175,2025-12-09,21:24,After You Dessert Cafe,Shibuya Honey Toast,360.53,food,True,False,after you dessert cafe shibuya honey toast
-413b0c95-60c1-46e8-a758-6f7d63c32e44,2025-08-18,11:12,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,282.54,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-2c84502a-da41-4f76-aa07-19ed9b2eeb3c,2025-01-24,15:21,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,490.29,food,True,False,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-12e5ac84-a012-4d75-b44b-fbdecc27b291,2025-05-03,07:14,ธนาคารกสิกรไทย,โอนเงินคืนเพื่อนค่าอาหารกองกลาง,290.2,other,False,False,ธนาคาร กสิกร ไทย โอน เงิน คืน เพื่อน ค่า อาหาร กองกลาง
-74307d38-a99a-453c-a82a-54071469dd3f,2025-03-19,20:44,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,837.49,food,True,False,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-2549fea1-e0dd-4b4c-ad08-1898003df21a,2025-11-15,15:38,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,299.85,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-315717e5-48d8-4054-a27d-4579c91761bd,2025-08-09,09:46,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,6839.51,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-881a052f-5ad4-427f-badd-8ca9e9799286,2025-01-27,14:12,วัดสระเกศราชวรมหาวิหาร,ทำบุญค่าน้ำค่าไฟวัด,56.31,other,False,False,วัด สระ เกศ ราชวรมหาวิหาร ทำบุญ ค่าน้ำค่าไฟ วัด
-eb5ee28d-a4ee-4b60-a79f-1fbe129fff7e,2025-03-19,22:33,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,59.19,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-de6400c6-67c1-484b-a985-3ae92e2eb5d0,2025-12-15,11:24,Shopee Mall,เคสมือถือ + สติกเกอร์ตกแต่ง,197.61,shopping,True,False,shopee mall เคส มือถือ สติกเกอร์ ตกแต่ง
-ad3a0c9b-ca88-430d-92f8-90cf337b99d3,2025-03-04,16:15,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,297.69,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-69f96c51-2294-412f-a81e-a76f46603189,2025-07-05,15:04,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,69.91,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-a62f65aa-23bf-4b61-853f-1c4b55e0c65a,2025-08-30,08:21,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,61.91,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-98f4ca16-724a-4d34-a981-7c11948a1684,2025-12-31,02:21,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,1196.13,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-eec50816-a50c-4fdf-8db8-7cd50cedc2c5,2025-02-08,11:31,SF Cinema,ตั๋วชมภาพยนตร์รอบค่ำ,321.42,entertainment,True,False,sf cinema ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
-d883741c-58a7-4439-9d23-28aa7f7993b7,2025-11-28,08:13,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,810.98,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-c165f7e6-e3b3-4f41-ab96-7f60b7ca22bd,2025-07-06,13:31,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,64.71,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-3f2424e9-d983-4622-b035-abd49a927c98,2025-02-21,08:37,วินมอเตอร์ไซค์ ซอย 23,ค่าวินไปหน้าปากซอย,26.59,transport,False,False,วิน มอเตอร์ไซค์ ซอย 23 ค่า วิน ไป หน้า ปากซอย
-00eccf62-33c2-4f51-9610-1d4c20feec99,2025-11-07,07:29,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,411.08,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-a5314901-0f71-4b87-9e50-ec100004e2e9,2025-08-03,16:21,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน,577.68,bills,False,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน
-b5f762ad-fc4d-4c25-8909-08b169a3251f,2025-12-25,02:46,Shopee Mall,เคสมือถือ + สติกเกอร์ตกแต่ง,323.8,shopping,True,False,shopee mall เคส มือถือ สติกเกอร์ ตกแต่ง
-245c878d-7c82-478b-86f1-5d594e0c035e,2025-09-06,16:52,ธนาคารกรุงไทย,ชำระค่าธรรมเนียมราชการ,76.67,other,False,False,ธนาคาร กรุงไทย ชำระ ค่าธรรมเนียม ราชการ
-d1dc2803-435a-47af-9882-71cf8e4bf587,2025-03-17,15:52,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-bea6b41b-1e77-42e6-8f40-e761efaf468e,2025-07-26,13:54,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1457.87,food,True,True,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-e0bad486-62f8-4361-b65d-fa360329d35e,2025-06-05,12:04,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,64.82,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-c83fe788-1864-48b5-9c50-732496c41c25,2025-10-03,10:48,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1328.86,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-89521cfb-ef1f-4ba6-b6ca-f08f07a1a62e,2025-04-05,17:01,Boots,ซื้อยาแก้แพ้และวิตามินซี,262.84,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-b8fad6a3-3841-4798-ae63-ce8a891717cf,2025-12-09,13:32,Shopee Mall,เคสมือถือ + สติกเกอร์ตกแต่ง,164.64,shopping,True,False,shopee mall เคส มือถือ สติกเกอร์ ตกแต่ง
-d2e5f649-3b93-4fc8-987a-c8be60f6e0c4,2025-05-14,14:40,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,856.26,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-b1f43b05-32f8-485e-8952-405855975a0c,2025-09-03,19:36,IKEA Bangna,โคมไฟแต่งห้องและของตกแต่ง,1436.91,shopping,True,False,ikea bangna โคมไฟ แต่ง ห้อง และ ของ ตกแต่ง
-c07aa4ce-5554-4d9c-9338-b58a91da16e8,2025-04-09,14:36,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,690.37,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-8b371d86-cdca-4543-8f39-b35d49bc3273,2025-05-28,14:41,การประปานครหลวง MWA,ชำระค่าน้ำประปา,243.1,bills,False,False,การประปา นครหลวง mwa ชำระ ค่า น้ำประปา
-c547988b-236e-449f-8980-806569805c6c,2025-05-25,22:58,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,994.22,food,True,True,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-e58f003a-2fd9-4631-af93-6f83678332a7,2025-12-25,19:18,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,7085.23,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-a9b98207-d679-4f63-b95c-e2cfb5051ebb,2025-05-02,09:35,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,64.01,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-d7f0105a-b2ba-4969-8fe0-8527041708b0,2025-11-08,19:37,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,60.92,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-3ab706be-e83a-4012-82a4-502a4abc22e4,2025-09-20,00:53,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,57.3,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-da7685cf-f47b-46f0-8b4f-f7dd0e4890f8,2025-03-27,09:43,วัดสระเกศราชวรมหาวิหาร,ทำบุญค่าน้ำค่าไฟวัด,82.68,other,False,False,วัด สระ เกศ ราชวรมหาวิหาร ทำบุญ ค่าน้ำค่าไฟ วัด
-df11a3b9-976f-4a4a-b613-5ec4093c1340,2025-02-13,08:58,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,1133.14,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-5c183de9-30b5-4199-a743-88b422558949,2025-06-20,22:21,Amazon Cafe,Iced Black Coffee,69.83,food,False,False,amazon cafe iced black coffee
-86a07401-a9ea-4380-af7d-c3e75e8322f3,2025-11-11,10:42,MRT Bangkok,แตะบัตร MRT ไปทำงาน,44.62,transport,False,False,mrt bangkok แตะ บัตร mrt ไป ทำงาน
-dad1fe1b-3504-4568-9962-9000d66c3ec3,2025-09-28,16:56,FWD Insurance,เบี้ยประกันชีวิตและสุขภาพรายเดือน,1862.57,bills,False,False,fwd insurance เบี้ย ประกันชีวิต และ สุขภาพ รายเดือน
-031acae9-468e-4957-9904-6022ba9e8649,2025-05-26,19:37,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,949.71,food,True,True,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-a4b52747-bce3-42ff-b733-42a09d7f9944,2025-03-07,18:39,ปตท. PTT Station,เติมน้ำมันรถมอเตอร์ไซค์,158.37,transport,False,False,ปตท ptt station เติมน้ำมัน รถมอเตอร์ไซค์
-d8a8ecd1-d8dc-4f75-a6d6-38f5370356ba,2025-05-24,21:03,Amazon Cafe,Iced Black Coffee,62.99,food,False,False,amazon cafe iced black coffee
-c0fd67d8-d707-4e16-aa26-72adbaba1dd4,2025-05-28,18:14,SF Cinema,ตั๋วชมภาพยนตร์รอบค่ำ,307.28,entertainment,True,False,sf cinema ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
-c66aca82-37a6-4984-8003-99faf8d86754,2025-07-04,19:36,Boots,ซื้อยาแก้แพ้และวิตามินซี,263.62,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-b71d2a1d-9ff1-44c9-b281-243386c12c2e,2025-08-07,22:30,การประปานครหลวง MWA,ชำระค่าน้ำประปา,141.29,bills,False,False,การประปา นครหลวง mwa ชำระ ค่า น้ำประปา
-cdb96b86-1079-497a-8dbc-c3182a39b75f,2025-11-03,09:05,After You Dessert Cafe,Shibuya Honey Toast,377.56,food,True,False,after you dessert cafe shibuya honey toast
-c0ed51b2-b558-4232-8a28-8062ba13bcdd,2025-10-18,09:29,IKEA Bangna,โคมไฟแต่งห้องและของตกแต่ง,1344.42,shopping,True,False,ikea bangna โคมไฟ แต่ง ห้อง และ ของ ตกแต่ง
-da8392dc-e5a2-4d77-888e-8a98343570cf,2025-09-12,21:31,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,238.63,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-8409341c-0c0b-4418-af84-774132b757d1,2025-11-27,22:13,Watsons,ซื้อยาสีฟัน แชมพู สบู่,208.46,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-64dc6e0a-969e-4e09-aab3-28d2f72bd469,2025-09-02,02:21,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1006.59,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-a74b465e-2d31-4a79-97bd-8fc5a8590005,2025-02-11,14:31,MRT Bangkok,แตะบัตร MRT ไปทำงาน,37.32,transport,False,False,mrt bangkok แตะ บัตร mrt ไป ทำงาน
-f4eb6530-1069-426d-864f-fe121526b1e1,2025-11-22,07:29,ธนาคารกรุงไทย,ชำระค่าธรรมเนียมราชการ,92.8,other,False,False,ธนาคาร กรุงไทย ชำระ ค่าธรรมเนียม ราชการ
-a4541965-a854-4918-adab-fe06c62774df,2025-04-25,16:46,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,872.96,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-4693cf8e-6e23-4edc-bc0e-936f7b94807a,2025-06-25,01:53,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,77.68,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-bd276c65-fa95-4426-95f8-d96d63dab2f0,2025-08-06,02:08,Apple Store Online,Apple Watch สายแฟชั่นใหม่,3010.43,shopping,True,True,apple store online apple watch สาย แฟชั่น ใหม่
-370b269e-44bc-430d-b836-e74d223ce0bb,2025-11-22,20:04,Starbucks,Iced Caramel Macchiato Venti,195.76,food,True,False,starbucks iced caramel macchiato venti
-58567fa9-facc-440e-ab65-1bdd77dd22d8,2025-12-20,20:47,After You Dessert Cafe,Shibuya Honey Toast,249.66,food,True,False,after you dessert cafe shibuya honey toast
-22da6adf-a0ea-4257-b3fa-676e786840fd,2025-07-01,22:11,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,438.82,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-ff5b471b-0524-4916-89bb-cb6aaa9546e9,2025-12-17,14:27,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,689.93,food,True,False,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-f859e3d6-59c7-47e2-8131-49cd32d19396,2025-09-14,15:44,วินมอเตอร์ไซค์ ซอย 23,ค่าวินไปหน้าปากซอย,31.5,transport,False,False,วิน มอเตอร์ไซค์ ซอย 23 ค่า วิน ไป หน้า ปากซอย
-f74c3df8-288d-4239-828e-f5514830309e,2025-06-10,07:33,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,200.35,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-c81bd983-797c-4d45-b47c-819f8b6d0dc5,2025-04-30,12:23,การประปานครหลวง MWA,ชำระค่าน้ำประปา,153.17,bills,False,False,การประปา นครหลวง mwa ชำระ ค่า น้ำประปา
-bac9b154-3149-44ab-9e6d-6f18124d06c2,2025-02-04,16:28,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1043.27,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-c93d2a86-04f7-41c9-9d2b-c4f164d9a48d,2025-06-29,14:51,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,60.72,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-991df459-2615-43da-abbb-d18df2828b4d,2025-07-07,17:31,วินมอเตอร์ไซค์ ซอย 23,ค่าวินไปหน้าปากซอย,37.38,transport,False,False,วิน มอเตอร์ไซค์ ซอย 23 ค่า วิน ไป หน้า ปากซอย
-bc5811eb-2478-45b3-a766-7d9bdf321ebd,2025-02-24,18:04,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,521.15,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-608c8ee7-5da4-40a6-8781-a9eac00c5221,2025-01-03,09:38,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,79.58,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-d741c2bd-14b9-4497-8746-55ec6d59c378,2025-12-20,07:44,วัดสระเกศราชวรมหาวิหาร,ทำบุญค่าน้ำค่าไฟวัด,63.07,other,False,False,วัด สระ เกศ ราชวรมหาวิหาร ทำบุญ ค่าน้ำค่าไฟ วัด
-bd4945fa-b94f-491b-8851-5bbb63784cc7,2025-07-16,08:21,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,261.21,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-7750bede-8dbe-4082-97a0-c7cf44622dfa,2025-09-19,17:26,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,823.03,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-63c01aa4-94a2-4ccb-a373-94aaa2f9f397,2025-08-04,20:19,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,7487.85,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-6bbc38f7-1e48-420a-a508-37ab32738208,2025-04-15,12:35,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1754.28,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-b2559076-1d0a-4f2f-8a6b-04d620ba2afd,2025-02-18,13:37,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,723.28,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-97c007d5-c708-407d-904f-a7786ef66921,2025-03-12,12:37,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,53.42,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-4c39f9ef-72cc-4463-9db9-d6f24152fbbd,2025-10-25,07:54,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,289.13,transport,True,True,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-06ea10ee-a6bc-436b-be23-c5289db4962e,2025-08-17,01:36,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,459.36,food,True,False,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-14abe2f6-81ef-4104-a8ed-1892359d93f5,2025-04-05,15:57,Amazon Cafe,Iced Black Coffee,60.49,food,False,False,amazon cafe iced black coffee
-331010e2-5d7d-4aee-8bc2-19b7504db9e5,2025-06-06,02:26,TikTok Shop,สั่งของเล่น Art Toy กล่องสุ่มตอนไลฟ์ดึก,1058.99,shopping,True,True,tiktok shop สั่ง ของเล่น art toy กล่อง สุ่ม ตอน ไลฟ์ ดึก
-897d72f1-909f-4c56-8812-a423f2ee966a,2025-03-28,13:48,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,54.2,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-0447b032-08eb-4fde-8664-bf965b4015a8,2025-04-28,15:32,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1558.94,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-ae714d4a-b45f-4668-9034-93d532277b56,2025-05-04,02:29,GrabFood - Bonchon,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,578.29,food,True,True,grabfood bonchon ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
-4a12a4a1-2280-40be-9ba9-6da67ee79f9e,2025-04-13,08:36,FWD Insurance,เบี้ยประกันชีวิตและสุขภาพรายเดือน,2177.47,bills,False,False,fwd insurance เบี้ย ประกันชีวิต และ สุขภาพ รายเดือน
-9b233584-5c60-44ce-ab13-f340d46a34de,2025-02-22,23:05,Eveandboy,สกินแคร์และเครื่องสำอางแบรนด์ดัง,1462.42,shopping,True,False,eveandboy ส กิน แคร์ และ เครื่องสำอาง แบรนด์ ดัง
-516b583a-396f-49ad-85a7-c93949d175fa,2025-06-25,09:33,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,856.62,shopping,True,True,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-95dc72d0-c501-41e1-b5ec-b626b84d4fc9,2025-07-28,14:47,Netflix Thailand,Netflix Premium รายเดือน,419.0,entertainment,True,False,netflix thailand netflix premium รายเดือน
-639a68ac-462b-4cb3-8ad9-6af82bd666a4,2025-12-05,09:24,Boots,ซื้อยาแก้แพ้และวิตามินซี,169.49,shopping,False,False,boots ซื้อ ยา แก้ แพ้ และ วิตามิน ซี
-d46e7525-d3dc-45e5-9ac4-89acddc06782,2025-09-25,11:16,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1432.98,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-46e7dc2f-a3f8-4d81-9e4d-6f00ca093071,2025-01-01,00:44,ShopeeFood - McDonald's,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์,274.21,food,True,True,shopeefood mcdonald s เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์
-3c8cbec6-a298-4375-9b68-7c730f2bd34e,2025-09-04,16:41,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1251.13,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-6e9b9706-a386-4a73-a1f1-4b8fd48ec3e4,2025-03-31,22:48,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,57.41,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-b7369464-0b5c-451e-82c5-29e8852f254b,2025-02-27,19:08,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,457.68,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-fee4997f-5e81-4783-9fd2-efb921f0f5f2,2025-10-23,13:09,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,515.46,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-c275aac3-b55b-4bc0-8a5c-c58dd2fa5902,2025-10-02,11:49,BTS Skytrain,เติมเงินบัตร BTS เที่ยวเดินทาง,350.14,transport,False,False,bts skytrain เติม เงิน บัตร bts เที่ยว เดินทาง
-e32f15d4-ec45-4b0f-bdbd-9c3f93e7a78c,2025-12-19,13:00,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1489.32,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-4fa08e3c-7515-47dc-9e12-2a8dbcbb8466,2025-08-31,02:24,Amazon Cafe,Iced Black Coffee,74.34,food,False,False,amazon cafe iced black coffee
-65d75858-3985-4f13-a3a9-ebc5db223f52,2025-10-30,18:28,Watsons,ซื้อยาสีฟัน แชมพู สบู่,207.43,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-73cf9e26-7d33-410c-9f06-334a3d20b12f,2025-05-13,18:14,FWD Insurance,เบี้ยประกันชีวิตและสุขภาพรายเดือน,2088.95,bills,False,False,fwd insurance เบี้ย ประกันชีวิต และ สุขภาพ รายเดือน
-5522cd5a-6673-4584-a485-b585bc5798a2,2025-09-19,15:14,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,520.92,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-e8cb3d77-771c-4aaa-9e70-a3cbb25c4b66,2025-02-25,23:09,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,370.48,transport,True,True,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-5e7a5df5-b46a-44cf-87d6-a78edcb9678d,2025-10-03,07:11,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,335.82,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-119d8c4c-7bb8-4843-b2cb-4973a77037ba,2026-01-01,08:07,Amazon Cafe,Iced Black Coffee,65.08,food,False,False,amazon cafe iced black coffee
-c763245d-4753-4bfb-921c-0ca949bd5cb4,2025-08-20,02:03,GrabFood - ชานมไข่มุก KOI Thé,ชานมไข่มุก golden bubble x2 แก้ว,205.06,food,True,True,grabfood ชา นม ไข่มุก koi th é ชา นม ไข่มุก golden bubble x 2 แก้ว
-0730126a-4667-4487-b9af-dbe4c2bf18e4,2025-06-09,12:32,Amazon Cafe,Iced Black Coffee,64.84,food,False,False,amazon cafe iced black coffee
-9ce01860-4006-4edf-9df3-b3caf3aaa4fb,2025-12-03,17:36,วินมอเตอร์ไซค์ ซอย 23,ค่าวินไปหน้าปากซอย,38.28,transport,False,False,วิน มอเตอร์ไซค์ ซอย 23 ค่า วิน ไป หน้า ปากซอย
-415ece00-4017-4f3a-810a-23b8a703745a,2025-11-05,21:44,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1123.6,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-19cd9b71-e521-4c8e-b4da-8604dc0809eb,2025-02-09,19:24,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,990.41,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-b3f1a8f7-3b3d-4c55-b4db-985f226e9ddc,2025-02-27,08:50,MK Restaurants,สุกี้ชุดครอบครัว + เป็ดย่าง,701.98,food,True,False,mk restaurants สุกี้ ชุด ครอบครัว เป็ด ย่าง
-4fd78b47-6052-4f67-ad62-e4e4c0d4e649,2025-01-10,14:37,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-cddb37ec-e7dd-4f90-9bfa-343aa0316cd1,2025-05-04,01:29,GrabFood - Bonchon,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,413.46,food,True,True,grabfood bonchon ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
-0fe930bb-2f87-4905-880e-8563e5b5f088,2025-03-12,15:08,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,75.67,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-4d173780-9ba8-4e42-9959-ee9d7cc85bca,2025-08-25,09:48,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,9209.77,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-241b7ab2-6a14-4d2e-9b22-113bf68bf0d7,2025-12-11,08:38,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,838.93,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-0af0af51-23b8-465f-a22f-cf76ccfa133f,2025-09-05,14:31,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,63.11,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-1d7cabd7-325a-43ae-99e9-5476fe4c7bea,2025-08-13,16:27,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,65.19,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-141cc811-ea9c-4955-91d6-138c300f9d92,2025-08-10,12:45,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,53.42,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-01f1efa1-b61a-499c-b094-7eed8a2c213d,2025-04-09,01:35,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1277.54,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-e5cbf941-3b04-4de0-8cb5-6ef30e234b5b,2025-05-31,11:26,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,65.35,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-06aaaacf-3c3e-4b8d-80cf-98b545393a2b,2025-02-20,20:06,นิติบุคคลอาคารชุด,ชำระค่าส่วนกลางคอนโด,1621.07,bills,False,False,นิติบุคคล อาคารชุด ชำระ ค่า ส่วนกลาง คอนโด
-58239c56-2c3a-4f03-a1a6-36a96ea2f8aa,2025-05-02,08:11,AirAsia,ตั๋วเครื่องบินไปเที่ยวเชียงใหม่,3468.4,transport,True,False,airasia ตั๋ว เครื่องบิน ไปเที่ยว เชียงใหม่
-4526e215-c512-4e7f-bc21-e12617cc1d85,2025-11-10,21:57,Eveandboy,สกินแคร์และเครื่องสำอางแบรนด์ดัง,1491.56,shopping,True,False,eveandboy ส กิน แคร์ และ เครื่องสำอาง แบรนด์ ดัง
-5e751f2c-9c63-401c-8a71-76f24e921d07,2025-11-28,12:20,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,2102.86,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-6d607a0e-9d68-44a2-abd7-3495321a6244,2025-01-15,11:17,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,393.52,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-8aa15099-0daf-4139-bd41-dd7587e85cc6,2025-10-24,02:43,Lazada 9.9 / Mid-Month,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,1334.14,shopping,True,True,lazada 9 9 mid month เครื่องดูดฝุ่น ไร้สาย กด ตอน เที่ยงคืน
-e9e51313-699f-4c0f-b8a8-a53e15a4e0a7,2025-02-10,11:04,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,66.77,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-4d95faeb-9c3d-4f1e-a2c4-67415a5447d0,2025-05-08,12:22,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,685.24,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-000d804a-9068-42df-994b-5533ec7b3b92,2025-06-08,19:13,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,57.86,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-95bbe0e0-c49a-4ed2-9cfa-77c6b61000da,2025-10-25,19:05,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,298.02,transport,True,True,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-c0618239-3d16-42a1-91cf-b80948b6cdaf,2025-05-28,20:36,Glow Nightclub,ปาร์ตี้ศุกร์หรรษากับเพื่อนร่วมงาน,1086.19,entertainment,True,False,glow nightclub ปาร์ตี้ ศุกร์ หรรษา กับ เพื่อนร่วมงาน
-aafa098f-a37d-4e93-baaf-14ece4c31721,2025-03-16,13:23,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,61.59,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-c57f5e28-33f8-4e88-8d1b-1625ef4a7064,2025-09-30,00:54,SF Cinema,ตั๋วชมภาพยนตร์รอบค่ำ,391.81,entertainment,True,False,sf cinema ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
-763e0909-5f97-4f37-9714-d62ca3adca26,2025-06-13,09:11,Amazon Cafe,Iced Black Coffee,67.71,food,False,False,amazon cafe iced black coffee
-099d4bf2-5311-45f8-9ee6-004b4d1a0da4,2025-10-24,15:36,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,69.25,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-5ebe42b0-d13f-4fe6-991e-d566ccec227a,2025-03-31,13:25,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,522.65,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-2e9d5ec4-80eb-43d5-9fb2-6ae151c042a6,2025-09-13,18:40,Amazon Cafe,Iced Black Coffee,60.02,food,False,False,amazon cafe iced black coffee
-f95b70fe-cec2-4675-8dff-844f72f77f47,2025-07-11,11:55,Steam Games,ซื้อเกมลดราคาบน Steam Store,720.82,entertainment,True,False,steam games ซื้อ เกม ลดราคา บน steam store
-4ddde17b-395d-49d6-9c29-9d07a4ac3421,2025-07-02,22:59,Watsons,ซื้อยาสีฟัน แชมพู สบู่,190.89,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-af501407-d1a0-42fd-8ab5-d0f49e4022c4,2025-04-16,10:16,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,534.7,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-ba2751c9-ace4-43d2-af2d-2414c4275a27,2025-01-31,23:35,Lineman - ส้มตำยำแซ่บ,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,433.09,food,True,True,lineman ส้มตำ ยำ แซ่บ ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
-c0fbef99-54a1-48cd-8b40-9b952d6de012,2025-12-27,10:42,การประปานครหลวง MWA,ชำระค่าน้ำประปา,239.96,bills,False,False,การประปา นครหลวง mwa ชำระ ค่า น้ำประปา
-d398318d-9cdb-475b-bb37-6ddec0227083,2025-08-23,21:25,ก๋วยเตี๋ยวเรืออยุธยา,เส้นเล็กน้ำตกหมูพิเศษ,62.42,food,False,False,ก๋วยเตี๋ยว เรือ อยุธยา เส้น เล็ก น้ำตก หมู พิเศษ
-7c872242-bfd9-4cdf-8acd-cb3e5027ade4,2025-04-04,19:05,Big C Supercenter,ของใช้จำเป็นในห้องน้ำ,510.65,shopping,False,False,big c supercenter ของใช้ จำเป็น ใน ห้องน้ำ
-bd5f8dfa-320f-4aa3-aac4-b357d8c0ba0e,2025-03-05,17:52,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,66.69,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-00480e99-b6a7-4f9f-baf1-2f5821603f7a,2025-12-02,07:23,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,690.67,food,True,False,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-0bcafc4e-a0f3-4f9d-a235-3baba2c74f69,2025-04-22,09:25,ปตท. PTT Station,เติมน้ำมันรถมอเตอร์ไซค์,161.68,transport,False,False,ปตท ptt station เติมน้ำมัน รถมอเตอร์ไซค์
-d3428de7-5d68-469e-aa01-666a7f754453,2025-08-18,10:00,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,387.41,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-0ba3986c-d938-4c39-9d22-b480993f8d7a,2025-07-23,09:13,Watsons,ซื้อยาสีฟัน แชมพู สบู่,197.21,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-157f6d42-792c-415f-8237-0bea9baee299,2025-05-29,00:46,Netflix Thailand,Netflix Premium รายเดือน,419.0,entertainment,True,False,netflix thailand netflix premium รายเดือน
-20d2531c-8b9c-4534-9c50-6b2c37950c8e,2025-03-30,02:54,Lineman - ส้มตำยำแซ่บ,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,292.37,food,True,True,lineman ส้มตำ ยำ แซ่บ ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
-79162fa2-9ccf-4f41-801d-5cd02efb28f4,2025-07-21,12:04,Glow Nightclub,ปาร์ตี้ศุกร์หรรษากับเพื่อนร่วมงาน,1284.37,entertainment,True,False,glow nightclub ปาร์ตี้ ศุกร์ หรรษา กับ เพื่อนร่วมงาน
-681b3e81-6b2f-44fc-9366-45f27535f61f,2025-10-30,02:26,Uniqlo,ซื้อเสื้อกล้ามและถุงเท้าทำงาน,301.11,shopping,False,False,uniqlo ซื้อ เสื้อกล้าม และ ถุงเท้า ทำงาน
-bf217867-6346-4fa1-b719-35b1f0a13a73,2025-12-06,14:33,ZARA,กางเกงสแล็คและเบลเซอร์,2808.86,shopping,True,False,zara กางเกง สแล็ค และ เบล เซอร์
-7402c9ed-2d01-40b2-96f9-7fed94ba2d55,2025-01-20,07:19,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,290.01,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-3343d90f-3cbd-4616-b440-00e51e76d7eb,2025-07-29,19:41,ค่าเช่าคอนโด / หอพัก,โอนค่าเช่าห้องประจำเดือน,7088.3,bills,False,False,ค่าเช่า คอนโด หอพัก โอน ค่าเช่า ห้อง ประจำเดือน
-f8648338-46db-4959-832d-d84ec9e47c12,2025-12-12,20:07,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-7d335855-18ac-4d22-86fd-d6a02debaea3,2025-01-22,21:08,Amazon Cafe,Iced Black Coffee,67.97,food,False,False,amazon cafe iced black coffee
-ddcb931f-c1eb-4283-a6e0-dda9c97e84ad,2025-02-22,07:38,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,633.72,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-5bd3a921-6f68-4a63-bd84-ef7680ef3e29,2025-10-27,12:53,Starbucks,Iced Caramel Macchiato Venti,187.89,food,True,True,starbucks iced caramel macchiato venti
-fc9cc58c-e64a-4142-9a50-16a9fbee9e80,2025-03-01,01:43,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,70.7,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-c489bb42-ef90-4412-b362-1645a3becb90,2025-10-20,11:01,Bolt Taxi,นั่ง Taxi กลับบ้านช่วงเร่งด่วน,212.97,transport,True,False,bolt taxi นั่ง taxi กลับบ้าน ช่วง เร่งด่วน
-36baf3a3-ebad-4b25-a2dd-0d1508c9b118,2025-12-28,19:36,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่อง,61.24,food,False,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง
-fe143d95-722a-43de-8574-2c8e78f16ea4,2025-02-17,08:50,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,1048.75,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-9206a2f1-101c-4713-9a7b-0ef1d2b6f23e,2025-08-26,00:12,Lazada 9.9 / Mid-Month,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,4074.83,shopping,True,True,lazada 9 9 mid month เครื่องดูดฝุ่น ไร้สาย กด ตอน เที่ยงคืน
-6e43efdc-1332-4fc2-8b4e-78b4db2c50fc,2025-06-24,07:42,Sushi Masa,เซ็ตซูชิพรีเมียมแซลมอน,792.08,food,True,False,sushi masa เซ็ต ซูชิ พรีเมียม แซลมอน
-09cca7b0-eab4-4353-88e1-48c0cecf800e,2025-07-30,18:09,Watsons,ซื้อยาสีฟัน แชมพู สบู่,199.1,shopping,False,False,watsons ซื้อ ยาสีฟัน แชมพู สบู่
-61b87748-5979-48bc-86e9-7a63347cfe67,2025-01-26,12:03,Steam Games,ซื้อเกมลดราคาบน Steam Store,510.66,entertainment,True,True,steam games ซื้อ เกม ลดราคา บน steam store
-b683ed78-20e5-4e65-8150-4bed93f05409,2025-08-11,12:43,Haidilao Hot Pot,ชาบูหม้อไฟหมาล่า,1353.21,food,True,False,haidilao hot pot ชาบู หม้อไฟ หมา ล่า
-348085cb-cfbb-4b68-ad37-8dccfd9f67f4,2025-01-05,02:38,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน,1107.81,bills,False,False,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน
-ff3195b7-7691-4ece-b5c7-4a692b18ebbe,2025-03-23,13:11,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,948.52,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-d56fc925-8cd7-4b7a-8693-995cdaefd292,2025-02-20,13:27,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน,676.62,bills,False,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน
-d5a1ffba-ab83-469d-9098-1c62c334333a,2025-03-16,22:18,Spotify Premium,Spotify Individual Subscription,139.0,entertainment,True,False,spotify premium spotify individual subscription
-8825830e-10dc-4ea2-b9d6-c51b0e67f120,2025-08-08,00:33,TikTok Shop,สั่งของเล่น Art Toy กล่องสุ่มตอนไลฟ์ดึก,841.74,shopping,True,True,tiktok shop สั่ง ของเล่น art toy กล่อง สุ่ม ตอน ไลฟ์ ดึก
-3265456d-baab-4265-9726-a046ac457b52,2025-08-20,21:03,โอนเงินบริจาคมูลนิธิ,ร่วมบุญช่วยเหลือน้องหมาน้องแมว,280.66,other,True,False,โอน เงินบริจาค มูลนิธิ ร่วม บุญ ช่วยเหลือ น้อง หมา น้อง แมว
-4adc7e11-80f7-415c-a09e-ceb70df0d71d,2025-02-16,11:56,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่าง,75.01,food,False,False,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง
-0310a7e8-99cf-4cc8-8a19-2cf2461f7a59,2025-03-30,11:24,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,698.08,food,True,False,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-3f5d76df-3338-48b7-a861-4f101ddb91d7,2025-01-07,12:34,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,2394.04,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-f4e0dca5-5001-4722-beff-224dc285a61e,2025-06-19,07:30,GrabCar Premium,เรียกรถ Grab ไปปาร์ตี้,277.28,transport,True,False,grabcar premium เรียก รถ grab ไป ปาร์ตี้
-7e5f3370-6ba4-4ce1-9722-c280f01050a4,2025-06-14,09:50,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,72.15,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-96609609-76c8-4013-9d07-06dffe746177,2025-10-18,14:01,ร้านอาหารตามสั่งลุงหนวด,กะเพราหมูกรอบไข่ดาว,77.94,food,False,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กะเพรา หมูกรอบ ไข่ดาว
-0f7841cc-ab54-479f-b904-7373231b0458,2025-01-12,08:10,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,58.26,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-e036c4f1-0d9a-4850-a9ea-b71c3c336a50,2025-03-20,16:49,Sukishi Buffet,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,806.07,food,True,False,sukishi buffet บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
-f0035d50-d98a-48ca-b58e-8004ca496b83,2025-01-28,08:22,Amazon Cafe,Iced Black Coffee,65.56,food,False,False,amazon cafe iced black coffee
-1645ef36-7c93-4c18-89b7-04ce1c263839,2025-10-22,15:47,ปตท. PTT Station,เติมน้ำมัน E20 รถเก๋ง,913.17,transport,False,False,ปตท ptt station เติมน้ำมัน e 20 รถเก๋ง
-549afd15-9121-4832-8d68-41746b47c828,2025-09-30,23:59,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,2306.69,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-9e8ba50f-a68f-473f-a77b-19193cb6e6ae,2025-04-19,08:48,Ticketmelon,ตั๋วคอนเสิร์ตอินดี้เฟสติวัล,1484.1,entertainment,True,False,ticketmelon ตั๋ว คอนเสิร์ต อินดี้ เฟสติวัล
-5da10ebf-c4f6-4fc4-aa5b-4b72923a082c,2025-02-25,17:10,ชายสี่บะหมี่เกี๊ยว,บะหมี่เกี๊ยวหมูแดง,65.34,food,False,False,ชาย สี่ บะหมี่ เกี๊ยว บะหมี่ เกี๊ยว หมูแดง
-a67adc18-bfd5-4e7b-8773-9b66d0d62127,2025-11-04,08:25,นิติบุคคลอาคารชุด,ชำระค่าส่วนกลางคอนโด,1222.26,bills,False,False,นิติบุคคล อาคารชุด ชำระ ค่า ส่วนกลาง คอนโด
-0ec16037-9ee4-43c2-9bcd-6b0a9d7040bd,2025-11-20,14:03,AIS Fibre / 3BB,ค่าบริการอินเทอร์เน็ตบ้าน,782.68,bills,False,False,ais fibre 3 bb ค่าบริการ อินเทอร์เน็ต บ้าน
-cb0c301f-7d66-4bca-9b3b-0a3a246fccb9,2025-04-23,21:31,AIS Fibre / 3BB,ค่าบริการอินเทอร์เน็ตบ้าน,715.39,bills,False,False,ais fibre 3 bb ค่าบริการ อินเทอร์เน็ต บ้าน
-16aa604b-0442-4546-a839-a282ee185f4c,2025-10-02,19:22,The Beer Bar Sukhumvit,ดื่มคราฟต์เบียร์สังสรรค์กับเพื่อน,1390.02,entertainment,True,False,the beer bar sukhumvit ดื่ม คราฟต์ เบียร์ สังสรรค์ กับ เพื่อน
-a1dbfbd6-d10a-42c6-b36e-a12965609757,2025-05-18,02:30,ทางด่วน กทพ.,Easy Pass เติมเงินทางด่วน,632.5,transport,False,False,ทางด่วน กทพ easy pass เติม เงิน ทางด่วน
-169aa456-16f4-4f3e-af12-fc96c5590b89,2025-05-03,02:54,Lazada Official,เสื้อผ้าแฟชั่นเกาหลีชุดใหม่,866.17,shopping,True,False,lazada official เสื้อผ้า แฟชั่น เกาหลี ชุด ใหม่
-67b1fa24-e06b-487f-8ca3-ce56ba8bbd01,2025-04-10,19:21,7-Eleven,ข้าวกล่องเซเว่น + น้ำเปล่า,85.2,food,False,False,7 eleven ข้าว กล่อง เซเว่น น้ำเปล่า
-0c8e8198-0ca4-4d63-b04d-82377ebda9e6,2025-03-18,19:09,นิติบุคคลอาคารชุด,ชำระค่าส่วนกลางคอนโด,1608.44,bills,False,False,นิติบุคคล อาคารชุด ชำระ ค่า ส่วนกลาง คอนโด
+transaction_id,date,time,merchant,memo,amount,category,is_wants,is_impulse,sub_type,is_unseen_merchant,processed_text
+93b2047b-76f2-4783-8272-74f93fe5ba79,2025-06-08,16:11,Starbucks Reserve,Shibuya Honey Toast และชาร้อน,671.59,food,True,False,wants,False,starbucks reserve shibuya honey toast และ ชาร้อน
+55b7f736-8bd3-470e-8972-d1f4e6344406,2025-06-27,21:02,GrabCar Premium Bangkok,เช่ารถขับเที่ยวกับเพื่อน,2006.63,transport,True,True,wants,False,grabcar premium bangkok เช่า รถ ขับ เที่ยว กับ เพื่อน
+9f8910a4-ba35-4ced-accf-3e64f29d4a7b,2025-04-09,13:17,Major Cineplex รัชโยธิน,ตั๋วชมภาพยนตร์รอบค่ำ,1673.07,entertainment,True,False,wants,False,major cineplex รัชโยธิน ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+4c66ee52-ed7d-4cae-9b68-959751438109,2025-05-08,19:22,Lotus's สุขุมวิท 50,ของสดวัตถุดิบทำกับข้าว,106.15,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ของสด วัตถุดิบ ทำกับข้าว
+376515b8-d050-4571-8706-a6122ceb8e7c,2025-03-19,10:08,Caltex เอกมัย,เติมเงินบัตร BTS รายเดือน,107.37,transport,False,False,routine,False,caltex เอกมัย เติม เงิน บัตร bts รายเดือน
+e98b0b22-b218-45a3-b110-985bfe0a7ec7,2025-01-04,13:09,H&M EmQuartier,กระเป๋าผ้าแบรนด์ยอดฮิต,2798.33,shopping,True,False,wants,False,h m emquartier กระเป๋า ผ้า แบรนด์ ยอดฮิต
+e182bba9-7d09-454b-82c2-6ffd38cb95cc,2025-12-22,16:54,Bar B Q Plaza,xxx,804.07,food,True,False,wants,False,bar b q plaza xxx
+ef673d83-52d1-4487-b8ab-6030bafd5478,2025-12-25,01:35,Foodpanda - Pizza Hut Delivery,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,1121.59,food,True,True,impulse_delivery,False,foodpanda pizza hut delivery ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
+8be46395-d2c8-41fa-ba02-f33afca26fad,2025-08-13,13:50,Amazon Cafe PTT,โจ๊กหมูใส่ไข่เยี่ยวม้า,206.4,food,False,False,routine,False,amazon cafe ptt โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+e3275231-cca9-4d28-9cdd-abd9f1bcffce,2025-05-09,17:22,Sephora Thailand,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,2176.08,shopping,True,False,wants,False,sephora thailand เสื้อผ้า แฟชั่น เกาหลี แมตช์ ชุด
+123f6389-192c-4dca-93f4-cb5773704ce2,2025-01-27,10:55,KFC Drive Thru,Iced Caramel Macchiato Venti,639.48,food,True,False,wants,False,kfc drive thru iced caramel macchiato venti
+fbb6035c-48ae-4fd8-9176-77f2024e6d9c,2025-03-08,17:36,Spotify Premium TH,ตั๋วชมภาพยนตร์รอบค่ำ,529.11,entertainment,True,False,wants,False,spotify premium th ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+7200cce4-cacb-4198-aae0-d683260a3f11,2025-11-29,17:59,ข้าวมันไก่ตอนประตูน้ำ,ข้าวมันไก่เนื้อน่องไม่หนัง,215.88,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+a6e9ff20-3aab-4f3a-839d-d5e7225b2674,2025-03-20,09:25,Big C Supercenter รัชดา,ผลไม้นำเข้าและนมจืด,247.63,shopping,False,False,routine,False,big c supercenter รัชดา ผลไม้ นำเข้า และ นม จืด
+f561dc72-e04e-45e2-bd7f-1cd931781e92,2025-10-29,22:07,Gentlewoman Store,ยอดตัดบัญชี,2626.29,shopping,True,False,wants,False,gentlewoman store ยอด ตัด บัญชี
+e6d09738-de89-44f7-b625-7933d9d4f49f,2025-12-29,17:50,Steam Games Store,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,260.73,entertainment,True,False,wants,False,steam games store ดื่ม คราฟต์ เบียร์ สังสรรค์ คืน วัน ศุกร์
+c4168cbf-1e59-42b9-b479-7cb43551c592,2026-01-01,18:30,Spotify Premium TH,ยอดตัดบัญชี,1475.63,entertainment,True,False,wants,False,spotify premium th ยอด ตัด บัญชี
+f3d51a13-ba32-45b7-8127-bdb185a076ea,2025-05-19,02:35,Central Online Shopping,Apple Watch สายสปอร์ตแฟชั่น,885.23,shopping,True,True,impulse_online,False,central online shopping apple watch สาย สปอร์ต แฟชั่น
+a6d7a960-1231-4766-8531-ead2e467b437,2025-04-16,19:01,Line Man Taxi VIP,นั่ง Taxi Express ช่วงฝนตก,250.4,transport,True,False,wants,False,line man taxi vip นั่ง taxi express ช่วง ฝนตก
+c84e233d-055a-42b7-bc9d-1f3ed2d0c8f3,2025-12-11,20:11,Bar B Q Plaza,เบอร์เกอร์เนื้อทรัฟเฟิล,691.68,food,True,False,wants,False,bar b q plaza เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+057d2c8a-137d-4456-a68e-666fdb6c0a84,2025-05-13,11:30,ปตท. PTT Station สาขา 1,ค่าวินไปหน้าปากซอยสุขุมวิท,119.58,transport,False,False,routine,False,ปตท ptt station สาขา 1 ค่า วิน ไป หน้า ปากซอย สุขุมวิท
+78328002-640e-40c1-a45f-e3f1d6dd1e95,2025-05-15,02:35,GrabFood - ชานมไข่มุก KOI The,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,329.09,food,True,True,impulse_delivery,False,grabfood ชา นม ไข่มุก koi the ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+d27cce69-2f91-441a-a95b-0249cb6d148c,2025-02-11,12:46,ชายสี่บะหมี่เกี๊ยว,Iced Black Coffee หวานน้อย,97.51,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว iced black coffee หวาน น้อย
+8e598e4b-3126-414b-ae8d-02b85cc05f88,2025-08-24,23:22,McDonald's EmQuartier,เบอร์เกอร์เนื้อทรัฟเฟิล,324.25,food,True,False,wants,False,mcdonald s emquartier เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+912990be-036d-48e3-bdf9-0e7656d920d4,2025-09-06,08:41,Nintendo eShop,ตั๋วคอนเสิร์ตอินดี้มิวสิก,938.25,entertainment,True,False,wants,False,nintendo eshop ตั๋ว คอนเสิร์ต อินดี้ มิวสิก
+cc0b227d-b817-4a4b-8f2c-6485a5462929,2025-10-25,01:55,AIS Fibre Broadband,ต่อประกันภัยรถยนต์ชั้น 1,3020.49,bills,False,False,routine,False,ais fibre broadband ต่อ ประกันภัย รถยนต์ ชั้น 1
+38046077-d2e3-4568-b0e5-3078c64c9982,2025-05-28,09:11,KFC Drive Thru,เบอร์เกอร์เนื้อทรัฟเฟิล,270.41,food,True,False,wants,False,kfc drive thru เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+ba1499f1-ebb1-443c-a32c-d09aaf544e13,2025-10-22,18:25,YouTube Premium Monthly,เล่นบอร์ดเกมกับกลุ่มเพื่อน,1454.98,entertainment,True,False,wants,False,youtube premium monthly เล่น บอร์ด เกม กับ กลุ่ม เพื่อน
+0ad0983b-2e4c-46a3-9c06-1ddc9894441b,2025-11-29,13:51,ที่จอดรถ อาคารเสริมมิตร,เติมน้ำมันดีเซลเต็มถัง,48.87,transport,False,False,routine,False,ที่จอดรถ อาคาร เสริม มิตร เติม น้ำมันดีเซล เต็ม ถัง
+0c7788b8-7e27-4714-96ab-9af3e968151a,2025-07-13,22:30,ธนาคารกรุงไทย Krungthai Next,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,267.56,other,False,False,routine,False,ธนาคาร กรุงไทย krungthai next โอน เงิน คืน เพื่อน ค่า อาหารกลางวัน
+b494ef22-5598-4518-8fad-7992ee5142a2,2025-08-29,10:23,Sukishi Korean Buffet,เบอร์เกอร์เนื้อทรัฟเฟิล,559.71,food,True,False,wants,False,sukishi korean buffet เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+a8133e55-8cd7-40b7-b031-f08dd7712636,2025-06-14,20:45,Big C Supercenter รัชดา,ซื้อยาสีฟัน แชมพู และสบู่เหลว,344.6,shopping,False,False,routine,False,big c supercenter รัชดา ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+0f6abef3-79ba-475d-ad59-d6cdc5043e7b,2025-11-14,15:10,ร้านส้มตำเจ๊ไก่ รัชดา,เกาเหลาเลือดหมูข้าวเปล่า,97.65,food,False,False,routine,False,ร้าน ส้มตำ เจ๊ ไก่ รัชดา เกาเหลา เลือดหมู ข้าว เปล่า
+4afd8e3b-ab3c-4788-897c-c793b9d11b08,2025-07-01,21:47,ร้านอาหารตามสั่งลุงหนวด,xxx,216.99,food,False,False,routine,False,ร้านอาหาร ตาม สั่ง ลุง หนวด xxx
+905083c3-f3b2-4412-a03b-158b5d8c68bf,2025-01-31,20:37,ข้าวมันไก่ตอนประตูน้ำ,กาแฟคั่วเข้มแก้วเช้า,69.8,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ กาแฟ คั่ว เข้ม แก้ว เช้า
+fd1fca64-9f9a-48a9-9e31-c6b82b925434,2025-02-07,01:47,ShopeeFood - McDonald's 24hrs,,358.33,food,True,True,impulse_delivery,False,shopeefood mcdonald s 24 hrs nan
+0750b3ca-b215-465d-b05f-d48997486935,2025-11-25,16:53,NT Broadband Thailand,ยอดตัดบัญชี,3275.0,bills,False,False,routine,False,nt broadband thailand ยอด ตัด บัญชี
+213837b1-2f74-49c5-aed8-f83fc53bef60,2025-02-08,18:22,Karaoke City Praditmanutham,ปาร์ตี้วันเกิดกับเพื่อนร่วมงาน,539.84,entertainment,True,False,wants,False,karaoke city praditmanutham ปาร์ตี้ วันเกิด กับ เพื่อนร่วมงาน
+1a0ecd78-c1c9-4ec1-8a12-6bad0e9bc6b6,2025-11-28,00:48,GrabFood - ชานมไข่มุก KOI The,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,1608.16,food,True,True,impulse_delivery,False,grabfood ชา นม ไข่มุก koi the ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+a85d062b-b182-46e0-963c-50949b479a05,2025-08-22,12:21,7-Eleven สาขาอโศก,ข้าวมันไก่เนื้อน่องไม่หนัง,85.22,food,False,False,routine,False,7 eleven สาขา อโศก ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+0d3cf0f7-a63c-45e8-885f-7af04cd9dd49,2025-06-29,00:58,ธนาคารกสิกรไทย K-Mobile,ส่งพัสดุเอกสารด่วน,58.43,other,False,False,routine,False,ธนาคาร กสิกร ไทย k mobile ส่ง พัสดุ เอกสาร ด่วน
+866a62e1-20b4-4fe3-8544-a471e5322f6b,2025-02-20,16:30,Bar B Q Plaza,สุกี้ชาบูเนื้อวากิวไม่อั้น,319.32,food,True,False,wants,False,bar b q plaza สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+92934c48-6a49-41d2-a1de-46d0242bda88,2025-01-10,23:56,YouTube Premium Monthly,จ่ายผ่านแอป,1111.14,entertainment,True,False,wants,False,youtube premium monthly จ่าย ผ่าน แอ ป
+346e099f-8177-4f42-89bd-a3bc06b21543,2025-02-02,17:14,ประกันภัยรถยนต์ วิริยะประกันภัย,ค่าโทรศัพท์และบรอดแบนด์,802.57,bills,False,False,routine,False,ประกันภัย รถยนต์ วิริยะ ประกันภัย ค่าโทรศัพท์ และ บรอดแบนด์
+7cc4f7c8-2d1f-4e0c-bdb1-a5d9440b7687,2025-08-25,22:14,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,ค่ารถตู้ไปทำงานอนุสาวรีย์,57.36,transport,False,False,routine,False,วิน มอเตอร์ไซค์ ซอย สุขุมวิท 21 ค่า รถตู้ ไป ทำงาน อนุสาวรีย์
+10a5fa48-859a-4939-9143-db7845c302a3,2025-11-16,15:16,ข้าวมันไก่ตอนประตูน้ำ,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,79.38,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+8e13598c-7faa-4386-9753-acff59dea479,2025-10-28,13:31,บัตรเครดิต SCB CardX,โอนค่าเช่าคอนโดประจำเดือน,770.41,bills,False,False,routine,False,บัตรเครดิต scb cardx โอน ค่าเช่า คอนโด ประจำเดือน
+cecce534-d505-4f88-906f-43e4a1ad8e87,2025-04-13,21:54,GrabCar Premium Bangkok,Grab VIP เดินทางไปสนามบิน,2371.89,transport,True,False,wants,False,grabcar premium bangkok grab vip เดินทาง ไป สนามบิน
+8258d3e8-7046-457f-9ee7-4b267bcb134a,2025-11-20,14:19,นิติบุคคลอาคารชุด ดิ ไอริส,โอนเงิน,3171.37,bills,False,False,routine,False,นิติบุคคล อาคารชุด ดิ ไอ ริ ส โอน เงิน
+d5bb132c-8034-4fe7-b55c-810ec1f432fc,2025-09-15,07:37,The Beer Bar Sukhumvit 11,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,1379.84,entertainment,True,False,wants,False,the beer bar sukhumvit 11 ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+8e80aea3-6a18-4fa8-a3f2-6977c15ea7be,2025-12-28,02:22,YouTube Premium Monthly,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,182.14,entertainment,True,False,wants,False,youtube premium monthly ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+7035b47c-21e7-4fce-ae00-f85e039a0334,2025-10-19,21:51,AirAsia Flight Booking,เรียกรถ GrabCar ไปปาร์ตี้,1717.23,transport,True,False,wants,False,airasia flight booking เรียก รถ grabcar ไป ปาร์ตี้
+be1f104a-4df1-409b-a92f-592272dd21eb,2025-04-18,15:56,Shell Station สุขุมวิท,เติมน้ำมันดีเซลเต็มถัง,63.07,transport,False,False,routine,False,shell station สุขุมวิท เติม น้ำมันดีเซล เต็ม ถัง
+b3ce89af-24a0-4c5f-8c3c-03a9dafcd748,2025-06-09,11:49,โจ๊กสามย่าน สาขา 2,แซนด์วิชทูน่ามื้อเช้า,91.04,food,False,False,routine,False,โจ๊ก สามย่าน สาขา 2 แซนด์วิช ทูน่า มื้อ เช้า
+809e8777-f59a-47e3-8765-96b7c626e4a6,2025-10-31,11:05,ข้าวมันไก่ตอนประตูน้ำ,เกาเหลาเลือดหมูข้าวเปล่า,167.04,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ เกาเหลา เลือดหมู ข้าว เปล่า
+a2f9ebcf-785b-48ff-9598-63b2b0c164f8,2025-03-21,15:20,Amazon Cafe PTT,โจ๊กหมูใส่ไข่เยี่ยวม้า,163.23,food,False,False,routine,False,amazon cafe ptt โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+2a27a5fe-15cc-42b9-892d-e5c87a48477c,2025-01-17,07:05,ปตท. PTT Station สาขา 1,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,49.71,transport,False,False,routine,False,ปตท ptt station สาขา 1 ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+b38f78b6-af59-46e6-98c5-6bdb3bdd3a87,2025-11-30,17:06,B2S Think Space,,1853.81,shopping,True,False,wants,False,b 2 s think space nan
+3caff374-7d3e-4f88-8f4e-063f085d731d,2025-12-05,07:19,AirAsia Flight Booking,เรียกรถ GrabCar ไปปาร์ตี้,1506.8,transport,True,False,wants,False,airasia flight booking เรียก รถ grabcar ไป ปาร์ตี้
+129c88a9-414e-4554-8f0c-bc4faa47a7d5,2025-02-15,01:20,Lazada 9.9 Official Store,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,1559.38,shopping,True,True,impulse_online,False,lazada 9 9 official store ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+1991efcb-b756-48b0-82e4-ff2af45d8286,2025-04-18,14:29,Big C Supercenter รัชดา,ซื้อของใช้จำเป็นในห้องน้ำ,139.92,shopping,False,False,routine,False,big c supercenter รัชดา ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+6ca8907e-4981-442a-a8eb-5e1dab1c3724,2025-04-15,11:21,ร้านส้มตำเจ๊ไก่ รัชดา,Iced Black Coffee หวานน้อย,82.98,food,False,False,routine,False,ร้าน ส้มตำ เจ๊ ไก่ รัชดา iced black coffee หวาน น้อย
+aa09b0fb-5118-411f-8b20-7d2784e620db,2025-10-29,10:06,IKEA Bangna,หนังสือแปลและนวนิยายขายดี,1312.03,shopping,True,False,wants,False,ikea bangna หนังสือ แปล และ นวนิยาย ขายดี
+56918bcd-3204-403a-9796-3a09fa12e51b,2025-09-05,16:24,ร้านส้มตำเจ๊ไก่ รัชดา,เส้นเล็กน้ำตกหมูพิเศษ,192.97,food,False,False,routine,False,ร้าน ส้มตำ เจ๊ ไก่ รัชดา เส้น เล็ก น้ำตก หมู พิเศษ
+3a3f65f0-13b7-475f-bfa4-495ef09f6d1e,2025-05-17,23:11,BCP บางจาก พระโขนง,ชำระเงิน,94.08,transport,False,False,routine,False,bcp บาง จาก พระ โขนง ชำระเงิน
+872b0d71-2788-4d53-837f-89ba46976a51,2025-04-28,16:40,Bar B Q Plaza,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,1151.99,food,True,False,wants,False,bar b q plaza ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+a09411ae-1291-4193-ab96-885e94f4df5b,2025-01-02,14:10,ร้านอาหารตามสั่งลุงหนวด,กาแฟคั่วเข้มแก้วเช้า,161.39,food,False,False,routine,False,ร้านอาหาร ตาม สั่ง ลุง หนวด กาแฟ คั่ว เข้ม แก้ว เช้า
+c7446cbc-47bc-4e10-8577-19b0ebc479a1,2025-12-04,15:54,The Beer Bar Sukhumvit 11,,1549.58,entertainment,True,False,wants,False,the beer bar sukhumvit 11 nan
+a54b7d4a-478a-4649-8152-2a5eece210ea,2025-02-27,12:39,ชายสี่บะหมี่เกี๊ยว,โจ๊กหมูใส่ไข่เยี่ยวม้า,130.17,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+cdb96cd3-ac19-49db-99bd-ae9b0bcd9849,2025-03-25,00:44,Apple Store Online TH,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,2435.77,shopping,True,True,impulse_online,False,apple store online th เครื่องดูดฝุ่น ไร้สาย กด ตอน เที่ยงคืน
+23e9bc68-c48d-47f9-aed4-f74b37dd0c5a,2025-09-05,20:48,B2S Think Space,ซื้อเสื้อกล้ามและกางเกงสแล็ค,1511.23,shopping,True,False,wants,False,b 2 s think space ซื้อ เสื้อกล้าม และ กางเกง สแล็ค
+c375f75f-9a5c-4154-ae47-092238b26c4f,2025-04-21,16:35,ร้านข้าวราดแกงเมืองตรัง,พร้อมเพย์,148.48,food,False,False,routine,False,ร้าน ข้าวราดแกง เมือง ตรัง พร้อม เพย์
+eba765d6-5db3-4791-a7d7-ec8cc1c6e43d,2025-10-06,12:01,H&M EmQuartier,เสื้อเบลเซอร์ทำงานคอลใหม่,432.44,shopping,True,False,wants,False,h m emquartier เสื้อ เบล เซอร์ ทำงาน คอ ล ใหม่
+eb9a48da-05fb-4208-a738-0d306149589c,2025-11-21,20:18,AirAsia Flight Booking,นั่ง Taxi Express ช่วงฝนตก,296.45,transport,True,False,wants,False,airasia flight booking นั่ง taxi express ช่วง ฝนตก
+133195f6-a573-41ab-802f-e2a2820f32c9,2025-05-05,20:33,Karaoke City Praditmanutham,Netflix Premium รายเดือน 4K,857.78,entertainment,True,False,wants,False,karaoke city praditmanutham netflix premium รายเดือน 4 k
+7bd30a34-241f-43a6-819b-60aaf3203532,2025-01-23,22:18,AirAsia Flight Booking,Grab VIP เดินทางไปสนามบิน,2177.1,transport,True,False,wants,False,airasia flight booking grab vip เดินทาง ไป สนามบิน
+8ff3da4a-d752-4d5a-846f-beb4c320919c,2025-10-24,20:14,โอนร่วมบุญผ้าป่าวัดป่า,โอนเงินซื้อของขวัญวันเกิดเพื่อน,287.28,other,True,False,wants,False,โอน ร่วม บุญ ผ้าป่า วัด ป่า โอน เงิน ซื้อ ของขวัญ วันเกิด เพื่อน
+6af100d2-57c8-4f88-8fca-49a4abc331f5,2025-03-15,19:01,บัตรเครดิต SCB CardX,เบี้ยประกันสุขภาพรายเดือน,1738.64,bills,False,False,routine,False,บัตรเครดิต scb cardx เบี้ยประกัน สุขภาพ รายเดือน
+29ad0686-6280-4981-9498-06a04aec7ac7,2025-11-20,16:07,PromptPay โอนเงินส่วนตัว,ร่วมบริจาคอาหารสุนัขแมวจรจัด,60.81,other,True,False,wants,False,promptpay โอน เงิน ส่วนตัว ร่วม บริจาค อาหาร สุนัข แมว จรจัด
+a406f273-af30-4c4c-8449-2f5f3edbbe5e,2025-01-18,10:49,Big C Supercenter รัชดา,ซื้อยาสีฟัน แชมพู และสบู่เหลว,471.55,shopping,False,False,routine,False,big c supercenter รัชดา ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+d7ddc871-129d-4dcc-a059-2f38b6a6b93d,2025-01-29,14:38,ปตท. PTT Station สาขา 2,ค่าจอดรถรายชั่วโมงอาคาร,48.81,transport,False,False,routine,False,ปตท ptt station สาขา 2 ค่า จอด รถ ราย ชั่วโมง อาคาร
+9210f4c2-dca1-48f9-bde6-caa6d306ccc4,2025-03-30,20:52,ร้านส้มตำเจ๊ไก่ รัชดา,ข้าวราดแกง 2 อย่างไข่ต้ม,135.33,food,False,False,routine,False,ร้าน ส้มตำ เจ๊ ไก่ รัชดา ข้าวราดแกง 2 อย่าง ไข่ต้ม
+346f3ecc-5394-4212-8009-2ea5539497f5,2025-01-30,19:54,Amazon Cafe PTT,เส้นเล็กน้ำตกหมูพิเศษ,52.78,food,False,False,routine,False,amazon cafe ptt เส้น เล็ก น้ำตก หมู พิเศษ
+3125d042-18f4-4a05-ba04-c1bb810cb044,2025-01-02,08:14,Board Game Cafe Ari,PlayStation Plus Member,259.21,entertainment,True,False,wants,False,board game cafe ari playstation plus member
+cb325a22-ea90-45da-9460-417af6b2f40f,2025-01-11,00:02,GrabCar Premium Bangkok,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,773.92,transport,True,False,wants,False,grabcar premium bangkok จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+9bdffd38-5eaf-4513-860b-0eff5b9287e7,2025-09-01,12:16,ร้านข้าวต้มรอบดึก กวงเฮง,Iced Black Coffee หวานน้อย,189.26,food,False,False,routine,False,ร้าน ข้าวต้ม รอบ ดึก กวง เฮง iced black coffee หวาน น้อย
+e7f94fe1-7e22-4c7a-95a0-ac35a13e6de9,2025-12-20,14:50,KFC Drive Thru,เบอร์เกอร์เนื้อทรัฟเฟิล,1013.5,food,True,False,wants,False,kfc drive thru เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+8f38e943-abc8-4d7a-bd41-3a28335ce34a,2025-08-17,00:12,Lazada 9.9 Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,651.49,shopping,True,True,impulse_online,False,lazada 9 9 official store สั่ง ของเล่น art toy กล่อง สุ่ม ไลฟ์ ดึก
+83b04e36-a6e9-45e3-b666-722e657e0aae,2025-03-23,14:35,วัดสระเกศราชวรมหาวิหาร,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,342.87,other,False,False,routine,False,วัด สระ เกศ ราชวรมหาวิหาร โอน เงิน คืน เพื่อน ค่า อาหารกลางวัน
+f09e38f7-7917-4b10-959f-2d843b4c2c06,2025-10-04,09:20,Boots Pharmacy พระราม 9,กล่องเก็บของและอุปกรณ์อเนกประสงค์,227.73,shopping,False,False,routine,False,boots pharmacy พระราม 9 กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+f06f8e7d-aa0b-45b4-84cb-08d69b85c021,2025-02-09,23:39,GrabFood - ชานมไข่มุก KOI The,ชานมไข่มุก golden bubble x2,1156.52,food,True,True,impulse_delivery,False,grabfood ชา นม ไข่มุก koi the ชา นม ไข่มุก golden bubble x 2
+27f46307-c203-4b01-81cb-1aee5cef2f3c,2025-04-12,13:21,7-Eleven สาขาอโศก,แซนด์วิชทูน่ามื้อเช้า,206.98,food,False,False,routine,False,7 eleven สาขา อโศก แซนด์วิช ทูน่า มื้อ เช้า
+c45cd6a4-23c1-4547-bd5c-287dc3fd8a48,2025-11-14,17:59,ร้านอาหารตามสั่งลุงหนวด,มื้อเที่ยงกับทีม,93.31,food,False,False,routine,False,ร้านอาหาร ตาม สั่ง ลุง หนวด มื้อ เที่ยง กับ ทีม
+f48e2007-1f58-4aad-8b3f-a092c79821b5,2025-09-17,13:37,NT Broadband Thailand,เคลียร์ยอด,1650.45,bills,False,False,routine,False,nt broadband thailand เคลียร์ ยอด
+194f655b-ceae-46fe-b7d8-1e0e635f5d01,2025-05-06,20:36,Steam Games Store,ปาร์ตี้วันเกิดกับเพื่อนร่วมงาน,486.09,entertainment,True,False,wants,False,steam games store ปาร์ตี้ วันเกิด กับ เพื่อนร่วมงาน
+f8d0b6e8-9cb3-4802-aac9-e3dffb274ea8,2025-11-17,00:20,Foodpanda - Pizza Hut Delivery,ยอดตัดบัญชี,1439.81,food,True,True,impulse_delivery,False,foodpanda pizza hut delivery ยอด ตัด บัญชี
+1d904947-0a55-4326-9a19-27221ed9d255,2025-05-09,15:44,Caltex เอกมัย,M-Flow ชำระค่าผ่านทางด่วน,48.11,transport,False,False,routine,False,caltex เอกมัย m flow ชำระ ค่า ผ่าน ทางด่วน
+8528d0f7-38c3-41c8-b788-35488562015d,2025-02-17,18:28,The Beer Bar Sukhumvit 11,YouTube Premium Family,806.76,entertainment,True,False,wants,False,the beer bar sukhumvit 11 youtube premium family
+03214d56-9a45-4dae-9c6e-43e3b39864f3,2025-07-23,11:54,Lotus's สุขุมวิท 50,กล่องเก็บของและอุปกรณ์อเนกประสงค์,280.6,shopping,False,False,routine,False,lotus s สุขุมวิท 50 กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+b6a91689-9207-4f95-90ee-446eeba7c7e1,2025-04-02,16:08,GrabCar Premium Bangkok,Grab VIP เดินทางไปสนามบิน,1100.68,transport,True,False,wants,False,grabcar premium bangkok grab vip เดินทาง ไป สนามบิน
+b72fb3f1-92a0-424b-b226-ed5bdc87c989,2025-07-10,18:22,McDonald's EmQuartier,ดินเนอร์ร้านอาหารอิตาเลียน,791.72,food,True,False,wants,False,mcdonald s emquartier ดินเนอร์ ร้านอาหาร อิตาเลียน
+59f22b53-70fc-4eb8-b551-e995b19c3ad1,2025-02-28,13:44,3BB Broadband Member,ค่าบริการอินเทอร์เน็ตบ้านไฟเบอร์,2435.46,bills,False,False,routine,False,3 bb broadband member ค่าบริการ อินเทอร์เน็ต บ้าน ไฟเบอร์
+5000f366-54b2-4ffa-ba5e-01b762d97887,2025-11-17,17:26,ค่าธรรมเนียมถอนเงินข้ามเขต,เติมเงินมือถือระบบเติมเงิน,175.27,other,False,False,routine,False,ค่าธรรมเนียม ถอนเงิน ข้าม เขต เติม เงิน มือถือ ระบบ เติม เงิน
+d7cf0b89-0345-40a1-ab00-95f408726752,2025-03-03,17:44,ข้าวมันไก่ตอนประตูน้ำ,กะเพราหมูกรอบไข่ดาวไม่สุก,200.88,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+0e366446-3ae4-4f46-9e74-ce95beeb7e38,2025-04-21,22:45,ที่จอดรถ อาคารเสริมมิตร,,46.07,transport,False,False,routine,False,ที่จอดรถ อาคาร เสริม มิตร nan
+8a514714-df23-4081-9000-8f2b0181d84f,2025-04-13,00:47,Lineman - ยำกุ้งสดแซ่บลืมผัว,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,1104.61,food,True,True,impulse_delivery,False,lineman ยำ กุ้ง สด แซ่บ ลืม ผัว ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
+3afe11a2-2fe1-4cbf-a6e5-60fd300dd94c,2025-01-16,08:13,ชายสี่บะหมี่เกี๊ยว,กาแฟคั่วเข้มแก้วเช้า,239.21,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว กาแฟ คั่ว เข้ม แก้ว เช้า
+516f7639-9e83-454a-b8b5-7f94eb837bf1,2025-10-24,20:46,Haidilao Hot Pot CentralWorld,ชาบูหม้อไฟหมาล่าพรีเมียม,778.63,food,True,False,wants,False,haidilao hot pot centralworld ชาบู หม้อไฟ หมา ล่า พรีเมียม
+c882c26b-7ca4-48b4-9ce7-7533fb1848b3,2025-08-20,22:44,Lotus's สุขุมวิท 50,ของสดวัตถุดิบทำกับข้าว,440.8,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ของสด วัตถุดิบ ทำกับข้าว
+ca0bddd0-b892-4605-8838-1839314975ef,2025-11-20,21:24,H&M EmQuartier,กระเป๋าผ้าแบรนด์ยอดฮิต,1126.18,shopping,True,False,wants,False,h m emquartier กระเป๋า ผ้า แบรนด์ ยอดฮิต
+652016c8-c1a7-4881-8640-1281b5b96b0c,2025-11-27,16:17,Sukishi Korean Buffet,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,797.39,food,True,True,wants,False,sukishi korean buffet เซ็ต ซูชิ พรีเมียม แซลมอน 5 คำ
+35982eea-8c5c-469d-83d2-2f96b1ea23e9,2025-12-17,07:48,โจ๊กสามย่าน สาขา 2,เกาเหลาเลือดหมูข้าวเปล่า,96.94,food,False,False,routine,False,โจ๊ก สามย่าน สาขา 2 เกาเหลา เลือดหมู ข้าว เปล่า
+e51a6288-5e16-400e-a494-51177a09c633,2025-07-06,00:03,3BB Broadband Member,ค่าโทรศัพท์และบรอดแบนด์,3218.73,bills,False,False,routine,False,3 bb broadband member ค่าโทรศัพท์ และ บรอดแบนด์
+26d9e417-adba-458d-98c2-f99878185ea7,2025-07-04,15:12,Gentlewoman Store,หนังสือแปลและนวนิยายขายดี,2889.82,shopping,True,False,wants,False,gentlewoman store หนังสือ แปล และ นวนิยาย ขายดี
+e6bd81fe-3bbf-4162-8cbc-5891a16a7044,2025-05-13,17:16,McDonald's EmQuartier,เบอร์เกอร์เนื้อทรัฟเฟิล,494.83,food,True,False,wants,False,mcdonald s emquartier เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+256c55ae-ae11-4313-ae03-ede58ea489e6,2025-01-07,17:51,7-Eleven สาขาอโศก,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,139.72,food,False,False,routine,False,7 eleven สาขา อโศก ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+3d4fa43e-3fbc-4165-8e3f-b960a420d304,2025-06-02,11:25,Lotus's สุขุมวิท 50,ซื้อยาสีฟัน แชมพู และสบู่เหลว,336.13,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+18ce14b9-b663-47d4-be32-1123ac1ff4b5,2025-05-11,12:29,ร้านข้าวราดแกงเมืองตรัง,โจ๊กหมูใส่ไข่เยี่ยวม้า,187.84,food,False,False,routine,False,ร้าน ข้าวราดแกง เมือง ตรัง โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+c0aadab9-efa7-47ab-89a0-b83753baaa62,2025-06-21,12:57,H&M EmQuartier,ลิปสติกและพาเลตต์อายแชโดว์,2117.24,shopping,True,False,wants,False,h m emquartier ลิปสติก และ พา เลตต์ อายแชโดว์
+031fbf5a-0b7c-4bb1-bb04-f0351aa7293a,2025-02-24,15:39,ปตท. PTT Station สาขา 2,เติมน้ำมัน Gasohol 95,46.36,transport,False,False,routine,False,ปตท ptt station สาขา 2 เติมน้ำมัน gasohol 95
+d361e2a9-47d6-4d68-b193-1c6011ad5189,2025-03-23,23:37,Momoparadise Central Rama 9,ชาบูหม้อไฟหมาล่าพรีเมียม,485.4,food,True,False,wants,False,momoparadise central rama 9 ชาบู หม้อไฟ หมา ล่า พรีเมียม
+f8bfb97d-4771-4707-b9b3-5ac3c8e6b01d,2025-08-08,14:22,3BB Broadband Member,ค่าเน็ตบ้านรายเดือน 3BB,2908.25,bills,False,False,routine,False,3 bb broadband member ค่า เน็ต บ้าน รายเดือน 3 bb
+2162a5ed-8b51-4062-925e-c8b91f83f56a,2025-01-09,10:56,AIS Fibre Broadband,จ่ายเงิน,2675.73,bills,False,False,routine,False,ais fibre broadband จ่าย เงิน
+35a80ab7-c8fe-4df7-82cd-f909d76fa5b8,2025-10-23,10:28,AIS Fibre Broadband,เบี้ยประกันสุขภาพรายเดือน,1525.14,bills,False,False,routine,False,ais fibre broadband เบี้ยประกัน สุขภาพ รายเดือน
+f308f62d-2721-48a4-b5c2-fbdd78ffb63d,2025-10-21,22:27,Lotus's สุขุมวิท 50,ซื้อยาแก้แพ้และวิตามินซีรวม,179.15,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ซื้อ ยา แก้ แพ้ และ วิตามิน ซี รวม
+7e3c052a-4ff6-4cdd-89d8-5f5d99ae2bfd,2025-09-23,13:59,Line Man Taxi VIP,เช่ารถขับเที่ยวกับเพื่อน,281.49,transport,True,False,wants,False,line man taxi vip เช่า รถ ขับ เที่ยว กับ เพื่อน
+323c165a-5d9a-4aae-9270-c9d918bfef6c,2025-09-14,11:24,Lotus's สุขุมวิท 50,ผลไม้นำเข้าและนมจืด,470.39,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ผลไม้ นำเข้า และ นม จืด
+18cea12b-6622-4ff2-863e-06a81a8a2ade,2025-11-13,15:05,MK Restaurants,เบอร์เกอร์เนื้อทรัฟเฟิล,954.81,food,True,False,wants,False,mk restaurants เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+702a1a41-5fa1-4632-840a-a39dc3ac2ca7,2025-05-06,22:11,McDonald's EmQuartier,ไก่ทอด KFC บักเก็ตพิเศษ,541.32,food,True,False,wants,False,mcdonald s emquartier ไก่ทอด kfc บัก เก็ต พิเศษ
+3c4cfcb5-d4c3-4924-992e-6378b1a3fd49,2025-09-20,16:35,Sukishi Korean Buffet,Iced Caramel Macchiato Venti,1149.18,food,True,False,wants,False,sukishi korean buffet iced caramel macchiato venti
+d6c9f192-2206-4cc8-a2d9-c32a2fef7af0,2025-10-13,01:50,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,โอน,115.5,transport,False,False,routine,False,วิน มอเตอร์ไซค์ ซอย สุขุมวิท 21 โอน
+f1fc96bc-bce0-4cce-9147-b5ed84bc08e3,2025-10-16,09:51,Spotify Premium TH,ยอดตัดบัญชี,321.06,entertainment,True,False,wants,False,spotify premium th ยอด ตัด บัญชี
+e67b7a1c-3bee-406f-9fc0-68af7375ab6d,2025-01-06,21:55,Gourmet Market Siam Paragon,ผลไม้นำเข้าและนมจืด,139.37,shopping,False,False,routine,False,gourmet market siam paragon ผลไม้ นำเข้า และ นม จืด
+d0fdfce2-3c20-4dd0-bf6c-3936dee47eb8,2025-06-23,18:21,Lotus's สุขุมวิท 50,ซื้อยาสีฟัน แชมพู และสบู่เหลว,483.53,shopping,False,False,routine,False,lotus s สุขุมวิท 50 ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+fda05fa1-e2c9-43b6-8eec-735037f25b96,2025-10-06,15:58,Big C Supercenter รัชดา,ผลไม้นำเข้าและนมจืด,472.58,shopping,False,False,routine,False,big c supercenter รัชดา ผลไม้ นำเข้า และ นม จืด
+4a9daa35-61e2-4993-90ff-6c1e4e50af3e,2025-06-20,17:17,GrabCar Premium Bangkok,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,1099.65,transport,True,False,wants,False,grabcar premium bangkok จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+069d898c-f225-455a-afb7-aa2d3e58ff94,2025-05-13,23:22,7-Eleven สาขาอโศก,ข้าวต้มปลาอินทรีย์รอบค่ำ,179.83,food,False,False,routine,False,7 eleven สาขา อโศก ข้าวต้ม ปลา อินทรีย์ รอบ ค่ำ
+55647a6c-0583-481f-b800-f283cbf98ac8,2025-12-24,09:51,The Beer Bar Sukhumvit 11,ตั๋วชมภาพยนตร์รอบค่ำ,572.52,entertainment,True,False,wants,False,the beer bar sukhumvit 11 ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+50278684-28df-44ca-b8de-5b5e5adf0582,2025-12-16,13:47,Amazon Cafe PTT,กะเพราหมูกรอบไข่ดาวไม่สุก,113.07,food,False,False,routine,False,amazon cafe ptt กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+24385feb-a9a0-4f21-ab22-e4caa2db8a72,2025-02-13,02:02,Lazada 9.9 Official Store,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,1722.26,shopping,True,True,impulse_online,False,lazada 9 9 official store เครื่องดูดฝุ่น ไร้สาย กด ตอน เที่ยงคืน
+5a8f28ea-c078-47f9-ab34-29bcd9596287,2025-12-10,11:25,Big C Supercenter รัชดา,กล่องเก็บของและอุปกรณ์อเนกประสงค์,449.07,shopping,False,False,routine,False,big c supercenter รัชดา กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+05cf388c-e4a6-434e-b6e8-cef41797dba5,2025-06-24,21:01,Uniqlo Central Rama 9,โคมไฟมินิมอลแต่งโต๊ะทำงาน,511.32,shopping,True,False,wants,False,uniqlo central rama 9 โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+5ec04a89-fa99-4716-b28d-8931459f997d,2025-02-22,02:32,TikTok Shop Thailand,Flash Sale 00:00 หูฟังบลูทูธ,2490.31,shopping,True,True,impulse_online,False,tiktok shop thailand flash sale 00 00 หูฟัง บลูทูธ
+4dfc8a7d-dc55-466b-8724-2fe28187b4ee,2025-01-01,21:34,Muji Central Chidlom,เสื้อเบลเซอร์ทำงานคอลใหม่,2556.45,shopping,True,False,wants,False,muji central chidlom เสื้อ เบล เซอร์ ทำงาน คอ ล ใหม่
+6a0de05d-c596-42e6-8585-53b0540dce7b,2025-01-20,15:56,ร้านอาหารตามสั่งลุงหนวด,xxx,67.12,food,False,False,routine,False,ร้านอาหาร ตาม สั่ง ลุง หนวด xxx
+c5ac8fd1-da41-485b-a037-3693108442fd,2025-06-23,13:19,บัตรเครดิต SCB CardX,โอนค่าเช่าคอนโดประจำเดือน,2317.97,bills,False,False,routine,False,บัตรเครดิต scb cardx โอน ค่าเช่า คอนโด ประจำเดือน
+77434203-aba0-4c32-83b8-e2cc094b2c08,2025-12-20,22:55,Momoparadise Central Rama 9,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,760.47,food,True,False,wants,False,momoparadise central rama 9 เซ็ต ซูชิ พรีเมียม แซลมอน 5 คำ
+a73a4ced-7491-42b2-93b9-1b39f4204000,2025-08-29,16:42,Gourmet Market Siam Paragon,ผลไม้นำเข้าและนมจืด,186.9,shopping,False,False,routine,False,gourmet market siam paragon ผลไม้ นำเข้า และ นม จืด
+91efbcf2-29be-413a-9b22-c7994da4add1,2025-07-04,00:28,PlayStation Network TH,Netflix Premium รายเดือน 4K,472.0,entertainment,True,False,wants,False,playstation network th netflix premium รายเดือน 4 k
+ff159b4d-54b0-4b21-8c19-095fe23a466c,2025-05-09,14:43,Shell Station สุขุมวิท,ค่าวินไปหน้าปากซอยสุขุมวิท,74.07,transport,False,False,routine,False,shell station สุขุมวิท ค่า วิน ไป หน้า ปากซอย สุขุมวิท
+0542d7d5-decc-4fab-8b49-1c4bcf6e82bd,2025-12-18,17:32,Caltex เอกมัย,เติมน้ำมัน E20 รถยนต์ส่วนตัว,72.01,transport,False,False,routine,False,caltex เอกมัย เติมน้ำมัน e 20 รถยนต์ ส่วนตัว
+519f38f8-1865-4f5c-a850-3ba4d98a1493,2025-11-07,13:12,3BB Broadband Member,ชำระค่าส่วนกลางคอนโดมิเนียม,1215.49,bills,False,False,routine,False,3 bb broadband member ชำระ ค่า ส่วนกลาง คอนโดมิเนียม
+0aae4088-a6c1-4c37-8cdf-e1e48547831e,2025-06-10,18:35,Bolt Taxi Express,Grab VIP เดินทางไปสนามบิน,1520.39,transport,True,False,wants,False,bolt taxi express grab vip เดินทาง ไป สนามบิน
+ac1a21ac-4282-4539-b2ac-d71920c452f9,2025-09-15,12:24,นิติบุคคลอาคารชุด ดิ ไอริส,ชำระยอดบัตรเครดิตยอดเต็ม,1254.76,bills,False,False,routine,False,นิติบุคคล อาคารชุด ดิ ไอ ริ ส ชำระ ยอด บัตรเครดิต ยอด เต็ม
+c90eee66-3120-4fde-b721-a50a12c43b32,2025-03-29,01:52,บัตรเครดิต SCB CardX,ชำระบิลบัตรเครดิตรายเดือน,988.07,bills,False,False,routine,False,บัตรเครดิต scb cardx ชำ ระบิล บัตรเครดิต รายเดือน
+5f908511-3675-4383-a29d-127ab9f321d8,2025-08-01,22:14,โจ๊กสามย่าน สาขา 2,ข้าวราดแกง 2 อย่างไข่ต้ม,113.17,food,False,False,routine,False,โจ๊ก สามย่าน สาขา 2 ข้าวราดแกง 2 อย่าง ไข่ต้ม
+87b77b0b-909f-4db4-8b97-73b12675a944,2025-03-04,17:19,BTS Skytrain อโศก,เติมน้ำมัน E20 รถยนต์ส่วนตัว,116.4,transport,False,False,routine,False,bts skytrain อโศก เติมน้ำมัน e 20 รถยนต์ ส่วนตัว
+b3a4a65c-1f29-4b2d-b9a7-51b65750f0e7,2025-01-24,20:21,GrabCar Premium Bangkok,นั่ง Taxi Express ช่วงฝนตก,1795.45,transport,True,False,wants,False,grabcar premium bangkok นั่ง taxi express ช่วง ฝนตก
+a0ddcfa6-8350-4dc3-83fc-c6a75548c1fd,2025-03-06,15:34,3BB Broadband Member,ชำระค่าไฟฟ้าประจำเดือน MEA,2533.15,bills,False,False,routine,False,3 bb broadband member ชำระ ค่าไฟฟ้า ประจำเดือน mea
+a06c1e28-e5b1-434b-b7d1-ec361f129fa6,2025-12-19,21:10,ข้าวมันไก่ตอนประตูน้ำ,บะหมี่เกี๊ยวหมูแดงแห้ง,156.53,food,False,False,routine,False,ข้าวมัน ไก่ตอน ประตูน้ำ บะหมี่ เกี๊ยว หมูแดง แห้ง
+1ccca435-0c83-4665-b997-7429fe5dfbde,2025-08-14,09:19,Line Man Taxi VIP,เรียกรถ GrabCar ไปปาร์ตี้,1867.67,transport,True,False,wants,False,line man taxi vip เรียก รถ grabcar ไป ปาร์ตี้
+9965c9cc-75ee-435e-ae78-030dbc6b656b,2025-06-14,13:13,Shell Station สุขุมวิท,เติมน้ำมัน Gasohol 95,111.75,transport,False,False,routine,False,shell station สุขุมวิท เติมน้ำมัน gasohol 95
+a918eb8b-469d-46d0-8a03-02233bbaff04,2025-04-12,00:57,Lineman - ยำกุ้งสดแซ่บลืมผัว,ชานมไข่มุก golden bubble x2,896.72,food,True,True,impulse_delivery,False,lineman ยำ กุ้ง สด แซ่บ ลืม ผัว ชา นม ไข่มุก golden bubble x 2
+51ee5191-735d-41a0-bd5f-3f6327c0f141,2025-08-30,21:22,Starbucks Reserve,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,669.96,food,True,False,wants,False,starbucks reserve ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+c2621009-2861-4dc3-b82f-4a6f482a758b,2025-09-22,14:47,โจ๊กสามย่าน สาขา 2,แซนด์วิชทูน่ามื้อเช้า,171.47,food,False,False,routine,False,โจ๊ก สามย่าน สาขา 2 แซนด์วิช ทูน่า มื้อ เช้า
+21092284-b944-4539-9f54-c60b5a5a7719,2025-11-27,14:26,ที่จอดรถ อาคารเสริมมิตร,Easy Pass เติมเงินทางด่วน,61.33,transport,False,False,routine,False,ที่จอดรถ อาคาร เสริม มิตร easy pass เติม เงิน ทางด่วน
+739cd3ff-df4e-46e7-b260-298efcfe6df6,2025-05-20,01:49,ShopeeFood - McDonald's 24hrs,โอนเงิน,1514.69,food,True,True,impulse_delivery,False,shopeefood mcdonald s 24 hrs โอน เงิน
+134e6d6d-5a22-44ef-b69d-120a68ba08a0,2025-01-10,15:57,Netflix Thailand,Spotify Individual Subscription,1518.42,entertainment,True,False,wants,False,netflix thailand spotify individual subscription
+1bbb8076-a8ca-476d-bf4a-95e751d8928c,2025-07-05,21:18,Momoparadise Central Rama 9,เคลียร์ยอด,818.04,food,True,False,wants,False,momoparadise central rama 9 เคลียร์ ยอด
+3bdc54c7-87f5-468d-8c95-97bd4d0ad83a,2025-09-23,22:03,B2S Think Space,โคมไฟมินิมอลแต่งโต๊ะทำงาน,678.63,shopping,True,False,wants,False,b 2 s think space โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+32883f6a-f650-43e8-b624-ce6988d994e2,2025-11-24,19:38,Major Cineplex รัชโยธิน,จ่ายเงิน,1738.82,entertainment,True,False,wants,False,major cineplex รัชโยธิน จ่าย เงิน
+fcdd5c27-2956-478e-a49c-648f964114ba,2025-02-22,11:06,IKEA Bangna,กระเป๋าผ้าแบรนด์ยอดฮิต,2362.91,shopping,True,False,wants,False,ikea bangna กระเป๋า ผ้า แบรนด์ ยอดฮิต
+2a20fb24-8f03-47c3-a40a-f3d47558890a,2025-10-22,09:13,Amazon Cafe PTT,ข้าวมันไก่เนื้อน่องไม่หนัง,74.46,food,False,False,routine,False,amazon cafe ptt ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+a2e00a02-97c3-4557-87e8-0bb9590ff05b,2025-07-27,01:05,AirAsia Flight Booking,นั่ง Taxi Express ช่วงฝนตก,1924.85,transport,True,True,wants,False,airasia flight booking นั่ง taxi express ช่วง ฝนตก
+3a4283d6-8eea-4031-8c06-4c77d1a43cb3,2025-09-23,12:23,Shell Station สุขุมวิท,ค่าจอดรถรายชั่วโมงอาคาร,76.22,transport,False,False,routine,False,shell station สุขุมวิท ค่า จอด รถ ราย ชั่วโมง อาคาร
+ea84f9d0-8c2c-4298-bf89-ab63fe5ed333,2025-04-08,10:55,Steam Games Store,ตั๋วคอนเสิร์ตอินดี้มิวสิก,1512.61,entertainment,True,False,wants,False,steam games store ตั๋ว คอนเสิร์ต อินดี้ มิวสิก
+6a40474c-6a8f-470c-874c-cff9580763db,2025-09-27,11:21,NT Broadband Thailand,ชำระบิลบัตรเครดิตรายเดือน,2677.38,bills,False,False,routine,False,nt broadband thailand ชำ ระบิล บัตรเครดิต รายเดือน
+fa6161cd-0224-4efe-b514-9337a7a885de,2025-08-04,15:57,Gentlewoman Store,เสื้อเบลเซอร์ทำงานคอลใหม่,2809.24,shopping,True,False,wants,False,gentlewoman store เสื้อ เบล เซอร์ ทำงาน คอ ล ใหม่
+4f142483-b97f-4f95-87f1-49571cf5dc09,2025-09-10,07:29,Caltex เอกมัย,ค่ารถตู้ไปทำงานอนุสาวรีย์,112.88,transport,False,False,routine,False,caltex เอกมัย ค่า รถตู้ ไป ทำงาน อนุสาวรีย์
+c81a9a25-1fd1-48d4-876d-07a962609692,2025-06-13,22:07,วินมอเตอร์ไซค์ ซอยสุขุมวิท 21,เติมน้ำมันดีเซลเต็มถัง,103.09,transport,False,False,routine,False,วิน มอเตอร์ไซค์ ซอย สุขุมวิท 21 เติม น้ำมันดีเซล เต็ม ถัง
+6e491c8b-b4ea-4fe7-baaf-3b0d49866488,2025-05-24,17:22,Caltex เอกมัย,ค่าวินไปหน้าปากซอยสุขุมวิท,36.45,transport,False,False,routine,False,caltex เอกมัย ค่า วิน ไป หน้า ปากซอย สุขุมวิท
+e6f7eef8-8d2e-4cdd-8fbd-9708ef3a36d0,2025-05-21,00:41,Karaoke City Praditmanutham,Spotify Individual Subscription,1204.21,entertainment,True,False,wants,False,karaoke city praditmanutham spotify individual subscription
+a6ea6fe9-5613-4f0e-ade6-b7ce88ec63aa,2025-06-06,22:31,ร้านข้าวต้มรอบดึก กวงเฮง,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,245.85,food,False,False,routine,False,ร้าน ข้าวต้ม รอบ ดึก กวง เฮง ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+d05f1142-1254-4b34-a03b-26ae07c0692e,2025-09-04,12:38,AirAsia Flight Booking,เช่ารถขับเที่ยวกับเพื่อน,1661.89,transport,True,False,wants,False,airasia flight booking เช่า รถ ขับ เที่ยว กับ เพื่อน
+57ae7a1c-3e33-46f5-bfae-afa3d63a4a94,2025-07-14,09:55,Haidilao Hot Pot CentralWorld,จ่ายผ่านแอป,285.51,food,True,False,wants,False,haidilao hot pot centralworld จ่าย ผ่าน แอ ป
+f880a70b-e1ff-4004-81ed-164c938531bc,2025-09-28,17:22,ค่าเช่าคอนโด ลุมพินีทาวเวอร์,เบี้ยประกันชีวิตและอุบัติเหตุ,4050.08,bills,False,False,routine,False,ค่าเช่า คอนโด ลุมพินี ทาวเวอร์ เบี้ย ประกันชีวิต และ อุบัติเหตุ
+d04723d5-6b77-4547-a2f1-b031a27bcc4d,2025-08-28,20:52,Major Cineplex รัชโยธิน,YouTube Premium Family,1699.6,entertainment,True,False,wants,False,major cineplex รัชโยธิน youtube premium family
+73ad586b-c4c0-46e0-a3ed-ee2fe81fa8c4,2025-05-23,16:14,Haidilao Hot Pot CentralWorld,Iced Caramel Macchiato Venti,1146.18,food,True,False,wants,False,haidilao hot pot centralworld iced caramel macchiato venti
+53b81e2a-b23a-4713-aa24-f55a9d3053e7,2025-06-10,15:09,AIS Fibre Broadband,เคลียร์ยอด,2090.8,bills,False,False,routine,False,ais fibre broadband เคลียร์ ยอด
+40b03841-b43d-4709-b15f-5ccd8a887b5a,2025-05-14,15:38,Big C Supercenter รัชดา,น้ำยาซักผ้าและปรับผ้านุ่ม,475.51,shopping,False,False,routine,False,big c supercenter รัชดา น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+94a690e3-ed8c-4bfb-9f86-ed6d3a429e70,2025-05-28,02:14,Gourmet Market Siam Paragon,ซื้อยาสีฟัน แชมพู และสบู่เหลว,293.86,shopping,False,False,routine,False,gourmet market siam paragon ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+fb2b2b57-d7ad-4ffa-b6b7-299b2aa19cc9,2025-07-05,19:09,ชายสี่บะหมี่เกี๊ยว,Iced Black Coffee หวานน้อย,52.44,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว iced black coffee หวาน น้อย
+11591c56-7657-439e-b85c-bfc672ca2360,2025-01-24,09:38,Momoparadise Central Rama 9,ชาบูหม้อไฟหมาล่าพรีเมียม,274.57,food,True,False,wants,False,momoparadise central rama 9 ชาบู หม้อไฟ หมา ล่า พรีเมียม
+885f9145-a5f7-49b0-924d-050c86b4924c,2025-05-01,11:47,Amazon Cafe PTT,ข้าวราดแกง 2 อย่างไข่ต้ม,147.53,food,False,False,routine,False,amazon cafe ptt ข้าวราดแกง 2 อย่าง ไข่ต้ม
+bf6196e7-2aa3-400f-a588-7610a0b13e09,2025-03-01,16:51,บัตรเครดิต SCB CardX,เบี้ยประกันสุขภาพรายเดือน,4080.39,bills,False,False,routine,False,บัตรเครดิต scb cardx เบี้ยประกัน สุขภาพ รายเดือน
+23e36eab-2afa-444c-9e0d-db063c4ac9e1,2025-09-21,15:03,Gourmet Market Siam Paragon,ซื้อของใช้จำเป็นในห้องน้ำ,199.64,shopping,False,False,routine,False,gourmet market siam paragon ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+6abb4973-9ccc-4205-8056-4c8dd04f1f30,2025-08-01,14:12,Muji Central Chidlom,ซื้อเสื้อกล้ามและกางเกงสแล็ค,666.93,shopping,True,False,wants,False,muji central chidlom ซื้อ เสื้อกล้าม และ กางเกง สแล็ค
+8b3737c7-6c92-4fe8-ae16-4d274f47ea52,2025-04-10,07:32,ค่าธรรมเนียมถอนเงินข้ามเขต,ทำบุญค่าน้ำค่าไฟวัดประจำเดือน,89.73,other,False,False,routine,False,ค่าธรรมเนียม ถอนเงิน ข้าม เขต ทำบุญ ค่าน้ำค่าไฟ วัด ประจำเดือน
+79dd2c54-04d7-4cb7-851e-080328bf3862,2025-07-13,08:02,Line Man Taxi VIP,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,577.53,transport,True,False,wants,False,line man taxi vip จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+a479fbb5-2550-4f03-82ef-9c52267cb8e8,2025-07-12,02:07,Apple Store Online TH,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,2388.52,shopping,True,True,impulse_online,False,apple store online th ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+bea2fffe-4892-4905-8909-1653badc90e9,2025-12-31,19:03,Caltex เอกมัย,เติมน้ำมัน E20 รถยนต์ส่วนตัว,61.15,transport,False,False,routine,False,caltex เอกมัย เติมน้ำมัน e 20 รถยนต์ ส่วนตัว
+4e420c2b-78bc-4325-9388-7cef3098a37b,2025-06-15,13:35,PromptPay โอนเงินส่วนตัว,บริจาคช่วยมูลนิธิการกุศล,498.83,other,True,False,wants,False,promptpay โอน เงิน ส่วนตัว บริจาค ช่วย มูลนิธิ การกุศล
+27208816-21e6-4e04-a153-3402cdd54cde,2025-10-04,20:38,Shell Station สุขุมวิท,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,87.13,transport,False,False,routine,False,shell station สุขุมวิท เติมน้ำมัน มอเตอร์ไซค์ เต็ม ถัง
+2ff567e7-b920-4ec6-901a-233769398c7c,2025-05-04,12:39,Big C Supercenter รัชดา,ซื้อยาแก้แพ้และวิตามินซีรวม,237.07,shopping,False,False,routine,False,big c supercenter รัชดา ซื้อ ยา แก้ แพ้ และ วิตามิน ซี รวม
+a52ef017-a682-4a19-9e55-b88f76c5862e,2025-12-30,13:49,Amazon Cafe PTT,กาแฟคั่วเข้มแก้วเช้า,223.45,food,False,False,routine,False,amazon cafe ptt กาแฟ คั่ว เข้ม แก้ว เช้า
+3a1532c3-ed0a-420b-8b2d-d9665a72f706,2025-10-28,13:22,ที่จอดรถ อาคารเสริมมิตร,M-Flow ชำระค่าผ่านทางด่วน,25.3,transport,False,False,routine,False,ที่จอดรถ อาคาร เสริม มิตร m flow ชำระ ค่า ผ่าน ทางด่วน
+ab528f7e-c8ec-4b7d-9cd1-fea88f2c3de6,2025-03-17,20:45,Lotus's สุขุมวิท 50,โอน,418.35,shopping,False,False,routine,False,lotus s สุขุมวิท 50 โอน
+876611ff-8ff3-40c4-83f3-9d12550d49a9,2025-01-04,17:31,Haidilao Hot Pot CentralWorld,เซ็ตซูชิพรีเมียมแซลมอน 5 คำ,478.83,food,True,False,wants,False,haidilao hot pot centralworld เซ็ต ซูชิ พรีเมียม แซลมอน 5 คำ
+fa5d3ee6-1d37-4c4e-bf5f-e7245bcdbd13,2025-04-29,12:14,Big C Supercenter รัชดา,,419.86,shopping,False,False,routine,False,big c supercenter รัชดา nan
+0eda4447-5767-408a-80ec-bbacd8b489c3,2025-03-20,17:37,Line Man Taxi VIP,เรียกรถ GrabCar ไปปาร์ตี้,1254.43,transport,True,False,wants,False,line man taxi vip เรียก รถ grabcar ไป ปาร์ตี้
+9c83c57c-40c7-49d7-b6ad-ab8b9a70c673,2026-01-01,22:47,Gourmet Market Siam Paragon,ซื้อของใช้จำเป็นในห้องน้ำ,184.13,shopping,False,False,routine,False,gourmet market siam paragon ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+016a69bc-029b-454d-b558-0be2e88473a8,2025-04-02,19:37,PromptPay โอนเงินส่วนตัว,พร้อมเพย์,376.88,other,True,False,wants,False,promptpay โอน เงิน ส่วนตัว พร้อม เพย์
+5044e91e-a529-4f6a-a329-3b64c40cbeeb,2025-03-13,14:42,ธนาคารกรุงไทย Krungthai Next,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,336.71,other,False,False,routine,False,ธนาคาร กรุงไทย krungthai next โอน เงิน คืน เพื่อน ค่า อาหารกลางวัน
+5d327c6e-4041-4197-84bb-2d086ced3339,2025-04-20,02:28,GrabFood - ชานมไข่มุก KOI The,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,347.51,food,True,True,impulse_delivery,False,grabfood ชา นม ไข่มุก koi the พิซซ่า ถาด กลาง หนา นุ่ม ส่ง รอบ เที่ยงคืน
+2cc5d69e-ba30-47ee-99b6-dc9a5d9df43a,2025-09-28,21:40,Caltex เอกมัย,แตะบัตร MRT สถานีพระราม 9,74.76,transport,False,False,routine,False,caltex เอกมัย แตะ บัตร mrt สถานี พระราม 9
+d7c1f0a4-f6c5-4770-b3a3-4e1a657793c0,2025-03-03,14:19,Boots Pharmacy พระราม 9,กล่องเก็บของและอุปกรณ์อเนกประสงค์,123.05,shopping,False,False,routine,False,boots pharmacy พระราม 9 กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+ec643153-7c06-4fa2-878e-b34512786b9c,2025-01-05,13:45,Bar B Q Plaza,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,1104.63,food,True,False,wants,False,bar b q plaza ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+598388ab-7efb-4522-94ee-07824e189e4e,2025-09-26,11:14,Momoparadise Central Rama 9,Iced Caramel Macchiato Venti,522.14,food,True,True,wants,False,momoparadise central rama 9 iced caramel macchiato venti
+a940fd0f-82a9-4195-af21-45859e61cea8,2025-07-14,08:42,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน 5G,1298.72,bills,False,False,routine,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน 5 g
+7a272f61-cae5-46d8-bc2b-522cc57b7411,2025-05-05,20:52,GrabCar Premium Bangkok,นั่ง Taxi Express ช่วงฝนตก,1613.92,transport,True,False,wants,False,grabcar premium bangkok นั่ง taxi express ช่วง ฝนตก
+fce8ecef-4199-42d3-afc1-d8f5f729bfca,2025-09-25,11:07,YouTube Premium Monthly,YouTube Premium Family,172.52,entertainment,True,False,wants,False,youtube premium monthly youtube premium family
+d6777746-987d-40c8-9773-a521acb6016c,2025-01-29,11:40,Bar B Q Plaza,ชำระเงิน,281.7,food,True,False,wants,False,bar b q plaza ชำระเงิน
+aeef9b1c-2685-47e3-a47d-90e71b01ceb3,2025-11-26,08:54,SF Cinema World CentralWorld,Spotify Individual Subscription,1911.7,entertainment,True,True,wants,False,sf cinema world centralworld spotify individual subscription
+9648fee8-20dc-4d42-a111-051092201b55,2025-04-24,18:52,ร้านข้าวต้มรอบดึก กวงเฮง,อาหารตามสั่งจานด่วน,162.38,food,False,False,routine,False,ร้าน ข้าวต้ม รอบ ดึก กวง เฮง อาหาร ตาม สั่ง จาน ด่วน
+73974e60-01ab-4827-9f90-3adbf2218be0,2025-06-05,12:10,Tops Supermarket All Seasons,ผลไม้นำเข้าและนมจืด,337.99,shopping,False,False,routine,False,tops supermarket all seasons ผลไม้ นำเข้า และ นม จืด
+9a3d7d65-2ace-443e-b8c5-a92b53b43576,2025-03-04,22:58,The Beer Bar Sukhumvit 11,ตั๋วคอนเสิร์ตอินดี้มิวสิก,1659.96,entertainment,True,False,wants,False,the beer bar sukhumvit 11 ตั๋ว คอนเสิร์ต อินดี้ มิวสิก
+3ca58c4b-cb5e-4d4b-bafe-e38f2a325bd3,2025-01-22,16:36,ทางด่วน กทพ. Easy Pass,xxx,84.42,transport,False,False,routine,False,ทางด่วน กทพ easy pass xxx
+595ea30b-92f1-4d3f-8f8b-b993b27e013e,2025-02-09,11:21,H&M EmQuartier,โคมไฟมินิมอลแต่งโต๊ะทำงาน,2105.74,shopping,True,False,wants,False,h m emquartier โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+a482378b-78f0-425c-a6e1-9b8fa52200f7,2025-09-30,10:46,ชายสี่บะหมี่เกี๊ยว,แซนด์วิชทูน่ามื้อเช้า,175.25,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว แซนด์วิช ทูน่า มื้อ เช้า
+abb54437-9bcd-4072-8504-b3ed91ba1641,2025-03-28,19:44,Big C Supercenter รัชดา,ซื้อของใช้จำเป็นในห้องน้ำ,193.44,shopping,False,False,routine,False,big c supercenter รัชดา ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+f7009384-1b33-4713-98e7-1e234a68ece2,2025-07-12,10:48,McDonald's EmQuartier,ไก่ทอด KFC บักเก็ตพิเศษ,441.84,food,True,False,wants,False,mcdonald s emquartier ไก่ทอด kfc บัก เก็ต พิเศษ
+f00d0881-8ccb-484a-8ad0-9f6f92e21998,2025-06-21,13:38,ร้านข้าวราดแกงเมืองตรัง,เคลียร์ยอด,75.98,food,False,False,routine,False,ร้าน ข้าวราดแกง เมือง ตรัง เคลียร์ ยอด
+c62cd198-d279-4df3-81ee-ad3ea10acb3c,2025-12-25,16:36,Momoparadise Central Rama 9,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,670.51,food,True,True,wants,False,momoparadise central rama 9 บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+38e0aa03-0166-4210-b77e-dffce8ea234b,2025-01-04,10:43,BCP บางจาก พระโขนง,ค่าจอดรถรายชั่วโมงอาคาร,52.88,transport,False,False,routine,False,bcp บาง จาก พระ โขนง ค่า จอด รถ ราย ชั่วโมง อาคาร
+76757547-b75b-4f50-955e-5427308fb58a,2025-05-15,19:19,TrueMove H Postpaid,ค่าแพ็กเกจมือถือรายเดือน 5G,1718.11,bills,False,False,routine,False,truemove h postpaid ค่า แพ็กเกจ มือถือ รายเดือน 5 g
+41c16eeb-08f3-436a-b6d0-045fe38797a8,2025-09-06,08:58,การประปานครหลวง MWA,โอนค่าเช่าคอนโดประจำเดือน,819.56,bills,False,False,routine,False,การประปา นครหลวง mwa โอน ค่าเช่า คอนโด ประจำเดือน
+58237b10-63f8-4c79-97ab-d21ddf100eab,2025-01-02,10:38,TrueMove H Postpaid,ชำระยอดบัตรเครดิตยอดเต็ม,4237.12,bills,False,False,routine,False,truemove h postpaid ชำระ ยอด บัตรเครดิต ยอด เต็ม
+3f22cb16-962d-47f3-8e54-37036ebec5cd,2025-08-19,07:29,ค่าเช่าคอนโด ลุมพินีทาวเวอร์,ชำระค่าส่วนกลางคอนโดมิเนียม,3115.8,bills,False,False,routine,False,ค่าเช่า คอนโด ลุมพินี ทาวเวอร์ ชำระ ค่า ส่วนกลาง คอนโดมิเนียม
+839752db-96f8-4124-8bbb-a4fb71c92e4b,2025-10-29,09:12,ชายสี่บะหมี่เกี๊ยว,คืนเพื่อน,225.43,food,False,False,routine,False,ชาย สี่ บะหมี่ เกี๊ยว คืน เพื่อน
+261a247d-cc8e-4383-8e6e-5694e84f499c,2025-08-20,08:27,Bolt Taxi Express,Grab VIP เดินทางไปสนามบิน,2006.11,transport,True,False,wants,False,bolt taxi express grab vip เดินทาง ไป สนามบิน
+d3b4969f-e968-4748-ad14-42a7f0f50932,2025-04-20,09:48,ปตท. PTT Station สาขา 2,เติมน้ำมันดีเซลเต็มถัง,29.78,transport,False,False,routine,False,ปตท ptt station สาขา 2 เติม น้ำมันดีเซล เต็ม ถัง
+7ffcfc12-19d2-4ead-b481-018e6d699f84,2025-12-25,16:11,บัตรเครดิต SCB CardX,ชำระยอดบัตรเครดิตยอดเต็ม,1297.61,bills,False,False,routine,False,บัตรเครดิต scb cardx ชำระ ยอด บัตรเครดิต ยอด เต็ม
+dfb03454-aa71-4e09-885b-2a6e1d64d1ec,2025-02-13,18:04,โจ๊กสามย่าน สาขา 2,โจ๊กหมูใส่ไข่เยี่ยวม้า,151.52,food,False,False,routine,False,โจ๊ก สามย่าน สาขา 2 โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+49cfada6-c7ec-4f6b-8f10-4af7e8137c6d,2025-07-31,21:44,ตู้เติมเงิน บุญเติม,ทำบุญค่าน้ำค่าไฟวัดประจำเดือน,488.0,other,False,False,routine,False,ตู้ เติม เงิน บุญ เติม ทำบุญ ค่าน้ำค่าไฟ วัด ประจำเดือน
+477c0f82-9536-410f-b003-b84ec8af8fe9,2025-05-06,20:16,Starbucks Reserve,ดินเนอร์ร้านอาหารอิตาเลียน,743.77,food,True,False,wants,False,starbucks reserve ดินเนอร์ ร้านอาหาร อิตาเลียน
+1fc0642c-ba55-4d02-87eb-9c05f5d5da7e,2025-06-26,16:22,โอนร่วมบุญผ้าป่าวัดป่า,โอนเงิน,489.32,other,True,True,wants,False,โอน ร่วม บุญ ผ้าป่า วัด ป่า โอน เงิน
+60d18e07-910f-46d8-bfff-1fef4e69e2e5,2025-05-03,20:51,Sukishi Korean Buffet,ไก่ทอด KFC บักเก็ตพิเศษ,705.07,food,True,False,wants,False,sukishi korean buffet ไก่ทอด kfc บัก เก็ต พิเศษ
+53c93a33-f747-4171-b6d1-4306dddc8707,2025-08-19,11:51,YouTube Premium Monthly,ซื้อเกมลดราคาบน Steam Store,996.66,entertainment,True,False,wants,False,youtube premium monthly ซื้อ เกม ลดราคา บน steam store
+a360312c-145f-4ecd-8d1b-f695132416c0,2025-01-01,13:48,ZARA Siam Paragon,จ่ายผ่านแอป,1969.69,shopping,True,False,wants,True,zara siam paragon จ่าย ผ่าน แอ ป
+2def9d05-631a-4b33-bc29-43dae07a3a2c,2025-01-01,14:55,Sushi Masa Thonglor,ไก่ทอด KFC บักเก็ตพิเศษ,596.59,food,True,False,wants,True,sushi masa thonglor ไก่ทอด kfc บัก เก็ต พิเศษ
+ee19981a-0c4d-487e-b45d-b98bd4b0dbba,2025-01-03,09:24,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,1472.42,transport,True,False,wants,True,nok air ticket เช่า รถ ขับ เที่ยว กับ เพื่อน
+b4eaab79-8ca9-488b-8063-db6292d86ebb,2025-01-03,22:05,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,208.42,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+1bd56a9e-8ca4-4805-94bb-391af2cc420b,2025-01-05,09:05,MRT Bangkok พระราม 9,Easy Pass เติมเงินทางด่วน,37.2,transport,False,False,routine,True,mrt bangkok พระราม 9 easy pass เติม เงิน ทางด่วน
+2f9bce0e-e59c-41b0-bcdd-aad3ef460606,2025-01-05,12:16,FWD Insurance Thailand,เบี้ยประกันสุขภาพรายเดือน,977.75,bills,False,False,routine,True,fwd insurance thailand เบี้ยประกัน สุขภาพ รายเดือน
+fd193be2-5985-42cb-af68-58e73cb9ad93,2025-01-07,15:29,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,2625.51,shopping,True,False,wants,True,zara siam paragon หนังสือ แปล และ นวนิยาย ขายดี
+df02478a-39ad-4bc0-befe-93b4d0f6c13c,2025-01-09,09:34,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,1086.82,food,True,False,wants,True,sushi masa thonglor สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+025f5d56-124d-40cd-ba51-22cc9b254752,2025-01-09,21:20,MRT Bangkok พระราม 9,เติมเงินบัตร BTS รายเดือน,119.85,transport,False,False,routine,True,mrt bangkok พระราม 9 เติม เงิน บัตร bts รายเดือน
+a932755a-7bc6-4f01-ad9c-55395bc79947,2025-01-12,17:01,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,1184.37,food,True,False,wants,True,sushi masa thonglor สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+ab8c8ddc-021f-4449-8d8b-fba483dd8b72,2025-01-14,09:29,Glow Nightclub Thonglor,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,1298.98,entertainment,True,False,wants,True,glow nightclub thonglor ดื่ม คราฟต์ เบียร์ สังสรรค์ คืน วัน ศุกร์
+19ae9a6d-a33d-41d1-81e6-316cf6ee0b35,2025-01-14,12:42,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,970.93,transport,True,False,wants,True,drive car rental thailand grab vip เดินทาง ไป สนามบิน
+b94e9014-5d61-43f7-8e31-9f9013d04c07,2025-01-14,14:43,After You Dessert Cafe,xxx,1184.74,food,True,False,wants,True,after you dessert cafe xxx
+3b59157f-5466-479f-b098-814e9a592fb8,2025-01-14,17:29,CJ Express ซอย 5,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,208.75,food,False,False,routine,True,cj express ซอย 5 ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+c4a94405-c16b-438c-9c64-8a62582d011c,2025-01-14,19:35,การไฟฟ้านครหลวง MEA,ค่าเน็ตบ้านรายเดือน 3BB,1675.64,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ค่า เน็ต บ้าน รายเดือน 3 bb
+aecb6dd4-8807-48ad-815f-e4ce8cc19311,2025-01-15,14:09,ร้านข้าวแกงป้าพร,กาแฟคั่วเข้มแก้วเช้า,204.01,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร กาแฟ คั่ว เข้ม แก้ว เช้า
+1bb1be36-5781-4a4b-b000-c4aa6b3fb896,2025-01-16,14:53,Daiso Japan 60 บาท,กล่องเก็บของและอุปกรณ์อเนกประสงค์,350.7,shopping,False,False,routine,True,daiso japan 60 บาท กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+258b64bf-4dd2-4092-bdf8-a6075fabf8eb,2025-01-17,19:46,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,1428.48,transport,True,False,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+45afbe31-b048-41c2-90d1-133f71ab058c,2025-01-17,21:20,Nok Air Ticket,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,2113.43,transport,True,False,wants,True,nok air ticket จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+feab6cbf-85c4-4677-9985-fbe0b5dfb338,2025-01-18,01:54,MRT Bangkok พระราม 9,M-Flow ชำระค่าผ่านทางด่วน,57.98,transport,False,False,routine,True,mrt bangkok พระราม 9 m flow ชำระ ค่า ผ่าน ทางด่วน
+2a95fb92-fd97-4eb3-94ca-0e193bc418c4,2025-01-18,02:42,Lineman - ส้มตำแซ่บพรีเมียม,ชานมไข่มุก golden bubble x2,1411.95,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ชา นม ไข่มุก golden bubble x 2
+401c7c66-4c1a-497a-b469-9578a303c6ab,2025-01-18,08:48,After You Dessert Cafe,Shibuya Honey Toast และชาร้อน,840.27,food,True,False,wants,True,after you dessert cafe shibuya honey toast และ ชาร้อน
+6276e04d-2378-402a-96d3-82ec9d8686f0,2025-01-19,15:20,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,98.77,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+0e10d02a-5d6c-4e70-b047-236dda776680,2025-01-20,22:35,Ticketmelon Concerts,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,959.86,entertainment,True,False,wants,True,ticketmelon concerts ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+e9dace51-810e-4fed-b10e-116c93028cb2,2025-01-21,11:17,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน MEA,2531.74,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน mea
+990d6291-7167-480b-bae3-bb1e150ad6c8,2025-01-21,21:17,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,549.77,food,True,False,wants,True,after you dessert cafe บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+a75d1057-930b-43f0-bf3c-b15843802f74,2025-01-21,22:35,FWD Insurance Thailand,ค่าโทรศัพท์และบรอดแบนด์,2686.99,bills,False,False,routine,True,fwd insurance thailand ค่าโทรศัพท์ และ บรอดแบนด์
+78a6b06f-ce93-4856-be45-1314a635782f,2025-01-23,14:41,Sushi Masa Thonglor,พร้อมเพย์,1003.0,food,True,False,wants,True,sushi masa thonglor พร้อม เพย์
+e1c97af9-d28d-4c35-8fd5-716d91ced695,2025-01-23,16:28,Sushi Masa Thonglor,สุกี้ชาบูเนื้อวากิวไม่อั้น,725.45,food,True,False,wants,True,sushi masa thonglor สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+b6d567e3-ab9e-47f2-918e-944baf4140d1,2025-01-24,19:52,Watsons สาขา เซ็นทรัล,คืนเพื่อน,229.31,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล คืน เพื่อน
+b92bbd25-2ce2-47be-a6ff-5f4a688bb443,2025-01-25,00:45,Drive Car Rental Thailand,เรียกรถ GrabCar ไปปาร์ตี้,414.38,transport,True,True,wants,True,drive car rental thailand เรียก รถ grabcar ไป ปาร์ตี้
+428c1083-cf6f-4cd0-be22-a6cc3a2ea7e8,2025-01-25,21:07,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,644.72,food,True,False,wants,True,sushi masa thonglor เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+a151fe7f-22b7-4a1d-9ddd-bed1f3e45f20,2025-01-25,21:48,Sushi Masa Thonglor,คืนเพื่อน,666.21,food,True,True,wants,True,sushi masa thonglor คืน เพื่อน
+b8bdc878-af88-4783-b89f-6899d2b0a1bf,2025-01-27,11:04,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,835.62,food,True,True,wants,True,sushi masa thonglor ชาบู หม้อไฟ หมา ล่า พรีเมียม
+ddc5315c-ff3a-4446-8a93-e862b074122c,2025-01-27,16:14,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินคืนค่าแท็กซี่หารกัน,359.24,other,False,False,routine,True,ธนาคาร ไทย พาณิชย์ scb easy โอน เงิน คืน ค่า แท็กซี่ หาร กัน
+fd49b3a6-18b3-4b30-afa1-c58c67abc255,2025-01-29,16:47,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ส้มตำไทยคอหมูย่าง,78.15,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ส้มตำ ไทย คอ หมู ย่าง
+879a2d73-6327-471d-abf7-7edaddf5445a,2025-01-31,21:58,CJ Express ซอย 5,โอน,239.25,food,False,False,routine,True,cj express ซอย 5 โอน
+636c332d-d5c8-43af-b5ed-6a1a9f777af1,2025-02-01,00:37,Lineman - ส้มตำแซ่บพรีเมียม,ยอดตัดบัญชี,749.78,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ยอด ตัด บัญชี
+7aedc4c6-bf9f-45c6-9958-3b120a667dd9,2025-02-02,00:04,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,1837.95,transport,True,False,wants,True,drive car rental thailand grab vip เดินทาง ไป สนามบิน
+9cb38f6c-1262-4153-a236-dfaa1b532cc2,2025-02-03,10:20,Glow Nightclub Thonglor,ซื้อเกมลดราคาบน Steam Store,401.85,entertainment,True,False,wants,True,glow nightclub thonglor ซื้อ เกม ลดราคา บน steam store
+b922a63f-8dfb-47f0-8e9f-9b27238800ae,2025-02-05,11:47,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,186.05,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+4a78b83a-33ac-4f1c-9f94-2def17848f0a,2025-02-07,18:05,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,130.09,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+8e6e2cb9-23b3-4227-ab55-c55de048ba1f,2025-02-07,20:01,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,อาหารตามสั่งจานด่วน,135.86,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด อาหาร ตาม สั่ง จาน ด่วน
+df89c583-1431-4592-a236-206ae55b26ba,2025-02-08,18:32,Nok Air Ticket,จ่ายผ่านแอป,2112.9,transport,True,False,wants,True,nok air ticket จ่าย ผ่าน แอ ป
+bc4be2e9-26b6-49dc-8665-6bf1eb73c7f5,2025-02-10,08:42,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,396.54,food,True,False,wants,True,greyhound cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+d2ac1b11-76f1-462a-9dcc-584389ab7deb,2025-02-10,11:09,ZARA Siam Paragon,กระเป๋าผ้าแบรนด์ยอดฮิต,2571.31,shopping,True,False,wants,True,zara siam paragon กระเป๋า ผ้า แบรนด์ ยอดฮิต
+182a8cff-1097-4b39-aabe-60bda96e2857,2025-02-10,11:38,Watsons สาขา เซ็นทรัล,ซื้อของใช้จำเป็นในห้องน้ำ,357.4,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+89a21d5e-ec19-4ea0-a46d-07feae7c0791,2025-02-11,11:55,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,87.19,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย โอน เงิน ซื้อ ของขวัญ วันเกิด เพื่อน
+954afa40-cada-4709-afab-0ed0dafd77a5,2025-02-12,09:58,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,230.85,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย โอน เงิน ซื้อ ของขวัญ วันเกิด เพื่อน
+3ba6f8a4-bd54-4af6-bf38-411851814534,2025-02-12,22:28,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,216.99,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวราดแกง 2 อย่าง ไข่ต้ม
+5c4b3a06-160c-4777-a27c-d8c706ffed2c,2025-02-14,10:49,Daiso Japan 60 บาท,จ่ายผ่านแอป,318.41,shopping,False,False,routine,True,daiso japan 60 บาท จ่าย ผ่าน แอ ป
+2f885b4c-712d-4793-a6fb-5e1ee7e8614b,2025-02-16,23:09,AIA Life Insurance Post,ชำระยอดบัตรเครดิตยอดเต็ม,411.36,bills,False,False,routine,True,aia life insurance post ชำระ ยอด บัตรเครดิต ยอด เต็ม
+46d74d8a-4a9a-49de-b1c1-5ea0ba58bdc7,2025-02-18,11:39,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,193.39,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+c97d8cc6-c693-44e7-ae0a-ee892afd3613,2025-02-18,17:42,ZARA Siam Paragon,กระเป๋าผ้าแบรนด์ยอดฮิต,2717.46,shopping,True,False,wants,True,zara siam paragon กระเป๋า ผ้า แบรนด์ ยอดฮิต
+146680a1-deb3-4988-8c1b-f0852d9df39e,2025-02-19,16:39,วินมอเตอร์ไซค์ หน้า MRT,ค่าจอดรถรายชั่วโมงอาคาร,114.45,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ค่า จอด รถ ราย ชั่วโมง อาคาร
+31906246-abb8-4a2e-8992-c556b0a07675,2025-02-19,18:33,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,241.27,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+58eaa38c-1a5b-40ae-9a05-44881c280998,2025-02-21,02:32,Lineman - ส้มตำแซ่บพรีเมียม,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,296.23,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
+299b1990-5add-4778-b8e3-ef8f3d751704,2025-02-21,12:31,FWD Insurance Thailand,ชำระค่าส่วนกลางคอนโดมิเนียม,1287.33,bills,False,False,routine,True,fwd insurance thailand ชำระ ค่า ส่วนกลาง คอนโดมิเนียม
+cd3f9dfb-324e-4343-b54b-b74126befa60,2025-02-21,22:18,Daiso Japan 60 บาท,ซื้อยาสีฟัน แชมพู และสบู่เหลว,452.98,shopping,False,False,routine,True,daiso japan 60 บาท ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+665aa29c-cd9a-4fd4-b699-fbce1dcf6583,2025-02-22,17:32,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,53.48,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+0600aba3-bfa1-4e4d-87fe-1b86ba043f40,2025-02-22,19:32,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมัน Gasohol 95,84.21,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt เติมน้ำมัน gasohol 95
+4637a4ef-4d6c-44c8-b639-b28d72f3fbd2,2025-02-26,08:53,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,2412.9,transport,True,True,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+195a0e73-cd8e-4d85-8c64-07f9d7433476,2025-02-26,14:34,ร้านข้าวแกงป้าพร,กาแฟคั่วเข้มแก้วเช้า,133.58,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร กาแฟ คั่ว เข้ม แก้ว เช้า
+b9441c87-ab33-4221-bd2d-3dcded4afec1,2025-02-27,00:30,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,473.75,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+cf3e4857-bef9-460d-8daa-a6d939ac272b,2025-02-27,02:41,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,1001.23,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+c633ad01-387c-44a4-9303-b308f56012f1,2025-02-27,07:19,AIA Life Insurance Post,จ่ายผ่านแอป,1210.6,bills,False,False,routine,True,aia life insurance post จ่าย ผ่าน แอ ป
+1db8fd28-892f-4800-b2a2-1f06c7c188a2,2025-02-27,16:37,Glow Nightclub Thonglor,PlayStation Plus Member,252.51,entertainment,True,False,wants,True,glow nightclub thonglor playstation plus member
+41d0bbfa-5f05-4b93-add6-2486c6bd1ffc,2025-03-01,01:29,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินไปหน้าปากซอยสุขุมวิท,103.22,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ค่า วิน ไป หน้า ปากซอย สุขุมวิท
+e8b54cae-3e05-476b-a028-14402072c673,2025-03-03,00:40,Pop Mart Official Store,จ่ายผ่านแอป,2848.12,shopping,True,True,impulse_online,True,pop mart official store จ่าย ผ่าน แอ ป
+0901f616-cb9f-444c-a9e0-57a609f272b8,2025-03-03,02:54,Pop Mart Official Store,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,534.0,shopping,True,True,impulse_online,True,pop mart official store ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+f78a0c1a-77cf-44d9-a606-772156720397,2025-03-03,08:55,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,699.14,transport,True,False,wants,True,drive car rental thailand grab vip เดินทาง ไป สนามบิน
+8c5adbef-bc0d-49ce-b15e-fee5cffc6b52,2025-03-04,16:24,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,59.17,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติม น้ำมันดีเซล เต็ม ถัง
+4cde84e8-7544-4214-bfc1-56980f68877c,2025-03-06,14:04,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,124.64,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+3ba327fd-bdcc-4875-bd91-d91809f7d090,2025-03-06,22:42,ร้านข้าวแกงป้าพร,โจ๊กหมูใส่ไข่เยี่ยวม้า,52.37,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+489173ea-cfe8-482a-a1ae-781789c5ddad,2025-03-07,14:19,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,แซนด์วิชทูน่ามื้อเช้า,179.98,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด แซนด์วิช ทูน่า มื้อ เช้า
+966359e5-2889-4143-8583-789f396d6206,2025-03-08,22:17,ZARA Siam Paragon,ลิปสติกและพาเลตต์อายแชโดว์,1865.13,shopping,True,False,wants,True,zara siam paragon ลิปสติก และ พา เลตต์ อายแชโดว์
+5f393980-647c-4a7e-99cc-25e87a51ecaa,2025-03-09,02:27,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,175.87,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บริจาค อาหาร สุนัข แมว จรจัด
+e1dbf454-d4e3-420f-8872-02d02bfb7396,2025-03-09,23:05,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,554.84,transport,True,False,wants,True,nok air ticket grab vip เดินทาง ไป สนามบิน
+4298b6e0-c3e8-4c17-a82b-936fcdfd2955,2025-03-10,18:06,Sushi Masa Thonglor,ไก่ทอด KFC บักเก็ตพิเศษ,506.28,food,True,False,wants,True,sushi masa thonglor ไก่ทอด kfc บัก เก็ต พิเศษ
+968da1f7-7440-4c48-9600-a009c8b569b4,2025-03-12,19:23,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,1454.95,transport,True,False,wants,True,drive car rental thailand นั่ง taxi express ช่วง ฝนตก
+34fcb706-7c1e-4da5-9a95-af014b097ab8,2025-03-12,20:43,Glow Nightclub Thonglor,ซื้อเกมลดราคาบน Steam Store,1236.79,entertainment,True,False,wants,True,glow nightclub thonglor ซื้อ เกม ลดราคา บน steam store
+9651b50e-0c6a-4758-9696-6261cecdc199,2025-03-14,14:28,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,1351.07,transport,True,False,wants,True,nok air ticket grab vip เดินทาง ไป สนามบิน
+42db3fa9-8da3-4d74-bc17-0ffb6c899c37,2025-03-14,16:02,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,359.19,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+3043e9f1-417f-432f-9162-bba582346469,2025-03-15,07:45,Sushi Masa Thonglor,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,1009.53,food,True,False,wants,True,sushi masa thonglor บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+af571680-23a1-4270-8709-e372f538203c,2025-03-17,08:17,Sushi Masa Thonglor,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,787.37,food,True,False,wants,True,sushi masa thonglor สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+5a3e6be9-1acd-42b3-a6da-a77b65f83140,2025-03-17,18:44,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,1522.05,transport,True,False,wants,True,nok air ticket ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+f3887b9e-a96b-4a61-b73e-e9bd3d3558ba,2025-03-17,22:40,CJ Express ซอย 5,กาแฟคั่วเข้มแก้วเช้า,160.98,food,False,False,routine,True,cj express ซอย 5 กาแฟ คั่ว เข้ม แก้ว เช้า
+51497ba6-48f5-4b83-9da6-5271da1415d6,2025-03-18,14:19,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,444.88,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+d7c3bec5-4041-4dea-8049-88914f916ea5,2025-03-22,00:04,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,668.09,food,True,True,impulse_delivery,True,grabfood bonchon chicken ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+28432bb4-6422-492b-98a6-13e3ca28bfd3,2025-03-22,00:30,Pop Mart Official Store,Flash Sale 00:00 หูฟังบลูทูธ,2082.61,shopping,True,True,impulse_online,True,pop mart official store flash sale 00 00 หูฟัง บลูทูธ
+b2552909-7975-4690-95f6-1b0a5b393282,2025-03-23,11:58,Glow Nightclub Thonglor,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,293.04,entertainment,True,False,wants,True,glow nightclub thonglor ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+df09306b-d9be-4a0e-8850-8fbd8006026b,2025-03-24,20:27,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินส่วนตัวเข้าบัญชีออมทรัพย์,182.56,other,False,False,routine,True,ธนาคาร ไทย พาณิชย์ scb easy โอน เงิน ส่วนตัว เข้า บัญชีออมทรัพย์
+10654850-5794-4e0d-a630-969d3c8ecc3b,2025-03-25,02:07,Pop Mart Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,2328.4,shopping,True,True,impulse_online,True,pop mart official store สั่ง ของเล่น art toy กล่อง สุ่ม ไลฟ์ ดึก
+59dc447b-0e14-45a6-819f-26e0fe26bc5f,2025-03-25,12:23,ZARA Siam Paragon,เสื้อเบลเซอร์ทำงานคอลใหม่,2662.24,shopping,True,True,wants,True,zara siam paragon เสื้อ เบล เซอร์ ทำงาน คอ ล ใหม่
+566b90bc-4b5c-4dfb-9cca-17df067cba15,2025-03-26,02:23,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,2629.46,shopping,True,True,impulse_online,True,shopee flash sale mall flash sale 00 00 หูฟัง บลูทูธ
+419a50f1-348c-4b79-814c-d75d4b8d0b11,2025-03-27,02:54,After You Dessert Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,648.83,food,True,True,wants,True,after you dessert cafe เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+11913bb6-bcff-48af-acf2-71413607cd90,2025-03-27,14:29,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,1457.09,transport,True,True,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+23e1e384-1912-4c1d-8243-1394328c0ea7,2025-03-27,16:20,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,870.67,transport,True,True,wants,True,nok air ticket เรียก รถ grabcar ไป ปาร์ตี้
+52ff6e1e-7669-487f-9d79-791ccfa7dea5,2025-03-28,11:49,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ชำระเงิน,143.21,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ชำระเงิน
+45847821-ff36-4292-b43b-95bb346deb4b,2025-03-29,12:01,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,320.05,shopping,False,False,routine,True,daiso japan 60 บาท น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+11c9f633-0b13-41fa-a56d-8a1065a527c7,2025-03-30,22:26,FWD Insurance Thailand,คืนเพื่อน,1525.65,bills,False,False,routine,True,fwd insurance thailand คืน เพื่อน
+3149d634-5316-45f4-8d89-e349be020221,2025-03-31,14:01,Daiso Japan 60 บาท,ชำระเงิน,311.77,shopping,False,False,routine,True,daiso japan 60 บาท ชำระเงิน
+8bc9480d-c323-42d9-9cd9-3520bb9fab0b,2025-04-02,08:11,AIA Life Insurance Post,ค่าโทรศัพท์และบรอดแบนด์,3396.1,bills,False,False,routine,True,aia life insurance post ค่าโทรศัพท์ และ บรอดแบนด์
+de76ffb7-ae10-4bd4-a172-c1e3c67e39c0,2025-04-03,09:52,M-Flow ทล.9 กรมทางหลวง,ค่ารถตู้ไปทำงานอนุสาวรีย์,67.43,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง ค่า รถตู้ ไป ทำงาน อนุสาวรีย์
+3ca6f82a-dfea-4a5e-8da3-5447523a6cc5,2025-04-03,14:44,Sushi Masa Thonglor,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,295.74,food,True,False,wants,True,sushi masa thonglor บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+55a73484-43dc-4385-b560-1849eb7377fc,2025-04-04,14:10,Daiso Japan 60 บาท,โอน,227.49,shopping,False,False,routine,True,daiso japan 60 บาท โอน
+5d331943-6e90-4aef-a2ae-9d7fb888d0b5,2025-04-07,10:26,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,1166.59,food,True,False,wants,True,greyhound cafe ดินเนอร์ ร้านอาหาร อิตาเลียน
+ec9e0195-5967-4339-a748-d30a11993d3a,2025-04-07,13:08,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,2538.67,shopping,True,False,wants,True,zara siam paragon เครื่องเขียน สมุด โน้ต สไตล์ ญี่ปุ่น
+a041ea69-6bae-4e53-a72b-80d0e0176118,2025-04-07,15:20,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,129.47,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด เส้น เล็ก น้ำตก หมู พิเศษ
+9a0a162b-ec03-45a6-85b5-042b23920590,2025-04-07,15:33,ร้านข้าวแกงป้าพร,มื้อเที่ยงกับทีม,167.52,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร มื้อ เที่ยง กับ ทีม
+dcea3355-9e93-43c7-9c9b-912db75e352f,2025-04-09,07:11,Eveandboy Mega Bangna,ซื้อเสื้อกล้ามและกางเกงสแล็ค,1586.77,shopping,True,False,wants,True,eveandboy mega bangna ซื้อ เสื้อกล้าม และ กางเกง สแล็ค
+2b4b5a5b-6888-4336-bfc6-90dda78aa933,2025-04-10,07:14,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,1100.71,food,True,False,wants,True,sushi masa thonglor ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+912a67a2-7ace-4bcd-96ea-bef2d421185f,2025-04-14,02:17,Lineman - ส้มตำแซ่บพรีเมียม,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,715.1,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+37498ebc-50d8-4b6c-a02f-88a4e0f732e5,2025-04-15,16:18,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,66.2,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt m flow ชำระ ค่า ผ่าน ทางด่วน
+4265ca4a-c48b-4ae0-b12c-9cb7ae7bbe14,2025-04-17,07:19,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,แซนด์วิชทูน่ามื้อเช้า,174.56,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด แซนด์วิช ทูน่า มื้อ เช้า
+8d4c4e9e-2efd-41df-b6ee-00cf3319d0e4,2025-04-18,08:00,CJ Express ซอย 5,แซนด์วิชทูน่ามื้อเช้า,121.51,food,False,False,routine,True,cj express ซอย 5 แซนด์วิช ทูน่า มื้อ เช้า
+405a4e08-c70f-4f79-8418-cc24f2f75aa9,2025-04-18,09:49,FWD Insurance Thailand,ชำระค่าน้ำประปานครหลวง,624.13,bills,False,False,routine,True,fwd insurance thailand ชำระ ค่า น้ำประปา นครหลวง
+f79ca2ca-8f56-49dc-b621-3d00b115307a,2025-04-18,15:53,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,2032.89,transport,True,False,wants,True,nok air ticket ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+2867aec0-f384-4349-bf17-decb3a51f3e2,2025-04-19,23:54,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,1508.57,transport,True,False,wants,True,nok air ticket เช่า รถ ขับ เที่ยว กับ เพื่อน
+910926c8-ad9f-4423-b443-5e22a93c8f5b,2025-04-20,02:25,MRT Bangkok พระราม 9,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,79.44,transport,False,False,routine,True,mrt bangkok พระราม 9 ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+59eab2ab-581e-4b9e-8d5d-e719e8d6374e,2025-04-21,07:52,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,1095.61,food,True,False,wants,True,greyhound cafe ดินเนอร์ ร้านอาหาร อิตาเลียน
+9419b598-eddb-4474-930d-f16c36456add,2025-04-21,20:06,After You Dessert Cafe,ยอดตัดบัญชี,454.81,food,True,False,wants,True,after you dessert cafe ยอด ตัด บัญชี
+71883206-2eaa-45dc-8c3f-be8a6a083a97,2025-04-23,12:32,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,97.27,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติม น้ำมันดีเซล เต็ม ถัง
+6e42ab24-d204-482c-aa0b-9d7afa553d69,2025-04-23,13:12,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,888.76,food,True,False,wants,True,sushi masa thonglor ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+a6cad4bb-fae8-4cce-a19f-0b812944eb1c,2025-04-24,20:43,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,438.92,shopping,False,False,routine,True,daiso japan 60 บาท ของสด วัตถุดิบ ทำกับข้าว
+ca9a8a73-a702-42bd-ad8c-65bb56130ba2,2025-04-25,02:05,Lineman - ส้มตำแซ่บพรีเมียม,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,889.77,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม พิซซ่า ถาด กลาง หนา นุ่ม ส่ง รอบ เที่ยงคืน
+16860aed-3ecb-4e7e-a0a5-d6ce7987b6a9,2025-04-25,08:09,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,364.76,shopping,False,False,routine,True,daiso japan 60 บาท ผลไม้ นำเข้า และ นม จืด
+0aafe22c-cda3-4f9f-9fca-23744d6f186f,2025-04-25,13:49,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,371.28,transport,True,False,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+52335274-f515-4537-840e-b3118dc2875d,2025-04-25,18:04,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,996.95,food,True,False,wants,True,after you dessert cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+07ae94ad-7b8d-45da-9eb3-e2888b10a5d5,2025-04-26,07:07,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,98.77,food,False,False,routine,True,cj express ซอย 5 ข้าวต้ม ปลา อินทรีย์ รอบ ค่ำ
+b02474c3-c9f5-4502-a7b6-1ca958d690c8,2025-04-27,00:50,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,1115.44,food,True,True,impulse_delivery,True,grabfood bonchon chicken ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+0955dc58-3e05-4840-a142-90c656d303b7,2025-04-27,02:41,Glow Nightclub Thonglor,จ่ายผ่านแอป,212.51,entertainment,True,False,wants,True,glow nightclub thonglor จ่าย ผ่าน แอ ป
+a2297507-2190-4eae-9cd3-d4a1667bcaa8,2025-04-27,19:27,Nok Air Ticket,โอน,1675.27,transport,True,True,wants,True,nok air ticket โอน
+9be76028-108c-4074-8fa9-f81422733dbb,2025-04-28,09:22,MRT Bangkok พระราม 9,เติมน้ำมัน Gasohol 95,53.63,transport,False,False,routine,True,mrt bangkok พระราม 9 เติมน้ำมัน gasohol 95
+abb04ca4-60db-4949-a384-6876297e5888,2025-04-28,11:07,Drive Car Rental Thailand,เช่ารถขับเที่ยวกับเพื่อน,1459.31,transport,True,False,wants,True,drive car rental thailand เช่า รถ ขับ เที่ยว กับ เพื่อน
+51f7decb-e56b-41db-80be-df38e370b47b,2025-04-29,17:22,Eveandboy Mega Bangna,เสื้อเบลเซอร์ทำงานคอลใหม่,581.5,shopping,True,False,wants,True,eveandboy mega bangna เสื้อ เบล เซอร์ ทำงาน คอ ล ใหม่
+f90cbcaa-3059-412c-9e6a-77a07b8e3892,2025-04-30,20:10,After You Dessert Cafe,Shibuya Honey Toast และชาร้อน,858.8,food,True,False,wants,True,after you dessert cafe shibuya honey toast และ ชาร้อน
+6b6758db-f074-4937-92b0-249b38c16042,2025-05-01,01:14,Shopee Flash Sale Mall,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,1339.25,shopping,True,True,impulse_online,True,shopee flash sale mall กล่อง สุ่ม คอลเลกชัน ใหม่ ล่าสุด
+611a8210-d7bc-4ffc-83ca-78fb4c8cec0a,2025-05-01,11:23,Greyhound Cafe,โอนเงิน,734.89,food,True,False,wants,True,greyhound cafe โอน เงิน
+fced2e17-b0b8-45b0-8d78-2cc35ab01ff0,2025-05-01,13:58,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,762.69,food,True,False,wants,True,sushi masa thonglor เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+843bd078-4dfa-4fa6-8f1e-9dfe1f426ad4,2025-05-01,18:25,การไฟฟ้านครหลวง MEA,เบี้ยประกันชีวิตและอุบัติเหตุ,3722.47,bills,False,False,routine,True,การไฟฟ้านครหลวง mea เบี้ย ประกันชีวิต และ อุบัติเหตุ
+abaf6d2f-a255-4418-bd17-85375329bb17,2025-05-02,17:40,การไฟฟ้านครหลวง MEA,ชำระค่าไฟฟ้าประจำเดือน MEA,1694.9,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ชำระ ค่าไฟฟ้า ประจำเดือน mea
+2b9d258f-6de7-40ab-973e-e66b6c7d5028,2025-05-06,10:27,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบุญสร้างโรงพยาบาลสงฆ์,78.56,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บุญ สร้าง โรงพยาบาล สงฆ์
+fb081845-190f-44a0-8441-c29b806b86d7,2025-05-07,12:40,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,236.15,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+5b77425f-43c2-4c3e-82c8-f56adb021c40,2025-05-08,09:35,Drive Car Rental Thailand,เช่ารถขับเที่ยวกับเพื่อน,2415.56,transport,True,False,wants,True,drive car rental thailand เช่า รถ ขับ เที่ยว กับ เพื่อน
+21b95abd-3df3-4abc-b346-aa734e9ed4ab,2025-05-10,00:53,Lineman - ส้มตำแซ่บพรีเมียม,จ่ายเงิน,892.02,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม จ่าย เงิน
+e39485ca-3eec-4541-87d3-80301b59abc7,2025-05-12,14:52,Sushi Masa Thonglor,Shibuya Honey Toast และชาร้อน,1063.49,food,True,False,wants,True,sushi masa thonglor shibuya honey toast และ ชาร้อน
+7bb8521e-3705-4cb0-a40a-0bc535b78093,2025-05-14,01:29,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,2814.27,shopping,True,True,impulse_online,True,shopee flash sale mall flash sale 00 00 หูฟัง บลูทูธ
+261461c6-9fad-4f14-8343-e5b6534c5e3f,2025-05-14,19:54,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,112.7,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+01c8d7b1-257b-483f-80be-4e494673b83d,2025-05-15,14:51,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,397.93,food,True,False,wants,True,sushi masa thonglor ชาบู หม้อไฟ หมา ล่า พรีเมียม
+9f572df1-5de8-47d8-9ab8-53afa96fea63,2025-05-16,20:51,Eveandboy Mega Bangna,ซื้อเสื้อกล้ามและกางเกงสแล็ค,890.28,shopping,True,False,wants,True,eveandboy mega bangna ซื้อ เสื้อกล้าม และ กางเกง สแล็ค
+49a9f4ff-640e-4f0c-9cf6-5ff148a734f6,2025-05-17,13:57,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,148.78,shopping,False,False,routine,True,daiso japan 60 บาท น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+410bab68-2f6c-4a01-accb-be06f29e02fe,2025-05-17,15:18,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมัน Gasohol 95,106.08,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt เติมน้ำมัน gasohol 95
+ba524e2c-48d9-4a21-9539-99ef0390090c,2025-05-18,12:40,Ticketmelon Concerts,ตั๋วชมภาพยนตร์รอบค่ำ,567.97,entertainment,True,False,wants,True,ticketmelon concerts ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+1c0a758c-0e78-4149-b7f6-b78f7eb228e4,2025-05-18,13:23,CJ Express ซอย 5,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,97.19,food,False,False,routine,True,cj express ซอย 5 ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+36d05c28-1835-457f-8c87-f4fe38f11f6e,2025-05-21,12:35,ไปรษณีย์ไทย Kerry Express,โอนเงินคืนค่าแท็กซี่หารกัน,305.22,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express โอน เงิน คืน ค่า แท็กซี่ หาร กัน
+e2242e12-f01e-41c3-bc0e-e4a00ed14e10,2025-05-21,23:53,Lineman - ส้มตำแซ่บพรีเมียม,xxx,1065.02,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม xxx
+ed74a243-ceb3-4761-a347-c6b6c60e9afc,2025-05-24,10:38,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,126.31,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร เกาเหลา เลือดหมู ข้าว เปล่า
+f7cb12ab-6fb2-4eff-af43-7c863c89c412,2025-05-25,11:48,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,2459.13,transport,True,True,wants,True,drive car rental thailand นั่ง taxi express ช่วง ฝนตก
+1be7557b-5e42-4e23-b0cf-59657610f041,2025-05-25,19:28,MRT Bangkok พระราม 9,เติมน้ำมัน E20 รถยนต์ส่วนตัว,99.7,transport,False,False,routine,True,mrt bangkok พระราม 9 เติมน้ำมัน e 20 รถยนต์ ส่วนตัว
+7dce14ff-a09d-4e33-a5d6-0d1b61c714d1,2025-05-26,10:47,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,1520.55,food,True,True,wants,True,greyhound cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+6a311422-f78f-48d3-a1d2-88387a7b4129,2025-05-27,02:30,Disney+ Hotstar TH,ตั๋วคอนเสิร์ตอินดี้มิวสิก,486.27,entertainment,True,True,wants,True,disney hotstar th ตั๋ว คอนเสิร์ต อินดี้ มิวสิก
+2d9d0cef-74cb-4886-852b-05d2fffbe297,2025-05-31,10:08,Greyhound Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,788.69,food,True,False,wants,True,greyhound cafe ดินเนอร์ ร้านอาหาร อิตาเลียน
+f5df6466-0302-424c-85ca-d2af5ecb3389,2025-06-01,12:48,การไฟฟ้านครหลวง MEA,ค่าเน็ตบ้านรายเดือน 3BB,1273.6,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ค่า เน็ต บ้าน รายเดือน 3 bb
+9eee5f45-7753-4041-99fd-115fb98255fa,2025-06-01,14:27,Watsons สาขา เซ็นทรัล,ของสดวัตถุดิบทำกับข้าว,252.15,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ของสด วัตถุดิบ ทำกับข้าว
+67645286-c63d-4ddb-9efe-d05b21b82b96,2025-06-03,21:18,MRT Bangkok พระราม 9,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,25.34,transport,False,False,routine,True,mrt bangkok พระราม 9 เติมน้ำมัน มอเตอร์ไซค์ เต็ม ถัง
+6bb54eaa-5032-4a72-9a1c-b13895e32625,2025-06-04,01:39,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,302.31,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+226c3227-c7b1-46a6-a911-52c00bd0d4f5,2025-06-06,17:22,CJ Express ซอย 5,xxx,188.0,food,False,False,routine,True,cj express ซอย 5 xxx
+eb4458c5-1b3a-4bdf-94fa-43c8f6fbdf7b,2025-06-06,19:46,ร้านข้าวแกงป้าพร,อาหารตามสั่งจานด่วน,116.1,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร อาหาร ตาม สั่ง จาน ด่วน
+401f123c-b710-4501-8d7e-c39574cd8c39,2025-06-07,17:35,FWD Insurance Thailand,ชำระค่าไฟฟ้าประจำเดือน MEA,2493.58,bills,False,False,routine,True,fwd insurance thailand ชำระ ค่าไฟฟ้า ประจำเดือน mea
+9a9ba7e6-73b2-41b0-965c-db10dd542dfa,2025-06-07,22:58,Watsons สาขา เซ็นทรัล,พร้อมเพย์,350.88,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล พร้อม เพย์
+e1e1aa07-79f4-4b55-9e9b-cab5a0809bc6,2025-06-09,02:45,Sushi Masa Thonglor,Iced Caramel Macchiato Venti,814.57,food,True,False,wants,True,sushi masa thonglor iced caramel macchiato venti
+6f1c88e7-aed7-42a4-85ef-99e01fe435f5,2025-06-09,02:57,Lineman - ส้มตำแซ่บพรีเมียม,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,945.82,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์ ดึก
+67721ca4-271d-48e0-a79f-7afa5a9197ef,2025-06-10,10:24,Nok Air Ticket,ตั๋วบินเชียงใหม่สุดสัปดาห์,1571.08,transport,True,False,wants,True,nok air ticket ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+c55aea44-0d93-437e-84fa-da64014e43e8,2025-06-11,19:11,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,108.83,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติม น้ำมันดีเซล เต็ม ถัง
+e17bd4e6-f42b-4a54-ad92-06bd935a4491,2025-06-11,21:30,Eveandboy Mega Bangna,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,2004.05,shopping,True,False,wants,True,eveandboy mega bangna เสื้อผ้า แฟชั่น เกาหลี แมตช์ ชุด
+39fd37d4-4940-4c28-93be-0c4169d89058,2025-06-12,21:25,AIA Life Insurance Post,โอนค่าเช่าคอนโดประจำเดือน,1079.81,bills,False,False,routine,True,aia life insurance post โอน ค่าเช่า คอนโด ประจำเดือน
+0a125063-381f-437b-8ae1-063bba5bcf92,2025-06-12,22:24,After You Dessert Cafe,ดินเนอร์ร้านอาหารอิตาเลียน,1181.19,food,True,False,wants,True,after you dessert cafe ดินเนอร์ ร้านอาหาร อิตาเลียน
+d6382ea5-3ec0-46da-a394-cc817dc6c914,2025-06-13,19:04,Glow Nightclub Thonglor,ร้องคาราโอเกะปาร์ตี้วันหยุด,1502.78,entertainment,True,False,wants,True,glow nightclub thonglor ร้อง คาราโอเกะ ปาร์ตี้ วันหยุด
+1542c0cb-6d9a-4aff-9ad4-c9506c57d106,2025-06-15,18:07,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,168.03,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+60d93428-75a5-466b-a4d6-873938da021e,2025-06-17,09:33,Watsons สาขา เซ็นทรัล,ซื้อยาแก้แพ้และวิตามินซีรวม,396.67,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ยา แก้ แพ้ และ วิตามิน ซี รวม
+53b17d57-fc3a-4f29-ad3c-dc12fc0e679c,2025-06-17,09:43,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,121.11,shopping,False,False,routine,True,daiso japan 60 บาท ของสด วัตถุดิบ ทำกับข้าว
+dfc5bbad-4cb2-4828-93de-e191e8a0972b,2025-06-18,15:54,Ticketmelon Concerts,Spotify Individual Subscription,1651.72,entertainment,True,False,wants,True,ticketmelon concerts spotify individual subscription
+eff749b5-b0fe-4d35-823d-e818ed13df78,2025-06-19,18:03,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,129.75,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวราดแกง 2 อย่าง ไข่ต้ม
+5a8c3ebf-6a95-4885-9857-a31d722605e1,2025-06-23,09:34,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,1308.75,transport,True,False,wants,True,nok air ticket grab vip เดินทาง ไป สนามบิน
+df6a65c9-83e4-4a56-b09f-856cd766989e,2025-06-24,14:31,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,1428.06,transport,True,False,wants,True,drive car rental thailand grab vip เดินทาง ไป สนามบิน
+32a01b8f-00f8-4a92-a55e-7eb3d67bb505,2025-06-24,21:43,วินมอเตอร์ไซค์ หน้า MRT,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,47.13,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt เติมน้ำมัน มอเตอร์ไซค์ เต็ม ถัง
+c8856fca-74f3-487d-adb6-47476b4668fd,2025-06-25,11:20,Daiso Japan 60 บาท,ซื้อยาสีฟัน แชมพู และสบู่เหลว,234.2,shopping,False,False,routine,True,daiso japan 60 บาท ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+74326d46-1b2d-43e2-9cb6-8e4b08449525,2025-06-25,23:50,Watsons สาขา เซ็นทรัล,โอน,171.77,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล โอน
+2bc9cbb4-3602-4a09-8b21-803cc5b3d6bf,2025-06-26,20:15,ร้านข้าวแกงป้าพร,ข้าวต้มปลาอินทรีย์รอบค่ำ,149.98,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าวต้ม ปลา อินทรีย์ รอบ ค่ำ
+e5997976-4e50-4bf1-b90e-6381c0d96f49,2025-06-27,23:20,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,919.89,shopping,True,True,impulse_online,True,shopee flash sale mall ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+4e4f88f4-7517-4a26-8afa-cf7c28d821db,2025-06-28,01:08,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,1101.21,shopping,True,True,impulse_online,True,shopee flash sale mall ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+71493d75-52e9-41d3-9bc5-e1de859821c3,2025-06-28,01:14,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,165.62,food,False,False,routine,True,cj express ซอย 5 ข้าวต้ม ปลา อินทรีย์ รอบ ค่ำ
+1ba32002-16f0-4aad-8710-ad95e7a4fd88,2025-06-28,14:05,วินมอเตอร์ไซค์ หน้า MRT,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,45.56,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+ffa8eaa0-527c-4034-8c1e-ea03d6299278,2025-06-28,18:29,AIA Life Insurance Post,ยอดตัดบัญชี,951.51,bills,False,False,routine,True,aia life insurance post ยอด ตัด บัญชี
+3324ddad-b6a7-4fe2-a9b5-8a71d25527fa,2025-06-29,14:05,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,239.99,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร เกาเหลา เลือดหมู ข้าว เปล่า
+a245236e-dcf2-4d9f-84ac-bced36e0c806,2025-06-29,21:45,CJ Express ซอย 5,เส้นเล็กน้ำตกหมูพิเศษ,188.15,food,False,False,routine,True,cj express ซอย 5 เส้น เล็ก น้ำตก หมู พิเศษ
+a8a2d269-97fc-4bb2-b7cd-c3907806c3f5,2025-06-30,09:35,Disney+ Hotstar TH,YouTube Premium Family,543.74,entertainment,True,False,wants,True,disney hotstar th youtube premium family
+003cb030-dab0-4dd4-b8cb-957ab05ed85e,2025-07-01,10:10,Ticketmelon Concerts,YouTube Premium Family,1593.74,entertainment,True,False,wants,True,ticketmelon concerts youtube premium family
+c9e976af-81cb-4382-847e-886d5f0f72c1,2025-07-01,10:30,Glow Nightclub Thonglor,ร้องคาราโอเกะปาร์ตี้วันหยุด,632.24,entertainment,True,False,wants,True,glow nightclub thonglor ร้อง คาราโอเกะ ปาร์ตี้ วันหยุด
+285dd2be-819d-4542-ab5d-bef8565ccab4,2025-07-06,20:55,Glow Nightclub Thonglor,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,1500.16,entertainment,True,False,wants,True,glow nightclub thonglor ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+2a294cba-9295-41b8-9a3c-f89860abc2dc,2025-07-07,16:18,MRT Bangkok พระราม 9,Easy Pass เติมเงินทางด่วน,84.66,transport,False,False,routine,True,mrt bangkok พระราม 9 easy pass เติม เงิน ทางด่วน
+d2828178-7d63-4878-828c-f9bc6bf8ef37,2025-07-08,10:26,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,234.68,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด เส้น เล็ก น้ำตก หมู พิเศษ
+15ef1e50-b864-478d-ba86-6e3ba151d6d6,2025-07-08,16:01,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,พร้อมเพย์,187.61,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด พร้อม เพย์
+5fd89b2c-9ec9-4e9d-97ae-6046a7d7a9e4,2025-07-09,02:48,Lineman - ส้มตำแซ่บพรีเมียม,,920.46,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม nan
+0c97b028-110d-4529-a78d-0ef324b5b90d,2025-07-09,09:19,ธนาคารไทยพาณิชย์ SCB Easy,โอนเงินคืนค่าแท็กซี่หารกัน,134.48,other,False,False,routine,True,ธนาคาร ไทย พาณิชย์ scb easy โอน เงิน คืน ค่า แท็กซี่ หาร กัน
+7e4a4f80-baf7-4d2a-b762-a8d8d5a8cc52,2025-07-10,12:28,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,246.26,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+aa43fc4e-e5bd-4d52-a997-ee1308ed3399,2025-07-10,18:45,Ticketmelon Concerts,ชำระเงิน,340.94,entertainment,True,False,wants,True,ticketmelon concerts ชำระเงิน
+02e60af5-4fa1-44a4-9bc8-272010e66583,2025-07-11,13:54,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,229.41,transport,True,False,wants,True,nok air ticket grab vip เดินทาง ไป สนามบิน
+b50b8db6-e683-4e35-8a83-f7f211600aa2,2025-07-15,17:31,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,345.93,shopping,False,False,routine,True,daiso japan 60 บาท ผลไม้ นำเข้า และ นม จืด
+c981a0ef-cf53-43db-8413-95d27926555e,2025-07-15,19:36,Drive Car Rental Thailand,เรียกรถ GrabCar ไปปาร์ตี้,430.13,transport,True,False,wants,True,drive car rental thailand เรียก รถ grabcar ไป ปาร์ตี้
+381edde1-7ce5-40cd-a1a8-f9eb4235c9a9,2025-07-15,20:12,Daiso Japan 60 บาท,โอนเงิน,185.63,shopping,False,False,routine,True,daiso japan 60 บาท โอน เงิน
+59c8b105-6184-4cba-a53f-8fba97d477d7,2025-07-16,16:36,Disney+ Hotstar TH,ดื่มคราฟต์เบียร์สังสรรค์คืนวันศุกร์,301.73,entertainment,True,False,wants,True,disney hotstar th ดื่ม คราฟต์ เบียร์ สังสรรค์ คืน วัน ศุกร์
+905980ee-2d16-4402-b00b-4a3b6b72b464,2025-07-17,09:40,Nok Air Ticket,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,1685.9,transport,True,False,wants,True,nok air ticket จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+1d811043-5df4-4ca7-95a4-5746562d1f2d,2025-07-17,20:59,M-Flow ทล.9 กรมทางหลวง,เติมเงินบัตร BTS รายเดือน,59.61,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติม เงิน บัตร bts รายเดือน
+93937f1c-c83a-4177-8f5b-c1a45f3c6092,2025-07-18,15:42,CJ Express ซอย 5,ชำระเงิน,206.45,food,False,False,routine,True,cj express ซอย 5 ชำระเงิน
+d08605fc-a40d-4a82-ae90-761752430954,2025-07-19,23:20,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,888.09,food,True,True,impulse_delivery,True,grabfood bonchon chicken ชา นม ไข่มุก golden bubble x 2
+9041c0c1-61d4-454b-8480-418f39578460,2025-07-21,10:20,FWD Insurance Thailand,โอนค่าเช่าคอนโดประจำเดือน,1088.31,bills,False,False,routine,True,fwd insurance thailand โอน ค่าเช่า คอนโด ประจำเดือน
+9b8d3f34-fc56-4ce9-8a30-926c6b3b8d15,2025-07-21,18:57,Watsons สาขา เซ็นทรัล,ของสดวัตถุดิบทำกับข้าว,443.06,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ของสด วัตถุดิบ ทำกับข้าว
+478860fb-cba2-42b3-bd1d-37cc33671b8f,2025-07-23,16:20,Watsons สาขา เซ็นทรัล,ซื้อยาแก้แพ้และวิตามินซีรวม,385.43,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ยา แก้ แพ้ และ วิตามิน ซี รวม
+138c5d66-bc8f-4d5b-bbab-d4d976b49d41,2025-07-24,02:38,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,1112.59,food,True,True,impulse_delivery,True,grabfood bonchon chicken เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์ ดึก
+699ad343-625d-49f6-b6cd-fbe0cbb1f7f5,2025-07-24,19:53,Disney+ Hotstar TH,Netflix Premium รายเดือน 4K,1673.14,entertainment,True,False,wants,True,disney hotstar th netflix premium รายเดือน 4 k
+c54cd01c-390a-4d46-a341-1b7451e0f450,2025-07-25,18:37,Watsons สาขา เซ็นทรัล,จ่ายผ่านแอป,489.76,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล จ่าย ผ่าน แอ ป
+f6f3b884-d22b-4652-8916-baa4f251d42b,2025-07-27,13:37,การไฟฟ้านครหลวง MEA,เบี้ยประกันชีวิตและอุบัติเหตุ,877.82,bills,False,False,routine,True,การไฟฟ้านครหลวง mea เบี้ย ประกันชีวิต และ อุบัติเหตุ
+add70850-fc9a-4bf0-922c-0d5da7563524,2025-07-28,10:53,Disney+ Hotstar TH,ตั๋วหนัง IMAX 3D พร้อมป๊อปคอร์น,790.35,entertainment,True,False,wants,True,disney hotstar th ตั๋วหนัง imax 3 d พร้อม ป๊อปคอร์น
+9211ef69-a627-47ad-b978-1e29fa84c60b,2025-07-28,19:05,Disney+ Hotstar TH,YouTube Premium Family,813.95,entertainment,True,False,wants,True,disney hotstar th youtube premium family
+114220b1-740f-4a76-a667-3b4fd23263c8,2025-07-29,20:05,Daiso Japan 60 บาท,ซื้อของใช้จำเป็นในห้องน้ำ,273.64,shopping,False,False,routine,True,daiso japan 60 บาท ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+5a699e67-b01a-42d8-8fb4-e88c8a2f6d73,2025-07-30,15:22,ZARA Siam Paragon,,1603.49,shopping,True,False,wants,True,zara siam paragon nan
+7fccbbf3-ae81-454f-81b6-cf54e6276aa0,2025-07-30,19:02,Sushi Masa Thonglor,ชาบูหม้อไฟหมาล่าพรีเมียม,682.25,food,True,False,wants,True,sushi masa thonglor ชาบู หม้อไฟ หมา ล่า พรีเมียม
+be9dfa94-7214-44f6-a99a-dd75337fb43f,2025-07-31,15:55,ไปรษณีย์ไทย Kerry Express,จ่ายเงิน,46.12,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express จ่าย เงิน
+58661be5-f352-4e2d-8f6e-f0a63710e039,2025-08-03,12:39,ZARA Siam Paragon,xxx,806.42,shopping,True,False,wants,True,zara siam paragon xxx
+c508bf96-f82c-4873-ab3b-6afdeede243c,2025-08-03,20:31,After You Dessert Cafe,โอน,590.85,food,True,False,wants,True,after you dessert cafe โอน
+105a07f5-9c3f-412f-9d11-4a888a2baaf8,2025-08-04,21:53,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,มื้อเที่ยงกับทีม,206.43,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด มื้อ เที่ยง กับ ทีม
+949ae341-8a47-4508-9f09-87a54e1a41a0,2025-08-05,02:21,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,929.44,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+a82fe7bd-1024-4f25-a361-44c29c08c635,2025-08-05,14:09,ไปรษณีย์ไทย Kerry Express,ยอดตัดบัญชี,230.17,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express ยอด ตัด บัญชี
+448b78b6-43ab-43bc-a775-5194e7f25060,2025-08-06,11:57,CJ Express ซอย 5,เกาเหลาเลือดหมูข้าวเปล่า,225.16,food,False,False,routine,True,cj express ซอย 5 เกาเหลา เลือดหมู ข้าว เปล่า
+bc9bffe8-6dbc-4345-8d55-503139af8433,2025-08-06,21:54,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันดีเซลเต็มถัง,67.04,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติม น้ำมันดีเซล เต็ม ถัง
+80d2bc08-153b-43b3-a636-146cd98dee6e,2025-08-07,18:00,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,91.53,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt m flow ชำระ ค่า ผ่าน ทางด่วน
+77deae3c-50fc-4d01-ae45-bb0f67b1e185,2025-08-09,00:28,Glow Nightclub Thonglor,ตั๋วชมภาพยนตร์รอบค่ำ,1072.3,entertainment,True,False,wants,True,glow nightclub thonglor ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+e12c312a-b84e-40f8-bd3a-4768e3737050,2025-08-09,11:45,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,803.25,food,True,False,wants,True,after you dessert cafe บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+b794b0b9-c821-4c93-a8dd-923f3b6b52e0,2025-08-10,10:38,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,107.92,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด เส้น เล็ก น้ำตก หมู พิเศษ
+eb42ea18-0dd2-4e7b-b1e7-b7f9ff1d8336,2025-08-10,10:44,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,2371.36,transport,True,False,wants,True,nok air ticket เรียก รถ grabcar ไป ปาร์ตี้
+3d4540d1-33ef-4eee-abe0-b6ad3bf4a050,2025-08-11,16:35,CJ Express ซอย 5,เคลียร์ยอด,158.37,food,False,False,routine,True,cj express ซอย 5 เคลียร์ ยอด
+3622f3e5-74e7-4167-9761-86447c216a95,2025-08-11,21:42,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,419.92,shopping,False,False,routine,True,daiso japan 60 บาท ผลไม้ นำเข้า และ นม จืด
+3ce50d77-51ea-436c-8f7f-3ca9ec67db7d,2025-08-12,08:31,ร้านข้าวแกงป้าพร,Iced Black Coffee หวานน้อย,132.99,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร iced black coffee หวาน น้อย
+f5a56d35-2e21-44ed-bb8d-156b5a59eecb,2025-08-12,15:50,Greyhound Cafe,โอนเงิน,826.51,food,True,False,wants,True,greyhound cafe โอน เงิน
+543afa55-9840-42ea-aff8-e2c513d87b60,2025-08-13,10:15,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,63.64,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติมน้ำมัน มอเตอร์ไซค์ เต็ม ถัง
+249b9909-0c5e-4bd2-90cb-9fe2b1a55425,2025-08-14,12:00,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,426.16,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย โอน เงิน ซื้อ ของขวัญ วันเกิด เพื่อน
+0d8fdd81-9bb6-4293-aecf-3dd4c96fbe5e,2025-08-14,20:58,ร้านข้าวแกงป้าพร,ข้าวราดแกง 2 อย่างไข่ต้ม,242.22,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าวราดแกง 2 อย่าง ไข่ต้ม
+beae028f-e7b0-4093-8c33-d4511a092e9e,2025-08-16,15:12,Watsons สาขา เซ็นทรัล,ผลไม้นำเข้าและนมจืด,345.78,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ผลไม้ นำเข้า และ นม จืด
+f3c139e4-e974-4399-bd24-06df6b63710d,2025-08-16,18:12,Greyhound Cafe,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,931.92,food,True,False,wants,True,greyhound cafe ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+fb12715e-8eb8-4222-ad8a-f0eb2525d31c,2025-08-17,08:56,ร้านข้าวแกงป้าพร,กะเพราหมูกรอบไข่ดาวไม่สุก,156.48,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+57c28667-db44-4759-af88-93dee3c4c243,2025-08-17,21:00,CJ Express ซอย 5,แซนด์วิชทูน่ามื้อเช้า,60.37,food,False,False,routine,True,cj express ซอย 5 แซนด์วิช ทูน่า มื้อ เช้า
+6283e398-741c-47f3-8042-788a44e2a169,2025-08-20,07:33,AIA Life Insurance Post,ชำระยอดบัตรเครดิตยอดเต็ม,483.42,bills,False,False,routine,True,aia life insurance post ชำระ ยอด บัตรเครดิต ยอด เต็ม
+c4aca66a-7a18-42c2-99ee-8d296ff6323d,2025-08-20,18:19,วินมอเตอร์ไซค์ หน้า MRT,คืนเพื่อน,82.32,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt คืน เพื่อน
+f770f96a-7782-41a1-8b17-f935f6cd9058,2025-08-21,14:44,Greyhound Cafe,Shibuya Honey Toast และชาร้อน,947.86,food,True,False,wants,True,greyhound cafe shibuya honey toast และ ชาร้อน
+6e853296-5c6f-4205-8177-5454ba928a42,2025-08-21,18:02,Disney+ Hotstar TH,Disney+ Hotstar รายปี,511.26,entertainment,True,False,wants,True,disney hotstar th disney hotstar รายปี
+c23e5308-e447-4cdb-9d83-6b9ab0baab71,2025-08-22,20:56,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวมันไก่เนื้อน่องไม่หนัง,76.16,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+a47da2ca-2cd3-4fee-af2d-99e16d31e42f,2025-08-23,01:55,Pop Mart Official Store,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,1310.55,shopping,True,True,impulse_online,True,pop mart official store กล่อง สุ่ม คอลเลกชัน ใหม่ ล่าสุด
+dd2ae76f-139c-4ef7-a2c0-ed1237c0ad9e,2025-08-23,09:10,CJ Express ซอย 5,มื้อเที่ยงกับทีม,149.72,food,False,False,routine,True,cj express ซอย 5 มื้อ เที่ยง กับ ทีม
+eeeffe70-cef7-43a7-bfd2-a6d4b3b255d5,2025-08-23,17:45,ทำบุญช่วยเหลือผู้ประสบภัย,บริจาคช่วยมูลนิธิการกุศล,307.35,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย บริจาค ช่วย มูลนิธิ การกุศล
+57219897-db88-47f6-b4a2-6d84edff54a0,2025-08-24,15:19,CJ Express ซอย 5,อาหารตามสั่งจานด่วน,191.13,food,False,False,routine,True,cj express ซอย 5 อาหาร ตาม สั่ง จาน ด่วน
+6e1cd5cf-471b-4194-a58d-d1f9d457b03c,2025-08-28,10:25,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,81.59,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+5470344a-1d7e-4525-8d25-e3dfa8b276ab,2025-08-29,21:31,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โจ๊กหมูใส่ไข่เยี่ยวม้า,192.72,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+91d4d96e-0675-4684-9ffd-1fe6332d90a6,2025-08-31,12:46,Nok Air Ticket,จ่ายผ่านแอป,942.16,transport,True,False,wants,True,nok air ticket จ่าย ผ่าน แอ ป
+a36e7eaf-ffd6-421a-b0e2-4ee7a1627da0,2025-09-02,20:41,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,116.25,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+b6b390c5-1d12-450a-8e6c-6a97d92d85ae,2025-09-03,13:08,Greyhound Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,1135.22,food,True,False,wants,True,greyhound cafe เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+75851acf-621e-4eee-8519-f357a301c33c,2025-09-03,21:40,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,319.85,transport,True,False,wants,True,nok air ticket เรียก รถ grabcar ไป ปาร์ตี้
+7800b145-cc39-4b43-92c4-be5a55b178c0,2025-09-07,11:16,Greyhound Cafe,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,261.72,food,True,False,wants,True,greyhound cafe ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+ebabaa1d-e9f9-4696-9af2-9eaeca199fdb,2025-09-07,18:40,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,79.58,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร เกาเหลา เลือดหมู ข้าว เปล่า
+0a074248-9f78-40b0-8a27-34660e9859ee,2025-09-07,19:25,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โจ๊กหมูใส่ไข่เยี่ยวม้า,225.2,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด โจ๊ก หมู ใส่ ไข่เยี่ยวม้า
+a69427e6-aec0-40c9-91b9-e28a0682cded,2025-09-08,10:55,MRT Bangkok พระราม 9,จ่ายเงิน,51.29,transport,False,False,routine,True,mrt bangkok พระราม 9 จ่าย เงิน
+4fd5b610-f80d-4ffc-a513-aec069b60dbf,2025-09-08,14:30,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,โอน,183.06,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด โอน
+e27d22a2-a2d0-4ad1-885c-6c8c4c81355a,2025-09-09,14:23,ไปรษณีย์ไทย Kerry Express,โอนเงินคืนเพื่อนค่าอาหารกลางวัน,441.62,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express โอน เงิน คืน เพื่อน ค่า อาหารกลางวัน
+ec9255d3-cec9-4281-be88-313f289c2692,2025-09-09,22:30,ไปรษณีย์ไทย Kerry Express,ค่าธรรมเนียมธุรกรรมธนาคาร,449.47,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express ค่าธรรมเนียม ธุรกรรม ธนาคาร
+04bcf7d0-495c-4328-a61c-31b1834742fc,2025-09-11,08:08,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,กะเพราหมูกรอบไข่ดาวไม่สุก,249.26,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+4c0dfe2d-4743-477b-a1d0-5566db64fbbe,2025-09-11,21:10,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,196.36,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+c3126ad3-8b45-44ad-8f41-1c5d9f085503,2025-09-13,17:19,Ticketmelon Concerts,Spotify Individual Subscription,1548.65,entertainment,True,False,wants,True,ticketmelon concerts spotify individual subscription
+3617aacd-d974-4aed-8e70-d57f2662a456,2025-09-13,18:51,Daiso Japan 60 บาท,ซื้อยาแก้แพ้และวิตามินซีรวม,340.65,shopping,False,False,routine,True,daiso japan 60 บาท ซื้อ ยา แก้ แพ้ และ วิตามิน ซี รวม
+cb67f14c-abdb-40ba-870e-de04ff29462b,2025-09-14,02:18,After You Dessert Cafe,เคลียร์ยอด,346.85,food,True,False,wants,True,after you dessert cafe เคลียร์ ยอด
+4ad79281-5c50-40ad-9a3d-5eb846518e8b,2025-09-15,19:15,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,903.58,food,True,False,wants,True,after you dessert cafe สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+7c63da3b-142e-425e-8073-6779c0742700,2025-09-15,19:49,ธนาคารไทยพาณิชย์ SCB Easy,เติมเงินมือถือระบบเติมเงิน,339.14,other,False,False,routine,True,ธนาคาร ไทย พาณิชย์ scb easy เติม เงิน มือถือ ระบบ เติม เงิน
+45a91e71-70bb-4050-a56f-1a408a2ed3e6,2025-09-15,22:11,ธนาคารไทยพาณิชย์ SCB Easy,ค่าธรรมเนียมธุรกรรมธนาคาร,486.07,other,False,False,routine,True,ธนาคาร ไทย พาณิชย์ scb easy ค่าธรรมเนียม ธุรกรรม ธนาคาร
+f76186ab-f4f5-4c68-8630-05e83a68f7dc,2025-09-16,09:07,FWD Insurance Thailand,ค่าเน็ตบ้านรายเดือน 3BB,2042.17,bills,False,False,routine,True,fwd insurance thailand ค่า เน็ต บ้าน รายเดือน 3 bb
+48c1b7fa-ad9d-4f20-acd0-1c1b4bbc2487,2025-09-16,10:48,CJ Express ซอย 5,เคลียร์ยอด,189.04,food,False,False,routine,True,cj express ซอย 5 เคลียร์ ยอด
+0ebef76f-6e21-41a4-bde9-832cff8f82da,2025-09-16,19:35,วินมอเตอร์ไซค์ หน้า MRT,เคลียร์ยอด,76.2,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt เคลียร์ ยอด
+bc56f8ad-49c1-46da-9fb5-bf544b398c5d,2025-09-18,18:36,วินมอเตอร์ไซค์ หน้า MRT,M-Flow ชำระค่าผ่านทางด่วน,103.05,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt m flow ชำระ ค่า ผ่าน ทางด่วน
+ec63b6a6-d956-4f1d-8eb1-b67496d3b0d2,2025-09-18,20:24,Drive Car Rental Thailand,จ่ายเงิน,1422.38,transport,True,False,wants,True,drive car rental thailand จ่าย เงิน
+742c5ad2-2987-4bd4-9f70-65d39e515250,2025-09-19,14:17,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,441.51,transport,True,False,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+fdb46dd5-93c4-4a01-ba2d-20f84c3e1547,2025-09-19,20:04,ZARA Siam Paragon,โคมไฟมินิมอลแต่งโต๊ะทำงาน,2422.98,shopping,True,False,wants,True,zara siam paragon โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+63589824-d5f0-40d7-b739-db6ef6a4b243,2025-09-21,14:19,MRT Bangkok พระราม 9,เติมน้ำมัน Gasohol 95,54.71,transport,False,False,routine,True,mrt bangkok พระราม 9 เติมน้ำมัน gasohol 95
+0687be16-d120-44fb-aada-78a0d2f82613,2025-09-22,09:04,MRT Bangkok พระราม 9,เติมน้ำมันมอเตอร์ไซค์เต็มถัง,33.04,transport,False,False,routine,True,mrt bangkok พระราม 9 เติมน้ำมัน มอเตอร์ไซค์ เต็ม ถัง
+d0ced105-afe7-4dc4-990c-4dca3d198c92,2025-09-22,10:25,After You Dessert Cafe,Iced Caramel Macchiato Venti,917.46,food,True,False,wants,True,after you dessert cafe iced caramel macchiato venti
+10e551e5-6d47-4707-984f-2dd8761e2484,2025-09-24,11:26,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,342.05,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บริจาค อาหาร สุนัข แมว จรจัด
+0c23c38e-de45-4f10-b2f1-5cee9374fad7,2025-09-24,12:25,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,620.33,shopping,True,False,wants,True,zara siam paragon เครื่องเขียน สมุด โน้ต สไตล์ ญี่ปุ่น
+e6487717-6f3d-40c3-96f3-1560c9f73c65,2025-09-26,23:11,GrabFood - Bonchon Chicken,พิซซ่าถาดกลางหนานุ่มส่งรอบเที่ยงคืน,451.38,food,True,True,impulse_delivery,True,grabfood bonchon chicken พิซซ่า ถาด กลาง หนา นุ่ม ส่ง รอบ เที่ยงคืน
+0017311e-0a8a-4fa5-83bf-44ef1469520e,2025-09-27,10:02,CJ Express ซอย 5,อาหารตามสั่งจานด่วน,190.93,food,False,False,routine,True,cj express ซอย 5 อาหาร ตาม สั่ง จาน ด่วน
+5e8076dc-82ce-42e7-9371-e56cc9a5989b,2025-09-27,18:15,Nok Air Ticket,เรียกรถ GrabCar ไปปาร์ตี้,500.12,transport,True,False,wants,True,nok air ticket เรียก รถ grabcar ไป ปาร์ตี้
+2f3e96d4-2383-4f48-8e28-3d8181ec2b10,2025-09-29,00:56,Shopee Flash Sale Mall,เครื่องดูดฝุ่นไร้สายกดตอนเที่ยงคืน,533.95,shopping,True,True,impulse_online,True,shopee flash sale mall เครื่องดูดฝุ่น ไร้สาย กด ตอน เที่ยงคืน
+809e340f-4fe3-4fcb-9572-27c80ae86b8a,2025-09-29,14:18,วินมอเตอร์ไซค์ หน้า MRT,แตะบัตร เอ็มอาร์ที สถานีพระราม 9,47.63,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt แตะ บัตร เอ็ม อาร์ ที สถานี พระราม 9
+81544b18-b2a0-49c2-9f32-73a458cd894e,2025-09-30,19:09,ไปรษณีย์ไทย Kerry Express,ชำระเงิน,83.1,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express ชำระเงิน
+8926b38a-e2a0-4fe1-b786-b5ff381c8f6c,2025-10-02,15:40,FWD Insurance Thailand,โอน,629.01,bills,False,False,routine,True,fwd insurance thailand โอน
+a3221ab8-fa91-42a0-b698-b14a2a93e066,2025-10-02,20:09,Disney+ Hotstar TH,เน็ตฟลิก Premium รายเดือน 4K,732.96,entertainment,True,False,wants,True,disney hotstar th เน็ต ฟ ลิ ก premium รายเดือน 4 k
+1e710961-bf2e-4f2b-b14b-beda79bc6d6c,2025-10-03,09:50,การไฟฟ้านครหลวง MEA,ค่าบริการอินเทอร์เน็ตบ้านไฟเบอร์,769.09,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ค่าบริการ อินเทอร์เน็ต บ้าน ไฟเบอร์
+e84f8db7-485b-40b9-8b00-374dd58d65fd,2025-10-03,19:43,MRT Bangkok พระราม 9,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,35.46,transport,False,False,routine,True,mrt bangkok พระราม 9 ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+4de13453-66d6-4593-8d94-2465ba21f264,2025-10-04,02:35,Pop Mart Official Store,Apple Watch สายสปอร์ตแฟชั่น,2535.65,shopping,True,True,impulse_online,True,pop mart official store apple watch สาย สปอร์ต แฟชั่น
+180c5101-f69c-40d7-9113-7577371551fb,2025-10-05,02:15,Lineman - ส้มตำแซ่บพรีเมียม,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,361.37,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+3937fe65-2cc3-4cb1-9eb6-7e03f35fbbe3,2025-10-06,08:38,วินมอเตอร์ไซค์ หน้า MRT,ยอดตัดบัญชี,89.59,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ยอด ตัด บัญชี
+8b2b4510-1f79-4116-88f4-44f85dd28648,2025-10-08,01:48,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบุญสร้างโรงพยาบาลสงฆ์,219.7,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บุญ สร้าง โรงพยาบาล สงฆ์
+dafa444e-0e82-4420-9bc8-09786d49c4a9,2025-10-11,10:51,Sushi Masa Thonglor,เบอร์เกอร์เนื้อทรัฟเฟิล,1007.51,food,True,False,wants,True,sushi masa thonglor เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+2c26005a-25c5-4048-bbb8-c2a5398bbef7,2025-10-11,20:54,CJ Express ซอย 5,ข้าวมันไก่เนื้อน่องไม่หนัง,152.5,food,False,False,routine,True,cj express ซอย 5 ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+9ef3f550-1b47-44ba-9858-f006b401c44d,2025-10-11,21:41,MRT Bangkok พระราม 9,M-Flow ชำระค่าผ่านทางด่วน,59.53,transport,False,False,routine,True,mrt bangkok พระราม 9 m flow ชำระ ค่า ผ่าน ทางด่วน
+9fcc4460-0989-4879-b4f7-54c16598e148,2025-10-12,08:39,ร้านข้าวแกงป้าพร,เกาเหลาเลือดหมูข้าวเปล่า,189.95,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร เกาเหลา เลือดหมู ข้าว เปล่า
+3a48f6ea-4c6d-4f97-ad3b-be5f2b6a9c07,2025-10-12,11:54,Nok Air Ticket,นั่ง Taxi Express ช่วงฝนตก,2163.81,transport,True,False,wants,True,nok air ticket นั่ง taxi express ช่วง ฝนตก
+8fcd95e7-a6d7-4fbf-8a6f-6c012833ba82,2025-10-13,00:30,Lineman - ส้มตำแซ่บพรีเมียม,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,1188.42,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์ ดึก
+c1928686-6bf8-4d7d-8d61-e06ee10fe633,2025-10-13,15:16,Watsons สาขา เซ็นทรัล,ยอดตัดบัญชี,132.68,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ยอด ตัด บัญชี
+5d9bdad7-f50a-44e5-8814-46375ccf6f07,2025-10-14,02:21,After You Dessert Cafe,ชาบูหม้อไฟหมาล่าพรีเมียม,707.54,food,True,False,wants,True,after you dessert cafe ชาบู หม้อไฟ หมา ล่า พรีเมียม
+e3f3f60f-0242-4935-9a99-f37327f96d79,2025-10-14,20:16,Watsons สาขา เซ็นทรัล,น้ำยาซักผ้าและปรับผ้านุ่ม,442.91,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+95013c47-cd57-4d23-b60d-733c1db39d55,2025-10-15,10:02,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,985.67,food,True,False,wants,True,after you dessert cafe สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+90243d7e-dc71-44d3-a233-d26c1cf69f3e,2025-10-16,21:26,CJ Express ซอย 5,เกาเหลาเลือดหมูข้าวเปล่า,129.16,food,False,False,routine,True,cj express ซอย 5 เกาเหลา เลือดหมู ข้าว เปล่า
+7992bf24-0c86-469e-91c1-a17bca11de1d,2025-10-17,17:21,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,2439.03,transport,True,False,wants,True,drive car rental thailand ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+7a4429ac-c985-4684-8ca9-2dccec10fd4a,2025-10-17,19:53,การไฟฟ้านครหลวง MEA,ต่อประกันภัยรถยนต์ชั้น 1,1673.13,bills,False,False,routine,True,การไฟฟ้านครหลวง mea ต่อ ประกันภัย รถยนต์ ชั้น 1
+79f7a4d0-1b7a-455e-9416-377fd7db1cf2,2025-10-18,11:40,Greyhound Cafe,เคลียร์ยอด,366.55,food,True,False,wants,True,greyhound cafe เคลียร์ ยอด
+d7db96a1-f408-4665-b3b4-bb692fb1c9e3,2025-10-18,14:46,Daiso Japan 60 บาท,น้ำยาซักผ้าและปรับผ้านุ่ม,363.7,shopping,False,False,routine,True,daiso japan 60 บาท น้ำยา ซักผ้า และ ปรับ ผ้า นุ่ม
+7cfa8d2a-6fe2-4955-badf-cd1a657dd5e8,2025-10-19,01:57,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,1385.48,food,True,True,impulse_delivery,True,grabfood bonchon chicken ชา นม ไข่มุก golden bubble x 2
+8fee5db4-46f9-41dd-8d0e-834053cf35de,2025-10-19,20:04,CJ Express ซอย 5,เส้นเล็กน้ำตกหมูพิเศษ,133.98,food,False,False,routine,True,cj express ซอย 5 เส้น เล็ก น้ำตก หมู พิเศษ
+33c0bc10-9606-469a-9ad4-a28743b76434,2025-10-21,08:32,ทำบุญช่วยเหลือผู้ประสบภัย,โอนเงินซื้อของขวัญวันเกิดเพื่อน,443.54,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย โอน เงิน ซื้อ ของขวัญ วันเกิด เพื่อน
+fa9d593a-d966-4f7d-98af-a046224f95b2,2025-10-21,15:25,Drive Car Rental Thailand,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,673.41,transport,True,False,wants,True,drive car rental thailand จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+c6092cde-c0c3-485f-91f7-55f07552ceaf,2025-10-23,16:01,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,464.66,shopping,False,False,routine,True,daiso japan 60 บาท ของสด วัตถุดิบ ทำกับข้าว
+7d107c67-9b17-4bc8-8649-95cdd79993e1,2025-10-26,00:29,ZARA Siam Paragon,โคมไฟมินิมอลแต่งโต๊ะทำงาน,1935.36,shopping,True,True,wants,True,zara siam paragon โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+80989827-5503-48a2-8263-58755aac5f02,2025-10-28,00:30,GrabFood - Bonchon Chicken,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,737.24,food,True,True,impulse_delivery,True,grabfood bonchon chicken ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+7efc0556-9986-466f-b796-ce2ec09d22b7,2025-10-28,21:09,M-Flow ทล.9 กรมทางหลวง,ค่าวินมอไซค์ไปต่อรถไฟฟ้า,26.98,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง ค่า วิน มอไซค์ ไป ต่อ รถไฟฟ้า
+a209fde4-86ce-4248-8a8e-3530257aab54,2025-10-28,22:47,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,315.98,food,True,False,wants,True,after you dessert cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+cfa223d4-c007-40a0-9f6a-685975317e31,2025-10-30,15:19,Greyhound Cafe,เบอร์เกอร์เนื้อทรัฟเฟิล,1042.46,food,True,False,wants,True,greyhound cafe เบอร์เกอร์ เนื้อ ทรัฟเฟิล
+d2ed4a7b-171d-4841-bb52-c39ddd2c16f5,2025-10-30,21:36,Daiso Japan 60 บาท,ซื้อของใช้จำเป็นในห้องน้ำ,487.79,shopping,False,False,routine,True,daiso japan 60 บาท ซื้อ ของใช้ จำเป็น ใน ห้องน้ำ
+41dd1f48-01c8-41d6-8c08-272a7bff95e7,2025-10-31,07:29,Sushi Masa Thonglor,ชำระเงิน,540.53,food,True,False,wants,True,sushi masa thonglor ชำระเงิน
+452c467b-d7fe-4430-bbf9-75d38a0433cd,2025-11-03,11:19,Ticketmelon Concerts,Netflix Premium รายเดือน 4K,1179.05,entertainment,True,False,wants,True,ticketmelon concerts netflix premium รายเดือน 4 k
+66e70a08-a29c-4b62-8ca2-a6043022587a,2025-11-04,02:25,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,1183.56,food,True,True,impulse_delivery,True,grabfood bonchon chicken เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์ ดึก
+da82a1cb-9beb-4a3b-a122-6619df9d335c,2025-11-04,12:09,M-Flow ทล.9 กรมทางหลวง,เติมน้ำมัน E20 รถยนต์ส่วนตัว,95.46,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง เติมน้ำมัน e 20 รถยนต์ ส่วนตัว
+2356b27b-06c3-4078-931b-64dffb7f5a26,2025-11-06,17:48,After You Dessert Cafe,บุฟเฟต์ปิ้งย่างเกาหลีชุดใหญ่,415.3,food,True,False,wants,True,after you dessert cafe บุฟเฟต์ ปิ้ง ย่าง เกาหลี ชุด ใหญ่
+9d0725e6-1eb1-4fb0-8e60-846278160c78,2025-11-07,20:59,Drive Car Rental Thailand,จ่ายเงิน,1215.52,transport,True,False,wants,True,drive car rental thailand จ่าย เงิน
+03fd29ec-71b2-4674-a610-f90fe4b59fb5,2025-11-09,12:18,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,2343.16,transport,True,False,wants,True,drive car rental thailand นั่ง taxi express ช่วง ฝนตก
+815ca6b7-3f13-4fad-90ff-af2dc36dbbb5,2025-11-10,08:21,Disney+ Hotstar TH,PlayStation Plus Member,248.0,entertainment,True,False,wants,True,disney hotstar th playstation plus member
+2e289ec1-061b-479a-8e17-d68839e218bd,2025-11-10,19:39,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,2960.83,shopping,True,False,wants,True,zara siam paragon หนังสือ แปล และ นวนิยาย ขายดี
+742575f1-d48b-491f-9a26-cfc147e186ce,2025-11-11,13:34,AIA Life Insurance Post,โอนค่าเช่าคอนโดประจำเดือน,2661.36,bills,False,False,routine,True,aia life insurance post โอน ค่าเช่า คอนโด ประจำเดือน
+21597015-d69f-403b-951a-9bf0fb38949f,2025-11-12,08:51,Eveandboy Mega Bangna,พร้อมเพย์,1540.25,shopping,True,False,wants,True,eveandboy mega bangna พร้อม เพย์
+0f1e7f97-1dfe-440f-8f08-a4721831c7a0,2025-11-13,15:20,วินมอเตอร์ไซค์ หน้า MRT,ยอดตัดบัญชี,92.02,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ยอด ตัด บัญชี
+54e6e5c6-765f-4db3-ac7f-b6403ce334d6,2025-11-16,08:35,Watsons สาขา เซ็นทรัล,ผลไม้นำเข้าและนมจืด,490.11,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ผลไม้ นำเข้า และ นม จืด
+d5ed9174-0577-41af-94ee-b9dae0c6f6c9,2025-11-17,01:02,Lineman - ส้มตำแซ่บพรีเมียม,เคลียร์ยอด,450.91,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม เคลียร์ ยอด
+1f858a52-a772-4ac3-ae0a-117d355bc664,2025-11-18,08:38,วินมอเตอร์ไซค์ หน้า MRT,Easy Pass เติมเงินทางด่วน,50.57,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt easy pass เติม เงิน ทางด่วน
+d428655f-00bd-4838-b623-c08b9f18d906,2025-11-18,16:58,After You Dessert Cafe,ชาบูหม้อไฟหมาล่าพรีเมียม,549.08,food,True,False,wants,True,after you dessert cafe ชาบู หม้อไฟ หมา ล่า พรีเมียม
+10155224-5eb2-4d9f-acd8-015bd3afc9c1,2025-11-19,13:57,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,232.57,other,True,False,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บริจาค อาหาร สุนัข แมว จรจัด
+d318a127-4730-4236-a7eb-7e88fdd10ae2,2025-11-19,14:49,M-Flow ทล.9 กรมทางหลวง,M-Flow ชำระค่าผ่านทางด่วน,82.53,transport,False,False,routine,True,m flow ทล 9 กรมทางหลวง m flow ชำระ ค่า ผ่าน ทางด่วน
+228d11f9-08f2-457f-b3eb-de336d998c45,2025-11-22,07:23,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,1398.06,transport,True,False,wants,True,drive car rental thailand ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+018b2c91-8d9f-4ba0-967d-2adf214d77c6,2025-11-22,07:38,วินมอเตอร์ไซค์ หน้า MRT,Easy Pass เติมเงินทางด่วน,25.63,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt easy pass เติม เงิน ทางด่วน
+6e6f9adf-b5d8-4ff7-bb87-56f22286505a,2025-11-22,16:58,ZARA Siam Paragon,หนังสือแปลและนวนิยายขายดี,1682.46,shopping,True,False,wants,True,zara siam paragon หนังสือ แปล และ นวนิยาย ขายดี
+d5cebaa3-b018-4f4a-991c-9bfdc70ea4f1,2025-11-25,08:17,Eveandboy Mega Bangna,โคมไฟมินิมอลแต่งโต๊ะทำงาน,518.63,shopping,True,True,wants,True,eveandboy mega bangna โคมไฟ มินิ มอ ล แต่ง โต๊ะทำงาน
+4adf6949-4928-4bdd-b469-d89d8370bdb8,2025-11-26,00:02,GrabFood - Bonchon Chicken,ชานมไข่มุก golden bubble x2,374.63,food,True,True,impulse_delivery,True,grabfood bonchon chicken ชา นม ไข่มุก golden bubble x 2
+2d080e5a-c888-4acb-89bb-bceab4f78b91,2025-11-27,13:53,AIA Life Insurance Post,ค่าเน็ตบ้านรายเดือน 3BB,1660.49,bills,False,False,routine,True,aia life insurance post ค่า เน็ต บ้าน รายเดือน 3 bb
+e3fa82d3-26d1-4f1e-98ad-e97ca20e530a,2025-11-28,10:35,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,525.06,transport,True,False,wants,True,nok air ticket เช่า รถ ขับ เที่ยว กับ เพื่อน
+1b7a5c57-f461-4f52-a877-e543774f5863,2025-11-29,09:58,Ticketmelon Concerts,Spotify Individual Subscription,1398.86,entertainment,True,False,wants,True,ticketmelon concerts spotify individual subscription
+4deb7df8-bd56-4c25-b2a7-d8b0d77713b7,2025-11-30,00:17,Drive Car Rental Thailand,โอนเงิน,1550.83,transport,True,False,wants,True,drive car rental thailand โอน เงิน
+d2451d2f-cff2-455b-b92a-006fb659352e,2025-11-30,02:11,GrabFood - Bonchon Chicken,ไก่ทอดบอนชอนชุดปาร์ตี้ สั่งดึก,428.29,food,True,True,impulse_delivery,True,grabfood bonchon chicken ไก่ทอด บอน ชอน ชุด ปาร์ตี้ สั่ง ดึก
+784faf87-3f3c-42e7-81d3-730b2d9abf25,2025-12-01,00:13,Pop Mart Official Store,ชำระเงิน,2674.0,shopping,True,True,impulse_online,True,pop mart official store ชำระเงิน
+cbd4e109-0991-4f49-9cca-c95bfbf852e8,2025-12-02,15:45,Nok Air Ticket,เช่ารถขับเที่ยวกับเพื่อน,1798.73,transport,True,False,wants,True,nok air ticket เช่า รถ ขับ เที่ยว กับ เพื่อน
+8319402c-87f6-472f-9fb2-04f5e91f883a,2025-12-02,18:11,ร้านข้าวแกงป้าพร,ข้าวกล่องเซเว่นพร้อมน้ำดื่ม,155.2,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าว กล่อง เซเว่น พร้อม น้ำดื่ม
+a562ca84-33d8-4f00-8d62-0ebc868b5e3e,2025-12-04,08:04,Drive Car Rental Thailand,นั่ง Taxi Express ช่วงฝนตก,393.13,transport,True,False,wants,True,drive car rental thailand นั่ง taxi express ช่วง ฝนตก
+e5dba622-2f4e-4dbb-9256-f5e440913571,2025-12-04,09:26,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,192.12,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวราดแกง 2 อย่าง ไข่ต้ม
+39368fca-5b24-4329-a8fe-fbfa668ac135,2025-12-04,10:02,Greyhound Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,418.06,food,True,False,wants,True,greyhound cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+d5c4399f-9979-43fa-b65d-1c38d6854f8f,2025-12-06,02:09,Shopee Flash Sale Mall,ช้อปปิ้งออนไลน์ช่วงลดราคาเที่ยงคืน,2079.62,shopping,True,True,impulse_online,True,shopee flash sale mall ช้อปปิ้ง ออนไลน์ ช่วง ลดราคา เที่ยงคืน
+935ba817-3216-4572-8c29-40b239286598,2025-12-07,15:13,Watsons สาขา เซ็นทรัล,ซื้อยาสีฟัน แชมพู และสบู่เหลว,352.45,shopping,False,False,routine,True,watsons สาขา เซ็นทรัล ซื้อ ยาสีฟัน แชมพู และ สบู่เหลว
+a27a0be4-1f74-4585-ad7a-dc1a34916fcb,2025-12-07,17:44,วินมอเตอร์ไซค์ หน้า MRT,ค่ารถตู้ไปทำงานอนุสาวรีย์,33.62,transport,False,False,routine,True,วิน มอเตอร์ไซค์ หน้า mrt ค่า รถตู้ ไป ทำงาน อนุสาวรีย์
+345d0836-7a3c-453a-b6ec-e71023a7ffaf,2025-12-07,21:37,Greyhound Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,1106.21,food,True,False,wants,True,greyhound cafe สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+44c69859-7a3c-4a4c-a123-9cef5a30f68c,2025-12-08,16:56,AIA Life Insurance Post,ชำระบิลบัตรเครดิตรายเดือน,935.08,bills,False,False,routine,True,aia life insurance post ชำ ระบิล บัตรเครดิต รายเดือน
+a4b4cb87-4ad8-4593-99a8-5f580c3759c4,2025-12-11,10:41,ร้านข้าวแกงป้าพร,ข้าวมันไก่เนื้อน่องไม่หนัง,164.94,food,False,False,routine,True,ร้าน ข้าวแกง ป้า พร ข้าวมันไก่ เนื้อ น่อง ไม่ หนัง
+63c45a1a-395f-45b8-aab1-06bf9e37fc54,2025-12-12,18:07,ไปรษณีย์ไทย Kerry Express,ส่งพัสดุเอกสารด่วน,76.8,other,False,False,routine,True,ไปรษณีย์ ไทย kerry express ส่ง พัสดุ เอกสาร ด่วน
+d6351206-54f8-45ae-900c-6b55b84e366b,2025-12-14,23:23,Lineman - ส้มตำแซ่บพรีเมียม,ชานมไข่มุก golden bubble x2,1266.75,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ชา นม ไข่มุก golden bubble x 2
+d6132d9f-8233-4a83-8501-f60ab61ebc4f,2025-12-15,09:39,Greyhound Cafe,ไก่ทอด KFC บักเก็ตพิเศษ,853.03,food,True,False,wants,True,greyhound cafe ไก่ทอด kfc บัก เก็ต พิเศษ
+d71882d2-8571-4a3f-890f-2e516c1f8a07,2025-12-15,15:29,Glow Nightclub Thonglor,xxx,179.82,entertainment,True,False,wants,True,glow nightclub thonglor xxx
+35eaf734-bbb0-4d84-8326-5f3b76bf6229,2025-12-15,21:54,Disney+ Hotstar TH,ตั๋วชมภาพยนตร์รอบค่ำ,1260.43,entertainment,True,False,wants,True,disney hotstar th ตั๋ว ชม ภาพยนตร์ รอบ ค่ำ
+27750818-30e6-4339-8643-59f1229e34ca,2025-12-16,07:09,AIA Life Insurance Post,เบี้ยประกันสุขภาพรายเดือน,1425.2,bills,False,False,routine,True,aia life insurance post เบี้ยประกัน สุขภาพ รายเดือน
+6d32f2d1-029a-4fad-9b05-fa624cc1d93a,2025-12-16,08:42,AIA Life Insurance Post,ชำระค่าน้ำประปานครหลวง,2096.24,bills,False,False,routine,True,aia life insurance post ชำระ ค่า น้ำประปา นครหลวง
+029da69c-4b6b-4f87-a8db-325a7822726d,2025-12-17,11:24,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,เส้นเล็กน้ำตกหมูพิเศษ,92.26,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด เส้น เล็ก น้ำตก หมู พิเศษ
+95c5197c-df39-4a1c-be0c-e2f0faf31b5d,2025-12-17,16:11,Daiso Japan 60 บาท,กล่องเก็บของและอุปกรณ์อเนกประสงค์,491.56,shopping,False,False,routine,True,daiso japan 60 บาท กล่อง เก็บ ของ และ อุปกรณ์ อเนกประสงค์
+bef511d7-a95d-451a-8004-43ea48676a81,2025-12-18,18:48,Drive Car Rental Thailand,จองตั๋วเครื่องบินไปเที่ยวภูเก็ต,1035.3,transport,True,False,wants,True,drive car rental thailand จองตั๋ว เครื่องบิน ไปเที่ยว ภูเก็ต
+00e23323-2fec-468b-96cd-62e0e7a43e6e,2025-12-19,13:40,After You Dessert Cafe,สุกี้ชุดครอบครัวพร้อมเป็ดย่าง,728.19,food,True,False,wants,True,after you dessert cafe สุกี้ ชุด ครอบครัว พร้อม เป็ด ย่าง
+adfb855a-f997-4ea3-8e63-ca915f88c806,2025-12-19,18:01,Daiso Japan 60 บาท,ผลไม้นำเข้าและนมจืด,304.53,shopping,False,False,routine,True,daiso japan 60 บาท ผลไม้ นำเข้า และ นม จืด
+e679bdaa-9bdf-4efb-96fd-359542aef833,2025-12-19,20:01,Eveandboy Mega Bangna,เสื้อผ้าแฟชั่นเกาหลีแมตช์ชุด,1626.98,shopping,True,False,wants,True,eveandboy mega bangna เสื้อผ้า แฟชั่น เกาหลี แมตช์ ชุด
+f72b6efd-4a90-483e-87f1-1a2ed68e8ea2,2025-12-19,21:41,ZARA Siam Paragon,เครื่องเขียนสมุดโน้ตสไตล์ญี่ปุ่น,1487.06,shopping,True,False,wants,True,zara siam paragon เครื่องเขียน สมุด โน้ต สไตล์ ญี่ปุ่น
+df9105c2-6630-414d-b812-e32d55df943b,2025-12-20,00:18,GrabFood - Bonchon Chicken,ยำแซลมอนกุ้งสด สั่งตอนหิวรอบดึก,686.23,food,True,True,impulse_delivery,True,grabfood bonchon chicken ยำ แซลมอน กุ้ง สด สั่ง ตอน หิว รอบ ดึก
+e181091d-57bf-4899-93b1-d94ca9454862,2025-12-20,12:15,ก๋วยเตี๋ยวเรืออยุธยา รสเด็ด,ข้าวราดแกง 2 อย่างไข่ต้ม,186.4,food,False,False,routine,True,ก๋วยเตี๋ยว เรือ อยุธยา รสเด็ด ข้าวราดแกง 2 อย่าง ไข่ต้ม
+7ab2c2ce-ceb9-47ab-a3ba-04d93ee7c4a5,2025-12-21,00:54,Pop Mart Official Store,สั่งของเล่น Art Toy กล่องสุ่มไลฟ์ดึก,1352.81,shopping,True,True,impulse_online,True,pop mart official store สั่ง ของเล่น art toy กล่อง สุ่ม ไลฟ์ ดึก
+9cdbd388-3e22-4df2-a239-5cf1ea8b7337,2025-12-22,16:30,CJ Express ซอย 5,กะเพราหมูกรอบไข่ดาวไม่สุก,211.04,food,False,False,routine,True,cj express ซอย 5 กะเพรา หมูกรอบ ไข่ดาว ไม่ สุก
+d5b3482f-f948-490f-859e-3e457ba5c9f5,2025-12-22,21:44,Sushi Masa Thonglor,พร้อมเพย์,390.62,food,True,False,wants,True,sushi masa thonglor พร้อม เพย์
+ad384cc9-f2a5-444a-87e2-5de8b8392142,2025-12-23,07:16,Drive Car Rental Thailand,Grab VIP เดินทางไปสนามบิน,1388.68,transport,True,False,wants,True,drive car rental thailand grab vip เดินทาง ไป สนามบิน
+f93b51b7-f15f-4bb9-8619-c98aef2dc635,2025-12-24,23:21,Shopee Flash Sale Mall,Flash Sale 00:00 หูฟังบลูทูธ,1982.47,shopping,True,True,impulse_online,True,shopee flash sale mall flash sale 00 00 หูฟัง บลูทูธ
+87e2b24f-bf43-492c-99e5-c22e4e0dcb0e,2025-12-25,01:03,Shopee Flash Sale Mall,กล่องสุ่มคอลเลกชันใหม่ล่าสุด,2547.81,shopping,True,True,impulse_online,True,shopee flash sale mall กล่อง สุ่ม คอลเลกชัน ใหม่ ล่าสุด
+3d651c01-3256-4337-865b-3f28d4a048af,2025-12-25,23:12,ทำบุญช่วยเหลือผู้ประสบภัย,ร่วมบริจาคอาหารสุนัขแมวจรจัด,85.94,other,True,True,wants,True,ทำบุญ ช่วยเหลือ ผู้ประสบภัย ร่วม บริจาค อาหาร สุนัข แมว จรจัด
+e0ff9653-02df-401a-8a52-977b28364ed9,2025-12-26,12:31,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,611.23,transport,True,True,wants,True,drive car rental thailand ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+0d87e521-922a-4469-9219-83d7077c77e0,2025-12-26,16:16,Sushi Masa Thonglor,ปิ้งย่างบาร์บีคิวฉลองปิดโปรเจกต์,543.36,food,True,False,wants,True,sushi masa thonglor ปิ้ง ย่าง บาร์บีคิว ฉลอง ปิด โปรเจกต์
+cf9fd597-11fd-43d3-b34a-21d5b6a1d2dd,2025-12-27,12:20,CJ Express ซอย 5,ข้าวต้มปลาอินทรีย์รอบค่ำ,205.95,food,False,False,routine,True,cj express ซอย 5 ข้าวต้ม ปลา อินทรีย์ รอบ ค่ำ
+c5b2c601-0ebc-4e47-9b7d-bf6aa2b188c2,2025-12-27,13:36,After You Dessert Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,1059.74,food,True,False,wants,True,after you dessert cafe สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+1ef267d1-3039-49fc-a239-4b4fcef4b1cc,2025-12-27,17:28,Greyhound Cafe,สุกี้ชาบูเนื้อวากิวไม่อั้น,255.39,food,True,True,wants,True,greyhound cafe สุกี้ ชาบู เนื้อ วา กิว ไม่ อั้น
+23920c04-2e2a-42ba-87bc-db33be3c0867,2025-12-28,02:52,Lineman - ส้มตำแซ่บพรีเมียม,ยำมาม่าหมูยอไข่แดงเค็มรอบดึก,571.15,food,True,True,impulse_delivery,True,lineman ส้มตำ แซ่บ พรีเมียม ยำ มาม่า หมูยอ ไข่แดง เค็ม รอบ ดึก
+6202ff9d-2c0f-4eb5-b998-d006e7707f7c,2025-12-28,13:51,Drive Car Rental Thailand,ตั๋วบินเชียงใหม่สุดสัปดาห์,445.72,transport,True,False,wants,True,drive car rental thailand ตั๋ว บิน เชียงใหม่ สุดสัปดาห์
+465f583d-5ac5-43cc-8f0b-e2a5610db202,2025-12-29,17:54,Nok Air Ticket,Grab VIP เดินทางไปสนามบิน,623.52,transport,True,False,wants,True,nok air ticket grab vip เดินทาง ไป สนามบิน
+48f06559-3c75-4be8-949e-3bbe681dba00,2025-12-30,23:35,Daiso Japan 60 บาท,ของสดวัตถุดิบทำกับข้าว,135.09,shopping,False,False,routine,True,daiso japan 60 บาท ของสด วัตถุดิบ ทำกับข้าว
+2363bc05-c665-4997-b4eb-60395c09d2b8,2025-12-31,00:34,GrabFood - Bonchon Chicken,เบอร์เกอร์ชุดใหญ่เฟรนช์ฟรายส์ดึก,1132.04,food,True,True,impulse_delivery,True,grabfood bonchon chicken เบอร์เกอร์ ชุด ใหญ่ เฟรนช์ ฟรายส์ ดึก
+a59ae9fb-0486-4542-b158-9a4bcaa4dd9b,2025-12-31,12:27,Disney+ Hotstar TH,Disney+ Hotstar รายปี,195.04,entertainment,True,False,wants,True,disney hotstar th disney hotstar รายปี
