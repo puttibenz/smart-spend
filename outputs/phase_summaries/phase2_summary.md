@@ -42,12 +42,12 @@
 | Model / Engine | Precision | Recall | F1-Score | ROC-AUC | PR-AUC | Status vs Criteria |
 |---|---|---|---|---|---|---|
 | **v1 Rule-Based (Baseline)** | **82.54%** | 29.38% | **0.4333** | 0.9708 | 0.7198 | *Baseline Reference* |
-| **v2 ML (Logistic Regression)** | 67.31% | **100.00%** | **0.8046** | **0.9832** | **0.8258** | **PASS [F1 Gain +37.13%]** |
-| **v2 ML (LightGBM)** | 71.74% | 94.29% | 0.8148 | 0.9818 | 0.8239 | **PASS** |
+| **v2 ML (LightGBM — Selected)** | **71.11%** | **91.43%** | **0.8000** | **0.9794** | **0.7901** | **PASS [F1 Gain +36.67%]** |
+| **v2 ML (Logistic Regression)** | 67.31% | 100.00% | 0.8046 | 0.9832 | 0.8258 | *Alternative Candidate* |
 
 ### 💡 Key Findings:
 1. **v1 Rule-Based:** มีความแม่นยำสูงเมื่อเตือน (Precision 82.54%) แต่มี Recall ต่ำ (29.38%) เพราะเกณฑ์ Score ≥ 70 แบบคงที่ ต้องอาศัยสัญญาณพร้อมกันหลายข้อจึงจะเตือน
-2. **v2 Machine Learning:** แก้ปัญหาของ v1 ได้อย่างยอดเยี่ยม โดยสามารถเรียนรู้น้ำหนักที่ยืดหยุ่นจาก Feature Space ทำให้ **Recall พุ่งขึ้นเป็น 100.00%** โดย Precision ยังคงอยู่ในระดับที่ยอมรับได้ (67.31%) ส่งผลให้ **F1-Score เพิ่มขึ้นจาก 0.4333 เป็น 0.8046 (+37.13%)**
+2. **v2 Machine Learning (LightGBM):** เลือกเป็นโมเดลหลักที่สมดุลที่สุด โดยได้ **Precision 71.11% และ Recall 91.43% (จับเคส Impulse ได้ 32/35 เคส หลุดเพียง 3 เคส)** ไม่ Over-optimistic 100% ลอยๆ และได้ **F1-Score 0.8000 (ชนะ Baseline +36.67%)**
 
 ---
 

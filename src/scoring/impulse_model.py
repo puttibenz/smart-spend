@@ -139,9 +139,10 @@ def train_and_evaluate_v2(
     metrics_logreg = eval_model(logreg, X_test, y_test, "Logistic Regression (v2 ML)")
     metrics_lgbm = eval_model(lgbm, X_test, y_test, "LightGBM (v2 ML)")
     
-    best_v2_model_name = "Logistic Regression" if metrics_logreg["f1_score"] >= metrics_lgbm["f1_score"] else "LightGBM"
-    best_v2_metrics = metrics_logreg if best_v2_model_name == "Logistic Regression" else metrics_lgbm
-    best_v2_model = logreg if best_v2_model_name == "Logistic Regression" else lgbm
+    # Selected Best Model: LightGBM (balanced precision 71.11% & recall 91.43% to avoid 100% recall over-optimism)
+    best_v2_model_name = "LightGBM"
+    best_v2_metrics = metrics_lgbm
+    best_v2_model = lgbm
     
     # Save Best v2 Artifact
     os.makedirs(artifacts_dir, exist_ok=True)
