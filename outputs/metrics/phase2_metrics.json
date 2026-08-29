@@ -1,0 +1,63 @@
+{
+  "phase": 2,
+  "component": "Impulse Risk Scoring Engine",
+  "timestamp": "2026-08-29T17:06:21.623757",
+  "data_leakage_disclaimer": "Synthetic Data Notice: Impulse patterns (late-night delivery & payday splurge) were injected during data generation. High correlation and precision/recall reflect adherence to synthetic behavioral assumptions and serve as a proof-of-concept baseline.",
+  "v1_rule_based": {
+    "precision": 0.8254,
+    "recall": 0.2938,
+    "f1_score": 0.4333,
+    "accuracy": 0.9174,
+    "roc_auc": 0.9708,
+    "pr_auc": 0.7198,
+    "confusion_matrix": [
+      [
+        1458,
+        11
+      ],
+      [
+        125,
+        52
+      ]
+    ],
+    "v1_meets_minimum_bar": false,
+    "thresholds": {
+      "precision_floor": 0.5,
+      "recall_floor": 0.5,
+      "nudge_threshold": 70.0
+    }
+  },
+  "feature_correlation_analysis": {
+    "late_night": {
+      "pearson_r": 0.5451,
+      "spearman_rho": 0.5451
+    },
+    "payday": {
+      "pearson_r": 0.4449,
+      "spearman_rho": 0.4449
+    },
+    "is_wants": {
+      "pearson_r": 0.3475,
+      "spearman_rho": 0.3475
+    },
+    "z_score": {
+      "pearson_r": 0.2799,
+      "spearman_rho": 0.2735
+    },
+    "amount": {
+      "pearson_r": 0.1549,
+      "spearman_rho": 0.2176
+    },
+    "hour": {
+      "pearson_r": -0.2916,
+      "spearman_rho": -0.2125
+    }
+  },
+  "sample_counts": {
+    "total_transactions": 1646,
+    "ground_truth_impulse_true": 177,
+    "ground_truth_impulse_false": 1469,
+    "v1_nudge_alerts_count": 63,
+    "cold_start_samples": 132
+  }
+}
