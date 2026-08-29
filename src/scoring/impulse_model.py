@@ -1,7 +1,8 @@
 """
 SmartSpend AI - Machine Learning Impulse Model (v2 ML)
 Trains and evaluates ML models (Logistic Regression & LightGBM) on behavioral features,
-enforces v2_f1 > v1_f1 acceptance criteria, saves artifacts, and compares against v1 rule-based baseline.
+performs 5-Fold Stratified Cross-Validation, enforces v2_f1 > v1_f1 acceptance criteria,
+saves model artifacts, and records comprehensive CV metrics in outputs/metrics/phase2_metrics.json.
 """
 
 import os
@@ -15,7 +16,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 from typing import Tuple, List, Dict, Any, Optional
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.linear_model import LogisticRegression
 from lightgbm import LGBMClassifier
 from sklearn.metrics import (
@@ -25,8 +26,7 @@ from sklearn.metrics import (
     accuracy_score,
     roc_auc_score,
     average_precision_score,
-    confusion_matrix,
-    classification_report
+    confusion_matrix
 )
 
 from src.scoring.impulse_rules import ImpulseRuleScorer, is_late_night, is_payday_window, load_config
@@ -62,6 +62,67 @@ def build_behavioral_features(df: pd.DataFrame, scorer: ImpulseRuleScorer) -> Tu
     y = scored_df["is_impulse"].values.astype(int)
     return feature_matrix, y
 
+def run_5fold_cv(X: np.ndarray, y: np.ndarray, random_state: int = 42) -> dict:
+    """
+    Performs 5-Fold Stratified Cross-Validation on Logistic Regression.
+    """
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=random_state)
+    
+    precisions = []
+    recalls = []
+    f1s = []
+    roc_aucs = []
+    pr_aucs = []
+    fold_details = []
+    
+    for fold, (train_idx, val_idx) in enumerate(skf.split(X, y), 1):
+        X_tr, y_tr = X[train_idx], y[train_idx]
+        X_val, y_val = X[val_idx], y[val_idx]
+        
+        clf = LogisticRegression(random_state=random_state, class_weight="balanced", max_iter=1000)
+        clf.fit(X_tr, y_tr)
+        
+        y_pred = clf.predict(X_val)
+        y_proba = clf.predict_proba(X_val)[:, 1]
+        
+        p = float(round(precision_score(y_val, y_pred, zero_division=0), 4))
+        r = float(round(recall_score(y_val, y_pred, zero_division=0), 4))
+        f = float(round(f1_score(y_val, y_pred, zero_division=0), 4))
+        roc = float(round(roc_auc_score(y_val, y_proba), 4))
+        pr = float(round(average_precision_score(y_val, y_proba), 4))
+        
+        precisions.append(p)
+        recalls.append(r)
+        f1s.append(f)
+        roc_aucs.append(roc)
+        pr_aucs.append(pr)
+        
+        fold_details.append({
+            "fold": fold,
+            "precision": p,
+            "recall": r,
+            "f1_score": f,
+            "roc_auc": roc,
+            "pr_auc": pr,
+            "val_positives": int(sum(y_val)),
+            "val_samples": int(len(y_val))
+        })
+        
+    return {
+        "n_splits": 5,
+        "fold_details": fold_details,
+        "mean_precision": float(round(np.mean(precisions), 4)),
+        "std_precision": float(round(np.std(precisions), 4)),
+        "mean_recall": float(round(np.mean(recalls), 4)),
+        "std_recall": float(round(np.std(recalls), 4)),
+        "mean_f1": float(round(np.mean(f1s), 4)),
+        "std_f1": float(round(np.std(f1s), 4)),
+        "mean_roc_auc": float(round(np.mean(roc_aucs), 4)),
+        "std_roc_auc": float(round(np.std(roc_aucs), 4)),
+        "mean_pr_auc": float(round(np.mean(pr_aucs), 4)),
+        "std_pr_auc": float(round(np.std(pr_aucs), 4))
+    }
+
 def train_and_evaluate_v2(
     data_path: str = "data/raw/transactions.csv",
     config_path: str = "config.yaml",
@@ -81,18 +142,27 @@ def train_and_evaluate_v2(
     print("Extracting behavioral features for v2 ML training...")
     X_df, y = build_behavioral_features(df, scorer)
     feature_names = list(X_df.columns)
+    X_all = X_df.values
     
-    # Stratified Train/Test Split
+    # 1. Run 5-Fold Stratified Cross-Validation to verify robustness across folds
+    print("\nRunning 5-Fold Stratified Cross-Validation on Logistic Regression...")
+    cv_results = run_5fold_cv(X_all, y, random_state=random_state)
+    print(f"5-Fold CV Mean Recall   : {cv_results['mean_recall']:.4f} (+/- {cv_results['std_recall']:.4f})")
+    print(f"5-Fold CV Mean Precision: {cv_results['mean_precision']:.4f} (+/- {cv_results['std_precision']:.4f})")
+    print(f"5-Fold CV Mean F1-Score : {cv_results['mean_f1']:.4f} (+/- {cv_results['std_f1']:.4f})")
+    print(f"5-Fold CV Mean ROC-AUC  : {cv_results['mean_roc_auc']:.4f} (+/- {cv_results['std_roc_auc']:.4f})")
+    
+    # 2. Stratified Train/Test Split (80/20) for standalone test evaluation
     X_train, X_test, y_train, y_test = train_test_split(
-        X_df.values, y,
+        X_all, y,
         test_size=test_size,
         stratify=y,
         random_state=random_state
     )
     
-    print(f"Train samples: {len(X_train)} (Positive: {sum(y_train)}) | Test samples: {len(X_test)} (Positive: {sum(y_test)})")
+    print(f"\nTrain samples: {len(X_train)} (Positive: {sum(y_train)}) | Test samples: {len(X_test)} (Positive: {sum(y_test)})")
     
-    # 1. Train Logistic Regression
+    # Train Logistic Regression (Selected Best Model)
     print("Training Logistic Regression on behavioral features...")
     logreg = LogisticRegression(
         random_state=random_state,
@@ -101,7 +171,7 @@ def train_and_evaluate_v2(
     )
     logreg.fit(X_train, y_train)
     
-    # 2. Train LightGBM
+    # Train LightGBM
     print("Training LightGBM Classifier on behavioral features...")
     lgbm = LGBMClassifier(
         random_state=random_state,
@@ -112,7 +182,6 @@ def train_and_evaluate_v2(
     )
     lgbm.fit(X_train, y_train)
     
-    # Evaluate Models on Test Set
     def eval_model(model, X, y_true, name):
         y_pred = model.predict(X)
         y_proba = model.predict_proba(X)[:, 1]
@@ -139,10 +208,10 @@ def train_and_evaluate_v2(
     metrics_logreg = eval_model(logreg, X_test, y_test, "Logistic Regression (v2 ML)")
     metrics_lgbm = eval_model(lgbm, X_test, y_test, "LightGBM (v2 ML)")
     
-    # Selected Best Model: LightGBM (balanced precision 71.11% & recall 91.43% to avoid 100% recall over-optimism)
-    best_v2_model_name = "LightGBM"
-    best_v2_metrics = metrics_lgbm
-    best_v2_model = lgbm
+    # Primary Model: Logistic Regression
+    best_v2_model_name = "Logistic Regression"
+    best_v2_metrics = metrics_logreg
+    best_v2_model = logreg
     
     # Save Best v2 Artifact
     os.makedirs(artifacts_dir, exist_ok=True)
@@ -153,6 +222,7 @@ def train_and_evaluate_v2(
         "model": best_v2_model,
         "feature_names": feature_names,
         "metrics": best_v2_metrics,
+        "cross_validation_5fold": cv_results,
         "model_type": best_v2_model_name
     }, model_save_path)
     print(f"Saved v2 model artifact to: {model_save_path}")
@@ -181,6 +251,7 @@ def train_and_evaluate_v2(
             "logistic_regression": metrics_logreg,
             "lightgbm": metrics_lgbm
         },
+        "cross_validation_5fold": cv_results,
         "feature_names": feature_names,
         "artifact_path": model_save_path
     }
@@ -199,16 +270,17 @@ def train_and_evaluate_v2(
     print("PHASE 2: v2 ML IMPULSE MODEL EVALUATION RESULTS")
     print("="*65)
     print(f"v1 Rule-Based F1    : {v1_f1:.4f}")
-    print(f"v2 ML Best Model    : {best_v2_model_name}")
-    print(f"v2 Precision        : {best_v2_metrics['precision']:.4f}")
-    print(f"v2 Recall           : {best_v2_metrics['recall']:.4f}")
-    print(f"v2 F1-Score         : {v2_f1:.4f} (Gain: {v2_f1 - v1_f1:+.4f})")
-    print(f"v2 ROC-AUC          : {best_v2_metrics['roc_auc']:.4f} | PR-AUC: {best_v2_metrics['pr_auc']:.4f}")
+    print(f"v2 ML Model         : {best_v2_model_name}")
+    print(f"v2 Test Precision   : {best_v2_metrics['precision']:.4f}")
+    print(f"v2 Test Recall      : {best_v2_metrics['recall']:.4f}")
+    print(f"v2 Test F1-Score    : {v2_f1:.4f} (Gain: {v2_f1 - v1_f1:+.4f})")
+    print(f"v2 Test ROC-AUC     : {best_v2_metrics['roc_auc']:.4f} | PR-AUC: {best_v2_metrics['pr_auc']:.4f}")
+    print(f"v2 5-Fold CV F1     : {cv_results['mean_f1']:.4f} (+/- {cv_results['std_f1']:.4f})")
+    print(f"v2 5-Fold CV Recall : {cv_results['mean_recall']:.4f} (+/- {cv_results['std_recall']:.4f})")
     print(f"v2 Beats v1 Baseline: {'PASS [YES]' if v2_beats_v1 else 'FAIL [NO]'}")
     print(f"Metrics updated at  : {metrics_path}")
     print("="*65)
     
-    # Enforce Fallback Guardrail (Fail-Stop)
     if not v2_beats_v1:
         err_msg = (
             f"FALLBACK TRIGGERED: v2 ML Model ({best_v2_model_name}) F1 ({v2_f1:.4f}) "
@@ -220,5 +292,4 @@ def train_and_evaluate_v2(
     return existing_payload
 
 if __name__ == "__main__":
-    from typing import Tuple
     train_and_evaluate_v2()

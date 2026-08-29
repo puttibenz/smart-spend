@@ -61,13 +61,13 @@
     "cold_start_samples": 132
   },
   "v2_ml": {
-    "best_model": "LightGBM",
-    "precision": 0.7111,
-    "recall": 0.9143,
-    "f1_score": 0.8,
-    "accuracy": 0.9515,
-    "roc_auc": 0.9794,
-    "pr_auc": 0.7901,
+    "best_model": "Logistic Regression",
+    "precision": 0.6731,
+    "recall": 1.0,
+    "f1_score": 0.8046,
+    "accuracy": 0.9485,
+    "roc_auc": 0.9832,
+    "pr_auc": 0.8258,
     "models_evaluated": {
       "logistic_regression": {
         "model_name": "Logistic Regression (v2 ML)",
@@ -108,6 +108,71 @@
         ]
       }
     },
+    "cross_validation_5fold": {
+      "n_splits": 5,
+      "fold_details": [
+        {
+          "fold": 1,
+          "precision": 0.6923,
+          "recall": 1.0,
+          "f1_score": 0.8182,
+          "roc_auc": 0.9737,
+          "pr_auc": 0.7647,
+          "val_positives": 36,
+          "val_samples": 330
+        },
+        {
+          "fold": 2,
+          "precision": 0.6481,
+          "recall": 1.0,
+          "f1_score": 0.7865,
+          "roc_auc": 0.9785,
+          "pr_auc": 0.7662,
+          "val_positives": 35,
+          "val_samples": 329
+        },
+        {
+          "fold": 3,
+          "precision": 0.7,
+          "recall": 1.0,
+          "f1_score": 0.8235,
+          "roc_auc": 0.9754,
+          "pr_auc": 0.74,
+          "val_positives": 35,
+          "val_samples": 329
+        },
+        {
+          "fold": 4,
+          "precision": 0.6604,
+          "recall": 1.0,
+          "f1_score": 0.7955,
+          "roc_auc": 0.9832,
+          "pr_auc": 0.8671,
+          "val_positives": 35,
+          "val_samples": 329
+        },
+        {
+          "fold": 5,
+          "precision": 0.6102,
+          "recall": 1.0,
+          "f1_score": 0.7579,
+          "roc_auc": 0.9707,
+          "pr_auc": 0.7157,
+          "val_positives": 36,
+          "val_samples": 329
+        }
+      ],
+      "mean_precision": 0.6622,
+      "std_precision": 0.0324,
+      "mean_recall": 1.0,
+      "std_recall": 0.0,
+      "mean_f1": 0.7963,
+      "std_f1": 0.0236,
+      "mean_roc_auc": 0.9763,
+      "std_roc_auc": 0.0043,
+      "mean_pr_auc": 0.7707,
+      "std_pr_auc": 0.0516
+    },
     "feature_names": [
       "late_night",
       "payday",
@@ -122,8 +187,8 @@
   },
   "v1_vs_v2_comparison": {
     "v1_rule_based_f1": 0.4333,
-    "v2_ml_f1": 0.8,
-    "f1_gain": 0.3667,
+    "v2_ml_f1": 0.8046,
+    "f1_gain": 0.3713,
     "v2_beats_v1": true
   }
 }
