@@ -1,0 +1,94 @@
+{
+  "phase": 2,
+  "component": "Needs vs Wants Classifier",
+  "timestamp": "2026-08-29T17:05:09.633760",
+  "metric_name": "accuracy",
+  "value": 0.8348,
+  "precision": 0.7841,
+  "recall": 0.9234,
+  "f1_score": 0.848,
+  "accuracy_floor": 0.7,
+  "meets_minimum_bar": true,
+  "confusion_matrix": [
+    [
+      615,
+      209
+    ],
+    [
+      63,
+      759
+    ]
+  ],
+  "classification_report": {
+    "Needs (False)": {
+      "precision": 0.9070796460176991,
+      "recall": 0.7463592233009708,
+      "f1-score": 0.8189081225033289,
+      "support": 824.0
+    },
+    "Wants (True)": {
+      "precision": 0.7840909090909091,
+      "recall": 0.9233576642335767,
+      "f1-score": 0.8480446927374302,
+      "support": 822.0
+    },
+    "accuracy": 0.8347509113001215,
+    "macro avg": {
+      "precision": 0.845585277554304,
+      "recall": 0.8348584437672737,
+      "f1-score": 0.8334764076203796,
+      "support": 1646.0
+    },
+    "weighted avg": {
+      "precision": 0.8456599973215744,
+      "recall": 0.8347509113001215,
+      "f1-score": 0.8334587061803832,
+      "support": 1646.0
+    }
+  },
+  "category_breakdown": {
+    "shopping": {
+      "total_samples": 329,
+      "accuracy": 0.5289,
+      "true_wants_count": 174,
+      "pred_wants_count": 329
+    },
+    "food": {
+      "total_samples": 577,
+      "accuracy": 0.9463,
+      "true_wants_count": 290,
+      "pred_wants_count": 259
+    },
+    "bills": {
+      "total_samples": 165,
+      "accuracy": 0.7455,
+      "true_wants_count": 0,
+      "pred_wants_count": 42
+    },
+    "entertainment": {
+      "total_samples": 165,
+      "accuracy": 1.0,
+      "true_wants_count": 165,
+      "pred_wants_count": 165
+    },
+    "transport": {
+      "total_samples": 328,
+      "accuracy": 0.9848,
+      "true_wants_count": 153,
+      "pred_wants_count": 148
+    },
+    "other": {
+      "total_samples": 82,
+      "accuracy": 0.5244,
+      "true_wants_count": 40,
+      "pred_wants_count": 25
+    }
+  },
+  "sample_counts": {
+    "total_transactions": 1646,
+    "ground_truth_wants": 822,
+    "ground_truth_needs": 824,
+    "predicted_wants": 968,
+    "predicted_needs": 678
+  }
+}
