@@ -132,24 +132,23 @@
 
 ---
 
-## 📏 Success Metrics (เพิ่มใหม่)
+## 📏 Success Metrics (ปรับปรุงตาม v5 Protocol)
 
 | Component | Metric | เป้าหมาย |
 |---|---|---|
-| Expense Categorization — Baseline | Macro-F1 ของ keyword/rule-based matching ล้วน (ไม่ใช้ ML) | ใช้เป็นเส้นฐานเทียบว่า ML ให้คุณค่าเพิ่มจริงหรือไม่ |
-| Expense Categorization — ML | Macro-F1 | ต้องสูงกว่า baseline อย่างมีนัยสำคัญ (ไม่ใช่แค่ ≥ 0.85 ลอยๆ เพราะ synthetic data ที่ pattern ชัดมักได้ score สูงอยู่แล้วแม้โมเดลง่ายมาก) |
+| Expense Categorization — Baseline | Macro-F1 ของ keyword/rule-based matching ล้วน (ไม่ใช้ ML) | ใช้เป็นเส้นฐานเทียบว่า ML ให้คุณค่าเพิ่มจริงหรือไม่ (~0.70-0.75) |
+| Expense Categorization — ML | Macro-F1 (บน Test Set ที่มี Realistic Noise) | ต้องสูงกว่า Baseline อย่างมีนัยสำคัญ และอยู่ในช่วงที่สมจริง `[0.75, 0.95]` |
+| Generalization — Unseen Merchant | Accuracy ของกลุ่มร้านค้าใหม่ที่ไม่เคยเห็นใน Train Set | `≥ 0.60` (Floor) และ Generalization Gap ระหว่าง Seen vs Unseen `≤ 0.20` |
 | Impulse Risk Score (v1 rule-based) | Precision/Recall เทียบ ground truth `is_impulse` | ใช้เป็น baseline อ้างอิงสำหรับ v2 |
 | Impulse Risk Score (v2 ML) | ปรับปรุงจาก v1 ได้อย่างมีนัยสำคัญ | Recall เพิ่มขึ้นโดย Precision ไม่ลดมาก |
-
-> **หมายเหตุ:** ตัวเลขเป้าหมาย (เช่น F1) ในตารางนี้เป็นทิศทางคร่าวๆ ไม่ใช่ตัวเลขตายตัวที่มีฐานอ้างอิงจริง เพราะยังไม่มีข้อมูลจริงมาทดสอบ — สิ่งที่สำคัญกว่าตัวเลขคือ **ML ต้องเอาชนะ baseline แบบไม่ใช้ ML ได้** ไม่งั้นแปลว่าใช้ ML เกินความจำเป็น
 
 ---
 
 ## ⚠️ Known Limitations
-- **Data Leakage โดยธรรมชาติของ synthetic data:** เพราะ impulse pattern (late-night + payday window) ถูก inject ไว้เองตอน generate data และ v1 Impulse Score ก็ใช้ feature ชุดเดียวกันนี้ตรงๆ ในการให้คะแนน ผลลัพธ์ precision/recall ที่ได้จึงมีแนวโน้มสูงเกินจริงเพราะโมเดล "รู้คำตอบ" อยู่แล้วจาก pattern ที่ตั้งไว้เอง — **ตัวเลข performance ที่ดีบน synthetic data ไม่สามารถตีความว่าโมเดลจะ generalize กับพฤติกรรมจริงได้** ต้องระบุข้อจำกัดนี้ชัดเจนทุกครั้งที่รายงานผล และถ้าจะพิสูจน์ความสามารถจริง ต้องทดสอบกับข้อมูลจริง (หรืออย่างน้อย synthetic data ที่สร้างจากกฎอื่นที่ต่างจากกฎที่ใช้ตอน generate)
-- ข้อมูลทั้งหมดเป็น synthetic — pattern พฤติกรรมจริงของมนุษย์ซับซ้อนกว่าที่ generate ไว้ ผลลัพธ์จึงเป็น proof-of-concept ไม่ใช่ระบบพร้อมใช้กับข้อมูลจริง
-- "Impulse Buying" เป็นแนวคิดเชิงจิตวิทยา การนิยามด้วย rule/feature เป็นการประมาณ ไม่ใช่การวัดอารมณ์จริง
-- Dataset ขนาดเล็ก (1 user จำลอง) — หากขยายเป็นหลาย user profile จะทำให้โมเดล generalize ได้ดีขึ้น (ระบุไว้เป็นแนวทางขยายผลในอนาคต)
+- **Data Leakage & Mitigation ด้วย Unseen Partitioning:** ใน Synthetic Data ทั่วไป โมเดลอาจจดจำ Template ได้ 100% จึงได้ออกแบบ **Custom 2-Stage Stratified Split** กักร้านค้ากลุ่ม Unseen 20% เข้า Test Set ทั้งหมดเพื่อประเมิน Zero-shot Generalization อย่างแท้จริง อย่างไรก็ดี พฤติกรรมจริงของมนุษย์มีความซับซ้อนและมีคำสแลง/บริบทที่หลากหลายกว่าที่จำลอง
+- **Impulse Pattern Leakage:** เพราะ impulse pattern (late-night + payday window) ถูก inject ไว้เองตอน generate data และ v1 Impulse Score ก็ใช้ feature ชุดเดียวกันนี้ตรงๆ ผลลัพธ์ precision/recall ที่ได้จึงมีแนวโน้มสูงเพราะโมเดลเรียนรู้จากกฎที่ตั้งไว้ ต้องตระหนักถึงข้อจำกัดนี้เสมอ
+- **"Impulse Buying" เชิงจิตวิทยา:** การนิยามด้วย rule/feature เป็นการประมาณเชิงพฤติกรรม ไม่ใช่การวัดอารมณ์หรือแรงจูงใจจริง
+- **Dataset ขนาด 1 User Profile:** ในอนาคตสามารถขยายเป็นหลาย Persona (สายประหยัด, สายช้อปปิ้ง, ฟรีแลนซ์) เพื่อทดสอบ Robustness
 
 ---
 
