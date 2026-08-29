@@ -25,6 +25,11 @@ evaluation_thresholds:
   max_generalization_gap: 0.20
   min_train_samples_per_category: 40
 
+evaluation_thresholds_phase2:
+  needs_wants_accuracy_floor: 0.70
+  v1_precision_floor: 0.50
+  v1_recall_floor: 0.50
+
 model_training:
   random_state: 42
   test_size: 0.2
@@ -155,6 +160,16 @@ baseline_keywords:
     - "ค่าธรรมเนียม"
     - "เบ็ดเตล็ด"
 
+needs_wants:
+  override_amount_multiplier: 1.5
+  default_mapping:
+    bills: false          # false = Need
+    shopping: true         # true = Want
+    entertainment: true
+    food: false
+    transport: false
+    other: false
+
 impulse_score:
   weights:
     late_night: 25
@@ -162,10 +177,8 @@ impulse_score:
     wants: 20
     amount_anomaly: 30
   nudge_threshold: 70
+  cold_start_days: 30
   late_night_window:
     - "23:00"
     - "02:00"
-
-needs_wants:
-  # Placeholder until confirmed in Phase 2 (Open Decision #2)
-  override_amount_multiplier: null
+  payday_days: [25, 26, 27]
