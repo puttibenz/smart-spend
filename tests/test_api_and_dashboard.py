@@ -37,7 +37,7 @@ def test_1_root_serves_frontend(client: TestClient):
     assert "<!DOCTYPE html>" in response.text
 
 def test_2_summary_data_consistency(client: TestClient):
-    """Assert /api/summary values match raw CSV and Phase 1-2 metrics 100%."""
+    """Assert /api/summary values match raw CSV and dynamic classifier predictions 100%."""
     response = client.get("/api/summary")
     assert response.status_code == 200
     summary = response.json()
@@ -49,7 +49,17 @@ def test_2_summary_data_consistency(client: TestClient):
     assert summary["total_spend"] == expected_total_spend
     assert summary["total_transactions"] == len(df)
     
-    # 2. Needs vs Wants consistency
+    # 2. Needs vs Wants consistency with predicted labels
+    from src.needs_wants.classify_needs_wants import NeedsWantsClassifier, load_config
+    config = load_config(CONFIG_PATH)
+    nw = NeedsWantsClassifier(config)
+    is_wants_pred = nw.classify_dataframe(df)
+    
+    expected_wants_amt = float(round(df.loc[is_wants_pred == True, "amount"].sum(), 2))
+    expected_needs_amt = float(round(df.loc[is_wants_pred == False, "amount"].sum(), 2))
+    
+    assert summary["wants_amount"] == expected_wants_amt
+    assert summary["needs_amount"] == expected_needs_amt
     assert round(summary["needs_amount"] + summary["wants_amount"], 2) == expected_total_spend
     assert round(summary["needs_percentage"] + summary["wants_percentage"], 1) == 100.0
     
@@ -234,3 +244,47 @@ def test_9_fail_fast_startup_on_missing_artifacts():
     """Assert dynamic artifact loader raises FileNotFoundError if artifact path does not exist."""
     with pytest.raises(FileNotFoundError):
         load_all_phase1_phase2_artifacts(artifacts_dir="non_existent_artifacts_dir_xyz")
+
+def test_10_dashboard_matches_live_predict_for_same_transaction(client: TestClient):
+    """
+    Assert that running a transaction through POST /api/predict gives identical
+    predicted is_wants and impulse_score to what the Dashboard table displays.
+    """
+    df = pd.read_csv(DATA_PATH)
+    # Pick the last transaction in the dataset
+    sample_tx = df.iloc[-1]
+    
+    payload = {
+        "merchant": str(sample_tx["merchant"]),
+        "memo": str(sample_tx["memo"]) if pd.notna(sample_tx["memo"]) else "",
+        "amount": float(sample_tx["amount"]),
+        "date": str(sample_tx["date"]),
+        "time": str(sample_tx["time"])
+    }
+    
+    # 1. Query live prediction
+    predict_res = client.post("/api/predict", json=payload)
+    assert predict_res.status_code == 200
+    live_pred = predict_res.json()
+    
+    # 2. Query transactions list from dashboard table
+    tx_res = client.get(f"/api/transactions?search={sample_tx['merchant']}&limit=100")
+    assert tx_res.status_code == 200
+    tx_items = tx_res.json()["items"]
+    
+    # Find matching transaction by transaction_id or merchant & date & amount
+    matching_item = None
+    for item in tx_items:
+        if item["transaction_id"] == sample_tx["transaction_id"]:
+            matching_item = item
+            break
+            
+    assert matching_item is not None, f"Transaction {sample_tx['transaction_id']} not found in API transactions list"
+    
+    # Assert exact match between Dashboard Table and Live Predictor
+    assert live_pred["is_wants"] == matching_item["is_wants"], (
+        f"Mismatch in is_wants: Live Predict ({live_pred['is_wants']}) vs Dashboard Table ({matching_item['is_wants']})"
+    )
+    assert live_pred["impulse_score_v1"] == matching_item["impulse_score"], (
+        f"Mismatch in impulse_score: Live Predict ({live_pred['impulse_score_v1']}) vs Dashboard Table ({matching_item['impulse_score']})"
+    )

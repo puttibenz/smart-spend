@@ -74,7 +74,10 @@ async def lifespan(app: FastAPI):
     raw_df["_dt"] = pd.to_datetime(raw_df["date"] + " " + raw_df["time"])
     raw_df = raw_df.sort_values("_dt").reset_index(drop=True)
     raw_df.drop(columns=["_dt"], inplace=True)
-    app_state["raw_df"] = raw_df
+    
+    # Preserve ground truth in separate column for evaluation / debug
+    if "is_wants" in raw_df.columns:
+        raw_df["is_wants_ground_truth"] = raw_df["is_wants"].copy()
     
     # 3. Initialize Classifiers & Scorers
     nw_classifier = NeedsWantsClassifier(config)
@@ -82,12 +85,18 @@ async def lifespan(app: FastAPI):
     app_state["nw_classifier"] = nw_classifier
     app_state["impulse_scorer"] = impulse_scorer
     
-    # 4. Precompute & Cache Scored DataFrame for fast UI serving
+    # 4. Predict Needs vs Wants dynamically for all historical transactions
+    print("[STARTUP] Predicting Needs vs Wants dynamically using classifier...")
+    is_wants_pred = nw_classifier.classify_dataframe(raw_df)
+    raw_df["is_wants"] = is_wants_pred  # Overwrite with predicted labels
+    app_state["raw_df"] = raw_df
+    
+    # 5. Precompute & Cache Scored DataFrame for fast UI serving (uses predicted is_wants)
     print("[STARTUP] Pre-scoring full transaction history...")
     scored_df = impulse_scorer.score_dataframe(raw_df)
     app_state["scored_df"] = scored_df
     
-    # 5. Load ML Model Artifacts (Fail-Fast check)
+    # 6. Load ML Model Artifacts (Fail-Fast check)
     print("[STARTUP] Loading serialized ML artifacts dynamically...")
     artifacts = load_all_phase1_phase2_artifacts()
     app_state["artifacts"] = artifacts
