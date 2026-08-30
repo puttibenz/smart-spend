@@ -1,6 +1,6 @@
 /**
- * SmartSpend AI - Dashboard Frontend JavaScript (Dark Emerald & Coral Flame Theme)
- * Handles API data fetching, Chart.js visualizations, 7x24 Heatmap rendering,
+ * SmartSpend AI - Clean Modern Dashboard (Stripe SaaS Style + GitHub Heatmap)
+ * Handles API data fetching, Chart.js visualizations, GitHub-style 7x24 Matrix rendering,
  * searchable/paginated transactions table, and live AI multi-model inference.
  */
 
@@ -141,7 +141,7 @@ async function initializeDashboard() {
     // 2. Fetch summary & render KPI cards + charts
     await loadSummary();
 
-    // 3. Fetch & render spending heatmap
+    // 3. Fetch & render GitHub-style heatmap
     await loadHeatmap();
 
     // 4. Fetch initial page of transactions
@@ -224,19 +224,24 @@ function renderNeedsWantsChart(needsAmt, wantsAmt) {
       labels: ['Needs (จำเป็น)', 'Wants (ฟุ่มเฟือย)'],
       datasets: [{
         data: [needsAmt, wantsAmt],
-        backgroundColor: ['#10b981', '#fb7185'],
-        borderColor: '#080e0c',
-        borderWidth: 3,
+        backgroundColor: ['#10b981', '#f43f5e'],
+        borderColor: '#ffffff',
+        borderWidth: 4,
         hoverOffset: 6
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      cutout: '72%',
+      cutout: '74%',
       plugins: {
         legend: { display: false },
         tooltip: {
+          backgroundColor: '#0f172a',
+          titleColor: '#ffffff',
+          bodyColor: '#e2e8f0',
+          padding: 10,
+          cornerRadius: 8,
           callbacks: {
             label: function(context) {
               const val = context.raw;
@@ -269,24 +274,24 @@ function renderMonthlyTrendChart(monthlyTrends) {
         {
           label: 'ยอดใช้จ่ายรวม (Total Spend)',
           data: totalAmounts,
-          borderColor: '#34d399',
-          backgroundColor: 'rgba(52, 211, 153, 0.12)',
+          borderColor: '#4f46e5',
+          backgroundColor: 'rgba(79, 70, 229, 0.08)',
           fill: true,
           tension: 0.35,
           borderWidth: 2.5,
-          pointRadius: 3,
-          pointBackgroundColor: '#10b981'
+          pointRadius: 3.5,
+          pointBackgroundColor: '#4f46e5'
         },
         {
           label: 'ยอด Impulse Buying',
           data: impulseAmounts,
           borderColor: '#f43f5e',
-          backgroundColor: 'rgba(244, 63, 94, 0.16)',
+          backgroundColor: 'rgba(244, 63, 94, 0.08)',
           fill: true,
           tension: 0.35,
           borderWidth: 2.5,
           pointRadius: 4,
-          pointBackgroundColor: '#fb7185'
+          pointBackgroundColor: '#f43f5e'
         }
       ]
     },
@@ -295,14 +300,14 @@ function renderMonthlyTrendChart(monthlyTrends) {
       maintainAspectRatio: false,
       scales: {
         x: {
-          grid: { color: 'rgba(16, 185, 129, 0.12)' },
-          ticks: { color: '#6ee7b7', font: { size: 10 } }
+          grid: { color: '#f1f5f9' },
+          ticks: { color: '#64748b', font: { size: 11, family: 'Inter' } }
         },
         y: {
-          grid: { color: 'rgba(16, 185, 129, 0.12)' },
+          grid: { color: '#f1f5f9' },
           ticks: {
-            color: '#6ee7b7',
-            font: { size: 10 },
+            color: '#64748b',
+            font: { size: 11, family: 'Inter' },
             callback: value => `฿${(value / 1000).toFixed(0)}k`
           }
         }
@@ -310,6 +315,11 @@ function renderMonthlyTrendChart(monthlyTrends) {
       plugins: {
         legend: { display: false },
         tooltip: {
+          backgroundColor: '#0f172a',
+          titleColor: '#ffffff',
+          bodyColor: '#e2e8f0',
+          padding: 10,
+          cornerRadius: 8,
           callbacks: {
             label: context => ` ${context.dataset.label}: ฿${context.raw.toLocaleString()}`
           }
@@ -320,7 +330,7 @@ function renderMonthlyTrendChart(monthlyTrends) {
 }
 
 /**
- * Fetches and renders the 7 Days x 24 Hours Spending & Impulse Heatmap.
+ * Fetches and renders the 7 Days x 24 Hours Heatmap in GitHub Contribution Style.
  */
 async function loadHeatmap() {
   const res = await fetch('/api/heatmap');
@@ -335,20 +345,29 @@ async function loadHeatmap() {
   const matrix = data.matrix;
   const maxAmt = data.max_amount_cell || 1;
 
+  // GitHub 5-level green color palette
+  const GH_COLORS = {
+    0: '#ebedf0', // No transactions
+    1: '#9be9a8', // Level 1 (Light green)
+    2: '#40c463', // Level 2 (Medium green)
+    3: '#30a14e', // Level 3 (Deep green)
+    4: '#216e39', // Level 4 (Dark rich green)
+  };
+
   let html = `
-    <div class="grid grid-cols-[80px_repeat(24,minmax(0,1fr))] gap-1 text-center text-[10px]">
+    <div class="grid grid-cols-[80px_repeat(24,minmax(0,1fr))] gap-1.5 text-center text-[10px]">
       <!-- Header: Hours 00 to 23 -->
-      <div class="py-1 text-emerald-400/60 font-medium">วัน \ ชม.</div>
+      <div class="py-1 text-slate-400 font-semibold">วัน \ ชม.</div>
   `;
 
   for (let h = 0; h < 24; h++) {
     const isLate = (h >= 23 || h <= 2);
-    html += `<div class="py-1 font-mono ${isLate ? 'text-coral-400 font-bold' : 'text-emerald-300/80'}">${String(h).padStart(2, '0')}</div>`;
+    html += `<div class="py-1 font-mono font-semibold ${isLate ? 'text-rose-500 font-bold' : 'text-slate-400'}">${String(h).padStart(2, '0')}</div>`;
   }
 
   // Rows for each Day
   for (let d = 0; d < 7; d++) {
-    html += `<div class="text-left font-medium text-emerald-200 py-1.5 truncate pr-1">${days[d].split(' ')[0]}</div>`;
+    html += `<div class="text-left font-semibold text-slate-600 py-1.5 truncate pr-1">${days[d].split(' ')[0]}</div>`;
     for (let h = 0; h < 24; h++) {
       const cell = matrix[d][h];
       const amt = cell.total_amount;
@@ -356,27 +375,31 @@ async function loadHeatmap() {
       const imp = cell.impulse_count;
       const isLate = cell.is_late_night;
 
-      // Dark Emerald to Coral Intensity
-      let bgClass = 'bg-mint-950/80 border-mint-900/50';
+      // GitHub color mapping based on amount intensity
+      let bgColor = GH_COLORS[0];
+      let borderStyle = 'border: 1px solid #e2e8f0;';
       if (amt > 0) {
         const ratio = amt / maxAmt;
-        if (imp > 0 && isLate) {
-          bgClass = 'bg-gradient-to-tr from-coral-600 to-rose-500 text-white shadow-sm shadow-coral-500/20';
-        } else if (ratio > 0.6) {
-          bgClass = 'bg-mint-500 text-slate-950 font-bold';
+        borderStyle = 'border: 1px solid rgba(0, 0, 0, 0.05);';
+        if (ratio > 0.6) {
+          bgColor = GH_COLORS[4];
         } else if (ratio > 0.3) {
-          bgClass = 'bg-mint-700 text-emerald-50';
+          bgColor = GH_COLORS[3];
         } else if (ratio > 0.1) {
-          bgClass = 'bg-mint-900 text-mint-200';
+          bgColor = GH_COLORS[2];
         } else {
-          bgClass = 'bg-mint-950 text-emerald-400/80';
+          bgColor = GH_COLORS[1];
         }
       }
 
+      // Indicator for impulse transactions during late night
+      const hasImpulseIndicator = (imp > 0 && isLate);
+
       html += `
-        <div class="heatmap-cell relative rounded h-7 flex items-center justify-center cursor-pointer border ${bgClass}"
-             title="${days[d]} ${String(h).padStart(2, '0')}:00\nยอดเงิน: ฿${amt.toLocaleString()}\nธุรกรรม: ${count} รายการ (Impulse: ${imp})">
-          ${count > 0 ? `<span class="text-[9px] font-semibold">${count}</span>` : ''}
+        <div class="gh-cell relative rounded-[3px] h-7 flex items-center justify-center cursor-pointer shadow-xs"
+             style="background-color: ${bgColor}; ${borderStyle}"
+             title="${days[d]} ${String(h).padStart(2, '0')}:00\n• ยอดใช้จ่ายรวม: ฿${amt.toLocaleString()}\n• จำนวน: ${count} รายการ\n• Impulse Risk: ${imp} รายการ">
+          ${hasImpulseIndicator ? `<span class="w-1.5 h-1.5 rounded-full bg-rose-500 ring-2 ring-white animate-pulse"></span>` : ''}
         </div>
       `;
     }
@@ -417,48 +440,46 @@ async function loadTransactions() {
   if (data.items.length === 0) {
     tbody.innerHTML = `
       <tr>
-        <td colspan="7" class="px-4 py-8 text-center text-emerald-400/60">
+        <td colspan="7" class="px-4 py-8 text-center text-slate-400">
           ไม่พบรายการที่ตรงกับเงื่อนไขการค้นหา
         </td>
       </tr>
     `;
   } else {
     tbody.innerHTML = data.items.map(tx => {
-      const categoryColor = getCategoryColor(tx.category);
+      const categoryBadge = getCategoryBadge(tx.category);
       const isNudge = tx.is_nudge_alert;
 
       return `
-        <tr class="hover:bg-mint-950/60 transition ${isNudge ? 'bg-coral-950/20' : ''}">
-          <td class="px-4 py-3 font-mono text-emerald-300/80 whitespace-nowrap">
-            <div>${tx.date}</div>
-            <div class="text-[10px] text-emerald-400/60">${tx.time}</div>
+        <tr class="hover:bg-slate-50/80 transition ${isNudge ? 'bg-rose-50/40' : ''}">
+          <td class="px-4 py-3 font-mono text-slate-500 whitespace-nowrap">
+            <div class="font-medium text-slate-700">${tx.date}</div>
+            <div class="text-[10px] text-slate-400">${tx.time}</div>
           </td>
           <td class="px-4 py-3">
-            <div class="font-semibold text-white">${escapeHtml(tx.merchant)}</div>
-            ${tx.memo ? `<div class="text-[11px] text-emerald-300/70 truncate max-w-xs">${escapeHtml(tx.memo)}</div>` : ''}
+            <div class="font-bold text-slate-900">${escapeHtml(tx.merchant)}</div>
+            ${tx.memo ? `<div class="text-[11px] text-slate-500 truncate max-w-xs">${escapeHtml(tx.memo)}</div>` : ''}
           </td>
-          <td class="px-4 py-3 text-right font-mono font-semibold text-white whitespace-nowrap">
+          <td class="px-4 py-3 text-right font-mono font-bold text-slate-900 whitespace-nowrap">
             ฿${tx.amount.toLocaleString('en-US', { minimumFractionDigits: 2 })}
           </td>
           <td class="px-4 py-3">
-            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold ${categoryColor}">
-              ${escapeHtml(tx.category)}
-            </span>
+            ${categoryBadge}
           </td>
           <td class="px-4 py-3 text-center">
-            <span class="px-2 py-0.5 rounded text-[10px] font-medium ${tx.is_wants ? 'bg-coral-500/10 text-coral-300 border border-coral-500/30' : 'bg-mint-500/10 text-mint-300 border border-mint-500/30'}">
+            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${tx.is_wants ? 'bg-rose-50 text-rose-700 border border-rose-200' : 'bg-emerald-50 text-emerald-700 border border-emerald-200'}">
               ${tx.is_wants ? 'Wants' : 'Needs'}
             </span>
           </td>
           <td class="px-4 py-3 text-center">
-            <span class="font-mono font-bold ${tx.impulse_score >= appState.nudgeThreshold ? 'text-coral-400' : (tx.impulse_score >= 40 ? 'text-amber-300' : 'text-emerald-300')}">
+            <span class="font-mono font-bold ${tx.impulse_score >= appState.nudgeThreshold ? 'text-rose-600 font-extrabold' : (tx.impulse_score >= 40 ? 'text-amber-600' : 'text-slate-600')}">
               ${tx.impulse_score}
             </span>
           </td>
           <td class="px-4 py-3 text-center whitespace-nowrap">
             ${isNudge ? 
-              `<span class="px-2 py-0.5 rounded-full bg-coral-500/20 text-coral-200 border border-coral-500/40 text-[10px] font-bold animate-pulse">🚨 Nudge</span>` : 
-              `<span class="text-emerald-900/60">-</span>`
+              `<span class="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 border border-rose-200 text-[10px] font-bold inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping"></span>🚨 Nudge</span>` : 
+              `<span class="text-slate-300">-</span>`
             }
           </td>
         </tr>
@@ -489,7 +510,7 @@ async function handleLivePrediction(e) {
   const originalBtnText = btnSubmit.innerHTML;
   btnSubmit.disabled = true;
   btnSubmit.innerHTML = `
-    <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-slate-950" fill="none" viewBox="0 0 24 24">
+    <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" fill="none" viewBox="0 0 24 24">
       <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
       <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
     </svg>
@@ -540,7 +561,7 @@ function renderPredictionResult(res) {
   // Needs vs Wants
   const nwTag = document.getElementById('pred-needs-wants-tag');
   nwTag.textContent = res.is_wants ? 'Wants (ฟุ่มเฟือย)' : 'Needs (จำเป็น)';
-  nwTag.className = `text-lg font-bold ${res.is_wants ? 'text-coral-400' : 'text-mint-400'}`;
+  nwTag.className = `text-lg font-extrabold ${res.is_wants ? 'text-rose-600' : 'text-emerald-600'}`;
   
   const nwReason = document.getElementById('pred-needs-wants-reason');
   nwReason.textContent = res.needs_wants_reason;
@@ -563,11 +584,11 @@ function renderPredictionResult(res) {
   const riskBadge = document.getElementById('pred-risk-badge');
   riskBadge.textContent = res.risk_level;
   if (res.is_nudge_alert) {
-    riskBadge.className = 'px-2.5 py-1 text-xs font-semibold rounded-full bg-coral-500/20 text-coral-200 border border-coral-500/40';
+    riskBadge.className = 'px-3 py-1 text-xs font-bold rounded-full bg-rose-100 text-rose-700 border border-rose-200';
   } else if (res.impulse_score_v1 >= 40 || res.impulse_probability_v2 >= 0.4) {
-    riskBadge.className = 'px-2.5 py-1 text-xs font-semibold rounded-full bg-amber-500/20 text-amber-200 border border-amber-500/40';
+    riskBadge.className = 'px-3 py-1 text-xs font-bold rounded-full bg-amber-100 text-amber-700 border border-amber-200';
   } else {
-    riskBadge.className = 'px-2.5 py-1 text-xs font-semibold rounded-full bg-mint-500/20 text-mint-200 border border-mint-500/40';
+    riskBadge.className = 'px-3 py-1 text-xs font-bold rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200';
   }
 
   // Nudge Box
@@ -579,14 +600,20 @@ function renderPredictionResult(res) {
   }
 }
 
-function getCategoryColor(cat) {
+function getCategoryBadge(cat) {
   switch (cat.toLowerCase()) {
-    case 'food': return 'bg-emerald-500/10 text-emerald-300 border border-emerald-500/30';
-    case 'shopping': return 'bg-teal-500/10 text-teal-300 border border-teal-500/30';
-    case 'transport': return 'bg-cyan-500/10 text-cyan-300 border border-cyan-500/30';
-    case 'bills': return 'bg-indigo-500/10 text-indigo-300 border border-indigo-500/30';
-    case 'entertainment': return 'bg-coral-500/10 text-coral-300 border border-coral-500/30';
-    default: return 'bg-slate-500/10 text-slate-300 border border-slate-500/30';
+    case 'food': 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200/80">food</span>`;
+    case 'shopping': 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-purple-50 text-purple-700 border border-purple-200/80">shopping</span>`;
+    case 'transport': 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-blue-50 text-blue-700 border border-blue-200/80">transport</span>`;
+    case 'bills': 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-amber-50 text-amber-700 border border-amber-200/80">bills</span>`;
+    case 'entertainment': 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-pink-50 text-pink-700 border border-pink-200/80">entertainment</span>`;
+    default: 
+      return `<span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-slate-100 text-slate-700 border border-slate-200">other</span>`;
   }
 }
 
