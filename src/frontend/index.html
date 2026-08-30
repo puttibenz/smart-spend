@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="th" class="h-full bg-slate-950 text-slate-100">
+<html lang="th" class="h-full bg-[#080e0c] text-emerald-50">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SmartSpend AI — Expense Categorization & Impulse Risk Dashboard</title>
+  <title>SmartSpend AI — Dark Emerald Fintech Dashboard</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Chart.js CDN -->
@@ -21,11 +21,23 @@
             sans: ['Prompt', 'Inter', 'sans-serif'],
           },
           colors: {
-            brand: {
-              50: '#eef2ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
+            mint: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            coral: {
+              400: '#fb7185',
+              500: '#f43f5e',
+              600: '#e11d48',
             }
           }
         }
@@ -35,44 +47,48 @@
   <style>
     body { font-family: 'Prompt', 'Inter', sans-serif; }
     .glass-card {
-      background: rgba(15, 23, 42, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(51, 65, 85, 0.6);
+      background: rgba(11, 20, 17, 0.82);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(16, 185, 129, 0.15);
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5);
+    }
+    .glass-card:hover {
+      border-color: rgba(16, 185, 129, 0.3);
     }
     .heatmap-cell {
       transition: all 0.15s ease-in-out;
     }
     .heatmap-cell:hover {
-      transform: scale(1.15);
+      transform: scale(1.18);
       z-index: 20;
     }
   </style>
 </head>
-<body class="min-h-full flex flex-col antialiased selection:bg-indigo-500 selection:text-white bg-slate-950">
+<body class="min-h-full flex flex-col antialiased selection:bg-mint-500 selection:text-slate-950 bg-[#080e0c]">
 
   <!-- Top Navigation Bar -->
-  <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur">
+  <header class="sticky top-0 z-40 w-full border-b border-mint-900/40 bg-[#080e0c]/90 backdrop-blur">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center shadow-lg shadow-indigo-500/20">
-          <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-mint-400 via-mint-500 to-teal-700 flex items-center justify-center shadow-lg shadow-mint-500/20">
+          <svg class="w-6 h-6 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <h1 class="text-lg font-bold tracking-tight text-white">SmartSpend <span class="text-indigo-400">AI</span></h1>
-            <span class="px-2 py-0.5 text-xs font-semibold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Phase 3 Live</span>
+            <h1 class="text-lg font-bold tracking-tight text-white">SmartSpend <span class="text-mint-400">AI</span></h1>
+            <span class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-mint-500/10 text-mint-300 border border-mint-500/30">Mint Fintech</span>
           </div>
-          <p class="text-xs text-slate-400">NLP Categorization & Impulse Risk Scoring Engine</p>
+          <p class="text-xs text-emerald-400/70">NLP Categorization & Impulse Risk Scoring Engine</p>
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <div class="hidden sm:flex items-center gap-2 text-xs text-slate-400 bg-slate-900/90 px-3 py-1.5 rounded-lg border border-slate-800">
-          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>Backend Connected (FastAPI)</span>
+        <div class="hidden sm:flex items-center gap-2 text-xs text-emerald-300/80 bg-mint-950/60 px-3 py-1.5 rounded-lg border border-mint-800/40">
+          <span class="w-2 h-2 rounded-full bg-mint-400 animate-pulse"></span>
+          <span>FastAPI Connected</span>
         </div>
-        <button id="btn-refresh" class="p-2 rounded-lg bg-slate-900 text-slate-300 hover:text-white hover:bg-slate-800 transition border border-slate-800" title="Refresh Data">
+        <button id="btn-refresh" class="p-2 rounded-lg bg-mint-950/60 text-emerald-300 hover:text-white hover:bg-mint-900/60 transition border border-mint-800/40" title="Refresh Data">
           <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
           </svg>
@@ -89,63 +105,63 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
         
         <!-- Card 1: Total Spend -->
-        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-2">
+        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group transition">
+          <div class="flex items-center justify-between text-emerald-300/80 mb-2">
             <span class="text-sm font-medium">ยอดใช้จ่ายรวม (12 เดือน)</span>
-            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+            <div class="w-8 h-8 rounded-lg bg-mint-500/10 text-mint-400 flex items-center justify-center border border-mint-500/20">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
             </div>
           </div>
           <div class="text-2xl font-bold text-white tracking-tight" id="kpi-total-spend">฿0.00</div>
-          <div class="mt-2 flex items-center gap-1.5 text-xs text-slate-400">
-            <span id="kpi-total-tx" class="font-semibold text-slate-200">0</span> รายการธุรกรรมทั้งหมด
+          <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-400/70">
+            <span id="kpi-total-tx" class="font-semibold text-emerald-200">0</span> รายการธุรกรรมทั้งหมด
           </div>
         </div>
 
         <!-- Card 2: Needs vs Wants -->
-        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-2">
+        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group transition">
+          <div class="flex items-center justify-between text-emerald-300/80 mb-2">
             <span class="text-sm font-medium">สัดส่วน Needs vs Wants</span>
-            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <div class="w-8 h-8 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center border border-teal-500/20">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 18h12l3-18H3z"/></svg>
             </div>
           </div>
           <div class="flex items-baseline gap-2">
-            <span class="text-2xl font-bold text-emerald-400" id="kpi-needs-pct">0%</span>
-            <span class="text-sm text-slate-500">/</span>
-            <span class="text-2xl font-bold text-amber-400" id="kpi-wants-pct">0%</span>
+            <span class="text-2xl font-bold text-mint-400" id="kpi-needs-pct">0%</span>
+            <span class="text-sm text-emerald-600">/</span>
+            <span class="text-2xl font-bold text-coral-400" id="kpi-wants-pct">0%</span>
           </div>
-          <div class="mt-2 text-xs text-slate-400 truncate">
-            Needs: <span id="kpi-needs-amt" class="text-slate-300 font-medium">฿0</span> | Wants: <span id="kpi-wants-amt" class="text-slate-300 font-medium">฿0</span>
+          <div class="mt-2 text-xs text-emerald-400/70 truncate">
+            Needs: <span id="kpi-needs-amt" class="text-emerald-200 font-medium">฿0</span> | Wants: <span id="kpi-wants-amt" class="text-coral-300 font-medium">฿0</span>
           </div>
         </div>
 
         <!-- Card 3: Impulse Spending -->
-        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-2">
+        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group transition">
+          <div class="flex items-center justify-between text-emerald-300/80 mb-2">
             <span class="text-sm font-medium">ยอดเงิน Impulse Buying</span>
-            <div class="w-8 h-8 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center">
+            <div class="w-8 h-8 rounded-lg bg-coral-500/10 text-coral-400 flex items-center justify-center border border-coral-500/20">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
             </div>
           </div>
-          <div class="text-2xl font-bold text-pink-400" id="kpi-impulse-amt">฿0.00</div>
-          <div class="mt-2 flex items-center justify-between text-xs text-slate-400">
-            <span>สัดส่วน <span id="kpi-impulse-pct" class="text-pink-300 font-semibold">0%</span> ของรายจ่าย</span>
-            <span id="kpi-impulse-count" class="font-medium text-slate-300">0 รายการ</span>
+          <div class="text-2xl font-bold text-coral-400" id="kpi-impulse-amt">฿0.00</div>
+          <div class="mt-2 flex items-center justify-between text-xs text-emerald-400/70">
+            <span>สัดส่วน <span id="kpi-impulse-pct" class="text-coral-300 font-semibold">0%</span> ของรายจ่าย</span>
+            <span id="kpi-impulse-count" class="font-medium text-emerald-200">0 รายการ</span>
           </div>
         </div>
 
         <!-- Card 4: Nudge Alerts -->
-        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group hover:border-slate-700 transition">
-          <div class="flex items-center justify-between text-slate-400 mb-2">
+        <div class="glass-card rounded-2xl p-5 relative overflow-hidden group transition">
+          <div class="flex items-center justify-between text-emerald-300/80 mb-2">
             <span class="text-sm font-medium">Proactive Nudge Alerts</span>
-            <div class="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center">
+            <div class="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center border border-rose-500/20">
               <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
             </div>
           </div>
           <div class="text-2xl font-bold text-rose-400" id="kpi-nudge-count">0</div>
-          <div class="mt-2 flex items-center gap-1 text-xs text-slate-400">
-            <span>เกณฑ์เตือนสติความเสี่ยงสูง (Score ≥ <span id="kpi-nudge-thresh">70</span>)</span>
+          <div class="mt-2 flex items-center gap-1 text-xs text-emerald-400/70">
+            <span>เกณฑ์เตือนสติความเสี่ยงสูง (Score ≥ <span id="kpi-nudge-thresh" class="text-emerald-200 font-semibold">70</span>)</span>
           </div>
         </div>
 
@@ -160,23 +176,23 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-base font-semibold text-white">Needs vs Wants Breakdown</h2>
-            <span class="text-xs text-slate-400">Transaction Tagging</span>
+            <span class="text-xs text-mint-400/80">Classifier Prediction</span>
           </div>
           <div class="relative h-56 flex items-center justify-center">
             <canvas id="chart-needs-wants"></canvas>
           </div>
         </div>
-        <div class="mt-4 pt-4 border-t border-slate-800/80 space-y-2 text-xs">
-          <div class="flex items-center justify-between text-slate-300">
+        <div class="mt-4 pt-4 border-t border-mint-900/40 space-y-2 text-xs">
+          <div class="flex items-center justify-between text-emerald-200">
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <span class="w-3 h-3 rounded-full bg-mint-400 shadow-sm shadow-mint-400/50"></span>
               <span>Needs (จำเป็น)</span>
             </div>
             <span id="legend-needs-val" class="font-semibold text-white">0%</span>
           </div>
-          <div class="flex items-center justify-between text-slate-300">
+          <div class="flex items-center justify-between text-emerald-200">
             <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+              <span class="w-3 h-3 rounded-full bg-coral-400 shadow-sm shadow-coral-400/50"></span>
               <span>Wants (ฟุ่มเฟือย/ตามใจ)</span>
             </div>
             <span id="legend-wants-val" class="font-semibold text-white">0%</span>
@@ -189,11 +205,11 @@
         <div class="flex items-center justify-between mb-4">
           <div>
             <h2 class="text-base font-semibold text-white">Monthly Spending & Impulse Trends</h2>
-            <p class="text-xs text-slate-400">เปรียบเทียบยอดรวมกับยอดเงิน Impulse Buying แต่ละเดือน</p>
+            <p class="text-xs text-emerald-400/70">เปรียบเทียบยอดรวมกับยอดเงิน Impulse Buying แต่ละเดือน</p>
           </div>
-          <div class="flex items-center gap-3 text-xs text-slate-400">
-            <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-indigo-500"></span><span>ยอดรวม</span></div>
-            <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-pink-500"></span><span>Impulse</span></div>
+          <div class="flex items-center gap-3 text-xs text-emerald-300">
+            <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-mint-400"></span><span>ยอดรวม</span></div>
+            <div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded bg-coral-500"></span><span>Impulse</span></div>
           </div>
         </div>
         <div class="relative h-64 w-full">
@@ -209,18 +225,18 @@
         <div>
           <h2 class="text-base font-semibold text-white flex items-center gap-2">
             <span>Spending & Impulse Risk Heatmap</span>
-            <span class="text-xs font-normal px-2 py-0.5 rounded bg-purple-500/10 text-purple-400 border border-purple-500/20">7 Days × 24 Hours</span>
+            <span class="text-xs font-normal px-2.5 py-0.5 rounded-full bg-mint-500/10 text-mint-300 border border-mint-500/30">7 Days × 24 Hours</span>
           </h2>
-          <p class="text-xs text-slate-400 mt-0.5">วิเคราะห์ความหนาแน่นและพฤติกรรมเสี่ยงรอบดึก (23:00–02:00) และช่วงเงินเดือนออก</p>
+          <p class="text-xs text-emerald-400/70 mt-0.5">วิเคราะห์ความหนาแน่นและพฤติกรรมเสี่ยงรอบดึก (23:00–02:00) และช่วงเงินเดือนออก</p>
         </div>
-        <div class="flex items-center gap-2 text-xs text-slate-400">
+        <div class="flex items-center gap-2 text-xs text-emerald-300/80">
           <span>น้อย</span>
           <div class="flex gap-1 items-center">
-            <span class="w-3.5 h-3.5 rounded bg-slate-900 border border-slate-800"></span>
-            <span class="w-3.5 h-3.5 rounded bg-indigo-950"></span>
-            <span class="w-3.5 h-3.5 rounded bg-indigo-800"></span>
-            <span class="w-3.5 h-3.5 rounded bg-indigo-600"></span>
-            <span class="w-3.5 h-3.5 rounded bg-pink-500"></span>
+            <span class="w-3.5 h-3.5 rounded bg-mint-950/80 border border-mint-900/60"></span>
+            <span class="w-3.5 h-3.5 rounded bg-mint-900/80"></span>
+            <span class="w-3.5 h-3.5 rounded bg-mint-700"></span>
+            <span class="w-3.5 h-3.5 rounded bg-mint-500"></span>
+            <span class="w-3.5 h-3.5 rounded bg-coral-500"></span>
           </div>
           <span>หนาแน่น (Impulse สูง)</span>
         </div>
@@ -242,26 +258,26 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <div class="flex items-center gap-2">
-              <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center text-white">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-mint-500 to-teal-400 flex items-center justify-center text-slate-950 font-bold">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
               </div>
               <h2 class="text-base font-semibold text-white">Live AI Simulator</h2>
             </div>
-            <span class="text-xs text-indigo-400">Real-time Inference</span>
+            <span class="text-xs text-mint-400">Real-time Inference</span>
           </div>
-          <p class="text-xs text-slate-400 mb-4">ทดสอบจำแนกหมวดหมู่ NLP และประเมิน Impulse Risk Score จากรายการจำลองใหม่</p>
+          <p class="text-xs text-emerald-400/70 mb-4">ทดสอบจำแนกหมวดหมู่ NLP และประเมิน Impulse Risk Score จากรายการจำลองใหม่</p>
 
           <!-- Quick Presets -->
           <div class="mb-4">
-            <label class="block text-xs font-medium text-slate-400 mb-1.5">⚡ เลือกตัวอย่างสำเร็จรูป (Presets):</label>
+            <label class="block text-xs font-medium text-emerald-300 mb-1.5">⚡ เลือกตัวอย่างสำเร็จรูป (Presets):</label>
             <div class="grid grid-cols-3 gap-2 text-xs">
-              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition truncate text-left" data-preset="late-food">
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-mint-950/60 hover:bg-mint-900/80 text-emerald-200 border border-mint-800/50 transition truncate text-left" data-preset="late-food">
                 🍕 GrabFood ดึก
               </button>
-              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition truncate text-left" data-preset="lunch">
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-mint-950/60 hover:bg-mint-900/80 text-emerald-200 border border-mint-800/50 transition truncate text-left" data-preset="lunch">
                 🍜 ข้าวเที่ยงปกติ
               </button>
-              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 transition truncate text-left" data-preset="shopee-payday">
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-mint-950/60 hover:bg-mint-900/80 text-emerald-200 border border-mint-800/50 transition truncate text-left" data-preset="shopee-payday">
                 🛍️ Shopee สิ้นเดือน
               </button>
             </div>
@@ -270,32 +286,32 @@
           <!-- Input Form -->
           <form id="predict-form" class="space-y-3.5">
             <div>
-              <label for="input-merchant" class="block text-xs font-medium text-slate-300 mb-1">ชื่อร้านค้า (Merchant) *</label>
-              <input type="text" id="input-merchant" required placeholder="เช่น GrabFood, Shopee, 7-Eleven, BTS" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
+              <label for="input-merchant" class="block text-xs font-medium text-emerald-200 mb-1">ชื่อร้านค้า (Merchant) *</label>
+              <input type="text" id="input-merchant" required placeholder="เช่น GrabFood, Shopee, 7-Eleven, BTS" class="w-full px-3 py-2 text-sm rounded-xl bg-mint-950/80 border border-mint-800/60 text-white placeholder-emerald-700 focus:outline-none focus:border-mint-400 focus:ring-1 focus:ring-mint-400">
             </div>
 
             <div>
-              <label for="input-memo" class="block text-xs font-medium text-slate-300 mb-1">บันทึกช่วยจำ (Memo)</label>
-              <input type="text" id="input-memo" placeholder="เช่น สั่งมื้อดึกหิวมาก, ซื้อเสื้อผ้าลดราคา" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
+              <label for="input-memo" class="block text-xs font-medium text-emerald-200 mb-1">บันทึกช่วยจำ (Memo)</label>
+              <input type="text" id="input-memo" placeholder="เช่น สั่งมื้อดึกหิวมาก, ซื้อเสื้อผ้าลดราคา" class="w-full px-3 py-2 text-sm rounded-xl bg-mint-950/80 border border-mint-800/60 text-white placeholder-emerald-700 focus:outline-none focus:border-mint-400 focus:ring-1 focus:ring-mint-400">
             </div>
 
             <div class="grid grid-cols-3 gap-2.5">
               <div class="col-span-1">
-                <label for="input-amount" class="block text-xs font-medium text-slate-300 mb-1">ยอดเงิน (฿) *</label>
-                <input type="number" step="0.01" min="1" id="input-amount" required placeholder="350.00" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
+                <label for="input-amount" class="block text-xs font-medium text-emerald-200 mb-1">ยอดเงิน (฿) *</label>
+                <input type="number" step="0.01" min="1" id="input-amount" required placeholder="350.00" class="w-full px-3 py-2 text-sm rounded-xl bg-mint-950/80 border border-mint-800/60 text-white placeholder-emerald-700 focus:outline-none focus:border-mint-400 focus:ring-1 focus:ring-mint-400">
               </div>
               <div class="col-span-1">
-                <label for="input-date" class="block text-xs font-medium text-slate-300 mb-1">วันที่ *</label>
-                <input type="date" id="input-date" required class="w-full px-2 py-2 text-xs rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
+                <label for="input-date" class="block text-xs font-medium text-emerald-200 mb-1">วันที่ *</label>
+                <input type="date" id="input-date" required class="w-full px-2 py-2 text-xs rounded-xl bg-mint-950/80 border border-mint-800/60 text-white focus:outline-none focus:border-mint-400 focus:ring-1 focus:ring-mint-400">
               </div>
               <div class="col-span-1">
-                <label for="input-time" class="block text-xs font-medium text-slate-300 mb-1">เวลา *</label>
-                <input type="time" id="input-time" required class="w-full px-2 py-2 text-xs rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500">
+                <label for="input-time" class="block text-xs font-medium text-emerald-200 mb-1">เวลา *</label>
+                <input type="time" id="input-time" required class="w-full px-2 py-2 text-xs rounded-xl bg-mint-950/80 border border-mint-800/60 text-white focus:outline-none focus:border-mint-400 focus:ring-1 focus:ring-mint-400">
               </div>
             </div>
 
-            <button type="submit" id="btn-submit-predict" class="w-full mt-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-medium text-sm shadow-lg shadow-indigo-500/25 transition flex items-center justify-center gap-2">
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <button type="submit" id="btn-submit-predict" class="w-full mt-2 py-2.5 px-4 rounded-xl bg-gradient-to-r from-mint-500 to-teal-600 hover:from-mint-400 hover:to-teal-500 text-slate-950 font-semibold text-sm shadow-lg shadow-mint-500/20 transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 text-slate-950" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               <span>ประมวลผลด้วย AI (Run Inference)</span>
             </button>
           </form>
@@ -307,18 +323,18 @@
         <div>
           <div class="flex items-center justify-between mb-4">
             <h2 class="text-base font-semibold text-white">AI Inference Results</h2>
-            <span id="pred-risk-badge" class="px-2.5 py-1 text-xs font-semibold rounded-full bg-slate-800 text-slate-400">
+            <span id="pred-risk-badge" class="px-2.5 py-1 text-xs font-semibold rounded-full bg-mint-950 text-emerald-400 border border-mint-800/40">
               Ready for Input
             </span>
           </div>
 
           <!-- Empty State Placeholder -->
-          <div id="pred-empty-state" class="py-12 flex flex-col items-center justify-center text-center text-slate-500">
-            <div class="w-12 h-12 rounded-full bg-slate-900 flex items-center justify-center mb-3 text-slate-600">
+          <div id="pred-empty-state" class="py-12 flex flex-col items-center justify-center text-center text-emerald-400/60">
+            <div class="w-12 h-12 rounded-full bg-mint-950/80 border border-mint-900/60 flex items-center justify-center mb-3 text-mint-400">
               <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
             </div>
-            <p class="text-sm font-medium text-slate-400">กรอกข้อมูลหรือเลือก Preset ด้านซ้ายเพื่อทดสอบ AI Inference</p>
-            <p class="text-xs text-slate-500 mt-1">โมเดลจะประมวลผล Categorization + Needs/Wants + Impulse Risk แบบสดๆ</p>
+            <p class="text-sm font-medium text-emerald-200">กรอกข้อมูลหรือเลือก Preset ด้านซ้ายเพื่อทดสอบ AI Inference</p>
+            <p class="text-xs text-emerald-400/60 mt-1">โมเดลจะประมวลผล Categorization + Needs/Wants + Impulse Risk แบบสดๆ</p>
           </div>
 
           <!-- Live Result Box -->
@@ -326,70 +342,70 @@
             
             <!-- Result Row 1: Category & Needs/Wants -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800">
-                <span class="text-xs text-slate-400 block mb-1">หมวดหมู่ที่จำแนกได้ (NLP Category)</span>
+              <div class="bg-mint-950/80 rounded-xl p-3.5 border border-mint-800/40">
+                <span class="text-xs text-emerald-400/70 block mb-1">หมวดหมู่ที่จำแนกได้ (NLP Category)</span>
                 <div class="flex items-center justify-between">
-                  <span id="pred-category-name" class="text-lg font-bold text-indigo-400 capitalize">-</span>
-                  <span id="pred-category-conf" class="text-xs px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 font-medium">Confidence 0%</span>
+                  <span id="pred-category-name" class="text-lg font-bold text-mint-300 capitalize">-</span>
+                  <span id="pred-category-conf" class="text-xs px-2 py-0.5 rounded bg-mint-500/10 text-mint-300 border border-mint-500/20 font-medium">Confidence 0%</span>
                 </div>
               </div>
 
-              <div class="bg-slate-900/90 rounded-xl p-3.5 border border-slate-800">
-                <span class="text-xs text-slate-400 block mb-1">การจำแนก Needs vs Wants</span>
+              <div class="bg-mint-950/80 rounded-xl p-3.5 border border-mint-800/40">
+                <span class="text-xs text-emerald-400/70 block mb-1">การจำแนก Needs vs Wants</span>
                 <div class="flex items-center justify-between">
-                  <span id="pred-needs-wants-tag" class="text-lg font-bold text-emerald-400">-</span>
-                  <span id="pred-needs-wants-reason" class="text-xs text-slate-400 truncate max-w-[140px]" title="">-</span>
+                  <span id="pred-needs-wants-tag" class="text-lg font-bold text-mint-400">-</span>
+                  <span id="pred-needs-wants-reason" class="text-xs text-emerald-400/70 truncate max-w-[140px]" title="">-</span>
                 </div>
               </div>
             </div>
 
             <!-- Result Row 2: Dual Impulse Risk Output -->
-            <div class="bg-slate-900/90 rounded-xl p-4 border border-slate-800 space-y-3">
+            <div class="bg-mint-950/80 rounded-xl p-4 border border-mint-800/40 space-y-3">
               <div class="flex items-center justify-between">
                 <div>
-                  <span class="text-xs text-slate-400 font-medium">Impulse Risk Score (v1 Rule-Based)</span>
+                  <span class="text-xs text-emerald-400/70 font-medium">Impulse Risk Score (v1 Rule-Based)</span>
                   <div class="flex items-baseline gap-2 mt-0.5">
                     <span id="pred-v1-score" class="text-3xl font-extrabold text-white">0</span>
-                    <span class="text-xs text-slate-500">/ 100</span>
+                    <span class="text-xs text-emerald-400/60">/ 100</span>
                   </div>
                 </div>
                 <div class="text-right">
-                  <span class="text-xs text-slate-400 font-medium">v2 ML Probability</span>
-                  <div class="text-2xl font-bold text-purple-400" id="pred-v2-prob">0.0%</div>
+                  <span class="text-xs text-emerald-400/70 font-medium">v2 ML Probability</span>
+                  <div class="text-2xl font-bold text-coral-400" id="pred-v2-prob">0.0%</div>
                 </div>
               </div>
 
               <!-- Score Bar -->
-              <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
-                <div id="pred-score-bar" class="h-3 rounded-full bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500 transition-all duration-500" style="width: 0%"></div>
+              <div class="w-full bg-[#05110d] rounded-full h-3 overflow-hidden border border-mint-900/60">
+                <div id="pred-score-bar" class="h-3 rounded-full bg-gradient-to-r from-mint-400 via-amber-400 to-coral-500 transition-all duration-500" style="width: 0%"></div>
               </div>
 
               <!-- 4-Factor Breakdown Chips -->
-              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-800/80 text-xs">
-                <div class="p-2 rounded bg-slate-950/60 border border-slate-800/60">
-                  <span class="text-slate-500 block text-[10px]">🌙 Late-Night (25)</span>
-                  <span id="chip-late" class="font-semibold text-slate-300">0 pts</span>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-mint-900/40 text-xs">
+                <div class="p-2 rounded bg-[#06140e] border border-mint-900/40">
+                  <span class="text-emerald-400/60 block text-[10px]">🌙 Late-Night (25)</span>
+                  <span id="chip-late" class="font-semibold text-emerald-200">0 pts</span>
                 </div>
-                <div class="p-2 rounded bg-slate-950/60 border border-slate-800/60">
-                  <span class="text-slate-500 block text-[10px]">💵 Payday (25)</span>
-                  <span id="chip-payday" class="font-semibold text-slate-300">0 pts</span>
+                <div class="p-2 rounded bg-[#06140e] border border-mint-900/40">
+                  <span class="text-emerald-400/60 block text-[10px]">💵 Payday (25)</span>
+                  <span id="chip-payday" class="font-semibold text-emerald-200">0 pts</span>
                 </div>
-                <div class="p-2 rounded bg-slate-950/60 border border-slate-800/60">
-                  <span class="text-slate-500 block text-[10px]">🛍️ Wants (20)</span>
-                  <span id="chip-wants" class="font-semibold text-slate-300">0 pts</span>
+                <div class="p-2 rounded bg-[#06140e] border border-mint-900/40">
+                  <span class="text-emerald-400/60 block text-[10px]">🛍️ Wants (20)</span>
+                  <span id="chip-wants" class="font-semibold text-emerald-200">0 pts</span>
                 </div>
-                <div class="p-2 rounded bg-slate-950/60 border border-slate-800/60">
-                  <span class="text-slate-500 block text-[10px]">📈 Anomaly (30)</span>
-                  <span id="chip-anomaly" class="font-semibold text-slate-300">0 pts</span>
+                <div class="p-2 rounded bg-[#06140e] border border-mint-900/40">
+                  <span class="text-emerald-400/60 block text-[10px]">📈 Anomaly (30)</span>
+                  <span id="chip-anomaly" class="font-semibold text-emerald-200">0 pts</span>
                 </div>
               </div>
             </div>
 
             <!-- Proactive Nudge Alert Box (Conditional) -->
-            <div id="pred-nudge-box" class="hidden p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs flex items-start gap-2.5">
-              <svg class="w-5 h-5 text-rose-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+            <div id="pred-nudge-box" class="hidden p-3.5 rounded-xl bg-coral-500/10 border border-coral-500/30 text-coral-300 text-xs flex items-start gap-2.5">
+              <svg class="w-5 h-5 text-coral-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
               <div>
-                <span class="font-bold text-rose-200 block text-sm">🚨 Proactive Nudge Alert!</span>
+                <span class="font-bold text-coral-200 block text-sm">🚨 Proactive Nudge Alert!</span>
                 <span>รายการนี้มีความเสี่ยงสูงที่จะเป็นการซื้อตามอารมณ์ (Impulse Buying) แนะนำให้รอ 24 ชั่วโมงก่อนตัดสินใจจ่าย</span>
               </div>
             </div>
@@ -405,17 +421,17 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
         <div>
           <h2 class="text-base font-semibold text-white">Transaction Explorer</h2>
-          <p class="text-xs text-slate-400">ค้นหา กรอง และตรวจสอบรายการธุรกรรมพร้อมผลการประเมินความเสี่ยง</p>
+          <p class="text-xs text-emerald-400/70">ค้นหา กรอง และตรวจสอบรายการธุรกรรมพร้อมผลการประเมินความเสี่ยง</p>
         </div>
         <div class="flex flex-wrap items-center gap-2.5">
           <!-- Search Input -->
           <div class="relative">
-            <input type="text" id="table-search" placeholder="ค้นหาร้านค้า, memo, หมวด..." class="w-48 sm:w-64 pl-8 pr-3 py-1.5 text-xs rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500">
-            <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <input type="text" id="table-search" placeholder="ค้นหาร้านค้า, memo, หมวด..." class="w-48 sm:w-64 pl-8 pr-3 py-1.5 text-xs rounded-xl bg-mint-950/80 border border-mint-800/60 text-white placeholder-emerald-700 focus:outline-none focus:border-mint-400">
+            <svg class="w-3.5 h-3.5 text-emerald-400/60 absolute left-2.5 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
           </div>
 
           <!-- Category Filter Dropdown -->
-          <select id="table-category-filter" class="px-3 py-1.5 text-xs rounded-xl bg-slate-900 border border-slate-700 text-white focus:outline-none focus:border-indigo-500">
+          <select id="table-category-filter" class="px-3 py-1.5 text-xs rounded-xl bg-mint-950/80 border border-mint-800/60 text-emerald-200 focus:outline-none focus:border-mint-400">
             <option value="all">ทุกหมวดหมู่ (All)</option>
             <option value="food">Food</option>
             <option value="shopping">Shopping</option>
@@ -426,17 +442,17 @@
           </select>
 
           <!-- Nudge Only Toggle -->
-          <label class="flex items-center gap-1.5 text-xs text-slate-300 bg-slate-900 px-3 py-1.5 rounded-xl border border-slate-700 cursor-pointer select-none">
-            <input type="checkbox" id="toggle-nudge-only" class="rounded text-rose-500 focus:ring-0">
+          <label class="flex items-center gap-1.5 text-xs text-emerald-200 bg-mint-950/80 px-3 py-1.5 rounded-xl border border-mint-800/60 cursor-pointer select-none">
+            <input type="checkbox" id="toggle-nudge-only" class="rounded text-coral-500 focus:ring-0">
             <span>เฉพาะ Nudge 🚨</span>
           </label>
         </div>
       </div>
 
       <!-- Transactions Table -->
-      <div class="overflow-x-auto rounded-xl border border-slate-800/80">
-        <table class="w-full text-left text-xs text-slate-300">
-          <thead class="bg-slate-900/90 text-slate-400 uppercase tracking-wider text-[10px] border-b border-slate-800">
+      <div class="overflow-x-auto rounded-xl border border-mint-900/50">
+        <table class="w-full text-left text-xs text-emerald-200">
+          <thead class="bg-mint-950/90 text-emerald-300 uppercase tracking-wider text-[10px] border-b border-mint-900/60">
             <tr>
               <th class="px-4 py-3 font-semibold">วัน / เวลา</th>
               <th class="px-4 py-3 font-semibold">ร้านค้า (Merchant) & Memo</th>
@@ -447,22 +463,22 @@
               <th class="px-4 py-3 font-semibold text-center">Nudge Alert</th>
             </tr>
           </thead>
-          <tbody id="transactions-table-body" class="divide-y divide-slate-800/60 bg-slate-950/40">
+          <tbody id="transactions-table-body" class="divide-y divide-mint-900/30 bg-[#07130e]/60">
             <!-- Rendered by dashboard.js -->
           </tbody>
         </table>
       </div>
 
       <!-- Pagination Footer -->
-      <div class="mt-4 flex items-center justify-between text-xs text-slate-400">
+      <div class="mt-4 flex items-center justify-between text-xs text-emerald-400/70">
         <div>
-          แสดง <span id="page-start-idx" class="font-semibold text-slate-200">1</span> - <span id="page-end-idx" class="font-semibold text-slate-200">50</span> จากทั้งหมด <span id="page-total-tx" class="font-semibold text-slate-200">0</span> รายการ
+          แสดง <span id="page-start-idx" class="font-semibold text-emerald-200">1</span> - <span id="page-end-idx" class="font-semibold text-emerald-200">50</span> จากทั้งหมด <span id="page-total-tx" class="font-semibold text-emerald-200">0</span> รายการ
         </div>
         <div class="flex items-center gap-2">
-          <button id="btn-prev-page" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-50 text-slate-300 disabled:cursor-not-allowed transition">
+          <button id="btn-prev-page" class="px-3 py-1.5 rounded-lg bg-mint-950/80 border border-mint-800/60 hover:bg-mint-900/80 disabled:opacity-40 text-emerald-200 disabled:cursor-not-allowed transition">
             ย้อนกลับ
           </button>
-          <button id="btn-next-page" class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 hover:bg-slate-800 disabled:opacity-50 text-slate-300 disabled:cursor-not-allowed transition">
+          <button id="btn-next-page" class="px-3 py-1.5 rounded-lg bg-mint-950/80 border border-mint-800/60 hover:bg-mint-900/80 disabled:opacity-40 text-emerald-200 disabled:cursor-not-allowed transition">
             ถัดไป
           </button>
         </div>
@@ -472,8 +488,8 @@
   </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800/80 py-6 text-center text-xs text-slate-500">
-    <p>SmartSpend AI — Solo Portfolio Project • Built with FastAPI, Scikit-learn, LightGBM, Tailwind CSS & Chart.js</p>
+  <footer class="border-t border-mint-900/40 py-6 text-center text-xs text-emerald-500/60">
+    <p>SmartSpend AI — Solo Portfolio Project • Modern Emerald Fintech Theme • Built with FastAPI, Scikit-learn, LightGBM, Tailwind CSS & Chart.js</p>
   </footer>
 
   <!-- Link JavaScript -->
