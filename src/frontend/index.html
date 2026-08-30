@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="th" class="h-full bg-slate-50/80 text-slate-800">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartSpend AI — Clean Modern Fintech Dashboard</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Google Fonts: Inter & Prompt -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Prompt', 'Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            gh: {
+              0: '#ebedf0',
+              1: '#9be9a8',
+              2: '#40c463',
+              3: '#30a14e',
+              4: '#216e39',
+            }
+          },
+          boxShadow: {
+            'card': '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
+            'card-hover': '0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.04)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Prompt', 'Inter', sans-serif; }
+    .stripe-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 1rem;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
+      transition: all 0.2s ease-in-out;
+    }
+    .stripe-card:hover {
+      box-shadow: 0 8px 24px -4px rgba(15, 23, 42, 0.08);
+      border-color: #cbd5e1;
+    }
+    .gh-cell {
+      transition: transform 0.12s ease, outline 0.12s ease;
+    }
+    .gh-cell:hover {
+      transform: scale(1.25);
+      z-index: 30;
+      outline: 1.5px solid #0f172a;
+    }
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+<body class="min-h-full flex flex-col antialiased selection:bg-indigo-500 selection:text-white bg-slate-50/70 text-slate-800">
+
+  <!-- Top Navigation Bar -->
+  <header class="sticky top-0 z-40 w-full border-b border-slate-200/80 bg-white/90 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-indigo-500 flex items-center justify-center shadow-md shadow-indigo-500/20 text-white font-bold">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <h1 class="text-lg font-bold tracking-tight text-slate-900">SmartSpend <span class="text-indigo-600">AI</span></h1>
+            <span class="px-2.5 py-0.5 text-[11px] font-semibold rounded-full bg-indigo-50 text-indigo-700 border border-indigo-200/60">Portfolio v1.0</span>
+          </div>
+          <p class="text-xs text-slate-500">AI-Powered Expense Categorization & Impulse Risk Engine</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100/80 px-3 py-1.5 rounded-full border border-slate-200">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>FastAPI Backend Active</span>
+        </div>
+        <button id="btn-refresh" class="p-2 rounded-xl bg-white text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition border border-slate-200 shadow-sm" title="Refresh Data">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+    <!-- 1. KPI Summary Cards Grid -->
+    <section>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Card 1: Total Spend -->
+        <div class="stripe-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-500 mb-2">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">ยอดใช้จ่ายรวม (12 เดือน)</span>
+            <div class="w-8 h-8 rounded-lg bg-indigo-50 text-indigo-600 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </div>
+          </div>
+          <div class="text-2xl font-extrabold text-slate-900 tracking-tight" id="kpi-total-spend">฿0.00</div>
+          <div class="mt-2 flex items-center gap-1.5 text-xs text-slate-500">
+            <span id="kpi-total-tx" class="font-bold text-slate-700">0</span> รายการธุรกรรมทั้งหมด
+          </div>
+        </div>
+
+        <!-- Card 2: Needs vs Wants -->
+        <div class="stripe-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-500 mb-2">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">สัดส่วน Needs vs Wants</span>
+            <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 18h12l3-18H3z"/></svg>
+            </div>
+          </div>
+          <div class="flex items-baseline gap-2">
+            <span class="text-2xl font-extrabold text-emerald-600" id="kpi-needs-pct">0%</span>
+            <span class="text-sm font-semibold text-slate-300">/</span>
+            <span class="text-2xl font-extrabold text-rose-500" id="kpi-wants-pct">0%</span>
+          </div>
+          <div class="mt-2 text-xs text-slate-500 truncate">
+            Needs: <span id="kpi-needs-amt" class="text-slate-700 font-semibold">฿0</span> | Wants: <span id="kpi-wants-amt" class="text-rose-600 font-semibold">฿0</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Impulse Spending -->
+        <div class="stripe-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-500 mb-2">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">ยอด Impulse Buying</span>
+            <div class="w-8 h-8 rounded-lg bg-rose-50 text-rose-600 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+            </div>
+          </div>
+          <div class="text-2xl font-extrabold text-rose-600" id="kpi-impulse-amt">฿0.00</div>
+          <div class="mt-2 flex items-center justify-between text-xs text-slate-500">
+            <span>คิดเป็น <span id="kpi-impulse-pct" class="text-rose-600 font-bold">0%</span> ของรายจ่าย</span>
+            <span id="kpi-impulse-count" class="font-medium text-slate-600">0 รายการ</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Nudge Alerts -->
+        <div class="stripe-card p-5 relative overflow-hidden group">
+          <div class="flex items-center justify-between text-slate-500 mb-2">
+            <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Proactive Nudges</span>
+            <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+            </div>
+          </div>
+          <div class="text-2xl font-extrabold text-amber-600" id="kpi-nudge-count">0</div>
+          <div class="mt-2 flex items-center gap-1 text-xs text-slate-500">
+            <span>เกณฑ์เตือนสติความเสี่ยงสูง (Score ≥ <span id="kpi-nudge-thresh" class="text-slate-700 font-bold">70</span>)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. Charts Section (Needs/Wants Doughnut + Monthly Trend) -->
+    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      
+      <!-- Chart Left: Needs vs Wants Breakdown -->
+      <div class="stripe-card p-6 lg:col-span-1 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <h2 class="text-base font-bold text-slate-900">Needs vs Wants</h2>
+              <p class="text-xs text-slate-500">การจำแนกสัดส่วนรายจ่ายจริง</p>
+            </div>
+            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600">Model Tagged</span>
+          </div>
+          <div class="relative h-56 flex items-center justify-center mt-2">
+            <canvas id="chart-needs-wants"></canvas>
+          </div>
+        </div>
+        <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs">
+          <div class="flex items-center justify-between text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+              <span class="font-medium">Needs (จำเป็น)</span>
+            </div>
+            <span id="legend-needs-val" class="font-bold text-slate-900">0%</span>
+          </div>
+          <div class="flex items-center justify-between text-slate-600">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+              <span class="font-medium">Wants (ฟุ่มเฟือย/ตามใจ)</span>
+            </div>
+            <span id="legend-wants-val" class="font-bold text-slate-900">0%</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chart Right: Monthly Spending & Impulse Trend -->
+      <div class="stripe-card p-6 lg:col-span-2 flex flex-col justify-between">
+        <div class="flex items-center justify-between mb-4">
+          <div>
+            <h2 class="text-base font-bold text-slate-900">Monthly Spending & Impulse Trends</h2>
+            <p class="text-xs text-slate-500">แนวโน้มยอดใช้จ่ายรวมและยอดเงิน Impulse Buying ตลอด 12 เดือน</p>
+          </div>
+          <div class="flex items-center gap-4 text-xs">
+            <div class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-indigo-500"></span><span class="font-medium text-slate-600">ยอดรวม</span></div>
+            <div class="flex items-center gap-1.5"><span class="w-3 h-1.5 rounded-full bg-rose-500"></span><span class="font-medium text-slate-600">Impulse</span></div>
+          </div>
+        </div>
+        <div class="relative h-64 w-full">
+          <canvas id="chart-monthly-trend"></canvas>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. Spending Heatmap Matrix (GitHub Contribution Style) -->
+    <section class="stripe-card p-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+        <div>
+          <div class="flex items-center gap-2.5">
+            <h2 class="text-base font-bold text-slate-900">Spending & Impulse Risk Matrix</h2>
+            <span class="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-600 border border-slate-200">GitHub Style (7 Days × 24 Hours)</span>
+          </div>
+          <p class="text-xs text-slate-500 mt-1">วิเคราะห์ความหนาแน่นของการใช้จ่ายและพฤติกรรมเสี่ยงรอบดึก (23:00–02:00) และช่วงเงินเดือนออก</p>
+        </div>
+        
+        <!-- GitHub Contribution Legend -->
+        <div class="flex items-center gap-2 text-xs text-slate-500 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200/80">
+          <span>Less</span>
+          <div class="flex gap-1 items-center">
+            <span class="w-3 h-3 rounded-[2px] bg-[#ebedf0] border border-slate-300/40" title="0 transactions"></span>
+            <span class="w-3 h-3 rounded-[2px] bg-[#9be9a8]" title="Level 1"></span>
+            <span class="w-3 h-3 rounded-[2px] bg-[#40c463]" title="Level 2"></span>
+            <span class="w-3 h-3 rounded-[2px] bg-[#30a14e]" title="Level 3"></span>
+            <span class="w-3 h-3 rounded-[2px] bg-[#216e39]" title="Level 4"></span>
+          </div>
+          <span>More</span>
+          <div class="flex items-center gap-1.5 ml-2 pl-2 border-l border-slate-200">
+            <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span>
+            <span class="text-rose-600 font-medium">Impulse Risk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heatmap Container -->
+      <div class="overflow-x-auto pb-2">
+        <div class="min-w-[700px]" id="heatmap-container">
+          <!-- Rendered dynamically by dashboard.js in GitHub Style -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Live AI Transaction Simulator (Split 2-Column Clean Card) -->
+    <section class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- Simulator Form (5 Cols) -->
+      <div class="stripe-card p-6 lg:col-span-5 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h2 class="text-base font-bold text-slate-900">Live AI Simulator</h2>
+            </div>
+            <span class="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-indigo-50 text-indigo-700">Real-time</span>
+          </div>
+          <p class="text-xs text-slate-500 mb-4">ทดสอบจำลองรายการใช้จ่ายใหม่ เพื่อให้ AI จำแนกหมวดหมู่และประเมินความเสี่ยงสดๆ</p>
+
+          <!-- Quick Presets -->
+          <div class="mb-4">
+            <label class="block text-xs font-semibold text-slate-600 mb-1.5">⚡ เลือกตัวอย่างสำเร็จรูป (Presets):</label>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 text-slate-700 font-medium border border-slate-200 transition truncate text-left" data-preset="late-food">
+                🍕 GrabFood ดึก
+              </button>
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 text-slate-700 font-medium border border-slate-200 transition truncate text-left" data-preset="lunch">
+                🍜 ข้าวเที่ยงปกติ
+              </button>
+              <button type="button" class="btn-preset px-2 py-1.5 rounded-lg bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 text-slate-700 font-medium border border-slate-200 transition truncate text-left" data-preset="shopee-payday">
+                🛍️ Shopee สิ้นเดือน
+              </button>
+            </div>
+          </div>
+
+          <!-- Input Form -->
+          <form id="predict-form" class="space-y-3">
+            <div>
+              <label for="input-merchant" class="block text-xs font-semibold text-slate-700 mb-1">ชื่อร้านค้า (Merchant) *</label>
+              <input type="text" id="input-merchant" required placeholder="เช่น GrabFood, Shopee, 7-Eleven, BTS" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+            </div>
+
+            <div>
+              <label for="input-memo" class="block text-xs font-semibold text-slate-700 mb-1">บันทึกช่วยจำ (Memo)</label>
+              <input type="text" id="input-memo" placeholder="เช่น สั่งมื้อดึกหิวมาก, ซื้อเสื้อผ้าลดราคา" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+            </div>
+
+            <div class="grid grid-cols-3 gap-2.5">
+              <div class="col-span-1">
+                <label for="input-amount" class="block text-xs font-semibold text-slate-700 mb-1">ยอดเงิน (฿) *</label>
+                <input type="number" step="0.01" min="1" id="input-amount" required placeholder="350.00" class="w-full px-3 py-2 text-sm rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+              </div>
+              <div class="col-span-1">
+                <label for="input-date" class="block text-xs font-semibold text-slate-700 mb-1">วันที่ *</label>
+                <input type="date" id="input-date" required class="w-full px-2 py-2 text-xs rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+              </div>
+              <div class="col-span-1">
+                <label for="input-time" class="block text-xs font-semibold text-slate-700 mb-1">เวลา *</label>
+                <input type="time" id="input-time" required class="w-full px-2 py-2 text-xs rounded-xl bg-slate-50 border border-slate-200 text-slate-900 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+              </div>
+            </div>
+
+            <button type="submit" id="btn-submit-predict" class="w-full mt-3 py-2.5 px-4 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-sm shadow-md shadow-indigo-600/20 transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <span>ประมวลผลด้วย AI (Run Inference)</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Simulator Output Panel (7 Cols) -->
+      <div class="stripe-card p-6 lg:col-span-7 flex flex-col justify-between" id="prediction-result-panel">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <h2 class="text-base font-bold text-slate-900">AI Inference Output</h2>
+            <span id="pred-risk-badge" class="px-3 py-1 text-xs font-bold rounded-full bg-slate-100 text-slate-600 border border-slate-200">
+              Ready for Input
+            </span>
+          </div>
+
+          <!-- Empty State Placeholder -->
+          <div id="pred-empty-state" class="py-14 flex flex-col items-center justify-center text-center text-slate-400">
+            <div class="w-14 h-14 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center mb-3 text-slate-400">
+              <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <p class="text-sm font-semibold text-slate-700">กรอกข้อมูลหรือเลือก Preset ด้านซ้ายเพื่อทดสอบ AI</p>
+            <p class="text-xs text-slate-400 mt-1">โมเดลจะประมวลผล Categorization + Needs/Wants + Impulse Risk ทันที</p>
+          </div>
+
+          <!-- Live Result Box -->
+          <div id="pred-result-box" class="hidden space-y-4">
+            
+            <!-- Result Row 1: Category & Needs/Wants -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80">
+                <span class="text-xs font-semibold text-slate-500 block mb-1">หมวดหมู่ที่จำแนกได้ (NLP Category)</span>
+                <div class="flex items-center justify-between">
+                  <span id="pred-category-name" class="text-lg font-extrabold text-indigo-600 capitalize">-</span>
+                  <span id="pred-category-conf" class="text-xs px-2.5 py-0.5 rounded-full bg-indigo-100 text-indigo-700 font-bold">Confidence 0%</span>
+                </div>
+              </div>
+
+              <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80">
+                <span class="text-xs font-semibold text-slate-500 block mb-1">การจำแนก Needs vs Wants</span>
+                <div class="flex items-center justify-between">
+                  <span id="pred-needs-wants-tag" class="text-lg font-extrabold text-emerald-600">-</span>
+                  <span id="pred-needs-wants-reason" class="text-xs text-slate-500 truncate max-w-[140px]" title="">-</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result Row 2: Dual Impulse Risk Output -->
+            <div class="bg-slate-50 rounded-xl p-4 border border-slate-200/80 space-y-3">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="text-xs font-semibold text-slate-500">Impulse Risk Score (v1 Rule-Based)</span>
+                  <div class="flex items-baseline gap-1.5 mt-0.5">
+                    <span id="pred-v1-score" class="text-3xl font-black text-slate-900">0</span>
+                    <span class="text-xs font-medium text-slate-400">/ 100</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-semibold text-slate-500">v2 ML Probability</span>
+                  <div class="text-2xl font-extrabold text-indigo-600" id="pred-v2-prob">0.0%</div>
+                </div>
+              </div>
+
+              <!-- Score Bar -->
+              <div class="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
+                <div id="pred-score-bar" class="h-3 rounded-full bg-gradient-to-r from-emerald-500 via-amber-500 to-rose-500 transition-all duration-500" style="width: 0%"></div>
+              </div>
+
+              <!-- 4-Factor Breakdown Chips -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-t border-slate-200 text-xs">
+                <div class="p-2 rounded-lg bg-white border border-slate-200">
+                  <span class="text-slate-400 block text-[10px] font-semibold">🌙 Late-Night (25)</span>
+                  <span id="chip-late" class="font-bold text-slate-800">0 pts</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white border border-slate-200">
+                  <span class="text-slate-400 block text-[10px] font-semibold">💵 Payday (25)</span>
+                  <span id="chip-payday" class="font-bold text-slate-800">0 pts</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white border border-slate-200">
+                  <span class="text-slate-400 block text-[10px] font-semibold">🛍️ Wants (20)</span>
+                  <span id="chip-wants" class="font-bold text-slate-800">0 pts</span>
+                </div>
+                <div class="p-2 rounded-lg bg-white border border-slate-200">
+                  <span class="text-slate-400 block text-[10px] font-semibold">📈 Anomaly (30)</span>
+                  <span id="chip-anomaly" class="font-bold text-slate-800">0 pts</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proactive Nudge Alert Box (Conditional) -->
+            <div id="pred-nudge-box" class="hidden p-4 rounded-xl bg-rose-50 border border-rose-200 text-rose-800 text-xs flex items-start gap-3">
+              <div class="p-1 rounded-lg bg-rose-100 text-rose-600 shrink-0 mt-0.5">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+              </div>
+              <div>
+                <span class="font-bold text-rose-900 block text-sm">🚨 Proactive Nudge Alert!</span>
+                <span class="text-rose-700">รายการนี้มีความเสี่ยงสูงที่จะเป็นการซื้อตามอารมณ์ (Impulse Buying) แนะนำให้รอ 24 ชั่วโมงก่อนตัดสินใจจ่าย</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 5. Transaction Explorer Table -->
+    <section class="stripe-card p-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-5">
+        <div>
+          <h2 class="text-base font-bold text-slate-900">Transaction Explorer</h2>
+          <p class="text-xs text-slate-500">ค้นหา กรอง และตรวจสอบรายการธุรกรรมพร้อมผลการประเมินความเสี่ยง</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2.5">
+          <!-- Search Input -->
+          <div class="relative">
+            <input type="text" id="table-search" placeholder="ค้นหาร้านค้า, memo, หมวด..." class="w-48 sm:w-64 pl-8 pr-3 py-1.5 text-xs rounded-xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+            <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+
+          <!-- Category Filter Dropdown -->
+          <select id="table-category-filter" class="px-3 py-1.5 text-xs font-medium rounded-xl bg-slate-50 border border-slate-200 text-slate-700 focus:bg-white focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 transition">
+            <option value="all">ทุกหมวดหมู่ (All Categories)</option>
+            <option value="food">Food</option>
+            <option value="shopping">Shopping</option>
+            <option value="transport">Transport</option>
+            <option value="bills">Bills</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="other">Other</option>
+          </select>
+
+          <!-- Nudge Only Toggle -->
+          <label class="flex items-center gap-1.5 text-xs font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 px-3 py-1.5 rounded-xl border border-slate-200 cursor-pointer select-none transition">
+            <input type="checkbox" id="toggle-nudge-only" class="rounded text-rose-600 focus:ring-0">
+            <span>เฉพาะ Nudge 🚨</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Transactions Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-200">
+        <table class="w-full text-left text-xs text-slate-700">
+          <thead class="bg-slate-50 text-slate-500 uppercase tracking-wider text-[10px] font-bold border-b border-slate-200">
+            <tr>
+              <th class="px-4 py-3">วัน / เวลา</th>
+              <th class="px-4 py-3">ร้านค้า (Merchant) & Memo</th>
+              <th class="px-4 py-3 text-right">ยอดเงิน (฿)</th>
+              <th class="px-4 py-3">หมวดหมู่ (Category)</th>
+              <th class="px-4 py-3 text-center">Needs/Wants</th>
+              <th class="px-4 py-3 text-center">Impulse Score</th>
+              <th class="px-4 py-3 text-center">Nudge Alert</th>
+            </tr>
+          </thead>
+          <tbody id="transactions-table-body" class="divide-y divide-slate-100 bg-white">
+            <!-- Rendered by dashboard.js -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination Footer -->
+      <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
+        <div>
+          แสดง <span id="page-start-idx" class="font-bold text-slate-800">1</span> - <span id="page-end-idx" class="font-bold text-slate-800">50</span> จากทั้งหมด <span id="page-total-tx" class="font-bold text-slate-800">0</span> รายการ
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="btn-prev-page" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-50 font-medium text-slate-700 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm transition">
+            ย้อนกลับ
+          </button>
+          <button id="btn-next-page" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 hover:bg-slate-50 font-medium text-slate-700 disabled:opacity-40 disabled:cursor-not-allowed shadow-sm transition">
+            ถัดไป
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white py-6 text-center text-xs text-slate-400">
+    <p>SmartSpend AI — Solo Portfolio Project • Clean Stripe SaaS Style • Built with FastAPI, Scikit-learn, LightGBM, Tailwind CSS & Chart.js</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
